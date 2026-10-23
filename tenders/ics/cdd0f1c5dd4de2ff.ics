@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Dublin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cdd0f1c5dd4de2ff@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Deadline: Single-Party Framework for Works-Related 
+ Technical Services in Geothermal Engineering Consultancy at Grangegorman
+ \, Dublin\, Ireland
+DTSTART;TZID=Europe/Dublin:20261105T140000
+DTEND;TZID=Europe/Dublin:20261105T143000
+DESCRIPTION:Source: TED 689259-2026. Published by source: 07 Oct 2026 · L
+ ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ igenda. This calendar entry does NOT update itself. For automatic updates
+ \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/689259-2026. No guarantee of completeness or accuracy. Time u
+ ncertain: the notice encodes 15:00 +01:00 (= 14:00 Irish time)\; eTenders
+  may state 15:00 local – the earlier value is used here. As published: 
+ 05 Nov 2026\, 14:00 Irish time (15:00 CET).
+URL:https://ted.europa.eu/en/notice/-/detail/689259-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0eb0e95523645031@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Deadline: Resource assessment for deep sedimentary 
+ and basement reservoirs
+DTSTART;TZID=Europe/Brussels:20261201T170000
+DTEND;TZID=Europe/Brussels:20261201T173000
+DESCRIPTION:Source: EU Funding & Tenders Portal\, HORIZON-CL5-2026-11-D3-0
+ 6. Published by source: 04 Aug 2026 · Last checked by SpudSignal: 23 Oct
+  2026. Deadlines can change through corrigenda. This calendar entry does 
+ NOT update itself. For automatic updates\, subscribe to the feed: https:/
+ /library.spudsignal.com/tenders/deadlines.ics. Only the original notice i
+ s binding: https://ec.europa.eu/info/funding-tenders/opportunities/portal
+ /screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06. No guarant
+ ee of completeness or accuracy. As published: 01 Dec 2026\, 17:00 CET (Br
+ ussels time).
+URL:https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/
+ opportunities/topic-details/horizon-cl5-2026-11-d3-06
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

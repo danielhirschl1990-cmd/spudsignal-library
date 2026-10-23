@@ -1,0 +1,603 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Open geothermal drilling &amp; project tenders and funding calls – SpudSignal Source Library</title>
+<meta name="description" content="Open geothermal drilling tenders and funding calls across Europe with deadlines, linked to the original notices. Reviewed by SpudSignal, updated weekly.">
+<link rel="canonical" href="https://library.spudsignal.com/tenders/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/tenders/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/tenders/icons/apple-touch-icon.png">
+<link rel="manifest" href="/tenders/manifest.webmanifest"><meta name="theme-color" content="#0F2A3D">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="SpudSignal Tenders">
+<link rel="alternate" type="text/calendar" title="Deadline feed (ICS)" href="/tenders/deadlines.ics">
+<style>
+:root{--navy:#0F2A3D;--or:#E97828;--mut:#4A6275;--line:#D5DEE6;--bg:#F4F7FA;--chipbg:#E6EDF3}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:#1B2B38;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+a{color:var(--navy)}a:hover{color:#B85A14}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px;border-radius:4px}
+.ic{width:22px;height:22px;flex:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 12px}
+.hero{background:var(--navy);color:#fff;padding:calc(18px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 18px max(16px,env(safe-area-inset-left));margin:0 -12px}
+.hero a{color:#FFD2AE}.hero h1{font-size:22px;line-height:1.25;margin:4px 0 8px}.hero p{margin:4px 0;color:#DCE5EC;font-size:15px}.hero .k{font-size:13px;text-transform:uppercase;letter-spacing:.06em}.hero .s{font-size:13px;color:#C8D2DC}
+.note{background:#FFF4EA;border-left:4px solid var(--or);padding:10px 12px;margin:12px 0;font-size:14px;border-radius:4px}
+.offline{background:#5B6B7A;color:#fff;font-size:14px;padding:8px 12px;margin:0 -12px;text-align:center}
+.since{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:12px 0;font-size:14px}
+.ioshint{position:relative;background:#fff;border:2px solid var(--navy);border-radius:10px;padding:12px 44px 12px 14px;margin:12px 0;font-size:14px}
+.ioshint .x{position:absolute;top:4px;right:4px;width:44px;height:44px;border:0;background:none;font-size:22px;color:var(--navy);cursor:pointer}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--navy);display:flex;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+nav.tabs a{flex:1;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#C8D2DC;text-decoration:none;font-size:12px;border-top:3px solid transparent;position:relative}
+nav.tabs a[aria-current="page"]{color:var(--or);border-top-color:var(--or)}
+nav.tabs a:focus-visible{outline-offset:-4px}
+nav.tabs .n{position:absolute;top:5px;left:calc(50% + 6px);background:var(--or);color:#fff;font-size:11px;font-weight:700;border-radius:9px;min-width:18px;height:18px;line-height:18px;padding:0 5px;text-align:center}
+nav.tabs .n[data-z]{display:none}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);padding:8px 0 6px;margin:0;border-bottom:1px solid var(--line)}
+.chiprow{display:flex;gap:6px;overflow-x:auto;padding:3px 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}.chiprow::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:36px;padding:6px 12px;border-radius:18px;border:1px solid #9FB0BF;background:#fff;color:var(--navy);font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chip.reset{border-style:dashed}
+#count{font-size:14px;color:var(--mut);margin:8px 0}
+#list{display:grid;gap:12px;margin-bottom:16px}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px}
+.card h3{font-size:17px;line-height:1.35;margin:4px 48px 4px 0}
+.card .top{margin:0 48px 4px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.badge{font-size:12px;font-weight:700;padding:2px 8px;border-radius:10px;color:#fff}.badge.tend{background:#2E5E80}.badge.fund{background:#1F6B4F}
+.tag{font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--navy);color:var(--navy)}
+.pill-new{font-size:12px;font-weight:700;padding:2px 9px;border-radius:10px;background:var(--navy);color:#fff}
+.pill-chg{font-size:12px;font-weight:700;padding:1px 8px;border-radius:10px;border:2px solid var(--or);color:#9A4A0F;background:#fff}
+.stale{font-size:13px;color:#7A3B00;background:#FFF4EA;border:1px dashed var(--or);border-radius:6px;padding:2px 8px}
+.chg{font-size:14px;background:#FFF4EA;border-radius:6px;padding:6px 8px;margin:6px 0}
+.meta{font-size:13px;color:var(--mut);margin:0}.lbl{font-size:12px;color:var(--mut);margin:0 0 6px}
+.flag{background:#FFF4EA;border:1px solid #F3C49C;padding:6px 8px;border-radius:6px;font-size:14px;margin:6px 0}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;margin:8px 0;font-size:14px}dt{color:var(--mut)}dd{margin:0}
+.more,.muted{color:var(--mut)}
+.cd{display:inline-block;margin-top:4px;font-size:13px;padding:2px 8px;border-radius:10px;background:var(--chipbg);color:#24445C}
+.cd.warn{background:#FFE3CC;color:#8A3E05;border:1px solid var(--or)}.cd.hot{background:var(--or);color:#fff;font-weight:700}.cd:empty{display:none}
+.cdx{display:block;font-size:12px;color:#8A3E05;margin-top:2px}
+.star{position:absolute;top:8px;right:8px;width:48px;height:48px;border:0;background:none;color:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:24px}
+.star:hover{background:var(--chipbg)}.star[aria-pressed="true"] svg{fill:var(--or);stroke:var(--or)}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:8px 0 4px}
+.btn2{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 12px;border:1px solid #9FB0BF;border-radius:8px;background:#fff;color:var(--navy);font-size:14px;text-decoration:none}
+.btn2 .ic{width:18px;height:18px}.btn2:hover{border-color:var(--navy)}
+.hint{font-size:12px;color:var(--mut)}
+.acc{font-size:12px;color:var(--mut);margin:6px 0 0}
+.card.gone{background:#F1F3F5;border-style:dashed}.card.gone h3 a{color:#5B6B7A}
+.gonetag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:10px;background:#5B6B7A;color:#fff}
+.feed{background:#fff;border:2px solid var(--navy);border-radius:10px;padding:12px 14px;margin:12px 0}
+.feedmini{display:none!important}.feed.compact>*{display:none}.feed.compact .feedmini{display:flex!important;align-items:center;gap:10px;margin:0;font-weight:600}.feed.compact .feedmini span:first-child{flex:1}
+.btn1.sm{min-height:44px;padding:8px 12px}.more2{min-height:44px;border:0;background:none;color:var(--navy);text-decoration:underline;font:inherit;font-size:14px;cursor:pointer}
+.chiprow.fade{-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent)}
+.hero .long{display:none}.chg{display:block}
+.abbr{font-size:13px;color:#4A6275;margin:4px 0 16px}.abbr summary{cursor:pointer;min-height:32px;display:inline-flex;align-items:center}.abbr dl,.box dl{font-size:13px;color:#4A6275}
+.feed h2{font-size:16px;margin:0 0 6px}.feed p{margin:4px 0;font-size:14px}
+.btn1{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:10px 16px;border-radius:8px;background:var(--or);color:#fff;font-weight:700;text-decoration:none;border:0}
+.btn1:hover{background:#C9621A;color:#fff}.btn1 .ic{width:20px;height:20px}
+.feedalt{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-top:8px}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}.box h2{font-size:18px;margin:0 0 8px}.box li{margin:4px 0}
+.empty{background:#fff;border:1px dashed #9FB0BF;border-radius:10px;padding:16px;text-align:center;color:var(--mut)}
+[hidden]{display:none!important}
+footer{max-width:1100px;margin:0 auto;padding:8px 12px 32px;font-size:13px;color:#5B6B7A;text-align:center;line-height:1.6}footer a{color:#0F2A3D}
+@media (min-width:900px){
+ body{padding-bottom:0}.hero .long{display:inline}.chiprow.fade{-webkit-mask-image:none;mask-image:none}
+ .hero{margin:0;border-radius:0 0 10px 10px;padding:22px 24px}.hero h1{font-size:28px}
+ nav.tabs{position:sticky;top:0;bottom:auto;padding:0;border-radius:10px;margin:12px 0 0;overflow:hidden}
+ nav.tabs a{flex-direction:row;gap:8px;font-size:15px;min-height:52px;border-top:0;border-bottom:3px solid transparent}
+ nav.tabs a[aria-current="page"]{border-bottom-color:var(--or)}
+ nav.tabs .n{position:static}
+ .bar{top:52px}
+ #list{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:no-preference){.star,.chip{transition:background .15s}}
+</style></head><body>
+<div class="wrap">
+<div class="offline" id="offline" role="status" hidden></div>
+<div class="hero"><p class="k"><a href="/">SpudSignal Source Library</a></p><h1>Open geothermal drilling &amp; project tenders and funding calls</h1>
+<p>Open geothermal tenders and funding calls across Europe, each linked to the original notice.<span class="long"> Only entries whose deadline has not passed and that were reviewed for a SpudSignal issue or verified on the programme's own page.</span></p>
+<p class="s">25 open entries &nbsp;·&nbsp; 10 countries + EU &nbsp;·&nbsp; last updated <span id="gen">23 Oct 2026, 15:28 CEST</span></p></div>
+<nav class="tabs" aria-label="Sections">
+<a href="#open" data-tab="open"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg><span>Open</span></a>
+<a href="#soon" data-tab="soon"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></svg><span>Closing soon</span><span class="n" id="n-soon" aria-label="entries">0</span></a>
+<a href="#saved" data-tab="saved"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg><span>Saved</span><span class="n" id="n-saved" aria-label="saved">0</span></a>
+<a href="#about" data-tab="about"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>About &amp; Sources</span></a>
+</nav>
+<div class="ioshint" id="ioshint" hidden><button class="x" type="button" aria-label="Dismiss install hint">×</button><strong>Install as an app:</strong> tap <strong>Share</strong> <span aria-hidden="true">⎋</span> in Safari, then <strong>Add to Home Screen</strong>. Works offline with the last loaded data.</div>
+<p class="note"><strong>No guarantee.</strong> All details as published by the source on the retrieval date shown. Deadlines, times and documents can change: always check the original notice before acting. No awards, no bidder assessments, no contact data.</p>
+<div class="since" id="since" role="status" hidden></div>
+<main id="main">
+<div id="view-list">
+<div class="feed" id="feedbox"><p class="feedmini"><span>Subscribe to deadline feed</span><a class="btn1 sm" href="webcal://library.spudsignal.com/tenders/deadlines.ics" aria-label="Subscribe to deadline feed"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Subscribe</span></a><button type="button" class="more2" id="feedmore" aria-expanded="false">Options</button></p><h2>Get every deadline in your calendar</h2>
+<p>Subscribe once (reminders 7 days and 1 day before) – the feed updates when SpudSignal re-checks the notices (corrections, withdrawals).</p>
+<p><a class="btn1" id="sub" href="webcal://library.spudsignal.com/tenders/deadlines.ics"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Subscribe to deadline feed</span></a></p>
+<div class="feedalt"><a id="sub-g" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Flibrary.spudsignal.com%2Ftenders%2Fdeadlines.ics" rel="noopener">Google Calendar</a><a id="sub-o" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Flibrary.spudsignal.com%2Ftenders%2Fdeadlines.ics&amp;name=SpudSignal%20deadlines" rel="noopener">Outlook.com</a><a href="/tenders/deadlines.ics">Feed URL (https)</a></div></div>
+<div class="bar" id="bar"><div class="chiprow"><button type="button" class="chip reset" id="reset" aria-pressed="false">All</button></div><div class="chiprow" role="group" aria-label="Type"><button type="button" class="chip" data-g="kind" data-v="tender" aria-pressed="false">Tenders</button><button type="button" class="chip" data-g="kind" data-v="funding" aria-pressed="false">Funding calls</button></div><div class="chiprow" role="group" aria-label="Category"><button type="button" class="chip" data-g="tag" data-v="Deep well" aria-pressed="false">Deep well</button><button type="button" class="chip" data-g="tag" data-v="Shallow BHE" aria-pressed="false">Shallow BHE</button><button type="button" class="chip" data-g="tag" data-v="Shallow (aquifer wells)" aria-pressed="false">Shallow (aquifer wells)</button><button type="button" class="chip" data-g="tag" data-v="Planning" aria-pressed="false">Planning</button></div><div class="chiprow" role="group" aria-label="Country"><button type="button" class="chip" data-g="country" data-v="CZ" aria-pressed="false">Czechia</button><button type="button" class="chip" data-g="country" data-v="EU" aria-pressed="false">EU-wide</button><button type="button" class="chip" data-g="country" data-v="FR" aria-pressed="false">France</button><button type="button" class="chip" data-g="country" data-v="DE" aria-pressed="false">Germany</button><button type="button" class="chip" data-g="country" data-v="HU" aria-pressed="false">Hungary</button><button type="button" class="chip" data-g="country" data-v="IE" aria-pressed="false">Ireland</button><button type="button" class="chip" data-g="country" data-v="NL" aria-pressed="false">Netherlands</button><button type="button" class="chip" data-g="country" data-v="PL" aria-pressed="false">Poland</button><button type="button" class="chip" data-g="country" data-v="RO" aria-pressed="false">Romania</button><button type="button" class="chip" data-g="country" data-v="SE" aria-pressed="false">Sweden</button><button type="button" class="chip" data-g="country" data-v="CH" aria-pressed="false">Switzerland</button></div></div>
+<p id="count" role="status"></p>
+<div id="list">
+<article class="card" id="e-99df042879984a15" data-uid="99df042879984a15" data-country="SE" data-kind="tender" data-deadline="2026-10-25" data-cpv="45120000 45250000 45255500 76300000 76340000" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Borrtjänster"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Sweden</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/664748-2026" rel="noopener">Borrtjänster</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Sveriges geologiska undersökning</dd>
+<dt>Deadline</dt><dd><strong>Ends 25 Oct 2026 (end of day, Swedish time). The notice encodes 26 Oct 00:00 +02:00, which taken literally is 23:00 CET on 25 Oct – submit by 23:00 to be safe.</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>45120000 45250000 45255500 <span class="more">+2 more</span></dd>
+<dt>Reference</dt><dd>TED 664748-2026</dd></dl><p class="flag">Time uncertain: the notice can be read as end of 25 Oct (Swedish time) or 23:00 CET – the earlier value is used here.</p>
+<p class="acts"><a class="btn2" href="ics/99df042879984a15.ics" download="spudsignal-99df042879984a15.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-6cf9dc14246ba798" data-uid="6cf9dc14246ba798" data-country="FR" data-kind="tender" data-deadline="2026-10-26" data-cpv="" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Réalisation de travaux concernant la mise en place d&#x27;un réseau de chaleur sur so"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-92772" rel="noopener">Réalisation de travaux concernant la mise en place d&#x27;un réseau de chaleur sur sondes géothermiques pour les bâtiments scolaires de St Pierre d&#x27;Eyraud</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>COMMUNE DE SAINT PIERRE D EYRAUD</dd>
+<dt>Deadline</dt><dd><strong>26 Oct 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-92772</dd></dl>
+<p class="acts"><a class="btn2" href="ics/6cf9dc14246ba798.ics" download="spudsignal-6cf9dc14246ba798.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-9b7ec724fea2f2ed" data-uid="9b7ec724fea2f2ed" data-country="DE" data-kind="tender" data-deadline="2026-10-27" data-cpv="42511110 45000000 45210000 45251000 45251100 45251141 45251200 45251250" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Geothermie Prenzlau - Anlagentechnik"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Germany</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/669195-2026" rel="noopener">Geothermie Prenzlau - Anlagentechnik</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Stadtwerke Prenzlau GmbH</dd>
+<dt>Requests to participate</dt><dd><strong>27 Oct 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>42511110 45000000 45210000 <span class="more">+5 more</span></dd>
+<dt>Reference</dt><dd>TED 669195-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/9b7ec724fea2f2ed.ics" download="spudsignal-9b7ec724fea2f2ed.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-389f89d14d614826" data-uid="389f89d14d614826" data-country="FR" data-kind="tender" data-deadline="2026-10-30" data-cpv="" data-tags="Shallow (aquifer wells)">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Création d&#x27;un réseau technique de chaleur géothermique sur le site de Bellegrave"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow (aquifer wells)</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-93304" rel="noopener">Création d&#x27;un réseau technique de chaleur géothermique sur le site de Bellegrave à Pessac (33)</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Ville de Pessac</dd>
+<dt>Deadline</dt><dd><strong>30 Oct 2026, 12:00 CET (Paris time; rectificatif 26-101172)</strong><br><span class="cd" aria-live="off"></span><span class="chg"><strong>CHANGED 19 Oct:</strong> deadline 26 Oct 2026, 13:00 CET → 30 Oct 2026, 12:00 CET (Paris time; rectificatif 26-101172) · <a href="https://www.boamp.fr/pages/avis/?q=idweb:26-101172" rel="noopener">correction notice 26-101172</a></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-93304 + rectificatif 26-101172</dd></dl>
+<p class="acts"><a class="btn2" href="ics/389f89d14d614826.ics" download="spudsignal-389f89d14d614826.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-6baedd6c10b06e19" data-uid="6baedd6c10b06e19" data-country="HU" data-kind="funding" data-deadline="2026-10-30" data-cpv="" data-tags="">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge fund">Funding call</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Hungary</span> · <span class="src">Programme page</span></p>
+<h3><a href="https://www.palyazat.gov.hu/programok/szechenyi-terv-plusz/kehop-plusz/kehop_plusz-4.2.4-25" rel="noopener">Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Programme</dt><dd>KEHOP Plusz (Széchenyi Terv Plusz)</dd>
+<dt>Deadline</dt><dd><strong>30 Oct 2026, 23:59 (Hungarian time)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>HU-KEHOP-Plusz-4.2.4-25</dd></dl>
+<p class="acts"><a class="btn2" href="ics/6baedd6c10b06e19.ics" download="spudsignal-6baedd6c10b06e19.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-6a7ed73200f7a63d" data-uid="6a7ed73200f7a63d" data-country="DE" data-kind="funding" data-deadline="2026-10-31" data-cpv="" data-tags="">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Förderaufruf „Explorationsinitiative Geothermie“"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge fund">Funding call</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Germany</span> · <span class="src">Programme page</span></p>
+<h3><a href="https://www.energieforschung.de/de/foerderung/foerderangebote/foerderaufruf-explorationsinitiative-geothermie" rel="noopener">Förderaufruf „Explorationsinitiative Geothermie“</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Programme</dt><dd>Explorationsinitiative Geothermie (BMWE / PtJ)</dd>
+<dt>Deadline</dt><dd><strong>Next submission cut-off: 31 Oct 2026 (project outlines via easy-Online; no time stated)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>DE-explorationsinitiative-2026-10</dd></dl><p class="flag">No time stated in the call – end of day (23:59 German time) assumed; submit earlier to be safe.</p>
+<p class="acts"><a class="btn2" href="ics/6a7ed73200f7a63d.ics" download="spudsignal-6a7ed73200f7a63d.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-7b5311b7bce42b93" data-uid="7b5311b7bce42b93" data-country="CH" data-kind="tender" data-deadline="2026-11-04" data-cpv="45000000" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Switzerland</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/643535-2026" rel="noopener">Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Amt für Städtebau</dd>
+<dt>Deadline</dt><dd><strong>04 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>45000000</dd>
+<dt>Reference</dt><dd>TED 643535-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/7b5311b7bce42b93.ics" download="spudsignal-7b5311b7bce42b93.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-4d8245a64661a9ca" data-uid="4d8245a64661a9ca" data-country="FR" data-kind="tender" data-deadline="2026-11-05" data-cpv="" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Travaux de rénovation énergétique et mise en place d’un système de chauffage par"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-95465" rel="noopener">Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Synd. Mixte Collecte des déchets ménagers ValDem</dd>
+<dt>Deadline</dt><dd><strong>05 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-95465</dd></dl>
+<p class="acts"><a class="btn2" href="ics/4d8245a64661a9ca.ics" download="spudsignal-4d8245a64661a9ca.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-cdd0f1c5dd4de2ff" data-uid="cdd0f1c5dd4de2ff" data-country="IE" data-kind="tender" data-deadline="2026-11-05" data-cpv="45220000 45251141 71311000 71313000 71314300 71351210 71351220 71530000 79415200" data-tags="Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Single-Party Framework for Works-Related Technical Services in Geothermal Engine"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Ireland</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/689259-2026" rel="noopener">Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Grangegorman Development Agency_564</dd>
+<dt>Deadline</dt><dd><strong>05 Nov 2026, 14:00 Irish time (15:00 CET)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>45220000 45251141 71311000 <span class="more">+6 more</span></dd>
+<dt>Reference</dt><dd>TED 689259-2026</dd></dl><p class="flag">Time uncertain: the notice encodes 15:00 +01:00 (= 14:00 Irish time); eTenders may state 15:00 local – the earlier value is used here.</p>
+<p class="acts"><a class="btn2" href="ics/cdd0f1c5dd4de2ff.ics" download="spudsignal-cdd0f1c5dd4de2ff.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-00be19d0c9c0cbfd" data-uid="00be19d0c9c0cbfd" data-country="CZ" data-kind="tender" data-deadline="2026-11-06" data-cpv="43130000 43132500 43612000 43612200" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Czechia</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/679859-2026" rel="noopener">SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Univerzita Karlova</dd>
+<dt>Deadline</dt><dd><strong>06 Nov 2026, 10:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>43130000 43132500 43612000 <span class="more">+1 more</span></dd>
+<dt>Reference</dt><dd>TED 679859-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/00be19d0c9c0cbfd.ics" download="spudsignal-00be19d0c9c0cbfd.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-59eca9045bac22e1" data-uid="59eca9045bac22e1" data-country="FR" data-kind="tender" data-deadline="2026-11-06" data-cpv="" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Réalisation d&#x27;un champ de sondes géothermiques verticales et de son réseau de di"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-101091" rel="noopener">Réalisation d&#x27;un champ de sondes géothermiques verticales et de son réseau de distribution de surface</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Mairie d&#x27;Aussac-Vadalle</dd>
+<dt>Deadline</dt><dd><strong>06 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-101091</dd></dl>
+<p class="acts"><a class="btn2" href="ics/59eca9045bac22e1.ics" download="spudsignal-59eca9045bac22e1.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-d46da94459df81b5" data-uid="d46da94459df81b5" data-country="CZ" data-kind="tender" data-deadline="2026-11-06" data-cpv="71350000 71351000 71351730" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: „Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H pro"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Czechia</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/730837-2026" rel="noopener">„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Česká geologická služba · Univerzita Karlova</dd>
+<dt>Deadline</dt><dd><strong>06 Nov 2026, 15:00 CET (updated; TED 730837-2026)</strong><br><span class="cd" aria-live="off"></span><span class="chg"><strong>CHANGED 22 Oct:</strong> deadline 30 Oct 2026, 15:00 CET → 06 Nov 2026, 15:00 CET (updated; TED 730837-2026) · <a href="https://ted.europa.eu/en/notice/-/detail/730837-2026" rel="noopener">correction notice 730837-2026</a></span></dd>
+<dt>CPV</dt><dd>71350000 71351000 71351730</dd>
+<dt>Reference</dt><dd>TED 730837-2026 (orig. 670200-2026)</dd></dl>
+<p class="acts"><a class="btn2" href="ics/d46da94459df81b5.ics" download="spudsignal-d46da94459df81b5.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-7095f2787aa83db3" data-uid="7095f2787aa83db3" data-country="CZ" data-kind="tender" data-deadline="2026-11-09" data-cpv="43130000 43612000 43612400 43612700" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Czechia</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/684005-2026" rel="noopener">SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Univerzita Karlova</dd>
+<dt>Deadline</dt><dd><strong>09 Nov 2026, 10:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>43130000 43612000 43612400 <span class="more">+1 more</span></dd>
+<dt>Reference</dt><dd>TED 684005-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/7095f2787aa83db3.ics" download="spudsignal-7095f2787aa83db3.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-3a5d2c3eb36bebba" data-uid="3a5d2c3eb36bebba" data-country="DE" data-kind="tender" data-deadline="2026-11-09" data-cpv="45262220" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Germany</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/698651-2026" rel="noopener">Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Gelsenwasser Energienetze GmbH</dd>
+<dt>Deadline</dt><dd><strong>09 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>45262220</dd>
+<dt>Reference</dt><dd>TED 698651-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/3a5d2c3eb36bebba.ics" download="spudsignal-3a5d2c3eb36bebba.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-4100e4cedb042af9" data-uid="4100e4cedb042af9" data-country="FR" data-kind="tender" data-deadline="2026-11-10" data-cpv="" data-tags="Deep well|Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Marché de maîtrise d&#x27;oeuvre pour la réalisation d&#x27;un puits de prospection géothe"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-97695" rel="noopener">Marché de maîtrise d&#x27;oeuvre pour la réalisation d&#x27;un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Société Publique Locale TERRITOIRE D&#x27;INNOVATION (SPL TERRINNOV)</dd>
+<dt>Deadline</dt><dd><strong>10 Nov 2026, 16:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-97695</dd></dl>
+<p class="acts"><a class="btn2" href="ics/4100e4cedb042af9.ics" download="spudsignal-4100e4cedb042af9.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-7bded30fa2266c1c" data-uid="7bded30fa2266c1c" data-country="DE" data-kind="tender" data-deadline="2026-11-11" data-cpv="71300000 71321200 71521000" data-tags="Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kir"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Germany</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/701161-2026" rel="noopener">Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>AFK-Geothermie GmbH</dd>
+<dt>Requests to participate</dt><dd><strong>11 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>71300000 71321200 71521000</dd>
+<dt>Reference</dt><dd>TED 701161-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/7bded30fa2266c1c.ics" download="spudsignal-7bded30fa2266c1c.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-253e005b3f55f334" data-uid="253e005b3f55f334" data-country="PL" data-kind="tender" data-deadline="2026-11-13" data-cpv="38540000" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odw"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Poland</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/691583-2026" rel="noopener">SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Politechnika Wrocławska</dd>
+<dt>Deadline</dt><dd><strong>13 Nov 2026, 10:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>38540000</dd>
+<dt>Reference</dt><dd>TED 691583-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/253e005b3f55f334.ics" download="spudsignal-253e005b3f55f334.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-798e608fb28b08cb" data-uid="798e608fb28b08cb" data-country="DE" data-kind="tender" data-deadline="2026-11-13" data-cpv="45214210 45214220 45262220" data-tags="Shallow BHE">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Neubau Ruwertalschule in Waldrach"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Shallow BHE</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Germany</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/709263-2026" rel="noopener">Neubau Ruwertalschule in Waldrach</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Kreisverwaltung Trier-Saarburg</dd>
+<dt>Deadline</dt><dd><strong>13 Nov 2026, 10:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>45214210 45214220 45262220</dd>
+<dt>Reference</dt><dd>TED 709263-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/798e608fb28b08cb.ics" download="spudsignal-798e608fb28b08cb.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-d6aceeed5e1cf4bd" data-uid="d6aceeed5e1cf4bd" data-country="FR" data-kind="funding" data-deadline="2026-11-16" data-cpv="" data-tags="">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Appel à projets FEDER 2026 – Création ou extension des installations de distribu"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge fund">Funding call</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">Programme page</span></p>
+<h3><a href="https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf" rel="noopener">Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Programme</dt><dd>Région Île-de-France – FEDER 2026</dd>
+<dt>Deadline</dt><dd><strong>16 Nov 2026, 17:00 Paris time (submission via e-Synergie)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>FR-IDF-FEDER-geothermie-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/d6aceeed5e1cf4bd.ics" download="spudsignal-d6aceeed5e1cf4bd.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-f0353bf382e57b2b" data-uid="f0353bf382e57b2b" data-country="FR" data-kind="tender" data-deadline="2026-11-17" data-cpv="" data-tags="Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: La présente consultation concerne la mission de Maitrise d’œuvre complète, décou"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-100440" rel="noopener">La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>CNRS - DR13</dd>
+<dt>Deadline</dt><dd><strong>17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-100440</dd></dl><p class="flag">Time uncertain: the notice states 12:00 Paris but encodes an inconsistent offset (11:00 CET) – the earlier value is used here.</p>
+<p class="acts"><a class="btn2" href="ics/f0353bf382e57b2b.ics" download="spudsignal-f0353bf382e57b2b.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-6b774d72bcf5d7f5" data-uid="6b774d72bcf5d7f5" data-country="FR" data-kind="tender" data-deadline="2026-11-18" data-cpv="71300000 71621000" data-tags="Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Maîtrise d&#x27;oeuvre pour la gestion des installations de surface du réseau de chal"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/696202-2026" rel="noopener">Maîtrise d&#x27;oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>UniGéo</dd>
+<dt>Deadline</dt><dd><strong>18 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>71300000 71621000</dd>
+<dt>Reference</dt><dd>TED 696202-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/6b774d72bcf5d7f5.ics" download="spudsignal-6b774d72bcf5d7f5.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-4fd50c9eb94424d6" data-uid="4fd50c9eb94424d6" data-country="RO" data-kind="tender" data-deadline="2026-11-23" data-cpv="39715200 45232140 45255500 45331100 71321200 71356200" data-tags="Deep well">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producț"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Romania</span> · <span class="src">TED (EU)</span></p>
+<h3><a href="https://ted.europa.eu/en/notice/-/detail/716179-2026" rel="noopener">Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală”</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>Orasul Calimanesti</dd>
+<dt>Deadline</dt><dd><strong>23 Nov 2026, 14:00 CET (notice: 15:00 UTC+02:00)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd>39715200 45232140 45255500 <span class="more">+3 more</span></dd>
+<dt>Reference</dt><dd>TED 716179-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/4fd50c9eb94424d6.ics" download="spudsignal-4fd50c9eb94424d6.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-c063c46f5a23a0b2" data-uid="c063c46f5a23a0b2" data-country="FR" data-kind="tender" data-deadline="2026-11-24" data-cpv="" data-tags="Deep well|Planning">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Etude et accompagnement sur les forages Les Cybéliades et Hélions II"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge tend">Tender</span><span class="tag">Deep well</span><span class="tag">Planning</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">France</span> · <span class="src">BOAMP (DILA)</span></p>
+<h3><a href="https://www.boamp.fr/pages/avis/?q=idweb:26-95181" rel="noopener">Etude et accompagnement sur les forages Les Cybéliades et Hélions II</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Buyer</dt><dd>COMMUNAUTE DE COMMUNES SAUER-PECHELBRONN</dd>
+<dt>Deadline</dt><dd><strong>24 Nov 2026, 12:00 CET</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>BOAMP 26-95181</dd></dl>
+<p class="acts"><a class="btn2" href="ics/c063c46f5a23a0b2.ics" download="spudsignal-c063c46f5a23a0b2.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-1d1fcdf4e5f90302" data-uid="1d1fcdf4e5f90302" data-country="NL" data-kind="funding" data-deadline="2026-11-26" data-cpv="" data-tags="">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++)"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge fund">Funding call</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">Netherlands</span> · <span class="src">Programme page</span></p>
+<h3><a href="https://www.rvo.nl/subsidies-financiering/sde/aanvragen" rel="noopener">Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++)</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Programme</dt><dd>RVO – SDE++ 2026</dd>
+<dt>Deadline</dt><dd><strong>Round 2026: opens 27 Oct 2026, 09:00 – closes 26 Nov 2026, 17:00 CET (phased)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>NL-SDE-2026</dd></dl>
+<p class="acts"><a class="btn2" href="ics/1d1fcdf4e5f90302.ics" download="spudsignal-1d1fcdf4e5f90302.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+<article class="card" id="e-0eb0e95523645031" data-uid="0eb0e95523645031" data-country="EU" data-kind="funding" data-deadline="2026-12-01" data-cpv="" data-tags="">
+<button class="star" type="button" aria-pressed="false" aria-label="Save: Resource assessment for deep sedimentary and basement reservoirs"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+<p class="top"><span class="badge fund">Funding call</span><span class="dyn"></span></p>
+<p class="meta"><span class="ctry">EU-wide</span> · <span class="src">EU Funding &amp; Tenders Portal</span></p>
+<h3><a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06" rel="noopener">Resource assessment for deep sedimentary and basement reservoirs</a></h3>
+<p class="lbl">Title as published (original language, unedited)</p>
+<dl><dt>Programme</dt><dd>European Commission (HORIZON-CL5-2026-11)</dd>
+<dt>Deadline</dt><dd><strong>01 Dec 2026, 17:00 CET (Brussels time)</strong><br><span class="cd" aria-live="off"></span><span class="chg" hidden></span></dd>
+<dt>CPV</dt><dd><span class="muted">not in our extract – see original</span></dd>
+<dt>Reference</dt><dd>HORIZON-CL5-2026-11-D3-06</dd></dl>
+<p class="acts"><a class="btn2" href="ics/0eb0e95523645031.ics" download="spudsignal-0eb0e95523645031.ics" type="text/calendar"><svg class="ic " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Add to calendar</span></a><span class="hint">One-off file, does not update. For automatic updates, subscribe to the feed.</span></p>
+<p class="acc">Accessed 23 Oct 2026 (last check) · As published by source, no guarantee – check the original.</p>
+</article>
+</div>
+<div id="gone"></div>
+
+<p class="empty" id="empty" hidden></p>
+<details class="abbr"><summary>Abbreviations</summary><dl>
+<dt>BHE</dt><dd>borehole heat exchanger (closed-loop ground probes)</dd>
+<dt>BTES</dt><dd>borehole thermal energy storage (in official titles)</dd>
+<dt>CPV</dt><dd>Common Procurement Vocabulary – EU code for what is being bought</dd>
+<dt>CET / CEST</dt><dd>Central European (Summer) Time; UTC = Coordinated Universal Time</dd>
+<dt>TED</dt><dd>Tenders Electronic Daily, the EU's official tender journal</dd>
+<dt>EU / EEA</dt><dd>European Union / European Economic Area</dd>
+<dt>BOAMP</dt><dd>Bulletin officiel des annonces des marchés publics (France)</dd>
+<dt>DILA</dt><dd>Direction de l'information légale et administrative, publisher of BOAMP</dd>
+<dt>simap</dt><dd>Swiss public procurement platform (simap.ch)</dd>
+<dt>ANAC</dt><dd>Autorità Nazionale Anticorruzione (Italy)</dd>
+<dt>FEDER</dt><dd>Fonds européen de développement régional (EU regional development fund, ERDF)</dd>
+<dt>KEHOP</dt><dd>Hungarian Environment and Energy Efficiency Operational Programme</dd>
+<dt>SDE++</dt><dd>Dutch subsidy scheme for renewable energy and climate transition (Stimulering Duurzame Energieproductie en Klimaattransitie)</dd>
+<dt>RVO</dt><dd>Netherlands Enterprise Agency</dd>
+<dt>BMWE</dt><dd>German Federal Ministry for Economic Affairs and Energy</dd>
+<dt>CC BY</dt><dd>Creative Commons Attribution licence</dd>
+<dt>JSON</dt><dd>machine-readable data file</dd>
+</dl></details>
+</div>
+<div id="view-about" hidden>
+<section class="box"><h2>About this app</h2>
+<p>Updated weekly. Every entry links to the original notice, which alone is binding.</p>
+<p>Google Calendar often refreshes subscribed feeds only after 12 to 24 hours. Your saved entries and visit data stay only on this device – no tracking, no account.</p>
+<p>Calendar entries carry reminders 7 days and 1 day before the deadline. Deadlines are shown in the official time zone of the procedure. Offline, the app shows the data from your last visit.</p></section>
+<section class="box"><h2>Abbreviations</h2><dl>
+<dt>BHE</dt><dd>borehole heat exchanger (closed-loop ground probes)</dd>
+<dt>BTES</dt><dd>borehole thermal energy storage (in official titles)</dd>
+<dt>CPV</dt><dd>Common Procurement Vocabulary – EU code for what is being bought</dd>
+<dt>CET / CEST</dt><dd>Central European (Summer) Time; UTC = Coordinated Universal Time</dd>
+<dt>TED</dt><dd>Tenders Electronic Daily, the EU's official tender journal</dd>
+<dt>EU / EEA</dt><dd>European Union / European Economic Area</dd>
+<dt>BOAMP</dt><dd>Bulletin officiel des annonces des marchés publics (France)</dd>
+<dt>DILA</dt><dd>Direction de l'information légale et administrative, publisher of BOAMP</dd>
+<dt>simap</dt><dd>Swiss public procurement platform (simap.ch)</dd>
+<dt>ANAC</dt><dd>Autorità Nazionale Anticorruzione (Italy)</dd>
+<dt>FEDER</dt><dd>Fonds européen de développement régional (EU regional development fund, ERDF)</dd>
+<dt>KEHOP</dt><dd>Hungarian Environment and Energy Efficiency Operational Programme</dd>
+<dt>SDE++</dt><dd>Dutch subsidy scheme for renewable energy and climate transition (Stimulering Duurzame Energieproductie en Klimaattransitie)</dd>
+<dt>RVO</dt><dd>Netherlands Enterprise Agency</dd>
+<dt>BMWE</dt><dd>German Federal Ministry for Economic Affairs and Energy</dd>
+<dt>CC BY</dt><dd>Creative Commons Attribution licence</dd>
+<dt>JSON</dt><dd>machine-readable data file</dd>
+</dl></section>
+<section class="box" id="coverage"><h2>Coverage</h2>
+<p>Covered: TED (all EU/EEA above-threshold notices), BOAMP (France), simap.ch (Switzerland), ANAC (Italy), UK Find a Tender, EU Funding &amp; Tenders Portal, and selected national funding programme pages.</p>
+<p><strong>Not covered yet</strong>, so this list is <strong>not complete</strong>:</p>
+<ul><li><strong>Germany:</strong> national portal oeffentlichevergabe.de not covered – <strong>TED notices only</strong></li><li><strong>Austria:</strong> national portals not covered – <strong>TED notices only</strong></li><li><strong>Netherlands:</strong> TenderNed not covered – <strong>TED notices only</strong></li><li><strong>Poland:</strong> national portal not covered – <strong>TED notices only</strong></li><li><strong>Serbia, Türkiye:</strong> not covered</li></ul>
+<p>Every tender is re-checked for change notices (TED) and rectificatifs (BOAMP) on each update; entries not re-checked within 7 days are removed.</p></section>
+<section class="box" id="sources"><h2>Data sources and licences</h2><ul>
+<li>TED – Tenders Electronic Daily, © European Union, reuse under Commission Decision 2011/833/EU (<a href="https://ted.europa.eu/en/legal-notice">ted.europa.eu</a>).</li>
+<li>BOAMP – Source : DILA, données mises à jour le 23 Oct 2026, <a href="https://www.boamp.fr/pages/recherche/">https://www.boamp.fr/pages/recherche/</a>, Licence Ouverte / Open Licence v2.0.</li>
+<li>Contains public sector information licensed under the Open Government Licence v3.0 (Find a Tender Service, UK).</li>
+<li>ANAC – Autorità Nazionale Anticorruzione, CC BY 4.0 (<a href="https://www.anticorruzione.it/copyright">anticorruzione.it</a>).</li>
+<li>EU Funding &amp; Tenders Portal, © European Union, CC BY 4.0.</li>
+<li>simap.ch: Dies ist keine amtliche Veröffentlichung. Massgebend sind die auf der Plattform www.simap.ch veröffentlichten Daten.</li>
+</ul><p>Content shortened to key fields (title, buyer, country, deadline, CPV); titles shown unedited in the original language. Retrieval date per entry. All details as published by source, no guarantee – check the original.</p></section>
+</div>
+</main>
+</div>
+<footer><p style="margin:0 0 6px;">Media owner and publisher: Daniel Hirschl, Ortsstraße 28, 3493 Kammern, Austria. SpudSignal is a neutral, independent briefing on European geothermal news. Liability: listings are provided for information only, without guarantee of completeness or accuracy; the original notice is authoritative.</p>
+<p style="margin:0;"><a href="https://impressum.spudsignal.com">Impressum &amp; disclaimer</a> &nbsp;·&nbsp; <a href="https://privacy.spudsignal.com">Privacy</a> &nbsp;·&nbsp; <a href="/">Source Library</a> &nbsp;·&nbsp; <a href="/tenders/tenders.json">JSON</a> &nbsp;·&nbsp; <a href="https://spudsignal.beehiiv.com/subscribe">Subscribe free</a></p></footer>
+<script type="application/json" id="data">{"generated": "2026-10-23T15:28+02:00", "note": "As published by source, no guarantee – check the original.", "entries": [{"uid": "99df042879984a15", "kind": "tender", "src": "TED", "id": "TED 664748-2026", "title": "Borrtjänster", "title_official": null, "buyer": "Sveriges geologiska undersökning", "country": "SE", "tz": "Europe/Stockholm", "deadline_iso": "2026-10-25T23:00:00+01:00", "deadline_txt": "Ends 25 Oct 2026 (end of day, Swedish time). The notice encodes 26 Oct 00:00 +02:00, which taken literally is 23:00 CET on 25 Oct – submit by 23:00 to be safe.", "deadline_label": null, "time_note": "Time uncertain: the notice can be read as end of 25 Oct (Swedish time) or 23:00 CET – the earlier value is used here.", "tags": ["Deep well"], "cpv": ["45120000", "45250000", "45255500", "76300000", "76340000"], "url": "https://ted.europa.eu/en/notice/-/detail/664748-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "6cf9dc14246ba798", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-92772", "title": "Réalisation de travaux concernant la mise en place d'un réseau de chaleur sur sondes géothermiques pour les bâtiments scolaires de St Pierre d'Eyraud", "title_official": null, "buyer": "COMMUNE DE SAINT PIERRE D EYRAUD", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-10-26T12:00:00+01:00", "deadline_txt": "26 Oct 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92772", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "9b7ec724fea2f2ed", "kind": "tender", "src": "TED", "id": "TED 669195-2026", "title": "Geothermie Prenzlau - Anlagentechnik", "title_official": null, "buyer": "Stadtwerke Prenzlau GmbH", "country": "DE", "tz": "Europe/Berlin", "deadline_iso": "2026-10-27T12:00:00+01:00", "deadline_txt": "27 Oct 2026, 12:00 CET", "deadline_label": "Requests to participate", "time_note": null, "tags": ["Deep well"], "cpv": ["42511110", "45000000", "45210000", "45251000", "45251100", "45251141", "45251200", "45251250"], "url": "https://ted.europa.eu/en/notice/-/detail/669195-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "389f89d14d614826", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-93304 + rectificatif 26-101172", "title": "Création d'un réseau technique de chaleur géothermique sur le site de Bellegrave à Pessac (33)", "title_official": null, "buyer": "Ville de Pessac", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-10-30T12:00:00+01:00", "deadline_txt": "30 Oct 2026, 12:00 CET (Paris time; rectificatif 26-101172)", "deadline_label": null, "time_note": null, "tags": ["Shallow (aquifer wells)"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-93304", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": {"date": "2026-10-19", "field": "deadline", "old": "26 Oct 2026, 13:00 CET", "old_iso": "2026-10-26T13:00:00", "notice": "26-101172", "notice_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101172", "new": "30 Oct 2026, 12:00 CET (Paris time; rectificatif 26-101172)"}, "accessed": "2026-10-23"}, {"uid": "6baedd6c10b06e19", "kind": "funding", "src": "PROG", "id": "HU-KEHOP-Plusz-4.2.4-25", "title": "Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2", "title_official": true, "buyer": "KEHOP Plusz (Széchenyi Terv Plusz)", "country": "HU", "tz": "Europe/Budapest", "deadline_iso": "2026-10-30T23:59:00+01:00", "deadline_txt": "30 Oct 2026, 23:59 (Hungarian time)", "deadline_label": null, "time_note": null, "tags": [], "cpv": [], "url": "https://www.palyazat.gov.hu/programok/szechenyi-terv-plusz/kehop-plusz/kehop_plusz-4.2.4-25", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "6a7ed73200f7a63d", "kind": "funding", "src": "PROG", "id": "DE-explorationsinitiative-2026-10", "title": "Förderaufruf „Explorationsinitiative Geothermie“", "title_official": true, "buyer": "Explorationsinitiative Geothermie (BMWE / PtJ)", "country": "DE", "tz": "Europe/Berlin", "deadline_iso": "2026-10-31T23:59:00+01:00", "deadline_txt": "Next submission cut-off: 31 Oct 2026 (project outlines via easy-Online; no time stated)", "deadline_label": null, "time_note": "No time stated in the call – end of day (23:59 German time) assumed; submit earlier to be safe.", "tags": [], "cpv": [], "url": "https://www.energieforschung.de/de/foerderung/foerderangebote/foerderaufruf-explorationsinitiative-geothermie", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "7b5311b7bce42b93", "kind": "tender", "src": "TED", "id": "TED 643535-2026", "title": "Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden", "title_official": null, "buyer": "Amt für Städtebau", "country": "CH", "tz": "Europe/Zurich", "deadline_iso": "2026-11-04T12:00:00+01:00", "deadline_txt": "04 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": ["45000000"], "url": "https://ted.europa.eu/en/notice/-/detail/643535-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "4d8245a64661a9ca", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-95465", "title": "Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.", "title_official": null, "buyer": "Synd. Mixte Collecte des déchets ménagers ValDem", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-05T12:00:00+01:00", "deadline_txt": "05 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95465", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "cdd0f1c5dd4de2ff", "kind": "tender", "src": "TED", "id": "TED 689259-2026", "title": "Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland", "title_official": null, "buyer": "Grangegorman Development Agency_564", "country": "IE", "tz": "Europe/Dublin", "deadline_iso": "2026-11-05T15:00:00+01:00", "deadline_txt": "05 Nov 2026, 14:00 Irish time (15:00 CET)", "deadline_label": null, "time_note": "Time uncertain: the notice encodes 15:00 +01:00 (= 14:00 Irish time); eTenders may state 15:00 local – the earlier value is used here.", "tags": ["Planning"], "cpv": ["45220000", "45251141", "71311000", "71313000", "71314300", "71351210", "71351220", "71530000", "79415200"], "url": "https://ted.europa.eu/en/notice/-/detail/689259-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "00be19d0c9c0cbfd", "kind": "tender", "src": "TED", "id": "TED 679859-2026", "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES", "title_official": null, "buyer": "Univerzita Karlova", "country": "CZ", "tz": "Europe/Prague", "deadline_iso": "2026-11-06T10:00:00+01:00", "deadline_txt": "06 Nov 2026, 10:00 CET", "deadline_label": null, "time_note": null, "tags": ["Deep well"], "cpv": ["43130000", "43132500", "43612000", "43612200"], "url": "https://ted.europa.eu/en/notice/-/detail/679859-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "59eca9045bac22e1", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-101091", "title": "Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface", "title_official": null, "buyer": "Mairie d'Aussac-Vadalle", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-06T12:00:00+01:00", "deadline_txt": "06 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "d46da94459df81b5", "kind": "tender", "src": "TED", "id": "TED 730837-2026 (orig. 670200-2026)", "title": "„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“", "title_official": null, "buyer": "Česká geologická služba · Univerzita Karlova", "country": "CZ", "tz": "Europe/Prague", "deadline_iso": "2026-11-06T15:00:00+01:00", "deadline_txt": "06 Nov 2026, 15:00 CET (updated; TED 730837-2026)", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": ["71350000", "71351000", "71351730"], "url": "https://ted.europa.eu/en/notice/-/detail/730837-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": {"date": "2026-10-22", "field": "deadline", "old": "30 Oct 2026, 15:00 CET", "old_iso": "2026-10-30T15:00:00+01:00", "notice": "730837-2026", "notice_url": "https://ted.europa.eu/en/notice/-/detail/730837-2026", "new": "06 Nov 2026, 15:00 CET (updated; TED 730837-2026)"}, "accessed": "2026-10-23"}, {"uid": "7095f2787aa83db3", "kind": "tender", "src": "TED", "id": "TED 684005-2026", "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS", "title_official": null, "buyer": "Univerzita Karlova", "country": "CZ", "tz": "Europe/Prague", "deadline_iso": "2026-11-09T10:00:00+01:00", "deadline_txt": "09 Nov 2026, 10:00 CET", "deadline_label": null, "time_note": null, "tags": ["Deep well"], "cpv": ["43130000", "43612000", "43612400", "43612700"], "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "3a5d2c3eb36bebba", "kind": "tender", "src": "TED", "id": "TED 698651-2026", "title": "Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd", "title_official": null, "buyer": "Gelsenwasser Energienetze GmbH", "country": "DE", "tz": "Europe/Berlin", "deadline_iso": "2026-11-09T12:00:00+01:00", "deadline_txt": "09 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": ["45262220"], "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "4100e4cedb042af9", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-97695", "title": "Marché de maîtrise d'oeuvre pour la réalisation d'un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique", "title_official": null, "buyer": "Société Publique Locale TERRITOIRE D'INNOVATION (SPL TERRINNOV)", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-10T16:00:00+01:00", "deadline_txt": "10 Nov 2026, 16:00 CET", "deadline_label": null, "time_note": null, "tags": ["Deep well", "Planning"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "7bded30fa2266c1c", "kind": "tender", "src": "TED", "id": "TED 701161-2026", "title": "Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem", "title_official": null, "buyer": "AFK-Geothermie GmbH", "country": "DE", "tz": "Europe/Berlin", "deadline_iso": "2026-11-11T12:00:00+01:00", "deadline_txt": "11 Nov 2026, 12:00 CET", "deadline_label": "Requests to participate", "time_note": null, "tags": ["Planning"], "cpv": ["71300000", "71321200", "71521000"], "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "253e005b3f55f334", "kind": "tender", "src": "TED", "id": "TED 691583-2026", "title": "SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11", "title_official": null, "buyer": "Politechnika Wrocławska", "country": "PL", "tz": "Europe/Warsaw", "deadline_iso": "2026-11-13T10:00:00+01:00", "deadline_txt": "13 Nov 2026, 10:00 CET", "deadline_label": null, "time_note": null, "tags": ["Deep well"], "cpv": ["38540000"], "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "798e608fb28b08cb", "kind": "tender", "src": "TED", "id": "TED 709263-2026", "title": "Neubau Ruwertalschule in Waldrach", "title_official": null, "buyer": "Kreisverwaltung Trier-Saarburg", "country": "DE", "tz": "Europe/Berlin", "deadline_iso": "2026-11-13T10:00:00+01:00", "deadline_txt": "13 Nov 2026, 10:00 CET", "deadline_label": null, "time_note": null, "tags": ["Shallow BHE"], "cpv": ["45214210", "45214220", "45262220"], "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "d6aceeed5e1cf4bd", "kind": "funding", "src": "PROG", "id": "FR-IDF-FEDER-geothermie-2026", "title": "Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie", "title_official": true, "buyer": "Région Île-de-France – FEDER 2026", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-16T17:00:00+01:00", "deadline_txt": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)", "deadline_label": null, "time_note": null, "tags": [], "cpv": [], "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "f0353bf382e57b2b", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-100440", "title": "La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».", "title_official": null, "buyer": "CNRS - DR13", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-17T12:00:00+02:00", "deadline_txt": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)", "deadline_label": null, "time_note": "Time uncertain: the notice states 12:00 Paris but encodes an inconsistent offset (11:00 CET) – the earlier value is used here.", "tags": ["Planning"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "6b774d72bcf5d7f5", "kind": "tender", "src": "TED", "id": "TED 696202-2026", "title": "Maîtrise d'oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo", "title_official": null, "buyer": "UniGéo", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-18T12:00:00+01:00", "deadline_txt": "18 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Planning"], "cpv": ["71300000", "71621000"], "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "4fd50c9eb94424d6", "kind": "tender", "src": "TED", "id": "TED 716179-2026", "title": "Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală”", "title_official": null, "buyer": "Orasul Calimanesti", "country": "RO", "tz": "Europe/Bucharest", "deadline_iso": "2026-11-23T15:00:00+02:00", "deadline_txt": "23 Nov 2026, 14:00 CET (notice: 15:00 UTC+02:00)", "deadline_label": null, "time_note": null, "tags": ["Deep well"], "cpv": ["39715200", "45232140", "45255500", "45331100", "71321200", "71356200"], "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "c063c46f5a23a0b2", "kind": "tender", "src": "BOAMP", "id": "BOAMP 26-95181", "title": "Etude et accompagnement sur les forages Les Cybéliades et Hélions II", "title_official": null, "buyer": "COMMUNAUTE DE COMMUNES SAUER-PECHELBRONN", "country": "FR", "tz": "Europe/Paris", "deadline_iso": "2026-11-24T12:00:00.000+01:00", "deadline_txt": "24 Nov 2026, 12:00 CET", "deadline_label": null, "time_note": null, "tags": ["Deep well", "Planning"], "cpv": [], "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "1d1fcdf4e5f90302", "kind": "funding", "src": "PROG", "id": "NL-SDE-2026", "title": "Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++)", "title_official": true, "buyer": "RVO – SDE++ 2026", "country": "NL", "tz": "Europe/Amsterdam", "deadline_iso": "2026-11-26T17:00:00+01:00", "deadline_txt": "Round 2026: opens 27 Oct 2026, 09:00 – closes 26 Nov 2026, 17:00 CET (phased)", "deadline_label": null, "time_note": null, "tags": [], "cpv": [], "url": "https://www.rvo.nl/subsidies-financiering/sde/aanvragen", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}, {"uid": "0eb0e95523645031", "kind": "funding", "src": "EUFT", "id": "HORIZON-CL5-2026-11-D3-06", "title": "Resource assessment for deep sedimentary and basement reservoirs", "title_official": null, "buyer": "European Commission (HORIZON-CL5-2026-11)", "country": "EU", "tz": "Europe/Brussels", "deadline_iso": "2026-12-01T17:00:00+01:00", "deadline_txt": "01 Dec 2026, 17:00 CET (Brussels time)", "deadline_label": null, "time_note": null, "tags": [], "cpv": [], "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06", "checked": "2026-10-23", "flag": null, "first_seen": "2026-10-23", "change": null, "accessed": "2026-10-23"}], "removed": []}</script>
+<script>
+(function(){
+"use strict";
+var D=JSON.parse(document.getElementById("data").textContent), E={}, LS=window.localStorage, NOW=Date.now(), DAY=864e5;
+D.entries.forEach(function(e){E[e.uid]=e;});
+function get(k,d){try{var v=LS.getItem(k);return v?JSON.parse(v):d;}catch(x){return d;}}
+function put(k,v){try{LS.setItem(k,JSON.stringify(v));}catch(x){}}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function fdate(s){var d=new Date(s.length==10?s+"T12:00:00":s);return d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"});}
+function inst(e){return new Date(e.deadline_iso).getTime();}
+/* --- last visit / snapshot (kept for the whole session so badges survive reloads) --- */
+var prev; try{prev=JSON.parse(sessionStorage.getItem("ss_prev")||"null");}catch(x){}
+if(!prev){prev={last:get("ss_last",null),snap:get("ss_snap",null)};try{sessionStorage.setItem("ss_prev",JSON.stringify(prev));}catch(x){}}
+var snap={};D.entries.forEach(function(e){snap[e.uid]=e.deadline_iso;});put("ss_last",new Date().toISOString());put("ss_snap",snap);
+var saved=get("ss_saved",{});
+var nNew=0,nChg=0;
+/* --- per-card enhancement --- */
+var cards=[].slice.call(document.querySelectorAll("#list .card"));
+cards.forEach(function(c){
+ var e=E[c.dataset.uid];if(!e)return;
+ var dyn=c.querySelector(".dyn"),chg=c.querySelector(".chg"),h="";
+ var ageDays=(NOW-new Date(e.checked+"T12:00:00").getTime())/DAY;
+ if(ageDays>7){chg.hidden=true;h='<span class="stale">Not re-checked since '+esc(fdate(e.checked))+' – verify on the original</span>';}
+ else{
+  var isNew=prev.snap&&!(e.uid in prev.snap)&&(!prev.last||e.first_seen>=prev.last.slice(0,10));
+  if(isNew){h+='<span class="pill-new">NEW</span>';nNew++;c.dataset["new"]="1";}
+  var ch=e.change;
+  if(ch&&(NOW-new Date(ch.date+"T12:00:00").getTime())<=14*DAY){
+   h+='<span class="pill-chg">CHANGED</span>';
+   chg.innerHTML='<strong>CHANGED '+esc(fdate(ch.date).replace(/ \d{4}$/,""))+':</strong> '+esc(ch.field)+' '+esc(ch.old)+' → '+esc(ch["new"])+' · <a href="'+esc(ch.notice_url)+'" rel="noopener">correction notice '+esc(ch.notice)+'</a>';
+   chg.hidden=false;
+   if((prev.last&&ch.date>=prev.last.slice(0,10))||(prev.snap&&prev.snap[e.uid]&&prev.snap[e.uid]!==e.deadline_iso)){nChg++;}
+  }
+ }
+ dyn.innerHTML=h;
+ var st=c.querySelector(".star");
+ function paint(){var on=!!saved[e.uid];st.setAttribute("aria-pressed",on);st.setAttribute("aria-label",(on?"Remove from saved: ":"Save: ")+e.title.slice(0,80));}
+ paint();
+ st.addEventListener("click",function(){if(saved[e.uid])delete saved[e.uid];else saved[e.uid]={title:e.title,url:e.url,deadline_iso:e.deadline_iso,deadline_txt:e.deadline_txt,src:e.src,id:e.id,country:e.country,saved:new Date().toISOString().slice(0,10)};put("ss_saved",saved);paint();refresh();});
+});
+/* --- countdown in the official time zone --- */
+function tick(){cards.forEach(function(c){var e=E[c.dataset.uid];if(!e)return;var cd=c.querySelector(".cd"),ms=inst(e)-Date.now(),t,cls="";
+ var tzn="";try{tzn=new Intl.DateTimeFormat("en-GB",{timeZone:e.tz,hour:"2-digit",minute:"2-digit",timeZoneName:"short"}).format(new Date(inst(e)));}catch(x){}
+ if(ms<=0)t="Deadline passed – check the original";
+ else if(ms<48*36e5){var hh=Math.floor(ms/36e5),mm=Math.floor(ms%36e5/6e4);t="Closes in "+(hh?hh+" h ":"")+mm+" min";cls="hot";}
+ else{var d=Math.floor(ms/DAY);t="Closes in "+d+" days";if(d<=7)cls="warn";}
+ cd.className="cd "+cls;cd.textContent=t+(tzn?" · "+tzn+" ("+e.tz.replace("_"," ")+")":"");
+ var x=c.querySelector(".cdx");if(cls==="hot"){if(!x){x=document.createElement("span");x.className="cdx";cd.after(x);}x.textContent="Check the original – times may differ.";}else if(x)x.remove();
+});}
+tick();setInterval(tick,60000);
+/* --- tabs + chips --- */
+var sel={kind:{},tag:{},country:{}},tab="open";
+[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.addEventListener("click",function(){var g=b.dataset.g,v=b.dataset.v;if(sel[g][v])delete sel[g][v];else sel[g][v]=1;b.setAttribute("aria-pressed",!!sel[g][v]);refresh();});});
+document.getElementById("reset").addEventListener("click",function(){sel={kind:{},tag:{},country:{}};[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.setAttribute("aria-pressed","false");});refresh();});
+function soon(e){var ms=inst(e)-NOW;return ms>0&&ms<=14*DAY;}
+function match(c){var e=E[c.dataset.uid];if(!e)return true;
+ for(var g in sel){var ks=Object.keys(sel[g]);if(!ks.length)continue;
+  if(g==="tag"){if(!ks.some(function(k){return e.tags.indexOf(k)>=0;}))return false;}else if(ks.indexOf(e[g])<0)return false;}
+ if(tab==="soon"&&!soon(e))return false;if(tab==="saved"&&!saved[e.uid])return false;return true;}
+function refresh(){
+ var n=0;cards.forEach(function(c){var ok=match(c);c.hidden=!ok;if(ok)n++;});
+ var any=Object.keys(sel).some(function(g){return Object.keys(sel[g]).length;});document.getElementById("reset").setAttribute("aria-pressed",!any);
+ var ns=D.entries.filter(soon).length,nv=Object.keys(saved).length;
+ var a=document.getElementById("n-soon");a.textContent=ns;a.toggleAttribute("data-z",!ns);var b=document.getElementById("n-saved");b.textContent=nv;b.toggleAttribute("data-z",!nv);
+ /* saved entries that are no longer open */
+ var g=document.getElementById("gone"),gh="";
+ if(tab==="saved"){Object.keys(saved).forEach(function(u){if(E[u])return;var s=saved[u],rm=(D.removed||[]).filter(function(r){return r.uid===u;})[0];
+   var why=rm?"Removed from the list on "+fdate(rm.gone)+" (withdrawn, awarded, expired or no longer verifiable)":(new Date(s.deadline_iso).getTime()<NOW?"Deadline passed":"No longer listed");
+   gh+='<article class="card gone"><button class="star" type="button" aria-pressed="true" data-rm="'+esc(u)+'" aria-label="Remove from saved"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button><p class="top"><span class="gonetag">'+(why.indexOf("passed")>=0?"EXPIRED":"REMOVED")+'</span></p><h3><a href="'+esc(s.url)+'" rel="noopener">'+esc(s.title)+'</a></h3><p class="meta">'+esc(why)+'. Was: '+esc(s.deadline_txt)+' · '+esc(s.id)+'</p><p class="acc">Saved on this device on '+esc(fdate(s.saved))+'. Check the original notice for the current status.</p></article>';n++;});}
+ g.innerHTML=gh;[].forEach.call(g.querySelectorAll("[data-rm]"),function(x){x.addEventListener("click",function(){delete saved[x.dataset.rm];put("ss_saved",saved);refresh();});});
+ var em=document.getElementById("empty");em.hidden=n>0;em.textContent=tab==="saved"?"Nothing saved yet. Tap the bookmark on an entry to keep it here (stored only on this device).":"No entries match these filters.";
+ document.getElementById("count").textContent=n+" of "+D.entries.length+" entries shown"+(tab==="soon"?" · closing within 14 days":tab==="saved"?" · saved on this device":"");
+ document.getElementById("feedbox").hidden=tab==="saved";
+}
+function show(t){tab=["open","soon","saved","about"].indexOf(t)>=0?t:"open";
+ [].forEach.call(document.querySelectorAll("nav.tabs a"),function(a){if(a.dataset.tab===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+ document.getElementById("view-list").hidden=tab==="about";document.getElementById("view-about").hidden=tab!=="about";refresh();}
+window.addEventListener("hashchange",function(){show(location.hash.slice(1));window.scrollTo(0,0);});
+show(location.hash.slice(1));
+/* --- since last visit --- */
+[].forEach.call(document.querySelectorAll(".chiprow"),function(r){function f(){r.classList.toggle("fade",r.scrollWidth-r.clientWidth-r.scrollLeft>4);}r.addEventListener("scroll",f,{passive:true});window.addEventListener("resize",f);f();});
+var fb=document.getElementById("feedbox");if(prev.last&&!get("ss_feedopen",0))fb.classList.add("compact");
+document.getElementById("feedmore").addEventListener("click",function(){fb.classList.remove("compact");});
+var sv=document.getElementById("since");
+if(prev.last&&(nNew||nChg)){sv.innerHTML="Since your last visit ("+esc(fdate(prev.last))+"): <strong>"+nNew+" new</strong> · <strong>"+nChg+" changed</strong>";sv.hidden=false;}
+/* --- offline bar --- */
+function net(){var o=document.getElementById("offline");o.hidden=navigator.onLine;o.textContent="Offline · data as of "+document.getElementById("gen").textContent;}
+window.addEventListener("online",net);window.addEventListener("offline",net);net();
+/* --- iOS install hint --- */
+var ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+var standalone=navigator.standalone||matchMedia("(display-mode: standalone)").matches;
+var hint=document.getElementById("ioshint");
+if((ios&&!standalone&&!get("ss_ioshint",0))||/[?&]ioshint=1/.test(location.search)){hint.hidden=false;}
+hint.querySelector(".x").addEventListener("click",function(){hint.hidden=true;put("ss_ioshint",1);});
+/* Android/desktop: webcal may be unsupported – Google link stays visible */
+if("serviceWorker" in navigator)navigator.serviceWorker.register("/tenders/sw.js",{scope:"/tenders/"}).catch(function(){});
+})();
+</script>
+</body></html>

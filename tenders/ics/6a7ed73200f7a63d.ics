@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a7ed73200f7a63d@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Deadline: Förderaufruf „Explorationsinitiative G
+ eothermie“
+DTSTART;TZID=Europe/Berlin:20261031T235900
+DTEND;TZID=Europe/Berlin:20261101T002900
+DESCRIPTION:Source: the programme page\, DE-explorationsinitiative-2026-10
+ . Published by source: page as of 23 Oct 2026 · Last checked by SpudSign
+ al: 23 Oct 2026. Deadlines can change through corrigenda. This calendar e
+ ntry does NOT update itself. For automatic updates\, subscribe to the fee
+ d: https://library.spudsignal.com/tenders/deadlines.ics. Only the origina
+ l notice is binding: https://www.energieforschung.de/de/foerderung/foerde
+ rangebote/foerderaufruf-explorationsinitiative-geothermie. No guarantee o
+ f completeness or accuracy. No time stated in the call – end of day (23
+ :59 German time) assumed\; submit earlier to be safe. As published: Next 
+ submission cut-off: 31 Oct 2026 (project outlines via easy-Online\; no ti
+ me stated).
+URL:https://www.energieforschung.de/de/foerderung/foerderangebote/foerdera
+ ufruf-explorationsinitiative-geothermie
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

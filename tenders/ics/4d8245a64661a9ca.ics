@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d8245a64661a9ca@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique et m
+ ise en place d’un système de chauffage par géothermie sur sondes dans
+  deux bâtiments situés au siège social du S
+DTSTART;TZID=Europe/Paris:20261105T120000
+DTEND;TZID=Europe/Paris:20261105T123000
+DESCRIPTION:Source: BOAMP 26-95465. Published by source: 02 Oct 2026 · La
+ st checked by SpudSignal: 23 Oct 2026. Deadlines can change through corri
+ genda. This calendar entry does NOT update itself. For automatic updates
+ \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
+ s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
+ is/?q=idweb:26-95465. No guarantee of completeness or accuracy. As publis
+ hed: 05 Nov 2026\, 12:00 CET.
+URL:https://www.boamp.fr/pages/avis/?q=idweb:26-95465
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

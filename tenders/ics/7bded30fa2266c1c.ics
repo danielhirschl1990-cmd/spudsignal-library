@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7bded30fa2266c1c@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Requests to participate: Planungsleistungen Wärmen
+ etz Bauabschnitte 2027–2029\; Aschheim\, Feldkirchen\, Kirchhem
+DTSTART;TZID=Europe/Berlin:20261111T120000
+DTEND;TZID=Europe/Berlin:20261111T123000
+DESCRIPTION:Source: TED 701161-2026. Published by source: 12 Oct 2026 · L
+ ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ igenda. This calendar entry does NOT update itself. For automatic updates
+ \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/701161-2026. No guarantee of completeness or accuracy. As pub
+ lished: 11 Nov 2026\, 12:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/701161-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

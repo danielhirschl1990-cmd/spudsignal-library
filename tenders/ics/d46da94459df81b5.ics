@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Prague
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d46da94459df81b5@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261023T132815Z
+LAST-MODIFIED:20261023T130756Z
+SUMMARY:[Check source] Deadline: „Realizace vrtů pro systémy BTES2 a B
+ TES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“
+DTSTART;TZID=Europe/Prague:20261106T150000
+DTEND;TZID=Europe/Prague:20261106T153000
+DESCRIPTION:Source: TED 730837-2026 (orig. 670200-2026). Published by sour
+ ce: 22 Oct 2026 · Last checked by SpudSignal: 23 Oct 2026. Deadlines can
+  change through corrigenda. This calendar entry does NOT update itself. F
+ or automatic updates\, subscribe to the feed: https://library.spudsignal.
+ com/tenders/deadlines.ics. Only the original notice is binding: https://t
+ ed.europa.eu/en/notice/-/detail/730837-2026. No guarantee of completeness
+  or accuracy. As published: 06 Nov 2026\, 15:00 CET (updated\; TED 730837
+ -2026).
+URL:https://ted.europa.eu/en/notice/-/detail/730837-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR
