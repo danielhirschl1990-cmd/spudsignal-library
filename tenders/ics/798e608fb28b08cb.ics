@@ -25,13 +25,13 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:798e608fb28b08cb@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Neubau Ruwertalschule in Waldrach
 DTSTART;TZID=Europe/Berlin:20261113T100000
 DTEND;TZID=Europe/Berlin:20261113T103000
 DESCRIPTION:Source: TED 709263-2026. Published by source: 14 Oct 2026 · L
- ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

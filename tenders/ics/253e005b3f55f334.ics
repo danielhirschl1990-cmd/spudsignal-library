@@ -25,7 +25,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:253e005b3f55f334@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: SZP/243-277/2026 - Dostawa systemu do pom
  iaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z ukł
@@ -33,7 +33,7 @@ SUMMARY:[Check source] Deadline: SZP/243-277/2026 - Dostawa systemu do pom
 DTSTART;TZID=Europe/Warsaw:20261113T100000
 DTEND;TZID=Europe/Warsaw:20261113T103000
 DESCRIPTION:Source: TED 691583-2026. Published by source: 07 Oct 2026 · L
- ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

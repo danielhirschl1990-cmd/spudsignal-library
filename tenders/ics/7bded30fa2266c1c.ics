@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:7bded30fa2266c1c@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Requests to participate: Planungsleistungen Wärmen
  etz Bauabschnitte 2027–2029\; Aschheim\, Feldkirchen\, Kirchhem
 DTSTART;TZID=Europe/Berlin:20261111T120000
 DTEND;TZID=Europe/Berlin:20261111T123000
 DESCRIPTION:Source: TED 701161-2026. Published by source: 12 Oct 2026 · L
- ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

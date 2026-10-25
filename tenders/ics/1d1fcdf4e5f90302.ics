@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:1d1fcdf4e5f90302@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Stimulering Duurzame Energieproductie en 
  Klimaattransitie (SDE++)
 DTSTART;TZID=Europe/Amsterdam:20261126T170000
 DTEND;TZID=Europe/Amsterdam:20261126T173000
 DESCRIPTION:Source: the programme page\, NL-SDE-2026. Published by source:
-  page as of 23 Oct 2026 · Last checked by SpudSignal: 23 Oct 2026. Deadl
+  page as of 25 Oct 2026 · Last checked by SpudSignal: 25 Oct 2026. Deadl
  ines can change through corrigenda. This calendar entry does NOT update i
  tself. For automatic updates\, subscribe to the feed: https://library.spu
  dsignal.com/tenders/deadlines.ics. Only the original notice is binding: h

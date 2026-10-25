@@ -25,7 +25,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:cdd0f1c5dd4de2ff@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Single-Party Framework for Works-Related 
  Technical Services in Geothermal Engineering Consultancy at Grangegorman
@@ -33,7 +33,7 @@ SUMMARY:[Check source] Deadline: Single-Party Framework for Works-Related
 DTSTART;TZID=Europe/Dublin:20261105T140000
 DTEND;TZID=Europe/Dublin:20261105T143000
 DESCRIPTION:Source: TED 689259-2026. Published by source: 07 Oct 2026 · L
- ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

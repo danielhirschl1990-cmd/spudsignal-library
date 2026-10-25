@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:0eb0e95523645031@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Resource assessment for deep sedimentary 
  and basement reservoirs
 DTSTART;TZID=Europe/Brussels:20261201T170000
 DTEND;TZID=Europe/Brussels:20261201T173000
 DESCRIPTION:Source: EU Funding & Tenders Portal\, HORIZON-CL5-2026-11-D3-0
- 6. Published by source: 04 Aug 2026 · Last checked by SpudSignal: 23 Oct
+ 6. Published by source: 04 Aug 2026 · Last checked by SpudSignal: 25 Oct
   2026. Deadlines can change through corrigenda. This calendar entry does 
  NOT update itself. For automatic updates\, subscribe to the feed: https:/
  /library.spudsignal.com/tenders/deadlines.ics. Only the original notice i

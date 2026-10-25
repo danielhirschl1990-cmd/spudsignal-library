@@ -25,7 +25,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:4100e4cedb042af9@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Marché de maîtrise d'oeuvre pour la ré
  alisation d'un puits de prospection géothermique sur le secteur Poterie 
@@ -33,7 +33,7 @@ SUMMARY:[Check source] Deadline: Marché de maîtrise d'oeuvre pour la ré
 DTSTART;TZID=Europe/Paris:20261110T160000
 DTEND;TZID=Europe/Paris:20261110T163000
 DESCRIPTION:Source: BOAMP 26-97695. Published by source: 10 Oct 2026 · La
- st checked by SpudSignal: 23 Oct 2026. Deadlines can change through corri
+ st checked by SpudSignal: 25 Oct 2026. Deadlines can change through corri
  genda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av

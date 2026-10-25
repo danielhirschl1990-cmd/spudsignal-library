@@ -25,7 +25,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:d6aceeed5e1cf4bd@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Appel à projets FEDER 2026 – Création
   ou extension des installations de distribution et production de chaleur 
@@ -33,8 +33,8 @@ SUMMARY:[Check source] Deadline: Appel à projets FEDER 2026 – Création
 DTSTART;TZID=Europe/Paris:20261116T170000
 DTEND;TZID=Europe/Paris:20261116T173000
 DESCRIPTION:Source: the programme page\, FR-IDF-FEDER-geothermie-2026. Pub
- lished by source: page as of 23 Oct 2026 · Last checked by SpudSignal: 2
- 3 Oct 2026. Deadlines can change through corrigenda. This calendar entry 
+ lished by source: page as of 25 Oct 2026 · Last checked by SpudSignal: 2
+ 5 Oct 2026. Deadlines can change through corrigenda. This calendar entry 
  does NOT update itself. For automatic updates\, subscribe to the feed: ht
  tps://library.spudsignal.com/tenders/deadlines.ics. Only the original not
  ice is binding: https://www.europeidf.fr/sites/default/files/AAP_FEDER202

@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:389f89d14d614826@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Création d'un réseau technique de chale
  ur géothermique sur le site de Bellegrave à Pessac (33)
 DTSTART;TZID=Europe/Paris:20261030T120000
 DTEND;TZID=Europe/Paris:20261030T123000
 DESCRIPTION:Source: BOAMP 26-93304 + rectificatif 26-101172. Published by 
- source: 19 Oct 2026 · Last checked by SpudSignal: 23 Oct 2026. Deadlines
+ source: 19 Oct 2026 · Last checked by SpudSignal: 25 Oct 2026. Deadlines
   can change through corrigenda. This calendar entry does NOT update itsel
  f. For automatic updates\, subscribe to the feed: https://library.spudsig
  nal.com/tenders/deadlines.ics. Only the original notice is binding: https

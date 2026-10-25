@@ -25,15 +25,15 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:6a7ed73200f7a63d@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Förderaufruf „Explorationsinitiative G
  eothermie“
 DTSTART;TZID=Europe/Berlin:20261031T235900
 DTEND;TZID=Europe/Berlin:20261101T002900
 DESCRIPTION:Source: the programme page\, DE-explorationsinitiative-2026-10
- . Published by source: page as of 23 Oct 2026 · Last checked by SpudSign
- al: 23 Oct 2026. Deadlines can change through corrigenda. This calendar e
+ . Published by source: page as of 25 Oct 2026 · Last checked by SpudSign
+ al: 25 Oct 2026. Deadlines can change through corrigenda. This calendar e
  ntry does NOT update itself. For automatic updates\, subscribe to the fee
  d: https://library.spudsignal.com/tenders/deadlines.ics. Only the origina
  l notice is binding: https://www.energieforschung.de/de/foerderung/foerde

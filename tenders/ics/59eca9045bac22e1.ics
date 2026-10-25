@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:59eca9045bac22e1@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261023T134249Z
+DTSTAMP:20261025T175858Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Réalisation d'un champ de sondes géothe
  rmiques verticales et de son réseau de distribution de surface
 DTSTART;TZID=Europe/Paris:20261106T120000
 DTEND;TZID=Europe/Paris:20261106T123000
 DESCRIPTION:Source: BOAMP 26-101091. Published by source: 16 Oct 2026 · L
- ast checked by SpudSignal: 23 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
