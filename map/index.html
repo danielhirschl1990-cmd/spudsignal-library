@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Geothermal map: projects, tenders &amp; funding – SpudSignal Library</title>
 <meta name="description" content="Map of geothermal projects and wells from SpudSignal issues, plus open tenders and funding calls in Europe.">
 <meta property="og:title" content="Europe&#39;s geothermal pipeline, on one map">
@@ -49,10 +49,18 @@ label{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer}
 .home:hover,.home:focus-visible{background:var(--orange)}
 header .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
 header nav a{min-height:40px;display:inline-flex;align-items:center}
-@media(max-width:760px){header{padding:0 10px}header .brand b{display:none}header .home{margin-left:auto}}
+@media(max-width:760px){header{padding:0 10px}}
+nav.tabs{display:none}
+@media(max-width:760px){
+header{padding:env(safe-area-inset-top) max(10px,env(safe-area-inset-right)) 0 max(10px,env(safe-area-inset-left));height:calc(56px + env(safe-area-inset-top))}
+#wrap{top:calc(56px + env(safe-area-inset-top));bottom:calc(56px + env(safe-area-inset-bottom))}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:1200;background:var(--navy);display:flex;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+nav.tabs a{flex:1;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#C8D2DC;text-decoration:none;font-size:12px;border-top:3px solid transparent}
+nav.tabs a[aria-current="page"]{color:var(--orange);border-top-color:var(--orange)}
+nav.tabs a:focus-visible{outline-offset:-4px}
+#legend{bottom:24px}}
 </style></head><body>
-<header><a class="home" href="/" aria-label="Back to the SpudSignal Library start page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Home</a>
-<a class="brand" href="/"><img src="logo-v3-dark.png" alt="SpudSignal"><b>SpudSignal Library</b></a>
+<header><a class="brand" href="/"><img src="logo-v3-dark.png" alt="SpudSignal"><b>SpudSignal Library</b></a>
 <nav aria-label="Sections"><a href="/">Home</a><a href="/tenders/">Tenders</a><a class="on" href="/map/" aria-current="page">Map</a></nav></header>
 <div id="wrap"><aside id="panel">
 <h3>Type</h3><div id="types"></div>
@@ -61,6 +69,7 @@ header nav a{min-height:40px;display:inline-flex;align-items:center}
 <h3>Nationwide / EU calls (no single site)</h3><div id="nw"></div>
 <p><small>Tender data as published by source, no guarantee – check the original. Pins marked “approx.” sit at town/region level.</small></p>
 </aside><div id="map"></div><div id="legend"></div><button id="tog">☰ Filters</button></div>
+<nav class="tabs" aria-label="Main"><a href="/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="/tenders/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg><span>Tenders</span></a><a href="/map/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12s-8-7-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Map</span></a></nav>
 <script src="vendor/leaflet/leaflet.js"></script><script src="vendor/markercluster/leaflet.markercluster.js"></script><script src="data.js"></script>
 <script>
 const C={project:'#0F2A3D',tender:'#E97828',funding:'#1B998B'},LB={project:'Projects & wells (#1–#5)',tender:'Open tenders',funding:'Funding calls'};
