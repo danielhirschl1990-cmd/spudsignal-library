@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geothermal map: projects, tenders &amp; funding – SpudSignal Library</title>
+<meta name="description" content="Map of geothermal projects and wells from SpudSignal issues, plus open tenders and funding calls in Europe.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="vendor/markercluster/MarkerCluster.css">
+<style>
+:root{--navy:#0F2A3D;--orange:#E97828;--gb:#C8D2DC}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:"DejaVu Sans",Verdana,system-ui,sans-serif;color:var(--navy)}
+header{height:56px;background:var(--navy);color:#fff;display:flex;align-items:center;gap:10px;padding:0 16px}
+header img{height:40px}header b{font-size:17px}header nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+header nav a{color:var(--gb);text-decoration:none}header nav a.on{color:#fff;border-bottom:2px solid var(--orange)}
+.draft{background:var(--orange);color:#fff;font-size:11px;padding:2px 6px;border-radius:3px}
+#wrap{position:absolute;top:56px;bottom:0;left:0;right:0;display:flex}
+#panel{width:300px;overflow:auto;background:#fff;border-right:1px solid var(--gb);padding:14px;font-size:13px}
+#map{flex:1}
+h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px;color:#4a6072}
+label{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid #fff;box-shadow:0 0 0 1px var(--navy)}
+.cty{display:flex;flex-wrap:wrap;gap:6px}.cty button{font:inherit;font-size:12px;border:1px solid var(--gb);background:#fff;color:var(--navy);border-radius:14px;padding:3px 9px;cursor:pointer}
+.cty button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.nw{border-left:3px solid var(--orange);padding:4px 8px;margin:6px 0;background:#f6f8fa}
+.nw a{color:var(--navy)}small{color:#5d7283}
+.leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.4;margin:12px 14px}
+.pt{font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em}
+.pp b{display:block;margin:3px 0}.pp a{color:var(--orange);font-weight:bold}
+.ap{background:var(--gb);border-radius:3px;padding:0 4px;font-size:11px}
+#tog{display:none}
+.ssc{background:#0F2A3D;color:#fff;border:3px solid #E97828;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+@media(max-width:760px){#panel{position:absolute;z-index:1100;top:0;left:0;bottom:0;width:86%;transform:translateX(-100%);transition:.2s;box-shadow:2px 0 12px rgba(0,0,0,.25)}
+#panel.open{transform:none}header nav{display:none}
+#tog{display:block;position:absolute;z-index:999;top:10px;left:56px;background:var(--navy);color:#fff;border:0;border-radius:18px;padding:8px 14px;font:inherit;font-size:13px}}
+</style></head><body>
+<header><a href="/" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none"><img src="logo-v3-dark.png" alt="SpudSignal"><b>SpudSignal Library</b></a>
+<nav><a href="/tenders/">Tenders</a><a class="on" href="/map/">Map</a></nav></header>
+<div id="wrap"><aside id="panel">
+<h3>Type</h3><div id="types"></div>
+<h3>Country</h3><div class="cty" id="ctys"></div>
+<p><small id="count"></small></p>
+<h3>Nationwide / EU calls (no single site)</h3><div id="nw"></div>
+<p><small>Tender data as published by source, no guarantee – check the original. Pins marked “approx.” sit at town/region level.</small></p>
+</aside><div id="map"></div><button id="tog">☰ Filters</button></div>
+<script src="vendor/leaflet/leaflet.js"></script><script src="vendor/markercluster/leaflet.markercluster.js"></script><script src="data.js"></script>
+<script>
+const C={project:'#0F2A3D',tender:'#E97828',funding:'#C8D2DC'},LB={project:'Projects & wells (#1–#5)',tender:'Open tenders',funding:'Funding calls'};
+const m=Lf();function Lf(){const mm=window.L.map('map',{zoomControl:true,maxZoom:12}).setView([49,10],4);
+window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(mm);return mm}
+const TODAY=new Date();const F=SS_DATA.features.filter(f=>!f.properties.deadline_iso||new Date(f.properties.deadline_iso)>TODAY),on={project:1,tender:1,funding:1},ctys=[...new Set(F.map(f=>f.properties.country))].sort();let sel=new Set(ctys);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function pop(p){let h=`<div class="pp"><span class="pt" style="color:${p.type=='funding'?'#5d7283':C[p.type]}">${p.type} · ${p.country}</span><b>${esc(p.title)}</b>`;
+if(p.buyer)h+=`<div><small>${esc(p.buyer)}</small></div>`;
+if(p.deadline)h+=`<div>⏱ <b style="display:inline">Deadline:</b> ${esc(p.deadline)}</div>`;
+if(p.approx)h+=`<div><span class="ap">approx.</span> <small>${esc(p.loc_note||'town-level location')}</small></div>`;
+h+='<div style="margin-top:6px">';if(p.source_url)h+=`<a href="${esc(p.source_url)}" target="_blank" rel="noopener">Source (${esc(p.id)}) ↗</a><br>`;
+if(p.issue_url)h+=`<a href="${esc(p.issue_url)}" target="_blank" rel="noopener">Read in SpudSignal #${p.issue} ↗</a>`;return h+'</div></div>'}
+const layer=window.SSLAYER=window.L.markerClusterGroup({maxClusterRadius:35,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:c=>{const n=c.getChildCount(),s=n<5?30:n<10?36:42;return window.L.divIcon({html:'<div class="ssc" style="width:'+s+'px;height:'+s+'px">'+n+'</div>',className:'',iconSize:[s,s]})}}).addTo(m);
+function draw(){layer.clearLayers();let n=0;F.forEach(f=>{const p=f.properties;if(!on[p.type]||!sel.has(p.country))return;n++;
+window.L.circleMarker([f.geometry.coordinates[1],f.geometry.coordinates[0]],{radius:p.type=='project'?7:8,color:p.type=='funding'?'#0F2A3D':'#fff',weight:2,fillColor:C[p.type],fillOpacity:.95,dashArray:p.approx?'3 2':null}).bindPopup(pop(p),{maxWidth:280}).addTo(layer)});
+document.getElementById('count').textContent=n+' pins shown'}
+document.getElementById('types').innerHTML=Object.keys(C).map(t=>`<label><input type="checkbox" checked data-t="${t}"><span class="dot" style="background:${C[t]}"></span>${LB[t]} (${F.filter(f=>f.properties.type==t).length})</label>`).join('');
+document.querySelectorAll('[data-t]').forEach(i=>i.onchange=()=>{on[i.dataset.t]=i.checked;draw()});
+const ce=document.getElementById('ctys');ce.innerHTML='<button class="on" data-c="*">All</button>'+ctys.map(c=>`<button data-c="${c}">${c}</button>`).join('');
+ce.onclick=e=>{const c=e.target.dataset.c;if(!c)return;if(c=='*')sel=new Set(ctys);else sel=new Set([c]);ce.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.c==c));draw()};
+document.getElementById('nw').innerHTML=SS_EXTRA.nationwide.filter(p=>new Date(p.deadline_iso)>TODAY).map(p=>`<div class="nw"><b>${p.country}</b> · <a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.title)}</a><br><small>Deadline: ${esc(p.deadline)}</small></div>`).join('');
+document.getElementById('tog').onclick=()=>document.getElementById('panel').classList.toggle('open');
+m.on('click',()=>document.getElementById('panel').classList.remove('open'));
+draw();window.SSMAP=m;
+if(window.innerWidth<=760&&layer.getLayers().length)m.fitBounds(layer.getBounds(),{padding:[24,24]});
+</script></body></html>
