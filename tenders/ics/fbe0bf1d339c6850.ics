@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:fbe0bf1d339c6850@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261025T175858Z
+DTSTAMP:20261101T221947Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: „Realizace vrtů pro systémy BTES2 a B
  TES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“
 DTSTART;TZID=Europe/Prague:20261106T150000
 DTEND;TZID=Europe/Prague:20261106T153000
 DESCRIPTION:Source: TED 730837-2026. Published by source: 22 Oct 2026 · L
- ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

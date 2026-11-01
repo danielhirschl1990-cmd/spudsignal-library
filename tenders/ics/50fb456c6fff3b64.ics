@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SpudSignal//Tender deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpudSignal deadline
+X-WR-TIMEZONE:Europe/Brussels
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Atlantic/Reykjavik
+BEGIN:STANDARD
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:50fb456c6fff3b64@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261101T221947Z
+LAST-MODIFIED:20261101T221916Z
+SUMMARY:[Check source] Deadline: Maintenance and repair of diaphragms
+DTSTART;TZID=Atlantic/Reykjavik:20261130T100000
+DTEND;TZID=Atlantic/Reykjavik:20261130T103000
+DESCRIPTION:Source: TED 754152-2026. Published by source: 30 Oct 2026 · L
+ ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ igenda. This calendar entry does NOT update itself. For automatic updates
+ \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/754152-2026. No guarantee of completeness or accuracy. As pub
+ lished: 30 Nov 2026\, 11:00 CET (notice: 10:00 UTC+00:00).
+URL:https://ted.europa.eu/en/notice/-/detail/754152-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+END:VCALENDAR

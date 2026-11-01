@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Berlin
+TZID:Europe/Zurich
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -23,22 +23,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:a18fef83c1e2ddc5@library.spudsignal.com
+UID:134f041368647f35@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261025T175858Z
-LAST-MODIFIED:20261025T175833Z
-SUMMARY:[Check source] Requests to participate: Forschungsbohrung Münster
-  - Teil 1 Bohrkontraktor
-DTSTART;TZID=Europe/Berlin:20261126T100000
-DTEND;TZID=Europe/Berlin:20261126T103000
-DESCRIPTION:Source: TED 734244-2026. Published by source: 23 Oct 2026 · L
- ast checked by SpudSignal: 25 Oct 2026. Deadlines can change through corr
+DTSTAMP:20261101T221947Z
+LAST-MODIFIED:20261101T221916Z
+SUMMARY:[Check source] Deadline: New Building 07B / Cost Group 241 / Geoth
+ ermal Boreholes
+DTSTART;TZID=Europe/Zurich:20261208T235900
+DTEND;TZID=Europe/Zurich:20261209T002900
+DESCRIPTION:Source: TED 752632-2026. Published by source: 29 Oct 2026 · L
+ ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
- ce/-/detail/734244-2026. No guarantee of completeness or accuracy. As pub
- lished: 26 Nov 2026\, 10:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/734244-2026
+ ce/-/detail/752632-2026. No guarantee of completeness or accuracy. As pub
+ lished: 08 Dec 2026\, 23:59 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/752632-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
