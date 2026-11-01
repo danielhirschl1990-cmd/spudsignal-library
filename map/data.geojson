@@ -1,6 +1,6 @@
 {
  "type": "FeatureCollection",
- "generated": "2026-11-02T00:21:00+01:00",
+ "generated": "2026-11-02T00:36:00+01:00",
  "tender_data": "2026-11-01T23:19+01:00",
  "features": [
   {
@@ -118,28 +118,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.8002,
-     48.9457
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "FR",
-    "title": "Sauer-Pechelbronn studies turning an existing well into a deep geothermal probe",
-    "issue": 2,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "BOAMP 26-95181, 2 Oct 2026",
-    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      11.342,
      48.2256
     ]
@@ -221,50 +199,6 @@
     "loc_source": "map script (issues/src)",
     "id": "Radio Poznań, 1 Oct 2026",
     "source_url": "https://radiopoznan.fm/informacje/pozostale/beda-wiercic-szukaja-wod-termalnych"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.1096,
-     46.2567
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "FR",
-    "title": "Ferney-Voltaire seeks a designer for a geothermal exploration well",
-    "issue": 3,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "BOAMP 26-97695, 10 Oct 2026",
-    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.2676,
-     50.9806
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "DE",
-    "title": "Gelsenwasser tenders a 30-borehole field for a cold heat network in Linnich",
-    "issue": 3,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "TED 698651-2026, 9 Oct 2026",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/698651-2026"
    }
   },
   {
@@ -360,28 +294,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.343,
-     45.239
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "RO",
-    "title": "Călimănești tenders design-and-build of two geothermal wells and heat networks",
-    "issue": 4,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "TED 716179-2026, 16 Oct 2026",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/716179-2026"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      34.679,
      37.966
     ]
@@ -419,50 +331,6 @@
     "loc_source": "map script (issues/src)",
     "id": "Jelenia Góra Nasze Miasto, 16 Oct 2026",
     "source_url": "https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     19.357,
-     52.232
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "PL",
-    "title": "ECO Kutno tenders drilling of two geothermal wells",
-    "issue": 5,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "TED 725171-2026, 20 Oct 2026",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/725171-2026"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     4.202,
-     52.001
-    ]
-   },
-   "properties": {
-    "type": "project",
-    "country": "NL",
-    "title": "HVC heat-exchanger framework – lot 1 (Westland)",
-    "issue": 5,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)",
-    "id": "TED 726565-2026, 21 Oct 2026",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/726565-2026"
    }
   },
   {
