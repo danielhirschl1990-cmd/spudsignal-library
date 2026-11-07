@@ -13,16 +13,22 @@
     "Project owners & developers"
   ];
   var SYMBOLS = {
-    "Drilling": "/symbols/drilling.svg",
-    "Equipment": "/symbols/equipment.svg",
-    "Engineering & Services": "/symbols/engineering-services.svg",
-    "Project owners & developers": "/symbols/project-owners.svg"
+    "Drilling": "/symbols/aud-drilling.svg",
+    "Equipment": "/symbols/aud-equipment.svg",
+    "Engineering & Services": "/symbols/aud-engineering.svg",
+    "Project owners & developers": "/symbols/aud-owners.svg"
   };
   var PNG = {
-    "Drilling": "/symbols/drilling.png",
-    "Equipment": "/symbols/equipment.png",
-    "Engineering & Services": "/symbols/engineering-services.png",
-    "Project owners & developers": "/symbols/project-owners.png"
+    "Drilling": "/symbols/aud-drilling.png",
+    "Equipment": "/symbols/aud-equipment.png",
+    "Engineering & Services": "/symbols/aud-engineering.png",
+    "Project owners & developers": "/symbols/aud-owners.png"
+  };
+  var PNG2X = {
+    "Drilling": "/symbols/aud-drilling@2x.png",
+    "Equipment": "/symbols/aud-equipment@2x.png",
+    "Engineering & Services": "/symbols/aud-engineering@2x.png",
+    "Project owners & developers": "/symbols/aud-owners@2x.png"
   };
 
   function escapeHtml(s) {
@@ -54,12 +60,16 @@
     return true;
   }
 
+  function emailImg(label) {
+    return '<img src="' + PNG[label] + '" srcset="' + PNG[label] + ' 1x, ' + PNG2X[label] + ' 2x" width="24" height="24" alt="">';
+  }
+
   function badgeHtml(assignment) {
     if (!assignment) return "";
     if (assignment.status !== "reviewed" && assignment.status !== "pending_review") return "";
     if (!assignment.labels || !assignment.labels.length) return "";
     var chips = assignment.labels.map(function (label) {
-      return '<span class="aud"><img class="audsym" src="' + SYMBOLS[label] + '" alt="" width="18" height="18"><span class="audname">' + escapeHtml(label) + '</span></span>';
+      return '<span class="aud"><img class="audsym" src="' + SYMBOLS[label] + '" alt="" width="24" height="24"><span class="audname">' + escapeHtml(label) + '</span></span>';
     }).join("");
     var state = assignment.status === "pending_review"
       ? '<span class="audstate">Proposed, pending review</span>'
@@ -144,6 +154,8 @@
     LABELS: LABELS,
     SYMBOLS: SYMBOLS,
     PNG: PNG,
+    PNG2X: PNG2X,
+    emailImg: emailImg,
     escapeHtml: escapeHtml,
     audienceMatch: audienceMatch,
     entryMatch: entryMatch,

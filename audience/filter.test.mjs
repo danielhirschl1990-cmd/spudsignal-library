@@ -165,3 +165,29 @@ test("Library summaries and source links for the four examples are intact", () =
   }
   assert.equal((indexHtml.match(/class="libcard"/g) || []).length, 92);
 });
+
+test("web uses the original SVG symbols and email uses PNG with a 2x source", () => {
+  const pages = [indexHtml, tendersHtml, preview, newsletter];
+  for (const page of pages) {
+    assert.equal(page.includes("file://"), false);
+    assert.equal(page.includes("/symbols/drilling.svg"), false);
+    assert.equal(page.includes("/symbols/project-owners.svg"), false);
+  }
+  for (const file of ["aud-drilling.svg", "aud-equipment.svg", "aud-engineering.svg", "aud-owners.svg"]) {
+    assert.ok(indexHtml.includes("/symbols/" + file), file);
+    assert.ok(tendersHtml.includes("/symbols/" + file), file);
+    const svg = fs.readFileSync(path.join(root, "symbols", file), "utf8");
+    assert.match(svg, /viewBox="0 0 24 24"/);
+  }
+  assert.match(fs.readFileSync(path.join(root, "symbols/aud-drilling.svg"), "utf8"), /M12 2\.5/);
+  assert.match(fs.readFileSync(path.join(root, "symbols/aud-equipment.svg"), "utf8"), /<circle /);
+  assert.match(fs.readFileSync(path.join(root, "symbols/aud-engineering.svg"), "utf8"), /M3\.5 20\.5V3\.5l17 17Z/);
+  assert.match(fs.readFileSync(path.join(root, "symbols/aud-owners.svg"), "utf8"), /M6\.5 21\.8V2\.6/);
+  assert.match(newsletter, /src="\/symbols\/aud-drilling\.png"/);
+  assert.match(newsletter, /srcset="\/symbols\/aud-drilling\.png 1x, \/symbols\/aud-drilling@2x\.png 2x"/);
+  assert.match(newsletter, /srcset="\/symbols\/legend\.png 1x, \/symbols\/legend@2x\.png 2x"/);
+  assert.match(newsletter, />Drilling</);
+  assert.match(newsletter, /Proposed, pending review/);
+  assert.equal(byNotice("TED 725171-2026").status, "pending_review");
+  assert.equal(byNotice("TED 725171-2026").approved, false);
+});

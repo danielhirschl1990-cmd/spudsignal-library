@@ -11,7 +11,8 @@
 .audchip[aria-pressed="true"]{border:3px solid #0F2A3D;background:#fff;color:#0F2A3D;box-shadow:inset 4px 0 0 #2E5E80}
 .audchip[aria-pressed="true"]::after{content:" · Selected";font-weight:700}
 .chip[aria-pressed="true"]::after{content:" · Selected";font-weight:700}
-.audsym{width:18px;height:18px;flex:none}
+.audsym{width:24px;height:24px;flex:none}
+.audlegendimg{display:block;max-width:100%;height:auto}
 .auds{display:flex;flex-wrap:wrap;align-items:center;gap:6px;width:100%;max-width:100%;margin:6px 0 0}
 .top .auds{flex:1 1 100%;min-width:0}
 .audfor{font-size:15px;font-weight:700;color:#0F2A3D}

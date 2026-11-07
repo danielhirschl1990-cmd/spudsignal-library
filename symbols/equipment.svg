@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <title>Equipment</title>
-  <circle cx="11" cy="16" r="6" fill="none" stroke="#0F2A3D" stroke-width="2"/>
-  <path d="M17 13 H25 V19 H17" fill="none" stroke="#2E5E80" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M11 4 V10 M11 22 V28" fill="none" stroke="#0F2A3D" stroke-width="2" stroke-linecap="round"/>
-</svg>

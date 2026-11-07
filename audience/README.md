@@ -80,7 +80,7 @@ The map has no audience filters in this stage. Weekly map maintenance, project p
 
 ## Newsletter excerpt
 
-Copy the “For:” line from `audience/newsletter-item.html` only after the Reviewer accepts the label. The line keeps the full name as text, so it can still be read if images are blocked. Email may use the PNG symbols in `symbols/`. The Library uses the SVG symbols beside the same words.
+Copy the “For:” line from `audience/newsletter-item.html` only after the Reviewer accepts the label. The line keeps the full name as text, so it can still be read if images are blocked. The Library uses the original SVG files in `symbols/` (`aud-drilling`, `aud-equipment`, `aud-engineering`, `aud-owners`). Email uses the matching PNG and `@2x` PNG, with root-relative addresses. Proposed labels stay pending until that review.
 
 Do not start a segmented mailing from these tags. Do not present a pending label as a finished newsletter tag.
 

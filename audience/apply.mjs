@@ -51,7 +51,7 @@ function dataAttrs(assignment) {
 }
 
 function chip(label) {
-  return `<button type="button" class="audchip" data-g="audience" data-v="${escapeAttr(label)}" aria-pressed="false"><img class="audsym" src="${api.SYMBOLS[label]}" alt="" width="18" height="18"><span class="audname">${api.escapeHtml(label)}</span></button>`;
+  return `<button type="button" class="audchip" data-g="audience" data-v="${escapeAttr(label)}" aria-pressed="false"><img class="audsym" src="${api.SYMBOLS[label]}" alt="" width="24" height="24"><span class="audname">${api.escapeHtml(label)}</span></button>`;
 }
 
 function audienceNotes(help) {
@@ -216,13 +216,13 @@ function stampTenders(html, byUrl, data) {
 
 function newsletter(doc) {
   const legend = api.LABELS.map(function (label) {
-    return `<li><img src="${api.PNG[label]}" alt="" width="20" height="20"><span>${api.escapeHtml(label)}</span></li>`;
+    return `<li>${api.emailImg(label)}<span>${api.escapeHtml(label)}</span></li>`;
   }).join("");
   const blocks = doc.assignments.map(function (assignment) {
     const pending = assignment.status === "pending_review";
     const body = assignment.labels.length
       ? `<p class="forline"><span class="audfor">For:</span> ${assignment.labels.map(function (label) {
-          return `<span class="aud"><img src="${api.PNG[label]}" alt="" width="20" height="20"><span class="audname">${api.escapeHtml(label)}</span></span>`;
+          return `<span class="aud">${api.emailImg(label)}<span class="audname">${api.escapeHtml(label)}</span></span>`;
         }).join(" ")}${pending ? ' <span class="audstate">Proposed, pending review</span>' : ""}</p>`
       : `<p class="forline">No audience tag. ${api.escapeHtml(assignment.withhold_until || "Left untagged.")}</p>`;
     return `<article>
@@ -240,13 +240,15 @@ ${body}
 <main style="max-width:640px;margin:0 auto;padding:16px">
 <p><strong>Template excerpt only.</strong> The SpudSignal newsletter lives outside this repository and was not edited. Use the same assignment record as the Library. Words stay readable if the images are blocked. Do not shorten the names.</p>
 <h1 style="font-size:22px;color:#0F2A3D">Audience legend</h1>
+<img class="audlegendimg" src="/symbols/legend.png" srcset="/symbols/legend.png 1x, /symbols/legend@2x.png 2x" width="594" height="59" alt="">
 <ul class="newsletter-legend">${legend}</ul>
+<p>Tags are editorial guidance, always check the notice scope.</p>
 ${blocks}
 <aside class="layout-sample">
 <p><strong>Layout sample only.</strong> Not a source and not an assignment. Two full names wrap in a narrow column.</p>
-<p class="forline"><span class="audfor">For:</span> <span class="aud"><img src="${api.PNG["Drilling"]}" alt="" width="20" height="20"><span class="audname">Drilling</span></span> <span class="aud"><img src="${api.PNG["Engineering & Services"]}" alt="" width="20" height="20"><span class="audname">Engineering &amp; Services</span></span></p>
+<p class="forline"><span class="audfor">For:</span> <span class="aud">${api.emailImg("Drilling")}<span class="audname">Drilling</span></span> <span class="aud">${api.emailImg("Engineering & Services")}<span class="audname">Engineering &amp; Services</span></span></p>
 </aside>
-<p>Symbols use the navy and grey-blue already used for Library badges. The map has no audience filter in this stage.</p>
+<p>Web pages use the original SVG symbols. Email uses the PNG and @2x files. The map has no audience filter in this stage. Proposed labels are still pending review.</p>
 </main></body></html>
 `;
 }
@@ -273,12 +275,12 @@ export function apply() {
   write("tenders/index.html", tenders);
   write("audience/newsletter-item.html", newsletter(doc));
   let sw = read("tenders/sw.js");
-  sw = sw.replace(/const C = "ss-tenders-[^"]+";/, 'const C = "ss-tenders-20261108audience";');
-  if (!sw.includes("/audience/badges.css")) {
-    sw = sw.replace(
-      '"/favicon.svg"',
-      '"/favicon.svg", "/audience/badges.css", "/audience/filter.js", "/symbols/drilling.svg", "/symbols/equipment.svg", "/symbols/engineering-services.svg", "/symbols/project-owners.svg"'
-    );
+  sw = sw.replace(/const C = "ss-tenders-[^"]+";/, 'const C = "ss-tenders-20261108audsymbols";');
+  const symbolPre = '"/symbols/aud-drilling.svg", "/symbols/aud-equipment.svg", "/symbols/aud-engineering.svg", "/symbols/aud-owners.svg"';
+  if (sw.includes("/symbols/drilling.svg")) {
+    sw = sw.replace('"/symbols/drilling.svg", "/symbols/equipment.svg", "/symbols/engineering-services.svg", "/symbols/project-owners.svg"', symbolPre);
+  } else if (!sw.includes("/symbols/aud-drilling.svg")) {
+    sw = sw.replace('"/favicon.svg"', '"/favicon.svg", "/audience/badges.css", "/audience/filter.js", ' + symbolPre);
   }
   write("tenders/sw.js", sw);
   return doc;
