@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>Engineering &amp; Services</title>
+  <path d="M6 26 H26 L16 7 Z" fill="none" stroke="#0F2A3D" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M12 26 V22 M16 26 V21 M20 26 V22" fill="none" stroke="#2E5E80" stroke-width="2" stroke-linecap="round"/>
+</svg>

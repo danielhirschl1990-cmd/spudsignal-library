@@ -1,0 +1,29 @@
+/* Audience badges and filters. Full public names only; symbols supplement the text.
+   Selected state includes the word Selected, not a colour change alone.
+   Audience chips wrap. They do not scroll sideways and do not use shortened names. */
+
+.audblock{margin:8px 0 12px;max-width:100%}
+.audheading{margin:0 0 4px;font-size:16px;line-height:1.3;color:#0F2A3D}
+.audhelp{margin:0 0 8px;font-size:15px;line-height:1.45;color:#1B2B38}
+.audrow{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px;width:100%;max-width:100%;overflow:visible;margin:0}
+.audchip{box-sizing:border-box;display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-width:100%;min-height:44px;padding:8px 12px;border:2px solid #2E5E80;border-radius:10px;background:#fff;color:#0F2A3D;font:16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;text-align:left;white-space:normal;cursor:pointer}
+.audchip .audname{text-transform:none;letter-spacing:0;overflow-wrap:break-word}
+.audchip[aria-pressed="true"]{border:3px solid #0F2A3D;background:#fff;color:#0F2A3D;box-shadow:inset 4px 0 0 #2E5E80}
+.audchip[aria-pressed="true"]::after{content:" · Selected";font-weight:700}
+.chip[aria-pressed="true"]::after{content:" · Selected";font-weight:700}
+.audsym{width:18px;height:18px;flex:none}
+.auds{display:flex;flex-wrap:wrap;align-items:center;gap:6px;width:100%;max-width:100%;margin:6px 0 0}
+.top .auds{flex:1 1 100%;min-width:0}
+.audfor{font-size:15px;font-weight:700;color:#0F2A3D}
+.aud{display:inline-flex;align-items:center;gap:6px;max-width:100%;box-sizing:border-box;padding:4px 10px;border:1px solid #2E5E80;border-radius:999px;background:#E6EDF3;color:#0F2A3D;font-size:15px;font-weight:700;line-height:1.35;text-transform:none;letter-spacing:0}
+.audname{overflow-wrap:break-word}
+.audstate{display:inline-block;max-width:100%;padding:3px 8px;border:1px dashed #0F2A3D;border-radius:999px;background:#fff;color:#0F2A3D;font-size:14px;font-weight:700;line-height:1.35}
+.audcount,.maplimit,.audempty{font-size:15px;line-height:1.45;color:#1B2B38}
+.audempty{margin:8px 0;padding:12px;border:1px dashed #2E5E80;border-radius:10px;background:#fff}
+.maplimit{margin:8px 0 16px}
+.libcard[hidden],h2[hidden],.audempty[hidden]{display:none !important}
+.audchip:focus-visible{outline:3px solid #E97828;outline-offset:2px}
+.layout-sample{max-width:360px;border:1px dashed #2E5E80;border-radius:10px;padding:12px;margin:12px 0}
+.forline{font-size:16px;line-height:1.4;color:#0F2A3D}
+.newsletter-legend{display:flex;flex-wrap:wrap;gap:8px 14px;padding:0;margin:8px 0;list-style:none}
+.newsletter-legend li{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:700;color:#0F2A3D}

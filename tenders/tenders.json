@@ -29,7 +29,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "7b5311b7bce42b93",
@@ -56,7 +58,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "4d8245a64661a9ca",
@@ -81,7 +85,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "00be19d0c9c0cbfd",
@@ -111,7 +117,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "59eca9045bac22e1",
@@ -136,7 +144,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "41cabab7a5f09b40",
@@ -161,7 +171,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "fbe0bf1d339c6850",
@@ -190,7 +202,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "7095f2787aa83db3",
@@ -220,7 +234,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "3a5d2c3eb36bebba",
@@ -247,7 +263,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "4100e4cedb042af9",
@@ -273,7 +291,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "7bded30fa2266c1c",
@@ -302,7 +322,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "3c97938c6f31d0cc",
@@ -337,7 +359,9 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "253e005b3f55f334",
@@ -364,7 +388,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "798e608fb28b08cb",
@@ -393,7 +419,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "803c662051981e98",
@@ -418,7 +446,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "d6aceeed5e1cf4bd",
@@ -441,7 +471,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "untagged"
   },
   {
    "uid": "f0353bf382e57b2b",
@@ -466,7 +498,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "6b774d72bcf5d7f5",
@@ -494,7 +528,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "3942db59a0569a17",
@@ -522,7 +558,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "d1a2305da5242137",
@@ -556,7 +594,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "0c87fc4157e326c0",
@@ -581,7 +621,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "82be64efeab79612",
@@ -606,7 +648,9 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "4fd50c9eb94424d6",
@@ -638,7 +682,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "06fd138aa75e9be4",
@@ -673,7 +719,11 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "c063c46f5a23a0b2",
@@ -699,7 +749,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "0dc12863fa50d657",
@@ -727,7 +779,9 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "1d1fcdf4e5f90302",
@@ -750,7 +804,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "5fbc2426027d65b6",
@@ -778,7 +834,9 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "50fb456c6fff3b64",
@@ -805,7 +863,9 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "dadbf94b3d55275a",
@@ -834,7 +894,11 @@
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [
+    "Equipment"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "0eb0e95523645031",
@@ -857,7 +921,9 @@
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "ed4f6d6f9dde823e",
@@ -884,7 +950,11 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "134f041368647f35",
@@ -911,7 +981,9 @@
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01"
+   "accessed": "2026-11-01",
+   "audience": [],
+   "audience_status": "unassigned"
   }
  ],
  "removed": [
