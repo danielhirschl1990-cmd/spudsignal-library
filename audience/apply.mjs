@@ -74,7 +74,7 @@ ${api.LABELS.map(chip).join("\n")}
 <!-- audience-bar-end -->`;
 }
 
-const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The same labels filter the map by exact source URL.";
+const LIBRARY_HELP = "Audience filters help you find updates relevant to your work. Select one or more categories to see items matching any of them, or choose “All” to include items without an audience label. Other active filters still apply. For tenders and funding calls, check the original source for application requirements and deadlines.";
 const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The same labels filter the map by exact source URL.";
 
 function replaceBlock(html, start, end, original, replacement) {
