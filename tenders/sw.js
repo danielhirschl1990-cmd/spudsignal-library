@@ -1,5 +1,5 @@
 /* SpudSignal Tenders – offline cache. Network first, cache fallback. Build 202611012319 */
-const C = "ss-tenders-20261108audsymbols";
+const C = "ss-tenders-20261108reviewed";
 const PRE = ["/tenders/", "/tenders/tenders.json", "/tenders/deadlines.ics", "/tenders/manifest.webmanifest", "/tenders/icon-192.png", "/favicon.svg", "/audience/badges.css", "/audience/filter.js", "/symbols/aud-drilling.svg", "/symbols/aud-equipment.svg", "/symbols/aud-engineering.svg", "/symbols/aud-owners.svg"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(PRE)).catch(() => {})); self.skipWaiting(); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith("ss-tenders") && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

@@ -93,8 +93,8 @@
     if (!doc.filter || doc.filter.across_groups !== "and") {
       errors.push("audience must combine with other filter groups using and");
     }
-    if (!doc.map || doc.map.audience_filters !== false) {
-      errors.push("map audience filters must stay off");
+    if (!doc.map || doc.map.audience_filters !== true || !/exact/i.test(String(doc.map.join || ""))) {
+      errors.push("map audience filters must be on and joined by exact URL");
     }
     var seen = {};
     doc.assignments.forEach(function (a) {

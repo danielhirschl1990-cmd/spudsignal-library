@@ -74,8 +74,8 @@ ${api.LABELS.map(chip).join("\n")}
 <!-- audience-bar-end -->`;
 }
 
-const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The same labels filter the map.";
-const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The same labels filter the map.";
+const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The same labels filter the map by exact source URL.";
+const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The same labels filter the map by exact source URL.";
 
 function replaceBlock(html, start, end, original, replacement) {
   const block = `${start}\n${replacement}\n${end}`;
@@ -204,7 +204,7 @@ function stampTenders(html, byUrl, data) {
   if (!html.includes('src="/audience/filter.js"')) {
     html = html.replace("<script>\n(function(){", '<script src="/audience/filter.js"></script>\n<script>\n(function(){');
   }
-  const about = '<p id="audience-about">Audience labels use the same assignment record on the Library, the open-tender list and the map. They are guidance, not eligibility. Several selected labels match an entry that carries any of them. An entry with no label stays visible under All.</p>';
+  const about = '<p id="audience-about">Audience labels use the same assignment record on the Library, the open-tender list and the map. They are guidance, not eligibility, and they are not a check that a deadline is currently open. Several selected labels match an entry that carries any of them. An entry with no label stays visible under All. The map joins a pin only when its source URL is the same URL.</p>';
   if (!html.includes('id="audience-about"')) {
     html = html.replace('<section class="box"><h2>About this app</h2>', '<section class="box"><h2>About this app</h2>\n' + about);
   } else {
@@ -243,13 +243,13 @@ ${body}
 <h1 style="font-size:22px;color:#0F2A3D">Audience legend</h1>
 <img class="audlegendimg" src="/symbols/legend.png" srcset="/symbols/legend.png 1x, /symbols/legend@2x.png 2x" width="594" height="59" alt="">
 <ul class="newsletter-legend">${legend}</ul>
-<p>Tags are editorial guidance, always check the notice scope.</p>
+<p>Tags are editorial guidance, always check the notice scope. They are not eligibility and they are not a check that a deadline is currently open.</p>
 ${blocks}
 <aside class="layout-sample">
 <p><strong>Layout sample only.</strong> Not a source and not an assignment. Two full names wrap in a narrow column.</p>
 <p class="forline"><span class="audfor">For:</span> <span class="aud">${api.emailImg("Drilling")}<span class="audname">Drilling</span></span> <span class="aud">${api.emailImg("Engineering & Services")}<span class="audname">Engineering &amp; Services</span></span></p>
 </aside>
-<p>Web pages use the original SVG symbols. This template uses the PNG and @2x files. The map has no audience filter.</p>
+<p>Web pages use the original SVG symbols. This template uses the PNG and @2x files. The map uses the same labels and joins a pin only by an exact source URL.</p>
 </main></body></html>
 `;
 }
@@ -276,7 +276,7 @@ export function apply() {
   write("tenders/index.html", tenders);
   write("audience/newsletter-item.html", newsletter(doc));
   let sw = read("tenders/sw.js");
-  sw = sw.replace(/const C = "ss-tenders-[^"]+";/, 'const C = "ss-tenders-20261108audsymbols";');
+  sw = sw.replace(/const C = "ss-tenders-[^"]+";/, 'const C = "ss-tenders-20261108reviewed";');
   const symbolPre = '"/symbols/aud-drilling.svg", "/symbols/aud-equipment.svg", "/symbols/aud-engineering.svg", "/symbols/aud-owners.svg"';
   if (sw.includes("/symbols/drilling.svg")) {
     sw = sw.replace('"/symbols/drilling.svg", "/symbols/equipment.svg", "/symbols/engineering-services.svg", "/symbols/project-owners.svg"', symbolPre);

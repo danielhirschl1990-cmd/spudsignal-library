@@ -1,6 +1,6 @@
 # Audience categories
 
-Status: rules and four historical examples reviewed GREEN at 00:57 CET on 8 November 2026. This file is the shared rule sheet for the newsletter editor and the Library. It does not authorise a live change or a Beehiiv send. Other Library items stay unclassified.
+Status: the independent full audit of 8 November 2026, 01:22 CET, is reconciled in `audience/assignments.json` by exact URL. 70 rows carry reviewed labels, 5 green rows are intentionally untagged, and 21 yellow rows stay untagged. This file does not authorise a live change or a Beehiiv send.
 
 The newsletter itself lives outside this repository and has not been edited. `audience/newsletter-item.html` is a reusable excerpt. Use the same labels, on the same source, as `audience/assignments.json`.
 
@@ -39,12 +39,12 @@ The script checks the record before it writes. It refuses a keyword method, a se
 `status` is one of:
 
 - `reviewed` — checked against the original. `approved` is true, and each label has its own `bases` entry. The public badge is the full name only.
-- `pending_review` — not used for the four historical examples.
-- `untagged` — no audience badge. `labels` is empty.
+- `pending_review` — not used after the 8 November reconciliation. A public badge from that status would say “Proposed, pending review”.
+- `untagged` — no audience badge. `labels` is empty. This covers the five green rows left blank on purpose and the 21 yellow rows the reviewer withheld.
 
 ## Reviewed historical examples
 
-These four rows are the independently checked examples. The check was GREEN at 00:57 CET on 8 November 2026. They are historical items, not a new deadline briefing. Every other source stays unclassified.
+These four rows were the first independently checked examples, GREEN at 00:57 CET on 8 November 2026. The later full audit confirmed the same labels. They are historical items, not a new deadline briefing. The other reviewed rows are in the assignment file, each with the reviewer id `AUD-…`.
 
 | Item | Notice | Label | Basis |
 | --- | --- | --- | --- |
@@ -69,14 +69,13 @@ Behaviour, covered by `audience/filter.test.mjs`:
 - Inside type, technical category and country, several selected values also match any of those values, as they did before.
 - An entry must satisfy every group that has a selection (AND). Drilling plus Poland plus Other shows an entry only when it is Drilling and Poland and Other.
 - Press a selected audience again to clear that one label. **All** in the audience row clears audience only. The **All** button above the audience row on the tender list clears type, technical category, country and audience.
-- An untagged entry, including the ERDF call, remains visible under All and drops out when any audience label is selected.
-- An entry with no audience label remains visible under All and drops out when any audience label is selected.
+- An entry with no audience label remains visible under All and drops out when any audience label is selected. A tag is not eligibility and it is not a check that a deadline is currently open.
 
 The selected state shows the word “Selected” and `aria-pressed="true"`. Colour is extra, not the only signal.
 
 ## Map
 
-The map uses the same assignment record. All is the default. Several audience labels match a pin that carries any of them, together with the existing type and country controls. Pins and nationwide calls with no label stay visible under All and drop out when a label is selected. That empty result is not a statement that no projects exist. Marker shapes, source and date lines, separate pins at one site, and the existing same-notice project/tender handling are unchanged. This preview is not a live publication.
+The map uses the same assignment record and joins a pin only when the source URL is the same string. All is the default. Several audience labels match a pin that carries any of them, together with the existing type and country controls. Pins and nationwide calls with no label stay visible under All and drop out when a label is selected. That empty result is not a statement that no projects exist. Marker shapes, source and date lines, separate pins at one site, and the existing same-notice project/tender handling are unchanged. The Kalisz map pin uses a different URL from the PGI record and stays unlabelled. `audience/map-crosswalk-2026-11-08.json` lists every pin. Documented Pessac and KEHOP identities in the content review are not approved alternate map links. This preview is not a live publication.
 
 ## Newsletter excerpt
 
@@ -86,10 +85,6 @@ The template’s image addresses are root-relative (`/symbols/…`). They are fo
 
 Do not start a segmented mailing from these tags. Do not present a pending label as a finished newsletter tag.
 
-## Reviewer handoff
+## After the 8 November audit
 
-1. Check each row in `audience/assignments.json` against the original notice.
-2. For the ERDF call, leave `labels` empty until the applicant or beneficiary wording is confirmed.
-3. For Kutno, do not add Equipment or Engineering & Services unless a separate scope, outside the drilling package, is in the notice.
-4. To publish a label, set `status` to `reviewed`, `approved` to true, and add a `bases` sentence for each label. Run `node audience/apply.mjs`.
-5. Keep the Library and the newsletter on that same record.
+The assignment file follows the independent review by exact URL and reviewer id. Yellow rows have no labels. Multi-tag corrections from that review are Aussac, both Kaba records, Călimănești, and Krafla. Stored Library sentences, including counts and start dates the reviewer did not clear, are not rewritten by the tag. The map crosswalk is `audience/map-crosswalk-2026-11-08.json` with the same rows in CSV and Markdown. Nothing here is a public release.

@@ -31,9 +31,10 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [
-    "Drilling"
+    "Drilling",
+    "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "7b5311b7bce42b93",
@@ -61,10 +62,8 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [
-    "Drilling"
-   ],
-   "audience_status": "pending_review"
+   "audience": [],
+   "audience_status": "untagged"
   },
   {
    "uid": "4d8245a64661a9ca",
@@ -90,8 +89,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "00be19d0c9c0cbfd",
@@ -125,7 +126,7 @@
    "audience": [
     "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "59eca9045bac22e1",
@@ -152,9 +153,10 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [
-    "Drilling"
+    "Drilling",
+    "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "41cabab7a5f09b40",
@@ -180,10 +182,8 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "pending_review"
+   "audience": [],
+   "audience_status": "untagged"
   },
   {
    "uid": "fbe0bf1d339c6850",
@@ -216,7 +216,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "7095f2787aa83db3",
@@ -250,7 +250,7 @@
    "audience": [
     "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "3a5d2c3eb36bebba",
@@ -281,7 +281,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "4100e4cedb042af9",
@@ -311,7 +311,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "7bded30fa2266c1c",
@@ -344,7 +344,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "3c97938c6f31d0cc",
@@ -383,7 +383,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "253e005b3f55f334",
@@ -414,7 +414,7 @@
    "audience": [
     "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "798e608fb28b08cb",
@@ -447,7 +447,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "803c662051981e98",
@@ -474,7 +474,7 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [],
-   "audience_status": "unassigned"
+   "audience_status": "untagged"
   },
   {
    "uid": "d6aceeed5e1cf4bd",
@@ -530,7 +530,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "6b774d72bcf5d7f5",
@@ -562,7 +562,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "3942db59a0569a17",
@@ -592,7 +592,7 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [],
-   "audience_status": "unassigned"
+   "audience_status": "untagged"
   },
   {
    "uid": "d1a2305da5242137",
@@ -628,7 +628,7 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [],
-   "audience_status": "unassigned"
+   "audience_status": "untagged"
   },
   {
    "uid": "0c87fc4157e326c0",
@@ -657,7 +657,7 @@
    "audience": [
     "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "82be64efeab79612",
@@ -683,8 +683,10 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "4fd50c9eb94424d6",
@@ -718,9 +720,11 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [
-    "Drilling"
+    "Drilling",
+    "Equipment",
+    "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "06fd138aa75e9be4",
@@ -789,7 +793,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "0dc12863fa50d657",
@@ -821,7 +825,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "1d1fcdf4e5f90302",
@@ -845,8 +849,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Project owners & developers"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "5fbc2426027d65b6",
@@ -878,7 +884,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "50fb456c6fff3b64",
@@ -906,8 +912,11 @@
    "first_seen": "2026-11-01",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Equipment",
+    "Engineering & Services"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "dadbf94b3d55275a",
@@ -965,7 +974,7 @@
    "change": null,
    "accessed": "2026-11-01",
    "audience": [],
-   "audience_status": "unassigned"
+   "audience_status": "untagged"
   },
   {
    "uid": "ed4f6d6f9dde823e",
@@ -1027,7 +1036,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   }
  ],
  "removed": [

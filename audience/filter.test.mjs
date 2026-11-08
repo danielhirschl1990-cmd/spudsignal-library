@@ -22,10 +22,21 @@ function byNotice(id) {
   return doc.assignments.find((row) => row.notice_id === id);
 }
 
-test("the shared record matches the review draft and stays unapproved", () => {
+test("the shared record matches the independent review", () => {
   assert.deepEqual(api.validateAssignments(doc), []);
-  assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved).length, 4);
-  assert.ok(doc.assignments.filter((row) => row.status === "pending_review" && row.approved === false).length > 20);
+  assert.equal(doc.assignments.length, 96);
+  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 70);
+  assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved && row.labels.length).length, 70);
+  assert.equal(doc.assignments.filter((row) => row.intentionally_untagged && !row.labels.length).length, 5);
+  assert.equal(doc.assignments.filter((row) => row.withheld && row.status === "untagged" && !row.labels.length).length, 21);
+  assert.equal(doc.assignments.filter((row) => row.status === "pending_review").length, 0);
+  assert.equal(new Set(doc.assignments.map((row) => row.url)).size, 96);
+  for (const row of doc.assignments) {
+    assert.equal(row.provenance[0].type, "independent_review");
+    assert.match(row.reviewer_id, /^AUD-[0-9a-f]{12}$/);
+    assert.equal(row.provenance[0].id, row.reviewer_id);
+    assert.equal(row.provenance[0].url, row.url);
+  }
   const kutno = byNotice("TED 725171-2026");
   const hvc = byNotice("TED 726565-2026");
   const paris = byNotice("TED 755201-2026");
@@ -42,7 +53,32 @@ test("the shared record matches the review draft and stays unapproved", () => {
   assert.match(feder.bases["Project owners & developers"], /§2/);
   assert.match(feder.bases["Project owners & developers"], /§3\.1/);
   assert.match(feder.eligibility_caveat, /not mean that every reader/);
-  assert.equal(doc.assignments.some((row) => row.status === "pending_review" && row.labels.length > 1), true);
+  const multi = {
+    "https://www.boamp.fr/pages/avis/?q=idweb:26-101091": ["Drilling", "Equipment"],
+    "https://ted.europa.eu/en/notice/-/detail/664782-2026": ["Drilling", "Equipment"],
+    "https://ted.europa.eu/en/notice/-/detail/729019-2026": ["Drilling", "Equipment"],
+    "https://ted.europa.eu/en/notice/-/detail/716179-2026": ["Drilling", "Equipment", "Engineering & Services"],
+    "https://ted.europa.eu/en/notice/-/detail/754152-2026": ["Equipment", "Engineering & Services"]
+  };
+  for (const [url, labels] of Object.entries(multi)) {
+    const row = doc.assignments.find((item) => item.url === url);
+    assert.deepEqual(row.labels, labels, url);
+    assert.equal(row.status, "reviewed");
+    for (const label of labels) assert.ok(row.bases[label].length >= 12);
+  }
+  for (const url of [
+    "https://ted.europa.eu/en/notice/-/detail/670200-2026",
+    "https://ted.europa.eu/en/notice/-/detail/730837-2026",
+    "https://www.graefelfing.de/aktuelles/artikel/2622.html",
+    "https://www.veitur.is/en/bilanir/borad_laugarnes_2026-27"
+  ]) {
+    const row = doc.assignments.find((item) => item.url === url);
+    assert.match(row.basis, /not cleared/);
+    assert.doesNotMatch(row.basis, /42\+66|2\.11|16\.10/);
+  }
+  const kalisz = doc.assignments.find((row) => row.url.includes("pgi.gov.pl"));
+  assert.deepEqual(kalisz.labels, []);
+  assert.equal(kalisz.withheld, true);
 });
 
 test("integrated packages, equipment supply and FEDER cannot pick up an extra label", () => {
@@ -124,8 +160,9 @@ test("Library and tender pages share the record and keep full labels", () => {
     assert.equal(preview.includes(banned), false, banned);
   }
   assert.match(indexHtml, /id="e-library-kutno"|data-audience="Drilling"/);
-  assert.match(indexHtml, /Proposed, pending review/);
-  assert.doesNotMatch(indexHtml.slice(indexHtml.indexOf("725171-2026") - 400, indexHtml.indexOf("725171-2026")), /Proposed, pending review/);
+  assert.doesNotMatch(indexHtml, /Proposed, pending review/);
+  assert.doesNotMatch(tendersHtml, /Proposed, pending review/);
+  assert.match(indexHtml, /not a check that a deadline is currently open/);
   assert.doesNotMatch(indexHtml, /stays untagged until/);
   assert.doesNotMatch(indexHtml, /does not filter by audience/);
   assert.match(indexHtml, /The same labels filter the map/);
@@ -171,11 +208,17 @@ test("open-tender facts and the map files stay unchanged", () => {
   const tagged = tenders.entries.filter((entry) => entry.audience.length);
   assert.ok(tagged.length > 4);
   const kaba = tenders.entries.find((entry) => entry.id === "TED 729019-2026");
-  assert.deepEqual(kaba.audience, ["Drilling"]);
-  assert.equal(kaba.audience_status, "pending_review");
+  assert.deepEqual(kaba.audience, ["Drilling", "Equipment"]);
+  assert.equal(kaba.audience_status, "reviewed");
   const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
   assert.deepEqual(blocked.audience, []);
-  assert.equal(blocked.audience_status, "unassigned");
+  assert.equal(blocked.audience_status, "untagged");
+  const crosswalk = JSON.parse(fs.readFileSync(path.join(root, "audience/map-crosswalk-2026-11-08.json"), "utf8"));
+  assert.equal(crosswalk.counts.pins, 60);
+  assert.equal(crosswalk.counts.pins_exact_url, 59);
+  assert.equal(crosswalk.counts.pins_unlinked, 1);
+  assert.equal(crosswalk.pins.find((pin) => pin.source_url.includes("radiopoznan.fm")).matching_basis, "unlinked");
+  assert.equal(crosswalk.documented_identities_not_approved_as_map_joins.every((item) => item.applied_to_map === false), true);
   const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n").filter((file) => file !== "map/index.html");
   for (const file of files) {
     const disk = fs.readFileSync(path.join(root, file));
@@ -185,6 +228,7 @@ test("open-tender facts and the map files stay unchanged", () => {
   const mapHtml = fs.readFileSync(path.join(root, "map/index.html"), "utf8");
   assert.match(mapHtml, /\/symbols\/aud-drilling\.svg/);
   assert.match(mapHtml, /audienceMatch/);
+  assert.match(mapHtml, /not a check that a deadline is currently open/);
   assert.match(mapHtml, /markerClusterGroup/);
   assert.doesNotMatch(mapHtml, /file:\/\//);
 });
