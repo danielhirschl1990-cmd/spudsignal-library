@@ -98,15 +98,15 @@ function stampLibrary(html, byUrl) {
   const notes = audienceNotes(LIBRARY_HELP);
   const controls = audienceControls();
   const mapNote = "<!-- map-audience-limit --><p class=\"maplimit\">The map does not filter by audience.</p>";
-  if (!html.includes("<!-- map-audience-limit -->")) {
+  if (html.includes("<!-- audience-notes-start -->")) {
+    html = html.replace(/<!-- audience-notes-start -->[\s\S]*?<!-- audience-notes-end -->/, notes);
+    html = html.replace(/<!-- audience-bar-start -->[\s\S]*?<!-- audience-bar-end -->/, controls);
+  } else if (!html.includes("<!-- map-audience-limit -->")) {
     const marker = 'href="/map/" style="background:#0F2A3D;color:#fff;border-color:#E97828"';
     const at = html.indexOf(marker);
     if (at < 0) throw new Error("Library map link not found");
     const end = html.indexOf("</a>", at);
     html = html.slice(0, end + 4) + "\n" + mapNote + "\n" + notes + "\n" + controls + "\n" + html.slice(end + 4);
-  } else if (html.includes("<!-- audience-notes-start -->")) {
-    html = html.replace(/<!-- audience-notes-start -->[\s\S]*?<!-- audience-notes-end -->/, notes);
-    html = html.replace(/<!-- audience-bar-start -->[\s\S]*?<!-- audience-bar-end -->/, controls);
   } else {
     html = html.replace(/<!-- audience-bar-start -->[\s\S]*?<!-- audience-bar-end -->/, notes + "\n" + controls);
   }

@@ -219,11 +219,35 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.equal(crosswalk.counts.pins_unlinked, 1);
   assert.equal(crosswalk.pins.find((pin) => pin.source_url.includes("radiopoznan.fm")).matching_basis, "unlinked");
   assert.equal(crosswalk.documented_identities_not_approved_as_map_joins.every((item) => item.applied_to_map === false), true);
+  assert.equal(new Set(crosswalk.pins.map((pin) => pin.crosswalk_key)).size, 60);
+  assert.deepEqual(crosswalk.identity.repeated_source_labels, {
+    "Official Gazette notice, 27 Sep 2026": [1, 2],
+    "GSE news, 23 Oct 2026": [25, 26]
+  });
+  const wellhead = crosswalk.pins.find((pin) => pin.feature_index === 5);
+  const liner = crosswalk.pins.find((pin) => pin.feature_index === 33);
+  assert.equal(wellhead.title, "Charles University orders wellheads and frac trees for SYNERGYS");
+  assert.equal(wellhead.source_url, "https://ted.europa.eu/en/notice/-/detail/674260-2026");
+  assert.match(wellhead.title_scope_note, /679859-2026/);
+  assert.equal(liner.source_url, "https://ted.europa.eu/en/notice/-/detail/679859-2026");
+  assert.match(liner.title, /LINER HANGER/);
+  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 70);
+  assert.equal(doc.assignments.filter((row) => row.intentionally_untagged).length, 5);
+  assert.equal(doc.assignments.filter((row) => row.withheld).length, 21);
   const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n").filter((file) => file !== "map/index.html");
+  const titleBefore = "Charles University orders wellheads, frac trees and liner hangers for SYNERGYS";
+  const titleAfter = "Charles University orders wellheads and frac trees for SYNERGYS";
   for (const file of files) {
     const disk = fs.readFileSync(path.join(root, file));
     const git = execSync(`git show main:${file}`, { cwd: root });
-    assert.deepEqual(disk, git, file);
+    if (file === "map/data.js" || file === "map/data.geojson") {
+      const restored = Buffer.from(disk.toString("utf8").replaceAll(titleAfter, titleBefore));
+      assert.deepEqual(restored, git, file + " changed beyond the pin 5 title");
+      assert.equal(disk.toString("utf8").includes(titleBefore), false, file);
+      assert.equal(disk.toString("utf8").split(titleAfter).length - 1, 1, file);
+    } else {
+      assert.deepEqual(disk, git, file);
+    }
   }
   const mapHtml = fs.readFileSync(path.join(root, "map/index.html"), "utf8");
   assert.match(mapHtml, /\/symbols\/aud-drilling\.svg/);
@@ -231,6 +255,45 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.match(mapHtml, /not a check that a deadline is currently open/);
   assert.match(mapHtml, /markerClusterGroup/);
   assert.doesNotMatch(mapHtml, /file:\/\//);
+});
+
+test("repeated source labels do not collapse markers", () => {
+  const source = fs.readFileSync(path.join(root, "map/data.js"), "utf8");
+  const start = source.indexOf("window.SS_DATA=") + "window.SS_DATA=".length;
+  const end = source.indexOf("window.SS_EXTRA=");
+  const data = JSON.parse(source.slice(start, source.lastIndexOf("}", end) + 1));
+  const mapHtml = fs.readFileSync(path.join(root, "map/index.html"), "utf8");
+  assert.match(mapHtml, /byUrl\.get\(normUrl\(p&&p\.source_url\)\)/);
+  assert.match(mapHtml, /F\.forEach/);
+  assert.match(mapHtml, /Source \(\$\{esc\(p\.id\)\}\)/);
+  assert.doesNotMatch(mapHtml, /properties\.id|byId\.set|new Map\(\[?\]?\).*id/);
+  const markers = data.features.map((feature) => ({
+    label: feature.properties.id,
+    title: feature.properties.title,
+    type: feature.properties.type,
+    url: feature.properties.source_url,
+    at: feature.geometry.coordinates.join(",")
+  }));
+  assert.equal(markers.length, 60);
+  assert.equal(new Set(markers.map((marker) => marker.at + "|" + marker.title)).size, 60);
+  const erzurum = markers.filter((marker) => marker.label === "Official Gazette notice, 27 Sep 2026");
+  const gse = markers.filter((marker) => marker.label === "GSE news, 23 Oct 2026");
+  const hvc = markers.filter((marker) => marker.url.endsWith("/726565-2026"));
+  assert.equal(erzurum.length, 2);
+  assert.equal(new Set(erzurum.map((marker) => marker.at)).size, 2);
+  assert.equal(new Set(erzurum.map((marker) => marker.url)).size, 1);
+  assert.equal(gse.length, 2);
+  assert.equal(new Set(gse.map((marker) => marker.at)).size, 2);
+  assert.equal(new Set(gse.map((marker) => marker.url)).size, 1);
+  assert.deepEqual(hvc.map((marker) => marker.type).sort(), ["project", "tender"]);
+  assert.equal(new Set(hvc.map((marker) => marker.at)).size, 2);
+  assert.equal(new Set(hvc.map((marker) => marker.url)).size, 1);
+  const equipment = doc.assignments.find((row) => row.url === hvc[0].url);
+  assert.deepEqual(equipment.labels, ["Equipment"]);
+  assert.equal(markers[4].url, "https://ted.europa.eu/en/notice/-/detail/674260-2026");
+  assert.equal(markers[4].at, "14.1318,50.5341");
+  assert.equal(markers[32].url, "https://ted.europa.eu/en/notice/-/detail/679859-2026");
+  assert.match(markers[32].title, /LINER HANGER/);
 });
 
 test("Library summaries and source links for the four examples are intact", () => {

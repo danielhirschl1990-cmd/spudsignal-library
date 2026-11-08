@@ -122,10 +122,15 @@ def main():
                 )
             else:
                 reason = "No assignment record uses this exact source URL. Title and place name were not used as a match."
+        lon, lat = feature["geometry"]["coordinates"]
         item = {
             "record_kind": "pin",
+            "crosswalk_key": f"pin:{props.get('type')}:{lon},{lat}:{url}",
             "feature_index": index,
             "pin_id": props.get("id") or "",
+            "source_label": props.get("id") or "",
+            "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+            "coordinates": [lon, lat],
             "type": props.get("type") or "",
             "title": props.get("title") or "",
             "country": props.get("country") or "",
@@ -137,6 +142,12 @@ def main():
             "alternate_link_note": IDENTITIES.get(url, ""),
             "alternate_link_approved": "no",
         }
+        if url == "https://ted.europa.eu/en/notice/-/detail/674260-2026" and props.get("type") == "project":
+            item["title_scope_note"] = (
+                "Title limited to the cited notice TED 674260-2026, wellheads and frac trees. "
+                "Liner hangers stay on the separate pin for TED 679859-2026. "
+                "Source URL, coordinates, issue and the source-label text were not changed."
+            )
         item.update(assignment_fields(row))
         pins.append(item)
 
@@ -146,8 +157,11 @@ def main():
         row = by_url.get(url)
         item = {
             "record_kind": "nationwide",
+            "crosswalk_key": f"nationwide:{props.get('id') or index}:{url}",
             "feature_index": index,
             "pin_id": props.get("id") or "",
+            "source_label": props.get("id") or "",
+            "source_label_role": "Citation text copied from the nationwide row id. Not a map-pin key.",
             "type": props.get("type") or "",
             "title": props.get("title") or "",
             "country": props.get("country") or "",
@@ -178,8 +192,11 @@ def main():
             )
         orphans.append({
             "record_kind": "assignment_without_map_pin",
+            "crosswalk_key": f"assignment:{row['reviewer_id']}",
             "feature_index": "",
             "pin_id": "",
+            "source_label": "",
+            "source_label_role": "",
             "type": "",
             "title": row.get("library_title") or "",
             "country": "",
@@ -193,6 +210,24 @@ def main():
             **assignment_fields(row),
         })
 
+    keys = [item["crosswalk_key"] for item in pins]
+    if len(keys) != len(set(keys)):
+        raise SystemExit("crosswalk_key is not unique")
+    repeated = {}
+    for item in pins:
+        repeated.setdefault(item["source_label"], []).append(item["feature_index"])
+    repeated = {label: indexes for label, indexes in repeated.items() if len(indexes) > 1}
+    for item in pins:
+        indexes = repeated.get(item["source_label"])
+        if not indexes:
+            item["source_label_unique"] = "yes"
+            continue
+        item["source_label_unique"] = "no"
+        item["source_label_note"] = (
+            "This citation label is shared by pins "
+            + ", ".join(str(number) for number in indexes)
+            + ". It is not a runtime key. Each pin keeps its own coordinates and marker."
+        )
     exact = sum(1 for item in pins if item["matching_basis"] == "exact_url")
     unlinked = sum(1 for item in pins if item["matching_basis"] == "unlinked")
     doc = {
@@ -204,6 +239,24 @@ def main():
             "No shortened title, place name, or alternate URL was treated as a match. "
             "Reviewer notes on the Pessac initial avis and the KEHOP programme identifier are recorded and are not approved map joins."
         ),
+        "identity": {
+            "crosswalk_key": "Unique stable key: pin type, coordinates and exact source URL. It does not use array order or the source citation label.",
+            "pin_id": "Copy of properties.id, a source citation label. It is not unique and the map does not use it to filter, draw, count or deduplicate.",
+            "runtime": (
+                "The map walks every feature. Audience labels come from the exact source URL. "
+                "Marker position comes from coordinates. The popup prints properties.id only as citation text. "
+                "A repeated citation label cannot drop, retag or merge a pin. "
+                "Two locations that share one source URL show that URL's labels and remain two markers."
+            ),
+            "repeated_source_labels": repeated,
+        },
+        "stored_facts_not_cleared": [
+            "Pin 11 title word approves is not a confirmed decision. The row stays yellow and untagged.",
+            "Pin 21 Gräfelfing Drilling tag does not confirm a 2 November start date.",
+            "Pins 25 and 26 share one GSE source. The Project owners label does not confirm each winner, plant or capacity named in the titles.",
+            "Litoměřice borehole counts and the Veitur start date remain stored card text. They were not cleared and were not rewritten.",
+            "Kalisz stays untagged. The Radio Poznań pin and the PGI record are different URLs.",
+        ],
         "reviewer": "Independent full audit, 8 November 2026, 01:22 CET. Assignments were reconciled by those exact URLs.",
         "counts": {
             "pins": len(pins),
@@ -241,9 +294,10 @@ def main():
     OUT_JSON.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n")
 
     columns = [
-        "record_kind", "feature_index", "pin_id", "type", "title", "country",
-        "source_url", "issue", "issue_url", "matching_basis", "unlinked_reason",
-        "assignment_reviewer_id", "assignment_row", "assignment_url",
+        "record_kind", "crosswalk_key", "feature_index", "pin_id", "source_label",
+        "source_label_unique", "source_label_note", "type", "title", "title_scope_note",
+        "country", "coordinates", "source_url", "issue", "issue_url", "matching_basis",
+        "unlinked_reason", "assignment_reviewer_id", "assignment_row", "assignment_url",
         "assignment_status", "assignment_review_status", "tags",
         "withheld", "intentionally_untagged", "alternate_link_note", "alternate_link_approved",
         "stored_deadline", "stored_deadline_note",
@@ -260,6 +314,17 @@ def main():
         "Joins use the exact source URL only. Place names and shortened titles were not used.",
         "Pessac initial-avis identity and the KEHOP programme identifier are noted below and are not approved alternate map links.",
         "",
+        "`crosswalk_key` is the unique identity in this file. `pin_id` is the original source citation label and can repeat.",
+        "The map does not filter, draw, count or deduplicate by that label. A repeated label does not drop a pin.",
+        "",
+        "Stored title and date caveats that this pass did not clear:",
+        "",
+        "- Pin 11, Vaud: the title word approves is not a confirmed decision. Yellow, untagged.",
+        "- Pin 21, Gräfelfing: the Drilling tag does not confirm a 2 November start.",
+        "- Pins 25 and 26, GSE: the shared Project owners label does not confirm each winner, plant or capacity.",
+        "- Litoměřice counts and the Veitur start date stay as stored card text and were not cleared.",
+        "- Kalisz stays untagged. The Radio Poznań URL and the PGI URL were not joined.",
+        "",
         f"Pins: {len(pins)}. Exact URL: {exact}. Unlinked: {unlinked}.",
         f"Nationwide rows that are not pins: {len(nationwide)}.",
         f"Assignment records with no map pin: {len(orphans)}.",
@@ -269,9 +334,14 @@ def main():
     ]
     for item in pins:
         tags = item["tags"] or "(no tags)"
-        lines.append(f"### {item['feature_index']}. {item['type']} · {item['pin_id']}")
+        lines.append(f"### {item['feature_index']}. {item['type']} · {item['crosswalk_key']}")
         lines.append("")
+        lines.append(f"- Source citation label: {item['pin_id']}")
+        if item.get("source_label_note"):
+            lines.append(f"- Identity: {item['source_label_note']}")
         lines.append(f"- Title: {item['title']}")
+        if item.get("title_scope_note"):
+            lines.append(f"- Title scope: {item['title_scope_note']}")
         lines.append(f"- Source URL: {item['source_url']}")
         if item["issue_url"]:
             lines.append(f"- Issue URL: {item['issue_url']}")

@@ -3,14 +3,27 @@
 Joins use the exact source URL only. Place names and shortened titles were not used.
 Pessac initial-avis identity and the KEHOP programme identifier are noted below and are not approved alternate map links.
 
+`crosswalk_key` is the unique identity in this file. `pin_id` is the original source citation label and can repeat.
+The map does not filter, draw, count or deduplicate by that label. A repeated label does not drop a pin.
+
+Stored title and date caveats that this pass did not clear:
+
+- Pin 11, Vaud: the title word approves is not a confirmed decision. Yellow, untagged.
+- Pin 21, Gräfelfing: the Drilling tag does not confirm a 2 November start.
+- Pins 25 and 26, GSE: the shared Project owners label does not confirm each winner, plant or capacity.
+- Litoměřice counts and the Veitur start date stay as stored card text and were not cleared.
+- Kalisz stays untagged. The Radio Poznań URL and the PGI URL were not joined.
+
 Pins: 60. Exact URL: 59. Unlinked: 1.
 Nationwide rows that are not pins: 2.
 Assignment records with no map pin: 38.
 
 ## Pins
 
-### 1. project · Official Gazette notice, 27 Sep 2026
+### 1. project · pin:project:40.683,39.922:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 
+- Source citation label: Official Gazette notice, 27 Sep 2026
+- Identity: This citation label is shared by pins 1, 2. It is not a runtime key. Each pin keeps its own coordinates and marker.
 - Title: Erzurum auctions two geothermal exploration licences (Aşkale field)
 - Source URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences
@@ -18,8 +31,10 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-691d0be27bcb row 87 · untagged · (no tags)
 - Assignment URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 
-### 2. project · Official Gazette notice, 27 Sep 2026
+### 2. project · pin:project:41.674,39.977:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 
+- Source citation label: Official Gazette notice, 27 Sep 2026
+- Identity: This citation label is shared by pins 1, 2. It is not a runtime key. Each pin keeps its own coordinates and marker.
 - Title: Erzurum auctions two geothermal exploration licences (Pasinler field)
 - Source URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences
@@ -27,8 +42,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-691d0be27bcb row 87 · untagged · (no tags)
 - Assignment URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf
 
-### 3. project · EIA notice (Foreks), 21 Sep 2026
+### 3. project · pin:project:28.833,38.044:https://www.foreks.com/haber/detay/6ab0f12895016b5817e5d7eb/FRKS/tr/ced-duyurusu-margun-jeotermal-enerji-21-09-26/
 
+- Source citation label: EIA notice (Foreks), 21 Sep 2026
 - Title: New EIA notice for Margün's exploration drilling near Buldan
 - Source URL: https://www.foreks.com/haber/detay/6ab0f12895016b5817e5d7eb/FRKS/tr/ced-duyurusu-margun-jeotermal-enerji-21-09-26/
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences
@@ -36,8 +52,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-8bf4efc4b03e row 88 · untagged · (no tags)
 - Assignment URL: https://www.foreks.com/haber/detay/6ab0f12895016b5817e5d7eb/FRKS/tr/ced-duyurusu-margun-jeotermal-enerji-21-09-26/
 
-### 4. project · Coriance release, 25 Sep 2026
+### 4. project · pin:project:2.5,48.934:https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/
 
+- Source citation label: Coriance release, 25 Sep 2026
 - Title: Drilling done at Aulnay-sous-Bois, heat due by year-end
 - Source URL: https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences
@@ -45,17 +62,20 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-434798dd5977 row 20 · reviewed · Drilling
 - Assignment URL: https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/
 
-### 5. project · TED 674260-2026, 1 Oct 2026
+### 5. project · pin:project:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/674260-2026
 
-- Title: Charles University orders wellheads, frac trees and liner hangers for SYNERGYS
+- Source citation label: TED 674260-2026, 1 Oct 2026
+- Title: Charles University orders wellheads and frac trees for SYNERGYS
+- Title scope: Title limited to the cited notice TED 674260-2026, wellheads and frac trees. Liner hangers stay on the separate pin for TED 679859-2026. Source URL, coordinates, issue and the source-label text were not changed.
 - Source URL: https://ted.europa.eu/en/notice/-/detail/674260-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
 - Match: exact_url
 - Assignment: AUD-ef57f3decb8e row 4 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/674260-2026
 
-### 6. project · GfA release, 1 Oct 2026
+### 6. project · pin:project:11.342,48.2256:https://www.gfa-online.com/geothermiebohrungen-erfolgreich-abgeschlossen/
 
+- Source citation label: GfA release, 1 Oct 2026
 - Title: Geiselbullach tests confirm about 10 MW of geothermal heat
 - Source URL: https://www.gfa-online.com/geothermiebohrungen-erfolgreich-abgeschlossen/
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -63,8 +83,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-92d66d8a5533 row 40 · reviewed · Drilling
 - Assignment URL: https://www.gfa-online.com/geothermiebohrungen-erfolgreich-abgeschlossen/
 
-### 7. project · Daldrup release (EQS), 30 Sep 2026
+### 7. project · pin:project:11.716,48.171:https://www.eqs-news.com/de/news/corporate/daldrup-sohne-ag-publishes-2026-group-half-year-report-significant-growth-and-high-order-backlog/6cbeae35-3692-4399-b2a2-0cb1db4def58
 
+- Source citation label: Daldrup release (EQS), 30 Sep 2026
 - Title: Daldrup reports order backlog, Aschheim wells due in November
 - Source URL: https://www.eqs-news.com/de/news/corporate/daldrup-sohne-ag-publishes-2026-group-half-year-report-significant-growth-and-high-order-backlog/6cbeae35-3692-4399-b2a2-0cb1db4def58
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -72,8 +93,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-030a69df2f10 row 41 · reviewed · Drilling
 - Assignment URL: https://www.eqs-news.com/de/news/corporate/daldrup-sohne-ag-publishes-2026-group-half-year-report-significant-growth-and-high-order-backlog/6cbeae35-3692-4399-b2a2-0cb1db4def58
 
-### 8. project · GFZ release, 29 Sep 2026
+### 8. project · pin:project:13.5328,52.9042:https://www.gfz.de/en/press/news/details/erfolgreicher-einsatz-einer-neuen-geothermie-technologie-fuer-stabile-lokale-und-erneuerbare-waerme
 
+- Source citation label: GFZ release, 29 Sep 2026
 - Title: Vacuum-insulated closed loop delivers heat at Groß Schönebeck
 - Source URL: https://www.gfz.de/en/press/news/details/erfolgreicher-einsatz-einer-neuen-geothermie-technologie-fuer-stabile-lokale-und-erneuerbare-waerme
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -81,16 +103,18 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-bd163525c532 row 42 · untagged · (no tags)
 - Assignment URL: https://www.gfz.de/en/press/news/details/erfolgreicher-einsatz-einer-neuen-geothermie-technologie-fuer-stabile-lokale-und-erneuerbare-waerme
 
-### 9. project · Radio Poznań, 1 Oct 2026
+### 9. project · pin:project:18.0895,51.7625:https://radiopoznan.fm/informacje/pozostale/beda-wiercic-szukaja-wod-termalnych
 
+- Source citation label: Radio Poznań, 1 Oct 2026
 - Title: Kalisz prepares to drill its GT-1 thermal-water well
 - Source URL: https://radiopoznan.fm/informacje/pozostale/beda-wiercic-szukaja-wod-termalnych
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
 - Match: unlinked
 - Unlinked: No assignment uses this Radio Poznań URL. The PGI Kalisz record AUD-a34b4517197f is a different URL, was not readable, and stays untagged. The town name was not used as a match.
 
-### 10. project · GOV.UK release, 6 Oct 2026
+### 10. project · pin:project:-1.3356,54.8372:https://www.gov.uk/government/news/flicking-the-switch-to-heat-seaham-homes-with-mine-water-energy
 
+- Source citation label: GOV.UK release, 6 Oct 2026
 - Title: Seaham mine-water heat network completes commissioning
 - Source URL: https://www.gov.uk/government/news/flicking-the-switch-to-heat-seaham-homes-with-mine-water-energy
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -98,8 +122,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-3b8848fc747b row 91 · untagged · (no tags)
 - Assignment URL: https://www.gov.uk/government/news/flicking-the-switch-to-heat-seaham-homes-with-mine-water-energy
 
-### 11. project · Grand Conseil agenda item, 6 Oct 2026
+### 11. project · pin:project:6.6327,46.5218:https://www.vd.ch/gc/seances-du-grand-conseil/point-seance/point/c6b492e5-4106-4305-be07-3ef168f3e949/meeting/1033712
 
+- Source citation label: Grand Conseil agenda item, 6 Oct 2026
 - Title: Vaud approves funds to explore its subsurface
 - Source URL: https://www.vd.ch/gc/seances-du-grand-conseil/point-seance/point/c6b492e5-4106-4305-be07-3ef168f3e949/meeting/1033712
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -107,8 +132,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-02f9122b7e45 row 83 · untagged · (no tags)
 - Assignment URL: https://www.vd.ch/gc/seances-du-grand-conseil/point-seance/point/c6b492e5-4106-4305-be07-3ef168f3e949/meeting/1033712
 
-### 12. project · Aberystwyth University release, 8 Oct 2026
+### 12. project · pin:project:23.8747,47.947:https://www.aber.ac.uk/en/news/archive/2026/10/title-290122-en.html
 
+- Source citation label: Aberystwyth University release, 8 Oct 2026
 - Title: UK-led team models a pilot geothermal plant at Solotvyno
 - Source URL: https://www.aber.ac.uk/en/news/archive/2026/10/title-290122-en.html
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -116,8 +142,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-cbb37240f268 row 90 · reviewed · Engineering & Services
 - Assignment URL: https://www.aber.ac.uk/en/news/archive/2026/10/title-290122-en.html
 
-### 13. project · BOAMP 26-100285, 17 Oct 2026
+### 13. project · pin:project:2.297,48.754:https://www.boamp.fr/pages/avis/?q=idweb:26-100285
 
+- Source citation label: BOAMP 26-100285, 17 Oct 2026
 - Title: Antony puts a deep Dogger geothermal heat concession out to tender
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-100285
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -125,8 +152,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-c4932b2b0a44 row 26 · reviewed · Project owners & developers
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-100285
 
-### 14. project · Official Gazette notice, 18 Oct 2026
+### 14. project · pin:project:34.679,37.966:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf
 
+- Source citation label: Official Gazette notice, 18 Oct 2026
 - Title: Niğde auctions six geothermal exploration licence areas
 - Source URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -134,8 +162,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-289a64505166 row 89 · untagged · (no tags)
 - Assignment URL: https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf
 
-### 15. project · Jelenia Góra Nasze Miasto, 16 Oct 2026
+### 15. project · pin:project:15.665,50.876:https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853
 
+- Source citation label: Jelenia Góra Nasze Miasto, 16 Oct 2026
 - Title: Jelenia Góra starts drilling the 2,500 m C-3 geothermal well
 - Source URL: https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -143,8 +172,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-46c2fb0bb063 row 74 · untagged · (no tags)
 - Assignment URL: https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853
 
-### 16. project · TED 726565-2026, 21 Oct 2026
+### 16. project · pin:project:6.806,53.219:https://ted.europa.eu/en/notice/-/detail/726565-2026
 
+- Source citation label: TED 726565-2026, 21 Oct 2026
 - Title: HVC heat-exchanger framework – lot 2 (Slochteren)
 - Source URL: https://ted.europa.eu/en/notice/-/detail/726565-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -152,8 +182,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-3ee9bf46c9ee row 69 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/726565-2026
 
-### 17. project · TED 734244-2026, 23 Oct 2026
+### 17. project · pin:project:7.626,51.963:https://ted.europa.eu/en/notice/-/detail/734244-2026
 
+- Source citation label: TED 734244-2026, 23 Oct 2026
 - Title: Geological Survey NRW tenders Münster research-well drilling
 - Source URL: https://ted.europa.eu/en/notice/-/detail/734244-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -161,8 +192,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-ff98cab0129c row 46 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/734244-2026
 
-### 18. project · Senate press release, 19 Oct 2026
+### 18. project · pin:project:13.563,52.543:https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1727603.php
 
+- Source citation label: Senate press release, 19 Oct 2026
 - Title: Berlin awards its first exploration right to BEW (Marzahn)
 - Source URL: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1727603.php
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -170,8 +202,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-6e92879011dd row 48 · reviewed · Project owners & developers
 - Assignment URL: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1727603.php
 
-### 19. project · Gobierno de Canarias release, 19 Oct 2026
+### 19. project · pin:project:-17.857,28.655:https://www3.gobiernodecanarias.org/noticias/el-gobierno-de-canarias-da-luz-verde-a-los-sondeos-para-investigar-el-potencial-geotermico-de-la-palma/
 
+- Source citation label: Gobierno de Canarias release, 19 Oct 2026
 - Title: La Palma test drilling exempted from simplified EIA
 - Source URL: https://www3.gobiernodecanarias.org/noticias/el-gobierno-de-canarias-da-luz-verde-a-los-sondeos-para-investigar-el-potencial-geotermico-de-la-palma/
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -179,8 +212,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-239ca67caec0 row 79 · reviewed · Project owners & developers
 - Assignment URL: https://www3.gobiernodecanarias.org/noticias/el-gobierno-de-canarias-da-luz-verde-a-los-sondeos-para-investigar-el-potencial-geotermico-de-la-palma/
 
-### 20. project · enercity release, 22 Oct 2026
+### 20. project · pin:project:9.828,52.417:https://www.enercity.de/presse/pressemitteilungen/2026/tiefengeothermieprojekt-in-lahe-wird-nicht-umgesetzt-hannovers-kohleausstieg-bleibt-abgesichert
 
+- Source citation label: enercity release, 22 Oct 2026
 - Title: enercity and Eavor drop Hannover-Lahe
 - Source URL: https://www.enercity.de/presse/pressemitteilungen/2026/tiefengeothermieprojekt-in-lahe-wird-nicht-umgesetzt-hannovers-kohleausstieg-bleibt-abgesichert
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -188,8 +222,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-3c63dd42c999 row 49 · reviewed · Project owners & developers
 - Assignment URL: https://www.enercity.de/presse/pressemitteilungen/2026/tiefengeothermieprojekt-in-lahe-wird-nicht-umgesetzt-hannovers-kohleausstieg-bleibt-abgesichert
 
-### 21. project · Gräfelfing news (bit blessing), 19 Oct 2026
+### 21. project · pin:project:11.43,48.121:https://www.graefelfing.de/aktuelles/artikel/2622.html
 
+- Source citation label: Gräfelfing news (bit blessing), 19 Oct 2026
 - Title: Gräfelfing to start deep drilling on 2 Nov
 - Source URL: https://www.graefelfing.de/aktuelles/artikel/2622.html
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -197,8 +232,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-7833cdfba387 row 50 · reviewed · Drilling
 - Assignment URL: https://www.graefelfing.de/aktuelles/artikel/2622.html
 
-### 22. project · Canton Thurgau release, 22 Oct 2026
+### 22. project · pin:project:8.896,47.556:https://www.tg.ch/news.html/485/news/80508
 
+- Source citation label: Canton Thurgau release, 22 Oct 2026
 - Title: Geothermie Thurgau – 3D seismic over about 430 km², winter 2027/28
 - Source URL: https://www.tg.ch/news.html/485/news/80508
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -206,8 +242,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-f8e622a7192d row 85 · reviewed · Engineering & Services
 - Assignment URL: https://www.tg.ch/news.html/485/news/80508
 
-### 23. project · TED 749142-2026, 29 Oct 2026
+### 23. project · pin:project:16.373,48.208:https://ted.europa.eu/en/notice/-/detail/749142-2026
 
+- Source citation label: TED 749142-2026, 29 Oct 2026
 - Title: Vienna awards surface works for its first deep-geothermal plant
 - Source URL: https://ted.europa.eu/en/notice/-/detail/749142-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -215,8 +252,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-a807202ec37e row 2 · untagged · (no tags)
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/749142-2026
 
-### 24. project · BBC News (LDRS), 28 Oct 2026
+### 24. project · pin:project:-4.744,50.361:https://www.bbc.co.uk/news/articles/crjwe84lqj10o
 
+- Source citation label: BBC News (LDRS), 28 Oct 2026
 - Title: Eden Geothermal seeks more wells within its Cornwall site
 - Source URL: https://www.bbc.co.uk/news/articles/crjwe84lqj10o
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -224,8 +262,10 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-e306683a8519 row 92 · untagged · (no tags)
 - Assignment URL: https://www.bbc.co.uk/news/articles/crjwe84lqj10o
 
-### 25. project · GSE news, 23 Oct 2026
+### 25. project · pin:project:11.979,44.882:https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 
+- Source citation label: GSE news, 23 Oct 2026
+- Identity: This citation label is shared by pins 25, 26. It is not a runtime key. Each pin keeps its own coordinates and marker.
 - Title: First FER 2 geothermal auction: Jolanda di Savoia admitted (24.4 MW)
 - Source URL: https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -233,8 +273,10 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-44b046fab52f row 67 · reviewed · Project owners & developers
 - Assignment URL: https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 
-### 26. project · GSE news, 23 Oct 2026
+### 26. project · pin:project:11.979,42.708:https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 
+- Source citation label: GSE news, 23 Oct 2026
+- Identity: This citation label is shared by pins 25, 26. It is not a runtime key. Each pin keeps its own coordinates and marker.
 - Title: First FER 2 geothermal auction: Castel Giorgio admitted (5 MW)
 - Source URL: https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -242,8 +284,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-44b046fab52f row 67 · reviewed · Project owners & developers
 - Assignment URL: https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando
 
-### 27. project · HVC news, 29 Oct 2026
+### 27. project · pin:project:4.833,52.663:https://www.hvcgroep.nl/ons-verhaal/nieuws/aardwarmte-alton-op-pauze-na-tegenvallende-testresultaten
 
+- Source citation label: HVC news, 29 Oct 2026
 - Title: HVC pauses Alton after weak well test
 - Source URL: https://www.hvcgroep.nl/ons-verhaal/nieuws/aardwarmte-alton-op-pauze-na-tegenvallende-testresultaten
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -251,8 +294,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-fb787dbfcda2 row 70 · reviewed · Drilling
 - Assignment URL: https://www.hvcgroep.nl/ons-verhaal/nieuws/aardwarmte-alton-op-pauze-na-tegenvallende-testresultaten
 
-### 28. project · City press release 21/2026, 26 Oct 2026
+### 28. project · pin:project:11.465,47.866:https://www.geretsried.de/user_uploads/de/rathaus/presse/medienmitteilungen/2026-10-26-MM-21-2026-ILN-Ruecktritt-Waermeliefervertrag-EAVOR.pdf
 
+- Source citation label: City press release 21/2026, 26 Oct 2026
 - Title: Geretsried heat buyer leaves Eavor contract
 - Source URL: https://www.geretsried.de/user_uploads/de/rathaus/presse/medienmitteilungen/2026-10-26-MM-21-2026-ILN-Ruecktritt-Waermeliefervertrag-EAVOR.pdf
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -260,8 +304,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-6f7d39fd5c60 row 51 · reviewed · Project owners & developers
 - Assignment URL: https://www.geretsried.de/user_uploads/de/rathaus/presse/medienmitteilungen/2026-10-26-MM-21-2026-ILN-Ruecktritt-Waermeliefervertrag-EAVOR.pdf
 
-### 29. project · Province of North Brabant, 26 Oct 2026
+### 29. project · pin:project:5.444,51.602:https://www.brabant.nl/actueel/nieuws/kansen-aardwarmte-brabant-in-kaart-gebracht/
 
+- Source citation label: Province of North Brabant, 26 Oct 2026
 - Title: North Brabant maps its geothermal potential
 - Source URL: https://www.brabant.nl/actueel/nieuws/kansen-aardwarmte-brabant-in-kaart-gebracht/
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -269,8 +314,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-5575d84ea650 row 71 · reviewed · Engineering & Services
 - Assignment URL: https://www.brabant.nl/actueel/nieuws/kansen-aardwarmte-brabant-in-kaart-gebracht/
 
-### 30. tender · TED 729019-2026
+### 30. tender · pin:tender:21.274,47.358:https://ted.europa.eu/en/notice/-/detail/729019-2026
 
+- Source citation label: TED 729019-2026
 - Title: Távhőszolgáltatási rendszer kialakítása Kabán
 - Source URL: https://ted.europa.eu/en/notice/-/detail/729019-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -278,8 +324,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-2b86d4c68c29 row 59 · reviewed · Drilling | Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/729019-2026
 
-### 31. tender · TED 643535-2026
+### 31. tender · pin:tender:8.729,47.499:https://ted.europa.eu/en/notice/-/detail/643535-2026
 
+- Source citation label: TED 643535-2026
 - Title: Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden
 - Source URL: https://ted.europa.eu/en/notice/-/detail/643535-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences
@@ -287,8 +334,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-0f54f506a3ad row 81 · untagged · (no tags)
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/643535-2026
 
-### 32. tender · BOAMP 26-95465
+### 32. tender · pin:tender:1.066,47.793:https://www.boamp.fr/pages/avis/?q=idweb:26-95465
 
+- Source citation label: BOAMP 26-95465
 - Title: Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-95465
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -296,8 +344,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-f7172201d4c4 row 14 · reviewed · Drilling
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-95465
 
-### 33. tender · TED 679859-2026
+### 33. tender · pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/679859-2026
 
+- Source citation label: TED 679859-2026
 - Title: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES
 - Source URL: https://ted.europa.eu/en/notice/-/detail/679859-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -305,8 +354,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-53c470839a6a row 5 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/679859-2026
 
-### 34. tender · BOAMP 26-101091
+### 34. tender · pin:tender:0.213,45.826:https://www.boamp.fr/pages/avis/?q=idweb:26-101091
 
+- Source citation label: BOAMP 26-101091
 - Title: Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-101091
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -314,16 +364,18 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-e5620174fec4 row 25 · reviewed · Drilling | Equipment
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-101091
 
-### 35. tender · BOAMP 26-102183
+### 35. tender · pin:tender:2.388,49.007:https://www.boamp.fr/pages/avis/?q=idweb:26-102183
 
+- Source citation label: BOAMP 26-102183
 - Title: Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-102183
 - Match: exact_url
 - Assignment: AUD-f9fed326d7be row 94 · untagged · (no tags)
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-102183
 
-### 36. tender · TED 730837-2026
+### 36. tender · pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/730837-2026
 
+- Source citation label: TED 730837-2026
 - Title: „Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“
 - Source URL: https://ted.europa.eu/en/notice/-/detail/730837-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -331,8 +383,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-704eadb4942e row 9 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/730837-2026
 
-### 37. tender · TED 684005-2026
+### 37. tender · pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/684005-2026
 
+- Source citation label: TED 684005-2026
 - Title: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS
 - Source URL: https://ted.europa.eu/en/notice/-/detail/684005-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -340,8 +393,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-6b4bbe5ec346 row 93 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/684005-2026
 
-### 38. tender · TED 698651-2026
+### 38. tender · pin:tender:6.2676,50.9806:https://ted.europa.eu/en/notice/-/detail/698651-2026
 
+- Source citation label: TED 698651-2026
 - Title: Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd
 - Source URL: https://ted.europa.eu/en/notice/-/detail/698651-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -349,8 +403,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-b7c398346f86 row 32 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/698651-2026
 
-### 39. tender · BOAMP 26-97695
+### 39. tender · pin:tender:6.1096,46.2567:https://www.boamp.fr/pages/avis/?q=idweb:26-97695
 
+- Source citation label: BOAMP 26-97695
 - Title: Marché de maîtrise d'oeuvre pour la réalisation d'un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-97695
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -358,8 +413,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-4a3efb511401 row 10 · reviewed · Engineering & Services
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-97695
 
-### 40. tender · TED 701161-2026
+### 40. tender · pin:tender:11.716,48.171:https://ted.europa.eu/en/notice/-/detail/701161-2026
 
+- Source citation label: TED 701161-2026
 - Title: Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem
 - Source URL: https://ted.europa.eu/en/notice/-/detail/701161-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -367,8 +423,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-4d9a6ae3efda row 44 · reviewed · Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/701161-2026
 
-### 41. tender · TED 737356-2026
+### 41. tender · pin:tender:-6.28,53.355:https://ted.europa.eu/en/notice/-/detail/737356-2026
 
+- Source citation label: TED 737356-2026
 - Title: Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland
 - Source URL: https://ted.europa.eu/en/notice/-/detail/737356-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -376,8 +433,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-4c016f7e4cad row 65 · reviewed · Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/737356-2026
 
-### 42. tender · TED 691583-2026
+### 42. tender · pin:tender:16.978,51.126:https://ted.europa.eu/en/notice/-/detail/691583-2026
 
+- Source citation label: TED 691583-2026
 - Title: SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11
 - Source URL: https://ted.europa.eu/en/notice/-/detail/691583-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -385,8 +443,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-ca21a08edc72 row 72 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/691583-2026
 
-### 43. tender · TED 709263-2026
+### 43. tender · pin:tender:6.747,49.747:https://ted.europa.eu/en/notice/-/detail/709263-2026
 
+- Source citation label: TED 709263-2026
 - Title: Neubau Ruwertalschule in Waldrach
 - Source URL: https://ted.europa.eu/en/notice/-/detail/709263-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -394,8 +453,9 @@ Assignment records with no map pin: 38.
 - Assignment: AUD-248a5aff7a01 row 45 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/709263-2026
 
-### 44. tender · BOAMP 26-101464
+### 44. tender · pin:tender:4.933,44.853:https://www.boamp.fr/pages/avis/?q=idweb:26-101464
 
+- Source citation label: BOAMP 26-101464
 - Title: Travaux de Création d'une centrale de géothermie sur sonde et travaux de remplacement des émetteurs au centre hospitalier Drôme Vivarais
 ---
 Relance du lot n°2
@@ -405,8 +465,9 @@ Relance du lot n°2
 - Assignment: AUD-0eb73077fc01 row 28 · untagged · (no tags)
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-101464
 
-### 45. funding · FR-IDF-FEDER-geothermie-2026
+### 45. funding · pin:funding:2.348,48.853:https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf
 
+- Source citation label: FR-IDF-FEDER-geothermie-2026
 - Title: Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie
 - Source URL: https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -414,8 +475,9 @@ Relance du lot n°2
 - Assignment: AUD-3f4d8779bceb row 19 · reviewed · Project owners & developers
 - Assignment URL: https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf
 
-### 46. tender · BOAMP 26-100440
+### 46. tender · pin:tender:3.877,43.611:https://www.boamp.fr/pages/avis/?q=idweb:26-100440
 
+- Source citation label: BOAMP 26-100440
 - Title: La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-100440
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -423,8 +485,9 @@ Relance du lot n°2
 - Assignment: AUD-86736b087c97 row 24 · reviewed · Engineering & Services
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-100440
 
-### 47. tender · TED 696202-2026
+### 47. tender · pin:tender:2.402,48.897:https://ted.europa.eu/en/notice/-/detail/696202-2026
 
+- Source citation label: TED 696202-2026
 - Title: Maîtrise d'oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo
 - Source URL: https://ted.europa.eu/en/notice/-/detail/696202-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat
@@ -432,8 +495,9 @@ Relance du lot n°2
 - Assignment: AUD-54d3f751ebee row 13 · reviewed · Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/696202-2026
 
-### 48. tender · TED 729199-2026
+### 48. tender · pin:tender:13.563,52.543:https://ted.europa.eu/en/notice/-/detail/729199-2026
 
+- Source citation label: TED 729199-2026
 - Title: Bohrplatzerrichtung zur Explorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes
 - Source URL: https://ted.europa.eu/en/notice/-/detail/729199-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -441,8 +505,9 @@ Relance du lot n°2
 - Assignment: AUD-8a441db58c07 row 95 · untagged · (no tags)
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/729199-2026
 
-### 49. tender · TED 732630-2026
+### 49. tender · pin:tender:11.553,48.016:https://ted.europa.eu/en/notice/-/detail/732630-2026
 
+- Source citation label: TED 732630-2026
 - Title: Fernwärmeverbundleitungstrasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG
 - Source URL: https://ted.europa.eu/en/notice/-/detail/732630-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -450,8 +515,9 @@ Relance du lot n°2
 - Assignment: AUD-1df7287aa222 row 47 · untagged · (no tags)
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/732630-2026
 
-### 50. tender · BOAMP 26-103297
+### 50. tender · pin:tender:2.344,48.961:https://www.boamp.fr/pages/avis/?q=idweb:26-103297
 
+- Source citation label: BOAMP 26-103297
 - Title: PUITS DE PRODUCTION GEOTHERMIQUE DE VILLETANEUSE FOURNITURE D'UNE ELECTROPOMPE DE PRODUCTION IMMERGEE
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-103297
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -459,16 +525,18 @@ Relance du lot n°2
 - Assignment: AUD-6f7217df9985 row 27 · reviewed · Equipment
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-103297
 
-### 51. tender · BOAMP 26-103038
+### 51. tender · pin:tender:0.352,48.107:https://www.boamp.fr/pages/avis/?q=idweb:26-103038
 
+- Source citation label: BOAMP 26-103038
 - Title: Rénovation énergétique d'un ensemble de bâtiments communaux et réalisation d'une installation de boucle d'eau tempérée à énergie géothermique (Beteg)
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-103038
 - Match: exact_url
 - Assignment: AUD-e2d74264c91b row 96 · reviewed · Drilling
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-103038
 
-### 52. tender · TED 716179-2026
+### 52. tender · pin:tender:24.343,45.239:https://ted.europa.eu/en/notice/-/detail/716179-2026
 
+- Source citation label: TED 716179-2026
 - Title: Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală”
 - Source URL: https://ted.europa.eu/en/notice/-/detail/716179-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde
@@ -476,8 +544,9 @@ Relance du lot n°2
 - Assignment: AUD-c19ae378590b row 77 · reviewed · Drilling | Equipment | Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/716179-2026
 
-### 53. tender · TED 725171-2026
+### 53. tender · pin:tender:19.357,52.232:https://ted.europa.eu/en/notice/-/detail/725171-2026
 
+- Source citation label: TED 725171-2026
 - Title: Wykonanie otworów geotermalnych Kutno GT-1 i Kutno GT-2, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KUTNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEMU CIEPŁOWNICZEGO ECO KUTNO SP. Z O.O.
 - Source URL: https://ted.europa.eu/en/notice/-/detail/725171-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -485,8 +554,9 @@ Relance du lot n°2
 - Assignment: AUD-b08b0ee2ee09 row 75 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/725171-2026
 
-### 54. tender · BOAMP 26-95181
+### 54. tender · pin:tender:7.8002,48.9457:https://www.boamp.fr/pages/avis/?q=idweb:26-95181
 
+- Source citation label: BOAMP 26-95181
 - Title: Etude et accompagnement sur les forages Les Cybéliades et Hélions II
 - Source URL: https://www.boamp.fr/pages/avis/?q=idweb:26-95181
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach
@@ -494,8 +564,9 @@ Relance du lot n°2
 - Assignment: AUD-9c135d874205 row 11 · reviewed · Engineering & Services
 - Assignment URL: https://www.boamp.fr/pages/avis/?q=idweb:26-95181
 
-### 55. tender · TED 754784-2026
+### 55. tender · pin:tender:7.626,51.963:https://ted.europa.eu/en/notice/-/detail/754784-2026
 
+- Source citation label: TED 754784-2026
 - Title: Forschungsbohrung Münster - Teil 1 Bohrkontraktor
 - Source URL: https://ted.europa.eu/en/notice/-/detail/754784-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -503,8 +574,9 @@ Relance du lot n°2
 - Assignment: AUD-317c742a972c row 53 · reviewed · Drilling
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/754784-2026
 
-### 56. tender · TED 738167-2026
+### 56. tender · pin:tender:-9.049,53.274:https://ted.europa.eu/en/notice/-/detail/738167-2026
 
+- Source citation label: TED 738167-2026
 - Title: Geothermal Consultancy Services for University Hospital Galway
 - Source URL: https://ted.europa.eu/en/notice/-/detail/738167-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -512,8 +584,9 @@ Relance du lot n°2
 - Assignment: AUD-5762716d5de8 row 64 · reviewed · Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/738167-2026
 
-### 57. tender · TED 754152-2026
+### 57. tender · pin:tender:-16.778,65.704:https://ted.europa.eu/en/notice/-/detail/754152-2026
 
+- Source citation label: TED 754152-2026
 - Title: Maintenance and repair of diaphragms
 - Source URL: https://ted.europa.eu/en/notice/-/detail/754152-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -521,8 +594,9 @@ Relance du lot n°2
 - Assignment: AUD-2ce8065abf53 row 62 · reviewed · Equipment | Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/754152-2026
 
-### 58. tender · TED 726565-2026
+### 58. tender · pin:tender:4.202,52.001:https://ted.europa.eu/en/notice/-/detail/726565-2026
 
+- Source citation label: TED 726565-2026
 - Title: Framework Agreement regarding the supply of Heat Exchangers for Geothermal Projects
 - Source URL: https://ted.europa.eu/en/notice/-/detail/726565-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma
@@ -530,8 +604,9 @@ Relance du lot n°2
 - Assignment: AUD-3ee9bf46c9ee row 69 · reviewed · Equipment
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/726565-2026
 
-### 59. tender · TED 755201-2026
+### 59. tender · pin:tender:2.348,48.853:https://ted.europa.eu/en/notice/-/detail/755201-2026
 
+- Source citation label: TED 755201-2026
 - Title: Maitrise d'oeuvre pour la réalisation et l'extension de réseaux de chaleurs parisiens
 - Source URL: https://ted.europa.eu/en/notice/-/detail/755201-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2
@@ -539,8 +614,9 @@ Relance du lot n°2
 - Assignment: AUD-222e97264b07 row 30 · reviewed · Engineering & Services
 - Assignment URL: https://ted.europa.eu/en/notice/-/detail/755201-2026
 
-### 60. tender · TED 752632-2026
+### 60. tender · pin:tender:9.376,47.426:https://ted.europa.eu/en/notice/-/detail/752632-2026
 
+- Source citation label: TED 752632-2026
 - Title: New Building 07B / Cost Group 241 / Geothermal Boreholes
 - Source URL: https://ted.europa.eu/en/notice/-/detail/752632-2026
 - Issue URL: https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2

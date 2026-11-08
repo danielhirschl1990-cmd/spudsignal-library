@@ -2,6 +2,28 @@
   "schema": "spudsignal.map.audience.crosswalk.v1",
   "generated": "2026-11-08",
   "method": "Each map feature in map/data.js and each nationwide row in SS_EXTRA is listed. A link exists only when the pin source URL is character-for-character the assignment URL. No shortened title, place name, or alternate URL was treated as a match. Reviewer notes on the Pessac initial avis and the KEHOP programme identifier are recorded and are not approved map joins.",
+  "identity": {
+    "crosswalk_key": "Unique stable key: pin type, coordinates and exact source URL. It does not use array order or the source citation label.",
+    "pin_id": "Copy of properties.id, a source citation label. It is not unique and the map does not use it to filter, draw, count or deduplicate.",
+    "runtime": "The map walks every feature. Audience labels come from the exact source URL. Marker position comes from coordinates. The popup prints properties.id only as citation text. A repeated citation label cannot drop, retag or merge a pin. Two locations that share one source URL show that URL's labels and remain two markers.",
+    "repeated_source_labels": {
+      "Official Gazette notice, 27 Sep 2026": [
+        1,
+        2
+      ],
+      "GSE news, 23 Oct 2026": [
+        25,
+        26
+      ]
+    }
+  },
+  "stored_facts_not_cleared": [
+    "Pin 11 title word approves is not a confirmed decision. The row stays yellow and untagged.",
+    "Pin 21 Gräfelfing Drilling tag does not confirm a 2 November start date.",
+    "Pins 25 and 26 share one GSE source. The Project owners label does not confirm each winner, plant or capacity named in the titles.",
+    "Litoměřice borehole counts and the Veitur start date remain stored card text. They were not cleared and were not rewritten.",
+    "Kalisz stays untagged. The Radio Poznań pin and the PGI record are different URLs."
+  ],
   "reviewer": "Independent full audit, 8 November 2026, 01:22 CET. Assignments were reconciled by those exact URLs.",
   "counts": {
     "pins": 60,
@@ -35,8 +57,15 @@
   "pins": [
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:40.683,39.922:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf",
       "feature_index": 1,
       "pin_id": "Official Gazette notice, 27 Sep 2026",
+      "source_label": "Official Gazette notice, 27 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        40.683,
+        39.922
+      ],
       "type": "project",
       "title": "Erzurum auctions two geothermal exploration licences (Aşkale field)",
       "country": "TR",
@@ -54,12 +83,21 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "no",
+      "source_label_note": "This citation label is shared by pins 1, 2. It is not a runtime key. Each pin keeps its own coordinates and marker."
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:41.674,39.977:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf",
       "feature_index": 2,
       "pin_id": "Official Gazette notice, 27 Sep 2026",
+      "source_label": "Official Gazette notice, 27 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        41.674,
+        39.977
+      ],
       "type": "project",
       "title": "Erzurum auctions two geothermal exploration licences (Pasinler field)",
       "country": "TR",
@@ -77,12 +115,21 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "no",
+      "source_label_note": "This citation label is shared by pins 1, 2. It is not a runtime key. Each pin keeps its own coordinates and marker."
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:28.833,38.044:https://www.foreks.com/haber/detay/6ab0f12895016b5817e5d7eb/FRKS/tr/ced-duyurusu-margun-jeotermal-enerji-21-09-26/",
       "feature_index": 3,
       "pin_id": "EIA notice (Foreks), 21 Sep 2026",
+      "source_label": "EIA notice (Foreks), 21 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        28.833,
+        38.044
+      ],
       "type": "project",
       "title": "New EIA notice for Margün's exploration drilling near Buldan",
       "country": "TR",
@@ -100,12 +147,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:2.5,48.934:https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/",
       "feature_index": 4,
       "pin_id": "Coriance release, 25 Sep 2026",
+      "source_label": "Coriance release, 25 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.5,
+        48.934
+      ],
       "type": "project",
       "title": "Drilling done at Aulnay-sous-Bois, heat due by year-end",
       "country": "FR",
@@ -123,14 +178,22 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/674260-2026",
       "feature_index": 5,
       "pin_id": "TED 674260-2026, 1 Oct 2026",
+      "source_label": "TED 674260-2026, 1 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        14.1318,
+        50.5341
+      ],
       "type": "project",
-      "title": "Charles University orders wellheads, frac trees and liner hangers for SYNERGYS",
+      "title": "Charles University orders wellheads and frac trees for SYNERGYS",
       "country": "CZ",
       "source_url": "https://ted.europa.eu/en/notice/-/detail/674260-2026",
       "issue": 2,
@@ -139,6 +202,7 @@
       "unlinked_reason": "",
       "alternate_link_note": "",
       "alternate_link_approved": "no",
+      "title_scope_note": "Title limited to the cited notice TED 674260-2026, wellheads and frac trees. Liner hangers stay on the separate pin for TED 679859-2026. Source URL, coordinates, issue and the source-label text were not changed.",
       "assignment_reviewer_id": "AUD-ef57f3decb8e",
       "assignment_row": 4,
       "assignment_url": "https://ted.europa.eu/en/notice/-/detail/674260-2026",
@@ -146,12 +210,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.342,48.2256:https://www.gfa-online.com/geothermiebohrungen-erfolgreich-abgeschlossen/",
       "feature_index": 6,
       "pin_id": "GfA release, 1 Oct 2026",
+      "source_label": "GfA release, 1 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.342,
+        48.2256
+      ],
       "type": "project",
       "title": "Geiselbullach tests confirm about 10 MW of geothermal heat",
       "country": "DE",
@@ -169,12 +241,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.716,48.171:https://www.eqs-news.com/de/news/corporate/daldrup-sohne-ag-publishes-2026-group-half-year-report-significant-growth-and-high-order-backlog/6cbeae35-3692-4399-b2a2-0cb1db4def58",
       "feature_index": 7,
       "pin_id": "Daldrup release (EQS), 30 Sep 2026",
+      "source_label": "Daldrup release (EQS), 30 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.716,
+        48.171
+      ],
       "type": "project",
       "title": "Daldrup reports order backlog, Aschheim wells due in November",
       "country": "DE",
@@ -192,12 +272,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:13.5328,52.9042:https://www.gfz.de/en/press/news/details/erfolgreicher-einsatz-einer-neuen-geothermie-technologie-fuer-stabile-lokale-und-erneuerbare-waerme",
       "feature_index": 8,
       "pin_id": "GFZ release, 29 Sep 2026",
+      "source_label": "GFZ release, 29 Sep 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        13.5328,
+        52.9042
+      ],
       "type": "project",
       "title": "Vacuum-insulated closed loop delivers heat at Groß Schönebeck",
       "country": "DE",
@@ -215,12 +303,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:18.0895,51.7625:https://radiopoznan.fm/informacje/pozostale/beda-wiercic-szukaja-wod-termalnych",
       "feature_index": 9,
       "pin_id": "Radio Poznań, 1 Oct 2026",
+      "source_label": "Radio Poznań, 1 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        18.0895,
+        51.7625
+      ],
       "type": "project",
       "title": "Kalisz prepares to drill its GT-1 thermal-water well",
       "country": "PL",
@@ -238,12 +334,20 @@
       "assignment_review_status": "",
       "tags": "",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:-1.3356,54.8372:https://www.gov.uk/government/news/flicking-the-switch-to-heat-seaham-homes-with-mine-water-energy",
       "feature_index": 10,
       "pin_id": "GOV.UK release, 6 Oct 2026",
+      "source_label": "GOV.UK release, 6 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -1.3356,
+        54.8372
+      ],
       "type": "project",
       "title": "Seaham mine-water heat network completes commissioning",
       "country": "UK",
@@ -261,12 +365,20 @@
       "assignment_review_status": "green",
       "tags": "",
       "withheld": "",
-      "intentionally_untagged": "yes"
+      "intentionally_untagged": "yes",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:6.6327,46.5218:https://www.vd.ch/gc/seances-du-grand-conseil/point-seance/point/c6b492e5-4106-4305-be07-3ef168f3e949/meeting/1033712",
       "feature_index": 11,
       "pin_id": "Grand Conseil agenda item, 6 Oct 2026",
+      "source_label": "Grand Conseil agenda item, 6 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        6.6327,
+        46.5218
+      ],
       "type": "project",
       "title": "Vaud approves funds to explore its subsurface",
       "country": "CH",
@@ -284,12 +396,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:23.8747,47.947:https://www.aber.ac.uk/en/news/archive/2026/10/title-290122-en.html",
       "feature_index": 12,
       "pin_id": "Aberystwyth University release, 8 Oct 2026",
+      "source_label": "Aberystwyth University release, 8 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        23.8747,
+        47.947
+      ],
       "type": "project",
       "title": "UK-led team models a pilot geothermal plant at Solotvyno",
       "country": "UA",
@@ -307,12 +427,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:2.297,48.754:https://www.boamp.fr/pages/avis/?q=idweb:26-100285",
       "feature_index": 13,
       "pin_id": "BOAMP 26-100285, 17 Oct 2026",
+      "source_label": "BOAMP 26-100285, 17 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.297,
+        48.754
+      ],
       "type": "project",
       "title": "Antony puts a deep Dogger geothermal heat concession out to tender",
       "country": "FR",
@@ -330,12 +458,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:34.679,37.966:https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf",
       "feature_index": 14,
       "pin_id": "Official Gazette notice, 18 Oct 2026",
+      "source_label": "Official Gazette notice, 18 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        34.679,
+        37.966
+      ],
       "type": "project",
       "title": "Niğde auctions six geothermal exploration licence areas",
       "country": "TR",
@@ -353,12 +489,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:15.665,50.876:https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853",
       "feature_index": 15,
       "pin_id": "Jelenia Góra Nasze Miasto, 16 Oct 2026",
+      "source_label": "Jelenia Góra Nasze Miasto, 16 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        15.665,
+        50.876
+      ],
       "type": "project",
       "title": "Jelenia Góra starts drilling the 2,500 m C-3 geothermal well",
       "country": "PL",
@@ -376,12 +520,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:6.806,53.219:https://ted.europa.eu/en/notice/-/detail/726565-2026",
       "feature_index": 16,
       "pin_id": "TED 726565-2026, 21 Oct 2026",
+      "source_label": "TED 726565-2026, 21 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        6.806,
+        53.219
+      ],
       "type": "project",
       "title": "HVC heat-exchanger framework – lot 2 (Slochteren)",
       "country": "NL",
@@ -399,12 +551,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:7.626,51.963:https://ted.europa.eu/en/notice/-/detail/734244-2026",
       "feature_index": 17,
       "pin_id": "TED 734244-2026, 23 Oct 2026",
+      "source_label": "TED 734244-2026, 23 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        7.626,
+        51.963
+      ],
       "type": "project",
       "title": "Geological Survey NRW tenders Münster research-well drilling",
       "country": "DE",
@@ -422,12 +582,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:13.563,52.543:https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1727603.php",
       "feature_index": 18,
       "pin_id": "Senate press release, 19 Oct 2026",
+      "source_label": "Senate press release, 19 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        13.563,
+        52.543
+      ],
       "type": "project",
       "title": "Berlin awards its first exploration right to BEW (Marzahn)",
       "country": "DE",
@@ -445,12 +613,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:-17.857,28.655:https://www3.gobiernodecanarias.org/noticias/el-gobierno-de-canarias-da-luz-verde-a-los-sondeos-para-investigar-el-potencial-geotermico-de-la-palma/",
       "feature_index": 19,
       "pin_id": "Gobierno de Canarias release, 19 Oct 2026",
+      "source_label": "Gobierno de Canarias release, 19 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -17.857,
+        28.655
+      ],
       "type": "project",
       "title": "La Palma test drilling exempted from simplified EIA",
       "country": "ES",
@@ -468,12 +644,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:9.828,52.417:https://www.enercity.de/presse/pressemitteilungen/2026/tiefengeothermieprojekt-in-lahe-wird-nicht-umgesetzt-hannovers-kohleausstieg-bleibt-abgesichert",
       "feature_index": 20,
       "pin_id": "enercity release, 22 Oct 2026",
+      "source_label": "enercity release, 22 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        9.828,
+        52.417
+      ],
       "type": "project",
       "title": "enercity and Eavor drop Hannover-Lahe",
       "country": "DE",
@@ -491,12 +675,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.43,48.121:https://www.graefelfing.de/aktuelles/artikel/2622.html",
       "feature_index": 21,
       "pin_id": "Gräfelfing news (bit blessing), 19 Oct 2026",
+      "source_label": "Gräfelfing news (bit blessing), 19 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.43,
+        48.121
+      ],
       "type": "project",
       "title": "Gräfelfing to start deep drilling on 2 Nov",
       "country": "DE",
@@ -514,12 +706,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:8.896,47.556:https://www.tg.ch/news.html/485/news/80508",
       "feature_index": 22,
       "pin_id": "Canton Thurgau release, 22 Oct 2026",
+      "source_label": "Canton Thurgau release, 22 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        8.896,
+        47.556
+      ],
       "type": "project",
       "title": "Geothermie Thurgau – 3D seismic over about 430 km², winter 2027/28",
       "country": "CH",
@@ -537,12 +737,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:16.373,48.208:https://ted.europa.eu/en/notice/-/detail/749142-2026",
       "feature_index": 23,
       "pin_id": "TED 749142-2026, 29 Oct 2026",
+      "source_label": "TED 749142-2026, 29 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        16.373,
+        48.208
+      ],
       "type": "project",
       "title": "Vienna awards surface works for its first deep-geothermal plant",
       "country": "AT",
@@ -560,12 +768,20 @@
       "assignment_review_status": "green",
       "tags": "",
       "withheld": "",
-      "intentionally_untagged": "yes"
+      "intentionally_untagged": "yes",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:-4.744,50.361:https://www.bbc.co.uk/news/articles/crjwe84lqj10o",
       "feature_index": 24,
       "pin_id": "BBC News (LDRS), 28 Oct 2026",
+      "source_label": "BBC News (LDRS), 28 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -4.744,
+        50.361
+      ],
       "type": "project",
       "title": "Eden Geothermal seeks more wells within its Cornwall site",
       "country": "UK",
@@ -583,12 +799,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.979,44.882:https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando",
       "feature_index": 25,
       "pin_id": "GSE news, 23 Oct 2026",
+      "source_label": "GSE news, 23 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.979,
+        44.882
+      ],
       "type": "project",
       "title": "First FER 2 geothermal auction: Jolanda di Savoia admitted (24.4 MW)",
       "country": "IT",
@@ -606,12 +830,21 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "no",
+      "source_label_note": "This citation label is shared by pins 25, 26. It is not a runtime key. Each pin keeps its own coordinates and marker."
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.979,42.708:https://www.gse.it/servizi-per-te/news/fer-2-pubblicate-le-graduatorie-del-terzo-bando",
       "feature_index": 26,
       "pin_id": "GSE news, 23 Oct 2026",
+      "source_label": "GSE news, 23 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.979,
+        42.708
+      ],
       "type": "project",
       "title": "First FER 2 geothermal auction: Castel Giorgio admitted (5 MW)",
       "country": "IT",
@@ -629,12 +862,21 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "no",
+      "source_label_note": "This citation label is shared by pins 25, 26. It is not a runtime key. Each pin keeps its own coordinates and marker."
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:4.833,52.663:https://www.hvcgroep.nl/ons-verhaal/nieuws/aardwarmte-alton-op-pauze-na-tegenvallende-testresultaten",
       "feature_index": 27,
       "pin_id": "HVC news, 29 Oct 2026",
+      "source_label": "HVC news, 29 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        4.833,
+        52.663
+      ],
       "type": "project",
       "title": "HVC pauses Alton after weak well test",
       "country": "NL",
@@ -652,12 +894,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:11.465,47.866:https://www.geretsried.de/user_uploads/de/rathaus/presse/medienmitteilungen/2026-10-26-MM-21-2026-ILN-Ruecktritt-Waermeliefervertrag-EAVOR.pdf",
       "feature_index": 28,
       "pin_id": "City press release 21/2026, 26 Oct 2026",
+      "source_label": "City press release 21/2026, 26 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.465,
+        47.866
+      ],
       "type": "project",
       "title": "Geretsried heat buyer leaves Eavor contract",
       "country": "DE",
@@ -675,12 +925,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:project:5.444,51.602:https://www.brabant.nl/actueel/nieuws/kansen-aardwarmte-brabant-in-kaart-gebracht/",
       "feature_index": 29,
       "pin_id": "Province of North Brabant, 26 Oct 2026",
+      "source_label": "Province of North Brabant, 26 Oct 2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        5.444,
+        51.602
+      ],
       "type": "project",
       "title": "North Brabant maps its geothermal potential",
       "country": "NL",
@@ -698,12 +956,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:21.274,47.358:https://ted.europa.eu/en/notice/-/detail/729019-2026",
       "feature_index": 30,
       "pin_id": "TED 729019-2026",
+      "source_label": "TED 729019-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        21.274,
+        47.358
+      ],
       "type": "tender",
       "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
       "country": "HU",
@@ -721,12 +987,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling | Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:8.729,47.499:https://ted.europa.eu/en/notice/-/detail/643535-2026",
       "feature_index": 31,
       "pin_id": "TED 643535-2026",
+      "source_label": "TED 643535-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        8.729,
+        47.499
+      ],
       "type": "tender",
       "title": "Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden",
       "country": "CH",
@@ -744,12 +1018,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:1.066,47.793:https://www.boamp.fr/pages/avis/?q=idweb:26-95465",
       "feature_index": 32,
       "pin_id": "BOAMP 26-95465",
+      "source_label": "BOAMP 26-95465",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        1.066,
+        47.793
+      ],
       "type": "tender",
       "title": "Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.",
       "country": "FR",
@@ -767,12 +1049,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/679859-2026",
       "feature_index": 33,
       "pin_id": "TED 679859-2026",
+      "source_label": "TED 679859-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        14.1318,
+        50.5341
+      ],
       "type": "tender",
       "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES",
       "country": "CZ",
@@ -790,12 +1080,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:0.213,45.826:https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
       "feature_index": 34,
       "pin_id": "BOAMP 26-101091",
+      "source_label": "BOAMP 26-101091",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        0.213,
+        45.826
+      ],
       "type": "tender",
       "title": "Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface",
       "country": "FR",
@@ -813,12 +1111,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling | Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:2.388,49.007:https://www.boamp.fr/pages/avis/?q=idweb:26-102183",
       "feature_index": 35,
       "pin_id": "BOAMP 26-102183",
+      "source_label": "BOAMP 26-102183",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.388,
+        49.007
+      ],
       "type": "tender",
       "title": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
       "country": "FR",
@@ -836,12 +1142,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/730837-2026",
       "feature_index": 36,
       "pin_id": "TED 730837-2026",
+      "source_label": "TED 730837-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        14.1318,
+        50.5341
+      ],
       "type": "tender",
       "title": "„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“",
       "country": "CZ",
@@ -859,12 +1173,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:14.1318,50.5341:https://ted.europa.eu/en/notice/-/detail/684005-2026",
       "feature_index": 37,
       "pin_id": "TED 684005-2026",
+      "source_label": "TED 684005-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        14.1318,
+        50.5341
+      ],
       "type": "tender",
       "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS",
       "country": "CZ",
@@ -882,12 +1204,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:6.2676,50.9806:https://ted.europa.eu/en/notice/-/detail/698651-2026",
       "feature_index": 38,
       "pin_id": "TED 698651-2026",
+      "source_label": "TED 698651-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        6.2676,
+        50.9806
+      ],
       "type": "tender",
       "title": "Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd",
       "country": "DE",
@@ -905,12 +1235,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:6.1096,46.2567:https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
       "feature_index": 39,
       "pin_id": "BOAMP 26-97695",
+      "source_label": "BOAMP 26-97695",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        6.1096,
+        46.2567
+      ],
       "type": "tender",
       "title": "Marché de maîtrise d'oeuvre pour la réalisation d'un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique",
       "country": "FR",
@@ -928,12 +1266,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:11.716,48.171:https://ted.europa.eu/en/notice/-/detail/701161-2026",
       "feature_index": 40,
       "pin_id": "TED 701161-2026",
+      "source_label": "TED 701161-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.716,
+        48.171
+      ],
       "type": "tender",
       "title": "Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem",
       "country": "DE",
@@ -951,12 +1297,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:-6.28,53.355:https://ted.europa.eu/en/notice/-/detail/737356-2026",
       "feature_index": 41,
       "pin_id": "TED 737356-2026",
+      "source_label": "TED 737356-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -6.28,
+        53.355
+      ],
       "type": "tender",
       "title": "Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland",
       "country": "IE",
@@ -974,12 +1328,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:16.978,51.126:https://ted.europa.eu/en/notice/-/detail/691583-2026",
       "feature_index": 42,
       "pin_id": "TED 691583-2026",
+      "source_label": "TED 691583-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        16.978,
+        51.126
+      ],
       "type": "tender",
       "title": "SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11",
       "country": "PL",
@@ -997,12 +1359,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:6.747,49.747:https://ted.europa.eu/en/notice/-/detail/709263-2026",
       "feature_index": 43,
       "pin_id": "TED 709263-2026",
+      "source_label": "TED 709263-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        6.747,
+        49.747
+      ],
       "type": "tender",
       "title": "Neubau Ruwertalschule in Waldrach",
       "country": "DE",
@@ -1020,12 +1390,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:4.933,44.853:https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
       "feature_index": 44,
       "pin_id": "BOAMP 26-101464",
+      "source_label": "BOAMP 26-101464",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        4.933,
+        44.853
+      ],
       "type": "tender",
       "title": "Travaux de Création d'une centrale de géothermie sur sonde et travaux de remplacement des émetteurs au centre hospitalier Drôme Vivarais\n---\nRelance du lot n°2",
       "country": "FR",
@@ -1043,12 +1421,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:funding:2.348,48.853:https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
       "feature_index": 45,
       "pin_id": "FR-IDF-FEDER-geothermie-2026",
+      "source_label": "FR-IDF-FEDER-geothermie-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.348,
+        48.853
+      ],
       "type": "funding",
       "title": "Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie",
       "country": "FR",
@@ -1066,12 +1452,20 @@
       "assignment_review_status": "green",
       "tags": "Project owners & developers",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:3.877,43.611:https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
       "feature_index": 46,
       "pin_id": "BOAMP 26-100440",
+      "source_label": "BOAMP 26-100440",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        3.877,
+        43.611
+      ],
       "type": "tender",
       "title": "La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».",
       "country": "FR",
@@ -1089,12 +1483,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:2.402,48.897:https://ted.europa.eu/en/notice/-/detail/696202-2026",
       "feature_index": 47,
       "pin_id": "TED 696202-2026",
+      "source_label": "TED 696202-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.402,
+        48.897
+      ],
       "type": "tender",
       "title": "Maîtrise d'oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo",
       "country": "FR",
@@ -1112,12 +1514,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:13.563,52.543:https://ted.europa.eu/en/notice/-/detail/729199-2026",
       "feature_index": 48,
       "pin_id": "TED 729199-2026",
+      "source_label": "TED 729199-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        13.563,
+        52.543
+      ],
       "type": "tender",
       "title": "Bohrplatzerrichtung zur Explorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes",
       "country": "DE",
@@ -1135,12 +1545,20 @@
       "assignment_review_status": "yellow",
       "tags": "",
       "withheld": "yes",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:11.553,48.016:https://ted.europa.eu/en/notice/-/detail/732630-2026",
       "feature_index": 49,
       "pin_id": "TED 732630-2026",
+      "source_label": "TED 732630-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        11.553,
+        48.016
+      ],
       "type": "tender",
       "title": "Fernwärmeverbundleitungstrasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG",
       "country": "DE",
@@ -1158,12 +1576,20 @@
       "assignment_review_status": "green",
       "tags": "",
       "withheld": "",
-      "intentionally_untagged": "yes"
+      "intentionally_untagged": "yes",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:2.344,48.961:https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
       "feature_index": 50,
       "pin_id": "BOAMP 26-103297",
+      "source_label": "BOAMP 26-103297",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.344,
+        48.961
+      ],
       "type": "tender",
       "title": "PUITS DE PRODUCTION GEOTHERMIQUE DE VILLETANEUSE FOURNITURE D'UNE ELECTROPOMPE DE PRODUCTION IMMERGEE",
       "country": "FR",
@@ -1181,12 +1607,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:0.352,48.107:https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
       "feature_index": 51,
       "pin_id": "BOAMP 26-103038",
+      "source_label": "BOAMP 26-103038",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        0.352,
+        48.107
+      ],
       "type": "tender",
       "title": "Rénovation énergétique d'un ensemble de bâtiments communaux et réalisation d'une installation de boucle d'eau tempérée à énergie géothermique (Beteg)",
       "country": "FR",
@@ -1204,12 +1638,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:24.343,45.239:https://ted.europa.eu/en/notice/-/detail/716179-2026",
       "feature_index": 52,
       "pin_id": "TED 716179-2026",
+      "source_label": "TED 716179-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        24.343,
+        45.239
+      ],
       "type": "tender",
       "title": "Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală”",
       "country": "RO",
@@ -1227,12 +1669,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling | Equipment | Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:19.357,52.232:https://ted.europa.eu/en/notice/-/detail/725171-2026",
       "feature_index": 53,
       "pin_id": "TED 725171-2026",
+      "source_label": "TED 725171-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        19.357,
+        52.232
+      ],
       "type": "tender",
       "title": "Wykonanie otworów geotermalnych Kutno GT-1 i Kutno GT-2, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KUTNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEMU CIEPŁOWNICZEGO ECO KUTNO SP. Z O.O.",
       "country": "PL",
@@ -1250,12 +1700,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:7.8002,48.9457:https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
       "feature_index": 54,
       "pin_id": "BOAMP 26-95181",
+      "source_label": "BOAMP 26-95181",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        7.8002,
+        48.9457
+      ],
       "type": "tender",
       "title": "Etude et accompagnement sur les forages Les Cybéliades et Hélions II",
       "country": "FR",
@@ -1273,12 +1731,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:7.626,51.963:https://ted.europa.eu/en/notice/-/detail/754784-2026",
       "feature_index": 55,
       "pin_id": "TED 754784-2026",
+      "source_label": "TED 754784-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        7.626,
+        51.963
+      ],
       "type": "tender",
       "title": "Forschungsbohrung Münster - Teil 1 Bohrkontraktor",
       "country": "DE",
@@ -1296,12 +1762,20 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:-9.049,53.274:https://ted.europa.eu/en/notice/-/detail/738167-2026",
       "feature_index": 56,
       "pin_id": "TED 738167-2026",
+      "source_label": "TED 738167-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -9.049,
+        53.274
+      ],
       "type": "tender",
       "title": "Geothermal Consultancy Services for University Hospital Galway",
       "country": "IE",
@@ -1319,12 +1793,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:-16.778,65.704:https://ted.europa.eu/en/notice/-/detail/754152-2026",
       "feature_index": 57,
       "pin_id": "TED 754152-2026",
+      "source_label": "TED 754152-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        -16.778,
+        65.704
+      ],
       "type": "tender",
       "title": "Maintenance and repair of diaphragms",
       "country": "IS",
@@ -1342,12 +1824,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment | Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:4.202,52.001:https://ted.europa.eu/en/notice/-/detail/726565-2026",
       "feature_index": 58,
       "pin_id": "TED 726565-2026",
+      "source_label": "TED 726565-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        4.202,
+        52.001
+      ],
       "type": "tender",
       "title": "Framework Agreement regarding the supply of Heat Exchangers for Geothermal Projects",
       "country": "NL",
@@ -1365,12 +1855,20 @@
       "assignment_review_status": "green",
       "tags": "Equipment",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:2.348,48.853:https://ted.europa.eu/en/notice/-/detail/755201-2026",
       "feature_index": 59,
       "pin_id": "TED 755201-2026",
+      "source_label": "TED 755201-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        2.348,
+        48.853
+      ],
       "type": "tender",
       "title": "Maitrise d'oeuvre pour la réalisation et l'extension de réseaux de chaleurs parisiens",
       "country": "FR",
@@ -1388,12 +1886,20 @@
       "assignment_review_status": "green",
       "tags": "Engineering & Services",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     },
     {
       "record_kind": "pin",
+      "crosswalk_key": "pin:tender:9.376,47.426:https://ted.europa.eu/en/notice/-/detail/752632-2026",
       "feature_index": 60,
       "pin_id": "TED 752632-2026",
+      "source_label": "TED 752632-2026",
+      "source_label_role": "Citation text copied from properties.id. The map does not use it as a key.",
+      "coordinates": [
+        9.376,
+        47.426
+      ],
       "type": "tender",
       "title": "New Building 07B / Cost Group 241 / Geothermal Boreholes",
       "country": "CH",
@@ -1411,14 +1917,18 @@
       "assignment_review_status": "green",
       "tags": "Drilling",
       "withheld": "",
-      "intentionally_untagged": ""
+      "intentionally_untagged": "",
+      "source_label_unique": "yes"
     }
   ],
   "nationwide_not_pins": [
     {
       "record_kind": "nationwide",
+      "crosswalk_key": "nationwide:NL-SDE-2026:https://www.rvo.nl/subsidies-financiering/sde/aanvragen",
       "feature_index": 1,
       "pin_id": "NL-SDE-2026",
+      "source_label": "NL-SDE-2026",
+      "source_label_role": "Citation text copied from the nationwide row id. Not a map-pin key.",
       "type": "funding",
       "title": "Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++)",
       "country": "NL",
@@ -1442,8 +1952,11 @@
     },
     {
       "record_kind": "nationwide",
+      "crosswalk_key": "nationwide:HORIZON-CL5-2026-11-D3-06:https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06",
       "feature_index": 2,
       "pin_id": "HORIZON-CL5-2026-11-D3-06",
+      "source_label": "HORIZON-CL5-2026-11-D3-06",
+      "source_label_role": "Citation text copied from the nationwide row id. Not a map-pin key.",
       "type": "funding",
       "title": "Resource assessment for deep sedimentary and basement reservoirs",
       "country": "EU",
@@ -1469,8 +1982,11 @@
   "assignments_without_map_pin": [
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-9de0ce183518",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Flanders: gravity and magnetotelluric surveys, Brabant Massif",
       "country": "",
@@ -1492,8 +2008,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-ec604166b054",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Charles University: day-rate drilling services with rig for SYNERGYS",
       "country": "",
@@ -1515,8 +2034,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-d05c0a14e169",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "SYNERGYS research infrastructure: project page",
       "country": "",
@@ -1538,8 +2060,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-59f78e1299ca",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Litoměřice SYNERGYS/USES4HEAT: 100 shallow boreholes for BTES heat storage",
       "country": "",
@@ -1561,8 +2086,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-8b3e581f8bbf",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Pessac, Bellegrave: new geothermal heat network, Lot 01 'Forages'",
       "country": "",
@@ -1584,8 +2112,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-29adb0f88367",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "GEVES, Erdre-en-Anjou: geothermal heat pump, lots 'Forage' and 'PAC Géothermie'",
       "country": "",
@@ -1607,8 +2138,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-cb400222b004",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Saint-Pierre-d'Eyraud: school heat network, Lot 2 'Sondes géothermiques'",
       "country": "",
@@ -1630,8 +2164,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-4e68e8adc182",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Douvaine: Lot 2 'Sondes Géothermie'",
       "country": "",
@@ -1653,8 +2190,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-3689e40d4fdf",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Meyzieu: Lot 14 'Géothermie'",
       "country": "",
@@ -1676,8 +2216,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-3a5b5450ba6a",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Coriance, Alfortville: new geothermal triplet commissioned",
       "country": "",
@@ -1699,8 +2242,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-8349e7a0024a",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "GHT Drôme Ardèche Vercors (CH Valence): borehole field for CH Drôme Vivarais awarded",
       "country": "",
@@ -1722,8 +2268,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-2740fe9ceaa1",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Beauvaisis Terre d'Énergie: absorption heat pumps on a geothermal source",
       "country": "",
@@ -1745,8 +2294,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-f59d58e6a09e",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Pessac, Bellegrave: new geothermal heat network, Lot 01 'Forages' (aquifer wells)",
       "country": "",
@@ -1768,8 +2320,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-7de545d913d5",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Stadtwerke Prenzlau: surface plant for geothermal district heating",
       "country": "",
@@ -1791,8 +2346,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-aa7cfe2d3b21",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "SWE Energie, Erfurt: processing and interpretation of 3D and wide-angle seismic",
       "country": "",
@@ -1814,8 +2372,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-47cb59235f0d",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Schwedt/Oder: Lot 32 'Geothermie'",
       "country": "",
@@ -1837,8 +2398,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-8935f5a87f1d",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "WärmeWerk Wörth: wireline logging for two deep geothermal wells",
       "country": "",
@@ -1860,8 +2424,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-c9772654eb72",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Rheinsberg: general planning for a hydrothermal doublet",
       "country": "",
@@ -1883,8 +2450,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-171e56e03ec8",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Fraunhofer IEG, Reallabor Geothermie Rheinland: 2D seismic survey",
       "country": "",
@@ -1906,8 +2476,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-5bd1ec9ecd62",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "TU Munich: software to assess deep geothermal projects in Bavaria",
       "country": "",
@@ -1929,8 +2502,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-b2d86db527f7",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Federal funding call 'Explorationsinitiative Geothermie'",
       "country": "",
@@ -1952,8 +2528,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-e0a8612e8e23",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Eavor, Geretsried: drilling rigs withdrawn, second loop postponed",
       "country": "",
@@ -1975,8 +2554,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-fd86a5996c5c",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "GeoHardt GmbH, Schwetzingen: drilling planning and supervision for up to three doublets awarded to BESTEC",
       "country": "",
@@ -1998,8 +2580,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-e7b90a42c5fe",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Kaba: new 1,200 m thermal well, heat centre and heat network",
       "country": "",
@@ -2021,8 +2606,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-c376ce14421a",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Mezőkövesd (Zsóry spa): new thermal well and well refurbishment",
       "country": "",
@@ -2044,8 +2632,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-3b8a95e0a5a2",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "University of Szeged: 38,000 GJ of geothermal heat",
       "country": "",
@@ -2067,8 +2658,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-e54fb7f3ecf8",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "KEHOP Plusz 4.2.4-25: grants to reduce geothermal drilling risk",
       "country": "",
@@ -2090,8 +2684,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-8f5807026097",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25)",
       "country": "",
@@ -2113,8 +2710,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-72d9cfe74afb",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Verkís, Akureyri: pre-insulated pipe for a geothermal heating main",
       "country": "",
@@ -2136,8 +2736,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-69fdbc971054",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Veitur, Reykjavík: hot-water drilling at Laugardalur",
       "country": "",
@@ -2159,8 +2762,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-36e0455da189",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Grangegorman Development Agency, Dublin: geothermal engineering consultancy framework",
       "country": "",
@@ -2182,8 +2788,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-001237fa8f83",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Enel: supplier qualification systems for geothermal",
       "country": "",
@@ -2205,8 +2814,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-a34b4517197f",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Kalisz: GT-1 geothermal exploration well",
       "country": "",
@@ -2228,8 +2840,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-7f5e26124d0d",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "EDA Renováveis, Azores: Pico Vermelho geothermal plant substation (Mota-Engil, awarded Jul 2025): contract modification",
       "country": "",
@@ -2251,8 +2866,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-9cfc70046803",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Housing fund, Kranj: hydrogeological supervision for geothermal wells",
       "country": "",
@@ -2274,8 +2892,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-15ba810ff5ee",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "SGU: four-year drilling framework with geoenergy lots",
       "country": "",
@@ -2297,8 +2918,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-81ed4d7d63ac",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "Zollikon, Rüterwis school: brine/water heat pumps on a borehole field",
       "country": "",
@@ -2320,8 +2944,11 @@
     },
     {
       "record_kind": "assignment_without_map_pin",
+      "crosswalk_key": "assignment:AUD-6138f59c49ce",
       "feature_index": "",
       "pin_id": "",
+      "source_label": "",
+      "source_label_role": "",
       "type": "",
       "title": "City of Zurich, Entlisberg: heat generation incl. borehole drilling awarded",
       "country": "",
