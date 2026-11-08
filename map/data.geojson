@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
- "generated": "2026-11-02T00:36:00+01:00",
- "tender_data": "2026-11-01T23:19+01:00",
+ "generated": "2026-11-08T21:24:00+01:00",
+ "tender_data": "2026-11-08T21:21+01:00",
  "features": [
   {
    "type": "Feature",
@@ -338,6 +338,28 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     19.357,
+     52.232
+    ]
+   },
+   "properties": {
+    "type": "project",
+    "country": "PL",
+    "title": "Kutno secures more than PLN 59m for geothermal heat",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
+    "approx": false,
+    "loc_note": null,
+    "loc_source": "map script (issues/src)",
+    "id": "NFOŚiGW release, 4 Nov 2026",
+    "source_url": "https://www.gov.pl/web/nfosigw/geotermia-dla-kutna-dzieki-srodkom-z-nfosigw-powstanie-nowoczesna-cieplownia-wykorzystujaca-energie-z-wnetrza-ziemi-"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.806,
      53.219
     ]
@@ -646,25 +668,21 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     21.274,
-     47.358
+     4.876,
+     52.338
     ]
    },
    "properties": {
-    "type": "tender",
-    "country": "HU",
-    "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
-    "buyer": "HBMFÜ Hajdú-Bihar Megyei Fejlesztési Ügynökség Nonprofit Korlátolt Felelősségű Társaság · Kaba Város Önkormányzata",
-    "id": "TED 729019-2026",
-    "deadline": "03 Nov 2026, 10:00 CET (notice: 11:00 UTC+02:00)",
-    "deadline_iso": "2026-11-03T11:00:00+02:00",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/729019-2026",
-    "checked": "2026-11-01",
-    "issue": 5,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
+    "type": "project",
+    "country": "NL",
+    "title": "OMV selected for Amsterdam–Amstelveen development",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
     "approx": true,
-    "loc_note": null,
-    "loc_source": "OSM Nominatim, town centre: Kaba, Püspökladányi járás, Hajdú-Bihar megye, Észak-Alföld, Alföld és Észak, 4183, Magyarország"
+    "loc_note": "Drilling site still to be selected; pin between Amsterdam and Amstelveen",
+    "loc_source": "issues/src/issue7_content.py: midpoint Amsterdam/Amstelveen (region marker)",
+    "id": "TED 769576-2026 (award), 5 Nov 2026",
+    "source_url": "https://ted.europa.eu/en/notice/-/detail/769576-2026"
    }
   },
   {
@@ -672,25 +690,21 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     8.729,
-     47.499
+     27.5958,
+     37.8732
     ]
    },
    "properties": {
-    "type": "tender",
-    "country": "CH",
-    "title": "Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden",
-    "buyer": "Amt für Städtebau",
-    "id": "TED 643535-2026",
-    "deadline": "04 Nov 2026, 12:00 CET",
-    "deadline_iso": "2026-11-04T12:00:00+01:00",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/643535-2026",
-    "checked": "2026-11-01",
-    "issue": 1,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-1-prenzlau-plant-kaba-well-erzurum-licences",
+    "type": "project",
+    "country": "TR",
+    "title": "Exergy signs a 33 MWe geothermal plant contract",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
     "approx": true,
-    "loc_note": null,
-    "loc_source": "OSM Nominatim, town centre: Winterthur, Bezirk Winterthur, Zürich, Schweiz/Suisse/Svizzera/Svizra"
+    "loc_note": "Mehmet Ege plant, Germencik district (Aydın); pin at town",
+    "loc_source": "issues/src/issue7_content.py: Germencik town",
+    "id": "Exergy release, 5 Nov 2026",
+    "source_url": "https://exergyint.com/wp-content/uploads/2026/11/Exergy-Signs-New-Contract-With-Maren-Elektrik-Uretim-Final.pdf"
    }
   },
   {
@@ -698,129 +712,21 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     1.066,
-     47.793
+     7.6998,
+     51.9882
     ]
    },
    "properties": {
-    "type": "tender",
-    "country": "FR",
-    "title": "Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.",
-    "buyer": "Synd. Mixte Collecte des déchets ménagers ValDem",
-    "id": "BOAMP 26-95465",
-    "deadline": "05 Nov 2026, 12:00 CET",
-    "deadline_iso": "2026-11-05T12:00:00+01:00",
-    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95465",
-    "checked": "2026-11-01",
-    "issue": 2,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach",
+    "type": "project",
+    "country": "DE",
+    "title": "Münster investigates another cold heat-network site",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
     "approx": true,
-    "loc_note": null,
-    "loc_source": "OSM Nominatim, town centre: Vendôme, Loir-et-Cher, Centre-Val de Loire, France métropolitaine, 41100, France"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     14.1318,
-     50.5341
-    ]
-   },
-   "properties": {
-    "type": "tender",
-    "country": "CZ",
-    "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES",
-    "buyer": "Univerzita Karlova",
-    "id": "TED 679859-2026",
-    "deadline": "06 Nov 2026, 10:00 CET",
-    "deadline_iso": "2026-11-06T10:00:00+01:00",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/679859-2026",
-    "checked": "2026-11-01",
-    "issue": 2,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     0.213,
-     45.826
-    ]
-   },
-   "properties": {
-    "type": "tender",
-    "country": "FR",
-    "title": "Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface",
-    "buyer": "Mairie d'Aussac-Vadalle",
-    "id": "BOAMP 26-101091",
-    "deadline": "06 Nov 2026, 12:00 CET",
-    "deadline_iso": "2026-11-06T12:00:00+01:00",
-    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
-    "checked": "2026-11-01",
-    "issue": 4,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
-    "approx": true,
-    "loc_note": null,
-    "loc_source": "OSM Nominatim, town centre: Aussac-Vadalle, Confolens, Charente, Nouvelle-Aquitaine, France métropolitaine, 16560, France"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     2.388,
-     49.007
-    ]
-   },
-   "properties": {
-    "type": "tender",
-    "country": "FR",
-    "title": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
-    "buyer": "SYND INTERCOM VILLIERS LE BEL-GONESSE",
-    "id": "BOAMP 26-102183",
-    "deadline": "06 Nov 2026, 12:00 CET",
-    "deadline_iso": "2026-11-06T12:00:00.000",
-    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102183",
-    "checked": "2026-11-01",
-    "issue": null,
-    "issue_url": null,
-    "approx": true,
-    "loc_note": null,
-    "loc_source": "OSM Nominatim, town centre: Villiers-le-Bel, Sarcelles, Val-d'Oise, Île-de-France, France métropolitaine, 95400, France"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     14.1318,
-     50.5341
-    ]
-   },
-   "properties": {
-    "type": "tender",
-    "country": "CZ",
-    "title": "„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“",
-    "buyer": "Česká geologická služba · Univerzita Karlova",
-    "id": "TED 730837-2026",
-    "deadline": "06 Nov 2026, 15:00 CET",
-    "deadline_iso": "2026-11-06T15:00:00+01:00",
-    "source_url": "https://ted.europa.eu/en/notice/-/detail/730837-2026",
-    "checked": "2026-11-01",
-    "issue": 5,
-    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
-    "approx": false,
-    "loc_note": null,
-    "loc_source": "map script (issues/src)"
+    "loc_note": "Kötterstraße, Handorf; pin at district",
+    "loc_source": "issues/src/issue7_content.py: Handorf district, Münster",
+    "id": "Stadtwerke Münster release, 2 Nov 2026",
+    "source_url": "https://www.stadtwerke-muenster.de/unternehmen/presse/pressemitteilungen/434621/stadtwerke-suchen-nach-erdwarme-an-der-kotterstrasse"
    }
   },
   {
@@ -841,7 +747,7 @@
     "deadline": "09 Nov 2026, 10:00 CET",
     "deadline_iso": "2026-11-09T10:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/684005-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 2,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach",
     "approx": false,
@@ -867,7 +773,7 @@
     "deadline": "09 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-09T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/698651-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 3,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
     "approx": false,
@@ -893,7 +799,7 @@
     "deadline": "10 Nov 2026, 16:00 CET",
     "deadline_iso": "2026-11-10T16:00:00+01:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 3,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
     "approx": false,
@@ -919,7 +825,7 @@
     "deadline": "11 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-11T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/701161-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 4,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
     "approx": true,
@@ -942,10 +848,10 @@
     "title": "Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland",
     "buyer": "Grangegorman Development Agency_564",
     "id": "TED 737356-2026",
-    "deadline": "12 Nov 2026, 15:00 CET",
+    "deadline": "12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time",
     "deadline_iso": "2026-11-12T15:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/737356-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 6,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2",
     "approx": true,
@@ -971,7 +877,7 @@
     "deadline": "13 Nov 2026, 10:00 CET",
     "deadline_iso": "2026-11-13T10:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/691583-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 3,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
     "approx": true,
@@ -997,7 +903,7 @@
     "deadline": "13 Nov 2026, 10:00 CET",
     "deadline_iso": "2026-11-13T10:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/709263-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 4,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
     "approx": true,
@@ -1023,7 +929,7 @@
     "deadline": "16 Nov 2026, 16:00 CET",
     "deadline_iso": "2026-11-16T16:00:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": true,
@@ -1049,7 +955,7 @@
     "deadline": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)",
     "deadline_iso": "2026-11-16T17:00:00+01:00",
     "source_url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 3,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
     "approx": true,
@@ -1075,7 +981,7 @@
     "deadline": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)",
     "deadline_iso": "2026-11-17T12:00:00+02:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 4,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
     "approx": true,
@@ -1101,12 +1007,38 @@
     "deadline": "18 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-18T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 3,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-3-ferney-well-linnich-boreholes-seaham-heat",
     "approx": true,
     "loc_note": "UniGéo spans Pantin, Les Lilas, Le Pré-Saint-Gervais, Romainville; pin at Pantin",
     "loc_source": "OSM Nominatim, town centre: Pantin, Bobigny, Seine-Saint-Denis, Île-de-France, France métropolitaine, 93500, France"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1609,
+     45.8177
+    ]
+   },
+   "properties": {
+    "type": "tender",
+    "country": "FR",
+    "title": "Travaux de rénovation énergétique avec la mise en place d'une PAC Géothermique sur sondes verticales sur le bâtiment \" MAIRIE \"",
+    "buyer": "Commune de Croze",
+    "id": "BOAMP 26-103155",
+    "deadline": "18 Nov 2026, 12:00 CET",
+    "deadline_iso": "2026-11-18T12:00:00Z",
+    "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
+    "checked": "2026-11-08",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
+    "approx": true,
+    "loc_note": "Town hall (mairie) renovation; pin at village",
+    "loc_source": "OSM Nominatim 8 Nov 2026, village: Croze, Aubusson, Creuse (relation 118574)"
    }
   },
   {
@@ -1127,7 +1059,7 @@
     "deadline": "20 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-20T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": false,
@@ -1153,7 +1085,7 @@
     "deadline": "21 Nov 2026, 23:00 CET",
     "deadline_iso": "2026-11-21T23:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": false,
@@ -1179,7 +1111,7 @@
     "deadline": "23 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-23T12:00:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": false,
@@ -1205,7 +1137,7 @@
     "deadline": "23 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-23T12:00:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": null,
     "issue_url": null,
     "approx": true,
@@ -1231,7 +1163,7 @@
     "deadline": "23 Nov 2026, 14:00 CET (notice: 15:00 UTC+02:00)",
     "deadline_iso": "2026-11-23T15:00:00+02:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 4,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-4-antony-concession-romanian-wells-nigde",
     "approx": false,
@@ -1257,12 +1189,38 @@
     "deadline": "24 Nov 2026, 10:00 CET",
     "deadline_iso": "2026-11-24T10:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": false,
     "loc_note": null,
     "loc_source": "map script (issues/src)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.274,
+     47.358
+    ]
+   },
+   "properties": {
+    "type": "tender",
+    "country": "HU",
+    "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
+    "buyer": "HBMFÜ Hajdú-Bihar Megyei Fejlesztési Ügynökség Nonprofit Korlátolt Felelősségű Társaság · Kaba Város Önkormányzata",
+    "id": "TED 763136-2026",
+    "deadline": "24 Nov 2026, 11:00 CET",
+    "deadline_iso": "2026-11-24T11:00:00+01:00",
+    "source_url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
+    "checked": "2026-11-08",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
+    "approx": true,
+    "loc_note": null,
+    "loc_source": "OSM Nominatim, town centre: Kaba, Püspökladányi járás, Hajdú-Bihar megye, Észak-Alföld, Alföld és Észak, 4183, Magyarország"
    }
   },
   {
@@ -1283,7 +1241,7 @@
     "deadline": "24 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-24T12:00:00.000+01:00",
     "source_url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 2,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-2-synergys-kit-alsace-well-geiselbullach",
     "approx": false,
@@ -1309,7 +1267,7 @@
     "deadline": "26 Nov 2026, 10:00 CET",
     "deadline_iso": "2026-11-26T10:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": false,
@@ -1335,7 +1293,7 @@
     "deadline": "27 Nov 2026, 12:00 CET",
     "deadline_iso": "2026-11-27T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 6,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2",
     "approx": false,
@@ -1361,7 +1319,7 @@
     "deadline": "30 Nov 2026, 11:00 CET (notice: 10:00 UTC+00:00)",
     "deadline_iso": "2026-11-30T10:00:00+00:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/754152-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 6,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2",
     "approx": true,
@@ -1387,11 +1345,63 @@
     "deadline": "30 Nov 2026, 18:00 CET (notice: 17:00 UTC+00:00)",
     "deadline_iso": "2026-11-30T17:00:00+00:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 5,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-5-kutno-wells-hvc-framework-berlin-la-palma",
     "approx": true,
     "loc_note": "Framework covers lots in Westland and Slochteren; pin at Westland",
+    "loc_source": "map script (issues/src)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.1486,
+     46.2546
+    ]
+   },
+   "properties": {
+    "type": "tender",
+    "country": "HU",
+    "title": "Geotermikus hőenergia beszerzés Szegedi Szakképzés",
+    "buyer": "Szegedi Szakképzési Centrum",
+    "id": "TED 759601-2026",
+    "deadline": "02 Dec 2026, 10:00 CET",
+    "deadline_iso": "2026-12-02T10:00:00+01:00",
+    "source_url": "https://ted.europa.eu/en/notice/-/detail/759601-2026",
+    "checked": "2026-11-08",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
+    "approx": true,
+    "loc_note": "Heat supply for the Csonka János school premises; pin at town, not a drilling site",
+    "loc_source": "issues/src/issue7_content.py: Szeged town centroid"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6334,
+     48.118
+    ]
+   },
+   "properties": {
+    "type": "tender",
+    "country": "DE",
+    "title": "SV-KWE-261103-004 - TW - Geothermie Michaelibad - Wärmestation - Spezialtiefbau Baugrube",
+    "buyer": "SWM Services GmbH",
+    "id": "TED 766383-2026",
+    "deadline": "07 Dec 2026, 13:00 CET",
+    "deadline_iso": "2026-12-07T13:00:00+01:00",
+    "source_url": "https://ted.europa.eu/en/notice/-/detail/766383-2026",
+    "checked": "2026-11-08",
+    "issue": 7,
+    "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-7-munich-works-kaba-reset-kutno-funding",
+    "approx": false,
+    "loc_note": null,
     "loc_source": "map script (issues/src)"
    }
   },
@@ -1413,7 +1423,7 @@
     "deadline": "08 Dec 2026, 12:00 CET",
     "deadline_iso": "2026-12-08T12:00:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 6,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2",
     "approx": true,
@@ -1439,7 +1449,7 @@
     "deadline": "08 Dec 2026, 23:59 CET",
     "deadline_iso": "2026-12-08T23:59:00+01:00",
     "source_url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
-    "checked": "2026-11-01",
+    "checked": "2026-11-08",
     "issue": 6,
     "issue_url": "https://spudsignal.beehiiv.com/p/spudsignal-6-alton-paused-paris-heat-italys-fer-2",
     "approx": false,
