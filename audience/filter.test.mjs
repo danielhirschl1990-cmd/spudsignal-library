@@ -308,6 +308,8 @@ test("Library summaries and source links for the four examples are intact", () =
     assert.ok(indexHtml.includes(quote), quote);
   }
   assert.equal((indexHtml.match(/class="libcard"/g) || []).length, 92);
+  assert.equal((indexHtml.match(/id="audience-bar"/g) || []).length, 1);
+  assert.equal((indexHtml.match(/id="aud-all"/g) || []).length, 1);
 });
 
 test("web uses the original SVG symbols and email uses PNG with a 2x source", () => {

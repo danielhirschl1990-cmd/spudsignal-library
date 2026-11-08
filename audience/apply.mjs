@@ -129,7 +129,19 @@ function stampLibrary(html, byUrl) {
   if (!html.includes("/audience/library.js")) {
     html = html.replace("</body>", '<script src="/audience/filter.js"></script>\n<script src="/audience/library.js"></script>\n</body>');
   }
-  return html.replace(/<!-- map-audience-limit --><p class="maplimit">The map does not filter by audience\.<\/p>\n?/g, "");
+  html = html.replace(/<!-- map-audience-limit --><p class="maplimit">The map does not filter by audience\.<\/p>\n?/g, "");
+  html = keepFirstBlock(html, "<!-- audience-notes-start -->", "<!-- audience-notes-end -->");
+  html = keepFirstBlock(html, "<!-- audience-bar-start -->", "<!-- audience-bar-end -->");
+  return html;
+}
+
+function keepFirstBlock(html, start, end) {
+  const re = new RegExp(start.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "[\\s\\S]*?" + end.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+  let seen = 0;
+  return html.replace(re, (block) => {
+    seen += 1;
+    return seen === 1 ? block : "";
+  });
 }
 
 const SEL_ORIGINAL = 'var sel={kind:{},tag:{},country:{}},tab="open";\n[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.addEventListener("click",function(){var g=b.dataset.g,v=b.dataset.v;if(sel[g][v])delete sel[g][v];else sel[g][v]=1;b.setAttribute("aria-pressed",!!sel[g][v]);refresh();});});\ndocument.getElementById("reset").addEventListener("click",function(){sel={kind:{},tag:{},country:{}};[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.setAttribute("aria-pressed","false");});refresh();});';
