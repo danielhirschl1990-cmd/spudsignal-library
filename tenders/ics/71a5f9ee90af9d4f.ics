@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Paris
+TZID:Europe/Budapest
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -23,23 +23,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:4d8245a64661a9ca@library.spudsignal.com
+UID:71a5f9ee90af9d4f@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique et m
- ise en place d’un système de chauffage par géothermie sur sondes dans
-  deux bâtiments situés au siège social du S
-DTSTART;TZID=Europe/Paris:20261105T120000
-DTEND;TZID=Europe/Paris:20261105T123000
-DESCRIPTION:Source: BOAMP 26-95465. Published by source: 02 Oct 2026 · La
- st checked by SpudSignal: 01 Nov 2026. Deadlines can change through corri
- genda. This calendar entry does NOT update itself. For automatic updates
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Deadline: Távhőszolgáltatási rendszer kialakít
+ ása Kabán
+DTSTART;TZID=Europe/Budapest:20261124T110000
+DTEND;TZID=Europe/Budapest:20261124T113000
+DESCRIPTION:Source: TED 763136-2026. Published by source: 03 Nov 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
- s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
- is/?q=idweb:26-95465. No guarantee of completeness or accuracy. As publis
- hed: 05 Nov 2026\, 12:00 CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-95465
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/763136-2026. No guarantee of completeness or accuracy. As pub
+ lished: 24 Nov 2026\, 11:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/763136-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM

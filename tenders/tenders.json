@@ -1,223 +1,7 @@
 {
- "generated": "2026-11-01T23:19+01:00",
+ "generated": "2026-11-08T21:21+01:00",
  "note": "As published by source, no guarantee – check the original.",
  "entries": [
-  {
-   "uid": "ffefc6bd40ec17bb",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 729019-2026",
-   "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
-   "title_official": null,
-   "buyer": "HBMFÜ Hajdú-Bihar Megyei Fejlesztési Ügynökség Nonprofit Korlátolt Felelősségű Társaság · Kaba Város Önkormányzata",
-   "country": "HU",
-   "tz": "Europe/Budapest",
-   "deadline_iso": "2026-11-03T11:00:00+02:00",
-   "deadline_txt": "03 Nov 2026, 10:00 CET (notice: 11:00 UTC+02:00)",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "45231000",
-    "45232140",
-    "45251250"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/729019-2026",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [
-    "Drilling",
-    "Equipment"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "7b5311b7bce42b93",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 643535-2026",
-   "title": "Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden",
-   "title_official": null,
-   "buyer": "Amt für Städtebau",
-   "country": "CH",
-   "tz": "Europe/Zurich",
-   "deadline_iso": "2026-11-04T12:00:00+01:00",
-   "deadline_txt": "04 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Shallow BHE"
-   ],
-   "cpv": [
-    "45000000"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/643535-2026",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "untagged"
-  },
-  {
-   "uid": "4d8245a64661a9ca",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-95465",
-   "title": "Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.",
-   "title_official": null,
-   "buyer": "Synd. Mixte Collecte des déchets ménagers ValDem",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-05T12:00:00+01:00",
-   "deadline_txt": "05 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Shallow BHE"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95465",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [
-    "Drilling"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "00be19d0c9c0cbfd",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 679859-2026",
-   "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES",
-   "title_official": null,
-   "buyer": "Univerzita Karlova",
-   "country": "CZ",
-   "tz": "Europe/Prague",
-   "deadline_iso": "2026-11-06T10:00:00+01:00",
-   "deadline_txt": "06 Nov 2026, 10:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Deep well"
-   ],
-   "cpv": [
-    "43130000",
-    "43132500",
-    "43612000",
-    "43612200"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/679859-2026",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [
-    "Equipment"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "59eca9045bac22e1",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-101091",
-   "title": "Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface",
-   "title_official": null,
-   "buyer": "Mairie d'Aussac-Vadalle",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-06T12:00:00+01:00",
-   "deadline_txt": "06 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Shallow BHE"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [
-    "Drilling",
-    "Equipment"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "41cabab7a5f09b40",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-102183",
-   "title": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
-   "title_official": null,
-   "buyer": "SYND INTERCOM VILLIERS LE BEL-GONESSE",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-06T12:00:00.000",
-   "deadline_txt": "06 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102183",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "untagged"
-  },
-  {
-   "uid": "fbe0bf1d339c6850",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 730837-2026",
-   "title": "„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“",
-   "title_official": null,
-   "buyer": "Česká geologická služba · Univerzita Karlova",
-   "country": "CZ",
-   "tz": "Europe/Prague",
-   "deadline_iso": "2026-11-06T15:00:00+01:00",
-   "deadline_txt": "06 Nov 2026, 15:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "71350000",
-    "71351000",
-    "71351730"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/730837-2026",
-   "checked": "2026-11-01",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-01",
-   "audience": [
-    "Drilling"
-   ],
-   "audience_status": "reviewed"
-  },
   {
    "uid": "7095f2787aa83db3",
    "kind": "tender",
@@ -242,11 +26,11 @@
     "43612700"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Equipment"
    ],
@@ -273,11 +57,11 @@
     "45262220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
@@ -303,11 +87,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -336,11 +120,11 @@
     "71521000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -357,9 +141,9 @@
    "country": "IE",
    "tz": "Europe/Dublin",
    "deadline_iso": "2026-11-12T15:00:00+01:00",
-   "deadline_txt": "12 Nov 2026, 15:00 CET",
+   "deadline_txt": "12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time",
    "deadline_label": null,
-   "time_note": null,
+   "time_note": "Time uncertain: TED encodes 15:00 +01:00 (= 14:00 Irish time); the buyer's eTenders page shows 15:00 without a time zone. Confirm on the buyer portal (Reviewer, 8 Nov 2026).",
    "tags": [
     "Other"
    ],
@@ -375,11 +159,11 @@
     "79415200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/737356-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -406,11 +190,11 @@
     "38540000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Equipment"
    ],
@@ -439,11 +223,11 @@
     "45262220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
@@ -468,11 +252,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -493,11 +277,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Project owners & developers"
    ],
@@ -522,11 +306,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -554,15 +338,42 @@
     "71621000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
    "audience_status": "reviewed"
+  },
+  {
+   "uid": "76d3e3d4f7f4b6c3",
+   "kind": "tender",
+   "src": "BOAMP",
+   "id": "BOAMP 26-103155",
+   "title": "Travaux de rénovation énergétique avec la mise en place d'une PAC Géothermique sur sondes verticales sur le bâtiment \" MAIRIE \"",
+   "title_official": null,
+   "buyer": "Commune de Croze",
+   "country": "FR",
+   "tz": "Europe/Paris",
+   "deadline_iso": "2026-11-18T12:00:00Z",
+   "deadline_txt": "18 Nov 2026, 12:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [],
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
+   "checked": "2026-11-08",
+   "flag": null,
+   "first_seen": "2026-11-08",
+   "change": null,
+   "accessed": "2026-11-08",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "3942db59a0569a17",
@@ -586,11 +397,11 @@
     "45255500"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -622,11 +433,11 @@
     "45232411"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -649,11 +460,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Equipment"
    ],
@@ -678,11 +489,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
@@ -714,11 +525,11 @@
     "71356200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling",
     "Equipment",
@@ -755,15 +566,46 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
    "audience_status": "reviewed"
+  },
+  {
+   "uid": "71a5f9ee90af9d4f",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 763136-2026",
+   "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
+   "title_official": null,
+   "buyer": "HBMFÜ Hajdú-Bihar Megyei Fejlesztési Ügynökség Nonprofit Korlátolt Felelősségű Társaság · Kaba Város Önkormányzata",
+   "country": "HU",
+   "tz": "Europe/Budapest",
+   "deadline_iso": "2026-11-24T11:00:00+01:00",
+   "deadline_txt": "24 Nov 2026, 11:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45231000",
+    "45232140",
+    "45251250"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
+   "checked": "2026-11-08",
+   "flag": null,
+   "first_seen": "2026-11-08",
+   "change": null,
+   "accessed": "2026-11-08",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "c063c46f5a23a0b2",
@@ -785,11 +627,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -817,11 +659,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
@@ -844,11 +686,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://www.rvo.nl/subsidies-financiering/sde/aanvragen",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Project owners & developers"
    ],
@@ -876,11 +718,11 @@
     "71351220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -907,11 +749,11 @@
     "50531000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754152-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Equipment",
     "Engineering & Services"
@@ -941,11 +783,11 @@
     "42511100"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Equipment"
    ],
@@ -968,13 +810,73 @@
    "tags": [],
    "cpv": [],
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [],
    "audience_status": "untagged"
+  },
+  {
+   "uid": "33fedeabccf98de1",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 759601-2026",
+   "title": "Geotermikus hőenergia beszerzés Szegedi Szakképzés",
+   "title_official": null,
+   "buyer": "Szegedi Szakképzési Centrum",
+   "country": "HU",
+   "tz": "Europe/Budapest",
+   "deadline_iso": "2026-12-02T10:00:00+01:00",
+   "deadline_txt": "02 Dec 2026, 10:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "09320000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/759601-2026",
+   "checked": "2026-11-08",
+   "flag": null,
+   "first_seen": "2026-11-08",
+   "change": null,
+   "accessed": "2026-11-08",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "9bb8bc940f00ee6c",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 766383-2026",
+   "title": "SV-KWE-261103-004 - TW - Geothermie Michaelibad - Wärmestation - Spezialtiefbau Baugrube",
+   "title_official": null,
+   "buyer": "SWM Services GmbH",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2026-12-07T13:00:00+01:00",
+   "deadline_txt": "07 Dec 2026, 13:00 CET",
+   "deadline_label": "Requests to participate",
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45112000",
+    "45262210",
+    "45262212"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/766383-2026",
+   "checked": "2026-11-08",
+   "flag": null,
+   "first_seen": "2026-11-08",
+   "change": null,
+   "accessed": "2026-11-08",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "ed4f6d6f9dde823e",
@@ -997,11 +899,11 @@
     "71321200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Engineering & Services"
    ],
@@ -1028,11 +930,11 @@
     "45000000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
-   "checked": "2026-11-01",
+   "checked": "2026-11-08",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-01",
+   "accessed": "2026-11-08",
    "audience": [
     "Drilling"
    ],
@@ -1125,6 +1027,34 @@
    "kind": "funding"
   },
   {
+   "uid": "7b5311b7bce42b93",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 04 Nov 2026, 12:00 CET",
+   "title": "Schulhaus Langwiesen Erweiterung und Sanierung; BKP 242 Erdsonden",
+   "url": "https://ted.europa.eu/en/notice/-/detail/643535-2026",
+   "deadline_iso": "2026-11-04T12:00:00+01:00",
+   "deadline_txt": "04 Nov 2026, 12:00 CET",
+   "src": "TED",
+   "id": "TED 643535-2026",
+   "country": "CH",
+   "kind": "tender"
+  },
+  {
+   "uid": "4d8245a64661a9ca",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 05 Nov 2026, 12:00 CET",
+   "title": "Travaux de rénovation énergétique et mise en place d’un système de chauffage par géothermie sur sondes dans deux bâtiments situés au siège social du Syndicat ValDem.",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95465",
+   "deadline_iso": "2026-11-05T12:00:00+01:00",
+   "deadline_txt": "05 Nov 2026, 12:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-95465",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
    "uid": "cdd0f1c5dd4de2ff",
    "status": "removed",
    "gone": "2026-11-01",
@@ -1139,6 +1069,34 @@
    "kind": "tender"
   },
   {
+   "uid": "00be19d0c9c0cbfd",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 06 Nov 2026, 10:00 CET",
+   "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES",
+   "url": "https://ted.europa.eu/en/notice/-/detail/679859-2026",
+   "deadline_iso": "2026-11-06T10:00:00+01:00",
+   "deadline_txt": "06 Nov 2026, 10:00 CET",
+   "src": "TED",
+   "id": "TED 679859-2026",
+   "country": "CZ",
+   "kind": "tender"
+  },
+  {
+   "uid": "59eca9045bac22e1",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 06 Nov 2026, 12:00 CET",
+   "title": "Réalisation d'un champ de sondes géothermiques verticales et de son réseau de distribution de surface",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
+   "deadline_iso": "2026-11-06T12:00:00+01:00",
+   "deadline_txt": "06 Nov 2026, 12:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-101091",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
    "uid": "d46da94459df81b5",
    "status": "removed",
    "gone": "2026-10-25",
@@ -1149,6 +1107,48 @@
    "deadline_txt": "06 Nov 2026, 15:00 CET (updated; TED 730837-2026)",
    "src": "TED",
    "id": "TED 730837-2026 (orig. 670200-2026)",
+   "country": "CZ",
+   "kind": "tender"
+  },
+  {
+   "uid": "ffefc6bd40ec17bb",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 03 Nov 2026, 10:00 CET (notice: 11:00 UTC+02:00)",
+   "title": "Távhőszolgáltatási rendszer kialakítása Kabán",
+   "url": "https://ted.europa.eu/en/notice/-/detail/729019-2026",
+   "deadline_iso": "2026-11-03T11:00:00+02:00",
+   "deadline_txt": "03 Nov 2026, 10:00 CET (notice: 11:00 UTC+02:00)",
+   "src": "TED",
+   "id": "TED 729019-2026",
+   "country": "HU",
+   "kind": "tender"
+  },
+  {
+   "uid": "41cabab7a5f09b40",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 06 Nov 2026, 12:00 CET",
+   "title": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102183",
+   "deadline_iso": "2026-11-06T12:00:00.000",
+   "deadline_txt": "06 Nov 2026, 12:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-102183",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
+   "uid": "fbe0bf1d339c6850",
+   "status": "removed",
+   "gone": "2026-11-08",
+   "reason": "deadline passed 06 Nov 2026, 15:00 CET",
+   "title": "„Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“",
+   "url": "https://ted.europa.eu/en/notice/-/detail/730837-2026",
+   "deadline_iso": "2026-11-06T15:00:00+01:00",
+   "deadline_txt": "06 Nov 2026, 15:00 CET",
+   "src": "TED",
+   "id": "TED 730837-2026",
    "country": "CZ",
    "kind": "tender"
   },

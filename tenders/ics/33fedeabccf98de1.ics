@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Paris
+TZID:Europe/Budapest
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -23,22 +23,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:59eca9045bac22e1@library.spudsignal.com
+UID:33fedeabccf98de1@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Réalisation d'un champ de sondes géothe
- rmiques verticales et de son réseau de distribution de surface
-DTSTART;TZID=Europe/Paris:20261106T120000
-DTEND;TZID=Europe/Paris:20261106T123000
-DESCRIPTION:Source: BOAMP 26-101091. Published by source: 16 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Deadline: Geotermikus hőenergia beszerzés Szegedi
+  Szakképzés
+DTSTART;TZID=Europe/Budapest:20261202T100000
+DTEND;TZID=Europe/Budapest:20261202T103000
+DESCRIPTION:Source: TED 759601-2026. Published by source: 02 Nov 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
- s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
- is/?q=idweb:26-101091. No guarantee of completeness or accuracy. As publi
- shed: 06 Nov 2026\, 12:00 CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-101091
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/759601-2026. No guarantee of completeness or accuracy. As pub
+ lished: 02 Dec 2026\, 10:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/759601-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM

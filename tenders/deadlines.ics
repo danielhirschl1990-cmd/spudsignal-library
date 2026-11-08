@@ -181,228 +181,16 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:ffefc6bd40ec17bb@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261025T175833Z
-SUMMARY:[Check source] Deadline: Távhőszolgáltatási rendszer kialakít
- ása Kabán
-DTSTART;TZID=Europe/Budapest:20261103T100000
-DTEND;TZID=Europe/Budapest:20261103T103000
-DESCRIPTION:Source: TED 729019-2026. Published by source: 21 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://ted.europa.eu/en/notice/-/detail/729019-2026
- . No guarantee of completeness or accuracy. As published: 03 Nov 2026\, 1
- 0:00 CET (notice: 11:00 UTC+02:00).
-URL:https://ted.europa.eu/en/notice/-/detail/729019-2026
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:7b5311b7bce42b93@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Schulhaus Langwiesen Erweiterung und Sani
- erung\; BKP 242 Erdsonden
-DTSTART;TZID=Europe/Zurich:20261104T120000
-DTEND;TZID=Europe/Zurich:20261104T123000
-DESCRIPTION:Source: TED 643535-2026. Published by source: 18 Sep 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://ted.europa.eu/en/notice/-/detail/643535-2026
- . No guarantee of completeness or accuracy. As published: 04 Nov 2026\, 1
- 2:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/643535-2026
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4d8245a64661a9ca@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique et m
- ise en place d’un système de chauffage par géothermie sur sondes dans
-  deux bâtiments situés au siège social du S
-DTSTART;TZID=Europe/Paris:20261105T120000
-DTEND;TZID=Europe/Paris:20261105T123000
-DESCRIPTION:Source: BOAMP 26-95465. Published by source: 02 Oct 2026 · La
- st checked by SpudSignal: 01 Nov 2026. Deadlines can change through corri
- genda. This calendar feed is refreshed by SpudSignal on each weekly check
- \, but your calendar app may show changes with a delay. Only the original
-  notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-95465. No
-  guarantee of completeness or accuracy. As published: 05 Nov 2026\, 12:00
-  CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-95465
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:00be19d0c9c0cbfd@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) -
-  LINER HANGER AND INSTALLATION SERVICES
-DTSTART;TZID=Europe/Prague:20261106T100000
-DTEND;TZID=Europe/Prague:20261106T103000
-DESCRIPTION:Source: TED 679859-2026. Published by source: 02 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://ted.europa.eu/en/notice/-/detail/679859-2026
- . No guarantee of completeness or accuracy. As published: 06 Nov 2026\, 1
- 0:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/679859-2026
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:59eca9045bac22e1@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Réalisation d'un champ de sondes géothe
- rmiques verticales et de son réseau de distribution de surface
-DTSTART;TZID=Europe/Paris:20261106T120000
-DTEND;TZID=Europe/Paris:20261106T123000
-DESCRIPTION:Source: BOAMP 26-101091. Published by source: 16 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-101091. 
- No guarantee of completeness or accuracy. As published: 06 Nov 2026\, 12:
- 00 CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-101091
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:41cabab7a5f09b40@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261025T175833Z
-SUMMARY:[Check source] Deadline: Prestations d’accompagnement à Maîtri
- se d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géother
- mie de Villiers-le-Bel/Gonesse.
-DTSTART;TZID=Europe/Paris:20261106T120000
-DTEND;TZID=Europe/Paris:20261106T123000
-DESCRIPTION:Source: BOAMP 26-102183. Published by source: 20 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-102183. 
- No guarantee of completeness or accuracy. As published: 06 Nov 2026\, 12:
- 00 CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-102183
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:fbe0bf1d339c6850@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261025T175833Z
-SUMMARY:[Check source] Deadline: „Realizace vrtů pro systémy BTES2 a B
- TES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“
-DTSTART;TZID=Europe/Prague:20261106T150000
-DTEND;TZID=Europe/Prague:20261106T153000
-DESCRIPTION:Source: TED 730837-2026. Published by source: 22 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
- igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
- k\, but your calendar app may show changes with a delay. Only the origina
- l notice is binding: https://ted.europa.eu/en/notice/-/detail/730837-2026
- . No guarantee of completeness or accuracy. As published: 06 Nov 2026\, 1
- 5:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/730837-2026
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P7D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:Re-check the deadline on the original notice before submitting
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:7095f2787aa83db3@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) -
   WELLHEAD AND FRAC TREE SYSTEMS
 DTSTART;TZID=Europe/Prague:20261109T100000
 DTEND;TZID=Europe/Prague:20261109T103000
 DESCRIPTION:Source: TED 684005-2026. Published by source: 05 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/684005-2026
@@ -425,14 +213,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:3a5d2c3eb36bebba@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Erdwärmesondenfeld für kaltes Nahwärme
  netz in Linnich-Süd
 DTSTART;TZID=Europe/Berlin:20261109T120000
 DTEND;TZID=Europe/Berlin:20261109T123000
 DESCRIPTION:Source: TED 698651-2026. Published by source: 09 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/698651-2026
@@ -455,7 +243,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4100e4cedb042af9@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Marché de maîtrise d'oeuvre pour la ré
  alisation d'un puits de prospection géothermique sur le secteur Poterie 
@@ -463,7 +251,7 @@ SUMMARY:[Check source] Deadline: Marché de maîtrise d'oeuvre pour la ré
 DTSTART;TZID=Europe/Paris:20261110T160000
 DTEND;TZID=Europe/Paris:20261110T163000
 DESCRIPTION:Source: BOAMP 26-97695. Published by source: 10 Oct 2026 · La
- st checked by SpudSignal: 01 Nov 2026. Deadlines can change through corri
+ st checked by SpudSignal: 08 Nov 2026. Deadlines can change through corri
  genda. This calendar feed is refreshed by SpudSignal on each weekly check
  \, but your calendar app may show changes with a delay. Only the original
   notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-97695. No
@@ -486,14 +274,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:7bded30fa2266c1c@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Requests to participate: Planungsleistungen Wärmen
  etz Bauabschnitte 2027–2029\; Aschheim\, Feldkirchen\, Kirchhem
 DTSTART;TZID=Europe/Berlin:20261111T120000
 DTEND;TZID=Europe/Berlin:20261111T123000
 DESCRIPTION:Source: TED 701161-2026. Published by source: 12 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/701161-2026
@@ -515,21 +303,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:3c97938c6f31d0cc@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261101T221947Z
-LAST-MODIFIED:20261101T221916Z
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202154Z
 SUMMARY:[Check source] Deadline: Single-Party Framework for Works-Related 
  Technical Services in Geothermal Engineering Consultancy at Grangegorman
  \, Dublin\, Ireland
 DTSTART;TZID=Europe/Dublin:20261112T140000
 DTEND;TZID=Europe/Dublin:20261112T143000
 DESCRIPTION:Source: TED 737356-2026. Published by source: 26 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/737356-2026
- . No guarantee of completeness or accuracy. As published: 12 Nov 2026\, 1
- 5:00 CET.
+ . No guarantee of completeness or accuracy. Time uncertain: TED encodes 1
+ 5:00 +01:00 (= 14:00 Irish time)\; the buyer's eTenders page shows 15:00 
+ without a time zone. Confirm on the buyer portal (Reviewer\, 8 Nov 2026).
+  As published: 12 Nov 2026\, 15:00 CET as encoded in TED\; confirm the bu
+ yer portal's closing time.
 URL:https://ted.europa.eu/en/notice/-/detail/737356-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -547,7 +338,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:253e005b3f55f334@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: SZP/243-277/2026 - Dostawa systemu do pom
  iaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z ukł
@@ -555,7 +346,7 @@ SUMMARY:[Check source] Deadline: SZP/243-277/2026 - Dostawa systemu do pom
 DTSTART;TZID=Europe/Warsaw:20261113T100000
 DTEND;TZID=Europe/Warsaw:20261113T103000
 DESCRIPTION:Source: TED 691583-2026. Published by source: 07 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/691583-2026
@@ -578,13 +369,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:798e608fb28b08cb@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Neubau Ruwertalschule in Waldrach
 DTSTART;TZID=Europe/Berlin:20261113T100000
 DTEND;TZID=Europe/Berlin:20261113T103000
 DESCRIPTION:Source: TED 709263-2026. Published by source: 14 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/709263-2026
@@ -607,7 +398,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:803c662051981e98@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: Travaux de Création d'une centrale de g
  éothermie sur sonde et travaux de remplacement des émetteurs au centre 
@@ -615,7 +406,7 @@ SUMMARY:[Check source] Deadline: Travaux de Création d'une centrale de g
 DTSTART;TZID=Europe/Paris:20261116T160000
 DTEND;TZID=Europe/Paris:20261116T163000
 DESCRIPTION:Source: BOAMP 26-101464. Published by source: 19 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-101464. 
@@ -638,7 +429,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d6aceeed5e1cf4bd@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Appel à projets FEDER 2026 – Création
   ou extension des installations de distribution et production de chaleur 
@@ -646,8 +437,8 @@ SUMMARY:[Check source] Deadline: Appel à projets FEDER 2026 – Création
 DTSTART;TZID=Europe/Paris:20261116T170000
 DTEND;TZID=Europe/Paris:20261116T173000
 DESCRIPTION:Source: the programme page\, FR-IDF-FEDER-geothermie-2026. Pub
- lished by source: page as of 01 Nov 2026 · Last checked by SpudSignal: 0
- 1 Nov 2026. Deadlines can change through corrigenda. This calendar feed i
+ lished by source: page as of 08 Nov 2026 · Last checked by SpudSignal: 0
+ 8 Nov 2026. Deadlines can change through corrigenda. This calendar feed i
  s refreshed by SpudSignal on each weekly check\, but your calendar app ma
  y show changes with a delay. Only the original notice is binding: https:/
  /www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf. 
@@ -671,7 +462,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:f0353bf382e57b2b@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: La présente consultation concerne la mis
  sion de Maitrise d’œuvre complète\, découpée en tranches\, pour l
@@ -679,7 +470,7 @@ SUMMARY:[Check source] Deadline: La présente consultation concerne la mis
 DTSTART;TZID=Europe/Paris:20261117T110000
 DTEND;TZID=Europe/Paris:20261117T113000
 DESCRIPTION:Source: BOAMP 26-100440. Published by source: 17 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-100440. 
@@ -704,14 +495,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6b774d72bcf5d7f5@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Maîtrise d'oeuvre pour la gestion des in
  stallations de surface du réseau de chaleur UniGéo
 DTSTART;TZID=Europe/Paris:20261118T120000
 DTEND;TZID=Europe/Paris:20261118T123000
 DESCRIPTION:Source: TED 696202-2026. Published by source: 08 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/696202-2026
@@ -732,16 +523,47 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:76d3e3d4f7f4b6c3@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique avec
+  la mise en place d'une PAC Géothermique sur sondes verticales sur le b
+ âtiment " MAIRIE "
+DTSTART;TZID=Europe/Paris:20261118T130000
+DTEND;TZID=Europe/Paris:20261118T133000
+DESCRIPTION:Source: BOAMP 26-103155. Published by source: 23 Oct 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
+ k\, but your calendar app may show changes with a delay. Only the origina
+ l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-103155. 
+ No guarantee of completeness or accuracy. As published: 18 Nov 2026\, 12:
+ 00 CET.
+URL:https://www.boamp.fr/pages/avis/?q=idweb:26-103155
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:3942db59a0569a17@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Bohrplatzerrichtung zur Ex
  plorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes
 DTSTART;TZID=Europe/Berlin:20261120T120000
 DTEND;TZID=Europe/Berlin:20261120T123000
 DESCRIPTION:Source: TED 729199-2026. Published by source: 21 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/729199-2026
@@ -764,14 +586,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d1a2305da5242137@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Fernwärmeverbundleitungst
  rasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG
 DTSTART;TZID=Europe/Berlin:20261121T230000
 DTEND;TZID=Europe/Berlin:20261121T233000
 DESCRIPTION:Source: TED 732630-2026. Published by source: 22 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/732630-2026
@@ -794,14 +616,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:0c87fc4157e326c0@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: PUITS DE PRODUCTION GEOTHERMIQUE DE VILLE
  TANEUSE FOURNITURE D'UNE ELECTROPOMPE DE PRODUCTION IMMERGEE
 DTSTART;TZID=Europe/Paris:20261123T120000
 DTEND;TZID=Europe/Paris:20261123T123000
 DESCRIPTION:Source: BOAMP 26-103297. Published by source: 23 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-103297. 
@@ -824,7 +646,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:82be64efeab79612@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: Rénovation énergétique d'un ensemble d
  e bâtiments communaux et réalisation d'une installation de boucle d'eau
@@ -832,7 +654,7 @@ SUMMARY:[Check source] Deadline: Rénovation énergétique d'un ensemble d
 DTSTART;TZID=Europe/Paris:20261123T120000
 DTEND;TZID=Europe/Paris:20261123T123000
 DESCRIPTION:Source: BOAMP 26-103038. Published by source: 22 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-103038. 
@@ -855,7 +677,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4fd50c9eb94424d6@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Servicii de proiectare şi Execuţie lucr
  ări pentru obiectivul: “Creșterea producției de energie din resurse 
@@ -863,7 +685,7 @@ SUMMARY:[Check source] Deadline: Servicii de proiectare şi Execuţie lucr
 DTSTART;TZID=Europe/Bucharest:20261123T150000
 DTEND;TZID=Europe/Bucharest:20261123T153000
 DESCRIPTION:Source: TED 716179-2026. Published by source: 16 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/716179-2026
@@ -886,7 +708,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:06fd138aa75e9be4@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: Wykonanie otworów geotermalnych Kutno GT
  -1 i Kutno GT-2\, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KU
@@ -894,7 +716,7 @@ SUMMARY:[Check source] Deadline: Wykonanie otworów geotermalnych Kutno GT
 DTSTART;TZID=Europe/Warsaw:20261124T100000
 DTEND;TZID=Europe/Warsaw:20261124T103000
 DESCRIPTION:Source: TED 725171-2026. Published by source: 20 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/725171-2026
@@ -915,16 +737,46 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:71a5f9ee90af9d4f@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Deadline: Távhőszolgáltatási rendszer kialakít
+ ása Kabán
+DTSTART;TZID=Europe/Budapest:20261124T110000
+DTEND;TZID=Europe/Budapest:20261124T113000
+DESCRIPTION:Source: TED 763136-2026. Published by source: 03 Nov 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
+ k\, but your calendar app may show changes with a delay. Only the origina
+ l notice is binding: https://ted.europa.eu/en/notice/-/detail/763136-2026
+ . No guarantee of completeness or accuracy. As published: 24 Nov 2026\, 1
+ 1:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/763136-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:c063c46f5a23a0b2@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Etude et accompagnement sur les forages L
  es Cybéliades et Hélions II
 DTSTART;TZID=Europe/Paris:20261124T120000
 DTEND;TZID=Europe/Paris:20261124T123000
 DESCRIPTION:Source: BOAMP 26-95181. Published by source: 02 Oct 2026 · La
- st checked by SpudSignal: 01 Nov 2026. Deadlines can change through corri
+ st checked by SpudSignal: 08 Nov 2026. Deadlines can change through corri
  genda. This calendar feed is refreshed by SpudSignal on each weekly check
  \, but your calendar app may show changes with a delay. Only the original
   notice is binding: https://www.boamp.fr/pages/avis/?q=idweb:26-95181. No
@@ -947,14 +799,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:0dc12863fa50d657@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Requests to participate: Forschungsbohrung Münster
   - Teil 1 Bohrkontraktor
 DTSTART;TZID=Europe/Berlin:20261126T100000
 DTEND;TZID=Europe/Berlin:20261126T103000
 DESCRIPTION:Source: TED 754784-2026. Published by source: 30 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/754784-2026
@@ -977,14 +829,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:1d1fcdf4e5f90302@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Stimulering Duurzame Energieproductie en 
  Klimaattransitie (SDE++)
 DTSTART;TZID=Europe/Amsterdam:20261126T170000
 DTEND;TZID=Europe/Amsterdam:20261126T173000
 DESCRIPTION:Source: the programme page\, NL-SDE-2026. Published by source:
-  page as of 01 Nov 2026 · Last checked by SpudSignal: 01 Nov 2026. Deadl
+  page as of 08 Nov 2026 · Last checked by SpudSignal: 08 Nov 2026. Deadl
  ines can change through corrigenda. This calendar feed is refreshed by Sp
  udSignal on each weekly check\, but your calendar app may show changes wi
  th a delay. Only the original notice is binding: https://www.rvo.nl/subsi
@@ -1008,14 +860,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:5fbc2426027d65b6@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Geothermal Consultancy Services for Unive
  rsity Hospital Galway
 DTSTART;TZID=Europe/Dublin:20261127T110000
 DTEND;TZID=Europe/Dublin:20261127T113000
 DESCRIPTION:Source: TED 738167-2026. Published by source: 26 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/738167-2026
@@ -1038,13 +890,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:50fb456c6fff3b64@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Maintenance and repair of diaphragms
 DTSTART;TZID=Atlantic/Reykjavik:20261130T100000
 DTEND;TZID=Atlantic/Reykjavik:20261130T103000
 DESCRIPTION:Source: TED 754152-2026. Published by source: 30 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/754152-2026
@@ -1067,14 +919,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dadbf94b3d55275a@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Framework Agreement regard
  ing the supply of Heat Exchangers for Geothermal Projects
 DTSTART;TZID=Europe/Amsterdam:20261130T180000
 DTEND;TZID=Europe/Amsterdam:20261130T183000
 DESCRIPTION:Source: TED 726565-2026. Published by source: 21 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/726565-2026
@@ -1097,14 +949,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:0eb0e95523645031@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Resource assessment for deep sedimentary 
  and basement reservoirs
 DTSTART;TZID=Europe/Brussels:20261201T170000
 DTEND;TZID=Europe/Brussels:20261201T173000
 DESCRIPTION:Source: EU Funding & Tenders Portal\, HORIZON-CL5-2026-11-D3-0
- 6. Published by source: 04 Aug 2026 · Last checked by SpudSignal: 01 Nov
+ 6. Published by source: 04 Aug 2026 · Last checked by SpudSignal: 08 Nov
   2026. Deadlines can change through corrigenda. This calendar feed is ref
  reshed by SpudSignal on each weekly check\, but your calendar app may sho
  w changes with a delay. Only the original notice is binding: https://ec.e
@@ -1127,16 +979,76 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:33fedeabccf98de1@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Deadline: Geotermikus hőenergia beszerzés Szegedi
+  Szakképzés
+DTSTART;TZID=Europe/Budapest:20261202T100000
+DTEND;TZID=Europe/Budapest:20261202T103000
+DESCRIPTION:Source: TED 759601-2026. Published by source: 02 Nov 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
+ k\, but your calendar app may show changes with a delay. Only the origina
+ l notice is binding: https://ted.europa.eu/en/notice/-/detail/759601-2026
+ . No guarantee of completeness or accuracy. As published: 02 Dec 2026\, 1
+ 0:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/759601-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9bb8bc940f00ee6c@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T202117Z
+SUMMARY:[Check source] Requests to participate: SV-KWE-261103-004 - TW - G
+ eothermie Michaelibad - Wärmestation - Spezialtiefbau Baugrube
+DTSTART;TZID=Europe/Berlin:20261207T130000
+DTEND;TZID=Europe/Berlin:20261207T133000
+DESCRIPTION:Source: TED 766383-2026. Published by source: 04 Nov 2026 · L
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
+ k\, but your calendar app may show changes with a delay. Only the origina
+ l notice is binding: https://ted.europa.eu/en/notice/-/detail/766383-2026
+ . No guarantee of completeness or accuracy. As published: 07 Dec 2026\, 1
+ 3:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/766383-2026
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:ed4f6d6f9dde823e@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Maitrise d'oeuvre pour la réalisation et
   l'extension de réseaux de chaleurs parisiens
 DTSTART;TZID=Europe/Paris:20261208T120000
 DTEND;TZID=Europe/Paris:20261208T123000
 DESCRIPTION:Source: TED 755201-2026. Published by source: 30 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/755201-2026
@@ -1159,14 +1071,14 @@ END:VEVENT
 BEGIN:VEVENT
 UID:134f041368647f35@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: New Building 07B / Cost Group 241 / Geoth
  ermal Boreholes
 DTSTART;TZID=Europe/Zurich:20261208T235900
 DTEND;TZID=Europe/Zurich:20261209T002900
 DESCRIPTION:Source: TED 752632-2026. Published by source: 29 Oct 2026 · L
- ast checked by SpudSignal: 01 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
  k\, but your calendar app may show changes with a delay. Only the origina
  l notice is binding: https://ted.europa.eu/en/notice/-/detail/752632-2026
@@ -1189,7 +1101,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:99df042879984a15@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Borrtjänster
 DTSTART;TZID=Europe/Stockholm:20261025T230000
@@ -1223,7 +1135,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6cf9dc14246ba798@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Réalisation de travaux conce
  rnant la mise en place d'un réseau de chaleur sur sondes géothermiques 
@@ -1255,7 +1167,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:9b7ec724fea2f2ed@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Requests to participate: Geothermie Pre
  nzlau - Anlagentechnik
@@ -1286,7 +1198,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:389f89d14d614826@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Création d'un réseau techni
  que de chaleur géothermique sur le site de Bellegrave à Pessac (33)
@@ -1318,7 +1230,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6baedd6c10b06e19@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Geotermikus fúrási kockáza
  tok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2
@@ -1351,7 +1263,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6a7ed73200f7a63d@library.spudsignal.com
 SEQUENCE:2
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Förderaufruf „Explorations
  initiative Geothermie“
@@ -1385,9 +1297,72 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:7b5311b7bce42b93@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: Schulhaus Langwiesen Erweiter
+ ung und Sanierung\; BKP 242 Erdsonden
+DTSTART;TZID=Europe/Zurich:20261104T120000
+DTEND;TZID=Europe/Zurich:20261104T123000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 04 Nov 2026\, 12:00 CET. Source: TED 643535-2026. Publis
+ hed by source: 18 Sep 2026 · Last checked by SpudSignal: 01 Nov 2026. De
+ adlines can change through corrigenda. This calendar feed is refreshed by
+  SpudSignal on each weekly check\, but your calendar app may show changes
+  with a delay. Only the original notice is binding: https://ted.europa.eu
+ /en/notice/-/detail/643535-2026. No guarantee of completeness or accuracy
+ . As published: 04 Nov 2026\, 12:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/643535-2026
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4d8245a64661a9ca@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: Travaux de rénovation énerg
+ étique et mise en place d’un système de chauffage par géothermie sur
+  sondes dans deux bâtiments situés au siège social du S
+DTSTART;TZID=Europe/Paris:20261105T120000
+DTEND;TZID=Europe/Paris:20261105T123000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 05 Nov 2026\, 12:00 CET. Source: BOAMP 26-95465. Publish
+ ed by source: 02 Oct 2026 · Last checked by SpudSignal: 01 Nov 2026. Dea
+ dlines can change through corrigenda. This calendar feed is refreshed by 
+ SpudSignal on each weekly check\, but your calendar app may show changes 
+ with a delay. Only the original notice is binding: https://www.boamp.fr/p
+ ages/avis/?q=idweb:26-95465. No guarantee of completeness or accuracy. As
+  published: 05 Nov 2026\, 12:00 CET.
+URL:https://www.boamp.fr/pages/avis/?q=idweb:26-95465
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:cdd0f1c5dd4de2ff@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Single-Party Framework for Wo
  rks-Related Technical Services in Geothermal Engineering Consultancy at G
@@ -1419,9 +1394,72 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:00be19d0c9c0cbfd@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: SYNERGYS PROJECT: LONG LEAD I
+ TEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES
+DTSTART;TZID=Europe/Prague:20261106T100000
+DTEND;TZID=Europe/Prague:20261106T103000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 06 Nov 2026\, 10:00 CET. Source: TED 679859-2026. Publis
+ hed by source: 02 Oct 2026 · Last checked by SpudSignal: 01 Nov 2026. De
+ adlines can change through corrigenda. This calendar feed is refreshed by
+  SpudSignal on each weekly check\, but your calendar app may show changes
+  with a delay. Only the original notice is binding: https://ted.europa.eu
+ /en/notice/-/detail/679859-2026. No guarantee of completeness or accuracy
+ . As published: 06 Nov 2026\, 10:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/679859-2026
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:59eca9045bac22e1@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: Réalisation d'un champ de so
+ ndes géothermiques verticales et de son réseau de distribution de surfa
+ ce
+DTSTART;TZID=Europe/Paris:20261106T120000
+DTEND;TZID=Europe/Paris:20261106T123000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 06 Nov 2026\, 12:00 CET. Source: BOAMP 26-101091. Publis
+ hed by source: 16 Oct 2026 · Last checked by SpudSignal: 01 Nov 2026. De
+ adlines can change through corrigenda. This calendar feed is refreshed by
+  SpudSignal on each weekly check\, but your calendar app may show changes
+  with a delay. Only the original notice is binding: https://www.boamp.fr/
+ pages/avis/?q=idweb:26-101091. No guarantee of completeness or accuracy. 
+ As published: 06 Nov 2026\, 12:00 CET.
+URL:https://www.boamp.fr/pages/avis/?q=idweb:26-101091
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:d46da94459df81b5@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[CANCELLED] [Check source] Deadline: „Realizace vrtů pro systé
  my BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT
@@ -1452,9 +1490,105 @@ DESCRIPTION:Re-check the deadline on the original notice before submitting
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ffefc6bd40ec17bb@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: Távhőszolgáltatási rendsz
+ er kialakítása Kabán
+DTSTART;TZID=Europe/Budapest:20261103T100000
+DTEND;TZID=Europe/Budapest:20261103T103000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 03 Nov 2026\, 10:00 CET (notice: 11:00 UTC+02:00). Sourc
+ e: TED 729019-2026. Published by source: 21 Oct 2026 · Last checked by S
+ pudSignal: 01 Nov 2026. Deadlines can change through corrigenda. This cal
+ endar feed is refreshed by SpudSignal on each weekly check\, but your cal
+ endar app may show changes with a delay. Only the original notice is bind
+ ing: https://ted.europa.eu/en/notice/-/detail/729019-2026. No guarantee o
+ f completeness or accuracy. As published: 03 Nov 2026\, 10:00 CET (notice
+ : 11:00 UTC+02:00).
+URL:https://ted.europa.eu/en/notice/-/detail/729019-2026
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:41cabab7a5f09b40@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: Prestations d’accompagnemen
+ t à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour
+  la géothermie de Villiers-le-Bel/Gonesse.
+DTSTART;TZID=Europe/Paris:20261106T120000
+DTEND;TZID=Europe/Paris:20261106T123000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 06 Nov 2026\, 12:00 CET. Source: BOAMP 26-102183. Publis
+ hed by source: 20 Oct 2026 · Last checked by SpudSignal: 01 Nov 2026. De
+ adlines can change through corrigenda. This calendar feed is refreshed by
+  SpudSignal on each weekly check\, but your calendar app may show changes
+  with a delay. Only the original notice is binding: https://www.boamp.fr/
+ pages/avis/?q=idweb:26-102183. No guarantee of completeness or accuracy. 
+ As published: 06 Nov 2026\, 12:00 CET.
+URL:https://www.boamp.fr/pages/avis/?q=idweb:26-102183
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fbe0bf1d339c6850@library.spudsignal.com
+SEQUENCE:1
+DTSTAMP:20261108T202154Z
+LAST-MODIFIED:20261108T201956Z
+SUMMARY:[CANCELLED] [Check source] Deadline: „Realizace vrtů pro systé
+ my BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT
+ “
+DTSTART;TZID=Europe/Prague:20261106T150000
+DTEND;TZID=Europe/Prague:20261106T153000
+DESCRIPTION:CANCELLED – removed from the SpudSignal list on 08 Nov 2026:
+  deadline passed 06 Nov 2026\, 15:00 CET. Source: TED 730837-2026. Publis
+ hed by source: 22 Oct 2026 · Last checked by SpudSignal: 01 Nov 2026. De
+ adlines can change through corrigenda. This calendar feed is refreshed by
+  SpudSignal on each weekly check\, but your calendar app may show changes
+  with a delay. Only the original notice is binding: https://ted.europa.eu
+ /en/notice/-/detail/730837-2026. No guarantee of completeness or accuracy
+ . As published: 06 Nov 2026\, 15:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/730837-2026
+STATUS:CANCELLED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Re-check the deadline on the original notice before submitting
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:a18fef83c1e2ddc5@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261101T221947Z
+DTSTAMP:20261108T202154Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Requests to participate: Forschungsbohr
  ung Münster - Teil 1 Bohrkontraktor
