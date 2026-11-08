@@ -25,46 +25,65 @@ function byNotice(id) {
 test("the shared record matches the review draft and stays unapproved", () => {
   assert.deepEqual(api.validateAssignments(doc), []);
   assert.equal(doc.assignments.length, 4);
-  assert.equal(doc.assignments.filter((row) => row.approved).length, 0);
+  assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved).length, 4);
   const kutno = byNotice("TED 725171-2026");
   const hvc = byNotice("TED 726565-2026");
   const paris = byNotice("TED 755201-2026");
   const feder = byNotice("FR-IDF-FEDER-geothermie-2026");
   assert.deepEqual(kutno.labels, ["Drilling"]);
-  assert.equal(kutno.status, "pending_review");
+  assert.equal(kutno.status, "reviewed");
   assert.equal(kutno.integrated_package, true);
   assert.deepEqual(hvc.labels, ["Equipment"]);
+  assert.equal(hvc.supply_package, true);
+  assert.match(hvc.bases.Equipment, /two portfolio lots/);
   assert.deepEqual(paris.labels, ["Engineering & Services"]);
-  assert.deepEqual(feder.labels, []);
-  assert.equal(feder.status, "untagged");
+  assert.deepEqual(feder.labels, ["Project owners & developers"]);
+  assert.equal(feder.status, "reviewed");
+  assert.match(feder.bases["Project owners & developers"], /§2/);
+  assert.match(feder.bases["Project owners & developers"], /§3\.1/);
+  assert.match(feder.eligibility_caveat, /not mean that every reader/);
   assert.equal(doc.assignments.some((row) => row.labels.length > 1), false);
 });
 
-test("integrated packages and FEDER cannot pick up an extra label", () => {
+test("integrated packages, equipment supply and FEDER cannot pick up an extra label", () => {
   const kutno = structuredClone(byNotice("TED 725171-2026"));
   kutno.labels = ["Drilling", "Equipment"];
+  kutno.bases.Equipment = "not a separate supply";
   const broken = structuredClone(doc);
   broken.assignments = broken.assignments.map((row) => row.notice_id === kutno.notice_id ? kutno : row);
   assert.ok(api.validateAssignments(broken).some((error) => error.includes("integrated package")));
 
+  const hvc = structuredClone(byNotice("TED 726565-2026"));
+  hvc.labels = ["Equipment", "Engineering & Services"];
+  hvc.bases["Engineering & Services"] = "integral product engineering is not a separate service";
+  const supplyDoc = structuredClone(doc);
+  supplyDoc.assignments = supplyDoc.assignments.map((row) => row.notice_id === hvc.notice_id ? hvc : row);
+  assert.ok(api.validateAssignments(supplyDoc).some((error) => error.includes("equipment supply")));
+
   const feder = structuredClone(byNotice("FR-IDF-FEDER-geothermie-2026"));
-  feder.labels = ["Project owners & developers"];
-  feder.status = "pending_review";
+  feder.labels = ["Project owners & developers", "Drilling"];
+  feder.bases.Drilling = "a funded project might later drill";
   const federDoc = structuredClone(doc);
   federDoc.assignments = federDoc.assignments.map((row) => row.notice_id === feder.notice_id ? feder : row);
-  assert.ok(api.validateAssignments(federDoc).some((error) => error.includes("FEDER must remain untagged")));
+  assert.ok(api.validateAssignments(federDoc).some((error) => error.includes("FEDER example cannot add Drilling")));
 });
 
 test("ANY/OR inside audience and AND across the existing filters", () => {
   const kutno = { kind: "tender", country: "PL", tags: ["Other"], audience: ["Drilling"] };
   const hvc = { kind: "tender", country: "NL", tags: ["Other"], audience: ["Equipment"] };
   const paris = { kind: "tender", country: "FR", tags: ["Other"], audience: ["Engineering & Services"] };
-  const feder = { kind: "funding", country: "FR", tags: [], audience: [] };
+  const feder = { kind: "funding", country: "FR", tags: [], audience: ["Project owners & developers"] };
+  const unknown = { kind: "tender", country: "DE", tags: ["Other"], audience: [] };
   const multi = { kind: "tender", country: "DE", tags: ["Deep well", "Planning"], audience: ["Drilling", "Equipment"] };
 
   assert.equal(api.entryMatch(kutno, {}), true);
   assert.equal(api.entryMatch(feder, {}), true);
-  assert.equal(api.entryMatch(feder, { audience: ["Project owners & developers"] }), false);
+  assert.equal(api.entryMatch(unknown, {}), true);
+  assert.equal(api.entryMatch(unknown, { audience: ["Drilling"] }), false);
+  assert.equal(api.entryMatch(feder, { audience: ["Project owners & developers"] }), true);
+  assert.equal(api.entryMatch(feder, { audience: ["Project owners & developers"], country: ["FR"], kind: ["funding"] }), true);
+  assert.equal(api.entryMatch(feder, { audience: ["Project owners & developers"], kind: ["tender"] }), false);
+  assert.equal(api.entryMatch(feder, { audience: ["Drilling"] }), false);
   assert.equal(api.entryMatch(kutno, { audience: ["Drilling", "Equipment"] }), true);
   assert.equal(api.entryMatch(hvc, { audience: ["Drilling", "Equipment"] }), true);
   assert.equal(api.entryMatch(paris, { audience: ["Drilling"] }), false);
@@ -82,12 +101,13 @@ test("badges use the full names and say when a proposal is not approved", () => 
   const html = api.badgeHtml(byNotice("TED 725171-2026"));
   assert.match(html, /For:/);
   assert.match(html, />Drilling</);
-  assert.match(html, /Proposed, pending review/);
+  assert.doesNotMatch(html, /Proposed, pending review/);
   assert.doesNotMatch(html, /Equipment/);
-  assert.equal(api.badgeHtml(byNotice("FR-IDF-FEDER-geothermie-2026")), "");
-  const reviewed = { status: "reviewed", labels: ["Equipment"] };
-  assert.match(api.badgeHtml(reviewed), />Equipment</);
-  assert.doesNotMatch(api.badgeHtml(reviewed), /Proposed, pending review/);
+  const federHtml = api.badgeHtml(byNotice("FR-IDF-FEDER-geothermie-2026"));
+  assert.match(federHtml, /Project owners &amp; developers/);
+  assert.doesNotMatch(federHtml, /Proposed, pending review/);
+  const pending = { status: "pending_review", labels: ["Equipment"] };
+  assert.match(api.badgeHtml(pending), /Proposed, pending review/);
 });
 
 test("Library and tender pages share the record and keep full labels", () => {
@@ -104,15 +124,18 @@ test("Library and tender pages share the record and keep full labels", () => {
     assert.equal(preview.includes(banned), false, banned);
   }
   assert.match(indexHtml, /id="e-library-kutno"|data-audience="Drilling"/);
-  assert.match(indexHtml, /725171-2026[\s\S]{0,500}Proposed, pending review|Proposed, pending review[\s\S]{0,800}725171-2026/);
+  assert.doesNotMatch(indexHtml, /Proposed, pending review/);
+  assert.doesNotMatch(tendersHtml, /Proposed, pending review/);
+  assert.doesNotMatch(indexHtml, /stays untagged until/);
+  assert.match(indexHtml, /The map does not filter by audience/);
   assert.match(tendersHtml, /data-audience="Drilling"/);
   assert.match(tendersHtml, /data-audience="Equipment"/);
   assert.match(tendersHtml, /data-audience="Engineering &amp; Services"/);
   const federAt = tendersHtml.indexOf('id="e-d6aceeed5e1cf4bd"');
-  const federCard = tendersHtml.slice(federAt - 220, federAt + 700);
-  assert.match(federCard, /data-audience=""/);
-  assert.match(federCard, /data-audience-status="untagged"/);
-  assert.doesNotMatch(federCard, /class="audname"/);
+  const federCard = tendersHtml.slice(federAt - 280, federAt + 900);
+  assert.match(federCard, /data-audience="Project owners &amp; developers"/);
+  assert.match(federCard, /data-audience-status="reviewed"/);
+  assert.match(federCard, /class="audname">Project owners &amp; developers</);
   assert.match(tendersHtml, /audienceMatch/);
   assert.match(tendersHtml, /tab==="soon"/);
   assert.match(indexHtml, /The map does not filter by audience/);
@@ -137,13 +160,16 @@ test("open-tender facts and the map files stay unchanged", () => {
   });
   const kutno = tenders.entries.find((entry) => entry.id === "TED 725171-2026");
   assert.deepEqual(kutno.audience, ["Drilling"]);
-  assert.equal(kutno.audience_status, "pending_review");
+  assert.equal(kutno.audience_status, "reviewed");
   assert.equal(kutno.tags.includes("Other"), true);
   const feder = tenders.entries.find((entry) => entry.id === "FR-IDF-FEDER-geothermie-2026");
-  assert.deepEqual(feder.audience, []);
-  assert.equal(feder.audience_status, "untagged");
+  assert.deepEqual(feder.audience, ["Project owners & developers"]);
+  assert.equal(feder.audience_status, "reviewed");
   const tagged = tenders.entries.filter((entry) => entry.audience.length);
-  assert.equal(tagged.length, 3);
+  assert.equal(tagged.length, 4);
+  const unknown = tenders.entries.find((entry) => entry.id === "TED 729019-2026");
+  assert.deepEqual(unknown.audience, []);
+  assert.equal(unknown.audience_status, "unassigned");
   const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n");
   for (const file of files) {
     const disk = fs.readFileSync(path.join(root, file));
@@ -187,7 +213,9 @@ test("web uses the original SVG symbols and email uses PNG with a 2x source", ()
   assert.match(newsletter, /srcset="\/symbols\/aud-drilling\.png 1x, \/symbols\/aud-drilling@2x\.png 2x"/);
   assert.match(newsletter, /srcset="\/symbols\/legend\.png 1x, \/symbols\/legend@2x\.png 2x"/);
   assert.match(newsletter, />Drilling</);
-  assert.match(newsletter, /Proposed, pending review/);
-  assert.equal(byNotice("TED 725171-2026").status, "pending_review");
-  assert.equal(byNotice("TED 725171-2026").approved, false);
+  assert.doesNotMatch(newsletter, /Proposed, pending review/);
+  assert.match(newsletter, /not ready to paste into Beehiiv/);
+  assert.match(newsletter, /https:\/\/library\.spudsignal\.com\/symbols\/aud-drilling\.png/);
+  assert.equal(byNotice("TED 725171-2026").status, "reviewed");
+  assert.equal(byNotice("TED 725171-2026").approved, true);
 });

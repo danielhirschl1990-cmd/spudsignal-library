@@ -29,16 +29,11 @@
       button.setAttribute("aria-pressed", selected[button.dataset.v] ? "true" : "false");
     });
     var shown = cards.filter(function (card) { return !card.hidden; }).length;
-    var proposed = cards.filter(function (card) {
-      return !card.hidden && card.getAttribute("data-audience-status") === "pending_review";
-    }).length;
     var count = document.getElementById("aud-count");
     if (count) {
-      var text = keys.length
+      count.textContent = keys.length
         ? shown + " of " + cards.length + " sources shown · audience: any of " + keys.join(", ")
         : cards.length + " sources shown · All audiences";
-      if (proposed) text += " · " + proposed + " proposed, pending review (not an approved assignment)";
-      count.textContent = text;
     }
     var empty = document.getElementById("aud-empty");
     if (empty) empty.hidden = shown > 0;

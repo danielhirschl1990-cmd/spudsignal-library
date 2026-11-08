@@ -134,7 +134,7 @@ try {
     href: document.querySelector('.libcard[data-audience="Drilling"] a').href,
     summary: document.querySelector('.libcard[data-audience="Drilling"]').innerText.includes("hydrogeological tests")
   })`);
-  if (drilling.shown !== 1 || !drilling.pending || !drilling.href.includes("725171-2026") || !drilling.summary) fail("library Drilling filter " + JSON.stringify(drilling));
+  if (drilling.shown !== 1 || drilling.pending || !drilling.href.includes("725171-2026") || !drilling.summary) fail("library Drilling filter " + JSON.stringify(drilling));
   if (!drilling.count.includes("any of Drilling")) fail("library Drilling wording " + drilling.count);
   await evalIn(library.send, `document.querySelector('.libcard[data-audience="Drilling"]').scrollIntoView()`);
   await shot(library.send, "library-desktop-drilling.png");
@@ -150,10 +150,12 @@ try {
   const owners = await evalIn(library.send, `({
     shown: [...document.querySelectorAll(".libcard")].filter((card) => !card.hidden).length,
     empty: !document.getElementById("aud-empty").hidden,
-    federHidden: document.querySelector('a[href*="FEDER2026"]').closest(".libcard").hidden
+    federHidden: document.querySelector('a[href*="FEDER2026"]').closest(".libcard").hidden,
+    federLabel: document.querySelector('a[href*="FEDER2026"]').closest(".libcard").innerText.includes("Project owners & developers"),
+    pending: document.body.innerText.includes("Proposed, pending review")
   })`);
-  if (owners.shown !== 0 || !owners.empty || !owners.federHidden) fail("library project owners " + JSON.stringify(owners));
-  await shot(library.send, "library-desktop-owners-empty.png");
+  if (owners.shown !== 1 || owners.empty || owners.federHidden || !owners.federLabel || owners.pending) fail("library project owners " + JSON.stringify(owners));
+  await shot(library.send, "library-desktop-owners.png");
   await library.close();
 
   const libraryMobile = await openPage(browser, `http://127.0.0.1:${port}/`, 390, 844);
@@ -189,7 +191,7 @@ try {
       deadline: card.innerText.includes("24 Nov 2026, 10:00 CET"),
       reference: card.innerText.includes("TED 725171-2026"),
       technical: card.innerText.includes("Other"),
-      audience: card.innerText.includes("Drilling") && card.innerText.includes("Proposed, pending review") && !card.innerText.includes("Equipment"),
+      audience: card.innerText.includes("Drilling") && !card.innerText.includes("Proposed, pending review") && !card.innerText.includes("Equipment"),
       selected: getComputedStyle(document.querySelector('.audchip[data-v="Drilling"]'), "::after").content.includes("Selected") && getComputedStyle(document.querySelector('.chip[data-v="PL"]'), "::after").content.includes("Selected")
     };
   })()`);
@@ -210,9 +212,9 @@ try {
   await evalIn(tenders.send, `document.querySelector('.chip[data-v="FR"]').click()`);
   const feder = await evalIn(tenders.send, `(() => {
     const card = document.querySelector('a[href*="FEDER2026"]').closest("article");
-    return { hidden: card.hidden, badge: !!card.querySelector(".audname"), status: card.getAttribute("data-audience-status"), text: card.innerText.includes("16 Nov 2026") };
+    return { hidden: card.hidden, label: card.innerText.includes("Project owners & developers"), pending: card.innerText.includes("Proposed, pending review"), status: card.getAttribute("data-audience-status"), text: card.innerText.includes("16 Nov 2026") };
   })()`);
-  if (feder.hidden || feder.badge || feder.status !== "untagged" || !feder.text) fail("FEDER " + JSON.stringify(feder));
+  if (feder.hidden || !feder.label || feder.pending || feder.status !== "reviewed" || !feder.text) fail("FEDER " + JSON.stringify(feder));
   await evalIn(tenders.send, `document.querySelector('a[href*="FEDER2026"]').closest("article").scrollIntoView({block:"center"})`);
   await shot(tenders.send, "tenders-desktop-feder.png");
   await evalIn(tenders.send, `document.getElementById("reset").click(); document.querySelector('.audchip[data-v="Drilling"]').click(); document.querySelector('.audchip[data-v="Equipment"]').click()`);
@@ -252,11 +254,12 @@ try {
       engineering: text.includes("Engineering & Services"),
       owners: text.includes("Project owners & developers"),
       pending: text.includes("Proposed, pending review"),
-      feder: text.includes("No audience tag"),
-      notEdited: text.includes("was not edited")
+      feder: text.includes("Project owners & developers"),
+      notEdited: text.includes("was not edited"),
+      notReady: text.includes("not ready to paste into Beehiiv")
     };
   })()`);
-  if (!blocked.forDrilling || !blocked.equipment || !blocked.engineering || !blocked.owners || !blocked.pending || !blocked.feder || !blocked.notEdited) {
+  if (!blocked.forDrilling || !blocked.equipment || !blocked.engineering || !blocked.owners || blocked.pending || !blocked.feder || !blocked.notEdited || !blocked.notReady) {
     fail("newsletter images blocked " + JSON.stringify(blocked));
   }
   await shot(newsletter.send, "newsletter-images-blocked.png");

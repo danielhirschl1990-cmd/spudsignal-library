@@ -57,7 +57,7 @@ function chip(label) {
 function audienceNotes(help) {
   return `<!-- audience-notes-start -->
 <p class="audhelp" id="aud-help">${help}</p>
-<p class="audempty" id="aud-empty" hidden>No entries carry the selected audience labels. Untagged entries stay in All. Untagged does not mean irrelevant. The Île-de-France ERDF call stays untagged until beneficiary evidence is confirmed.</p>
+<p class="audempty" id="aud-empty" hidden>No entries carry the selected audience labels. Entries without an audience label stay in All.</p>
 <!-- audience-notes-end -->`;
 }
 
@@ -74,8 +74,8 @@ ${api.LABELS.map(chip).join("\n")}
 <!-- audience-bar-end -->`;
 }
 
-const LIBRARY_HELP = "Audience names match the newsletter. They are an orientation aid, not eligibility and not a personalised feed. All shows every source. If you select more than one audience, a source is shown when it carries any selected label. All in this row clears the audience selection. Three labels are proposed and still pending review; they are not approved assignments. The Île-de-France ERDF call stays untagged until beneficiary evidence is confirmed. The map does not filter by audience.";
-const TENDERS_HELP = "Audience names match the newsletter. They are an orientation aid, not eligibility and not a personalised feed. All at the start of the filter bar clears type, technical category, country and audience. All in the audience row clears audience only. If you select more than one audience, an entry is shown when it carries any selected label. Audience then combines with the other filters. Three labels are proposed and still pending review; they are not approved assignments. The Île-de-France ERDF call stays untagged until beneficiary evidence is confirmed. Technical categories stay Deep well, Shallow BHE, Planning and Other. The map does not filter by audience.";
+const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The map does not filter by audience.";
+const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The map does not filter by audience.";
 
 function replaceBlock(html, start, end, original, replacement) {
   const block = `${start}\n${replacement}\n${end}`;
@@ -148,9 +148,8 @@ const MATCH_NEXT = `function match(c){var e=E[c.dataset.uid];if(!e)return true;
  if(tab==="soon"&&!soon(e))return false;if(tab==="saved"&&!saved[e.uid])return false;return true;}`;
 
 const COUNT_ORIGINAL = 'document.getElementById("count").textContent=n+" of "+D.entries.length+" entries shown"+(tab==="soon"?" · closing within 14 days":tab==="saved"?" · saved on this device":"");';
-const COUNT_NEXT = `var audKeys=Object.keys(sel.audience),proposed=0;
- cards.forEach(function(c){if(!c.hidden&&E[c.dataset.uid]&&E[c.dataset.uid].audience_status==="pending_review")proposed++;});
- document.getElementById("count").textContent=n+" of "+D.entries.length+" entries shown"+(tab==="soon"?" · closing within 14 days":tab==="saved"?" · saved on this device":"")+(audKeys.length?" · audience: any of "+audKeys.join(", "):"")+(proposed?" · "+proposed+" proposed, pending review (not an approved assignment)":"");
+const COUNT_NEXT = `var audKeys=Object.keys(sel.audience);
+ document.getElementById("count").textContent=n+" of "+D.entries.length+" entries shown"+(tab==="soon"?" · closing within 14 days":tab==="saved"?" · saved on this device":"")+(audKeys.length?" · audience: any of "+audKeys.join(", "):"");
  var audCount=document.getElementById("aud-count");if(audCount)audCount.textContent=audKeys.length?("Audience: any of "+audKeys.join(", ")):"All audiences";
  if(audAll)audAll.setAttribute("aria-pressed",audKeys.length?"false":"true");`;
 
@@ -219,18 +218,16 @@ function newsletter(doc) {
     return `<li>${api.emailImg(label)}<span>${api.escapeHtml(label)}</span></li>`;
   }).join("");
   const blocks = doc.assignments.map(function (assignment) {
-    const pending = assignment.status === "pending_review";
     const body = assignment.labels.length
       ? `<p class="forline"><span class="audfor">For:</span> ${assignment.labels.map(function (label) {
           return `<span class="aud">${api.emailImg(label)}<span class="audname">${api.escapeHtml(label)}</span></span>`;
-        }).join(" ")}${pending ? ' <span class="audstate">Proposed, pending review</span>' : ""}</p>`
-      : `<p class="forline">No audience tag. ${api.escapeHtml(assignment.withhold_until || "Left untagged.")}</p>`;
+        }).join(" ")}</p>`
+      : `<p class="forline">No audience tag.</p>`;
     return `<article>
 <h2>${api.escapeHtml(assignment.library_title)}</h2>
 <p>Notice ${api.escapeHtml(assignment.notice_id)}. <a href="${api.escapeHtml(assignment.url)}">${api.escapeHtml(assignment.url)}</a></p>
 ${body}
 <p>${api.escapeHtml(assignment.library_summary)}</p>
-<p><strong>Status:</strong> ${api.escapeHtml(assignment.status)}. ${assignment.approved ? "Approved assignment." : "Not an approved assignment."}</p>
 </article>`;
   }).join("\n");
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -238,7 +235,8 @@ ${body}
 <link rel="stylesheet" href="/audience/badges.css">
 </head><body style="margin:0;background:#fff;color:#1B2B38;font:16px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">
 <main style="max-width:640px;margin:0 auto;padding:16px">
-<p><strong>Template excerpt only.</strong> The SpudSignal newsletter lives outside this repository and was not edited. Use the same assignment record as the Library. Words stay readable if the images are blocked. Do not shorten the names.</p>
+<p><strong>Template excerpt only.</strong> The Beehiiv newsletter was not edited. Words stay readable if the images are blocked. Do not shorten the names.</p>
+<p>Image addresses in this file are root-relative (<code>/symbols/…</code>). They work on this Library site. They are not portable in Beehiiv. When a label is inserted there, replace each <code>src</code> and <code>srcset</code> with the absolute public URL of the same file, such as <code>https://library.spudsignal.com/symbols/aud-drilling.png</code> and its <code>@2x</code> file, after that file is on the public site. This excerpt is not ready to paste into Beehiiv.</p>
 <h1 style="font-size:22px;color:#0F2A3D">Audience legend</h1>
 <img class="audlegendimg" src="/symbols/legend.png" srcset="/symbols/legend.png 1x, /symbols/legend@2x.png 2x" width="594" height="59" alt="">
 <ul class="newsletter-legend">${legend}</ul>
@@ -248,7 +246,7 @@ ${blocks}
 <p><strong>Layout sample only.</strong> Not a source and not an assignment. Two full names wrap in a narrow column.</p>
 <p class="forline"><span class="audfor">For:</span> <span class="aud">${api.emailImg("Drilling")}<span class="audname">Drilling</span></span> <span class="aud">${api.emailImg("Engineering & Services")}<span class="audname">Engineering &amp; Services</span></span></p>
 </aside>
-<p>Web pages use the original SVG symbols. Email uses the PNG and @2x files. The map has no audience filter in this stage. Proposed labels are still pending review.</p>
+<p>Web pages use the original SVG symbols. This template uses the PNG and @2x files. The map has no audience filter.</p>
 </main></body></html>
 `;
 }

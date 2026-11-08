@@ -472,8 +472,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "untagged"
+   "audience": [
+    "Project owners & developers"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "f0353bf382e57b2b",
@@ -723,7 +725,7 @@
    "audience": [
     "Drilling"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "c063c46f5a23a0b2",
@@ -898,7 +900,7 @@
    "audience": [
     "Equipment"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "0eb0e95523645031",
@@ -954,7 +956,7 @@
    "audience": [
     "Engineering & Services"
    ],
-   "audience_status": "pending_review"
+   "audience_status": "reviewed"
   },
   {
    "uid": "134f041368647f35",

@@ -1,8 +1,9 @@
 {
   "schema": "spudsignal.audience.assignments.v1",
   "updated": "2026-11-08",
-  "status": "review-draft",
-  "documentation": "audience/README.md is the shared rule sheet for the newsletter editor and the Library. These proposed labels are not approved assignments. Set status to reviewed only after the Reviewer checks the original notice. Then run node audience/apply.mjs. Do not guess labels from keywords.",
+  "status": "reviewed-examples",
+  "review": "Rules and these four historical examples were independently checked GREEN at 00:57 CET on 8 November 2026. That check does not clear other items, software publication, or a live newsletter send.",
+  "documentation": "audience/README.md. Only these four rows are reviewed. Do not guess labels from keywords.",
   "labels": [
     "Drilling",
     "Equipment",
@@ -18,7 +19,7 @@
   },
   "map": {
     "audience_filters": false,
-    "reason": "This stage does not add audience filters to the map. Do not describe newsletter, Library and map filters as one complete set."
+    "reason": "This stage does not add audience filters to the map."
   },
   "assignments": [
     {
@@ -27,40 +28,42 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
       "library_title": "ECO Kutno: drilling of geothermal wells Kutno GT-1 and GT-2",
       "labels": ["Drilling"],
-      "status": "pending_review",
-      "approved": false,
+      "status": "reviewed",
+      "approved": true,
       "method": "manual",
       "integrated_package": true,
+      "bases": {
+        "Drilling": "TED 725171-2026, published 20 October 2026, expressly covers drilling, casing, cementing and completion of Kutno GT-1 and GT-2, together with hydrogeological tests and site restoration, as one construction package."
+      },
       "excluded": [
         {
           "label": "Equipment",
-          "reason": "Casing and other materials are inside the drilling package. An integrated drilling package does not automatically get an Equipment tag."
+          "reason": "Casing and other materials sit inside the drilling package. The notice also includes construction and installation of a thermal-water discharge tank. That tank is part of the same package and is not a separately procured equipment supply."
         },
         {
           "label": "Engineering & Services",
-          "reason": "Hydrogeological tests are described with the drilling package. Routine tests inside that package do not automatically get an Engineering & Services tag."
+          "reason": "Hydrogeological tests are integral to the drilling package. Routine tests inside that package do not add Engineering & Services."
         }
       ],
-      "basis": "The Library summary for this notice records drilling, casing, cementing, completion and hydrogeological tests for two wells. The 8 Nov 2026 rule draft proposes Drilling only and says the tag itself is not yet reviewed.",
+      "basis": "Drilling only. The package is wider than drill pipe and routine tests, and a drilling audience tag remains the defensible single label.",
       "library_summary": "Drilling, casing, cementing, completion and hydrogeological tests for two wells for a planned geothermal heating plant; GT-2 design option and right to drop GT-2.",
       "provenance": [
         {
-          "type": "library_entry",
+          "type": "original_notice",
           "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
           "notice_id": "TED 725171-2026",
-          "in_repo": true
-        },
-        {
-          "type": "open_tender_entry",
-          "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-          "notice_id": "TED 725171-2026",
-          "in_repo": true
+          "checked": "2026-11-08",
+          "note": "Independent review of the TED description: drilling, casing, cementing, completion, hydrogeological tests, site restoration, and a thermal-water discharge tank in the same package."
         },
         {
           "type": "editorial_record_outside_repo",
-          "ref": "issues/issue-5-final.md, lines 26–33, as cited by the 8 Nov 2026 rule draft",
-          "in_repo": false,
-          "note": "That editorial file is not in this repository and was not opened here."
+          "ref": "issues/issue-5-final.md, lines 26–33",
+          "in_repo": false
+        },
+        {
+          "type": "independent_review",
+          "ref": "Audience-tag review, 8 November 2026, final delta GREEN at 00:57 CET",
+          "result": "GREEN"
         }
       ]
     },
@@ -70,36 +73,46 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
       "library_title": "HVC: framework agreement for heat exchangers for geothermal projects",
       "labels": ["Equipment"],
-      "status": "pending_review",
-      "approved": false,
+      "status": "reviewed",
+      "approved": true,
       "method": "manual",
-      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED 726565-2026, published 21 October 2026, procures design, engineering, manufacturing, transportation and delivery of vertical plate-and-frame heat exchangers in two portfolio lots, Westland and Slochteren. The lots are represented by the Wippolderlaan and Alton datasheets. The notice does not limit the framework to exactly two plants."
+      },
       "excluded": [
         {
+          "label": "Engineering & Services",
+          "reason": "Design and engineering in this notice are the ordinary work of supplying the heat exchangers. They are not a separate engineering deliverable."
+        },
+        {
+          "label": "Drilling",
+          "reason": "Nothing in the supply package is a drilling, well-construction or well-intervention contract."
+        },
+        {
           "label": "Project owners & developers",
-          "reason": "The buyer being a project owner does not make the item a project-development or funding instrument. The stated scope is supply of heat exchangers."
+          "reason": "The buyer being a project owner does not make this a project-development or funding instrument."
         }
       ],
-      "basis": "The Library summary identifies a framework for plate-and-frame heat exchangers for two plant locations. The 8 Nov 2026 rule draft proposes Equipment only and says the tag itself is not yet reviewed.",
+      "basis": "Equipment only. Two portfolio lots, not a count of plant sites. Integral product engineering does not add a second tag.",
       "library_summary": "Plate-and-frame heat exchangers for HVC's geothermal production plants; lots Westland (est. EUR 3.5m) and Slochteren (est. EUR 5m).",
       "provenance": [
         {
-          "type": "library_entry",
+          "type": "original_notice",
           "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
           "notice_id": "TED 726565-2026",
-          "in_repo": true
-        },
-        {
-          "type": "open_tender_entry",
-          "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-          "notice_id": "TED 726565-2026",
-          "in_repo": true
+          "checked": "2026-11-08",
+          "note": "Independent review: two portfolio lots, Westland and Slochteren, not a statement that there are exactly two plants."
         },
         {
           "type": "editorial_record_outside_repo",
-          "ref": "issues/issue-5-final.md, lines 35–42, as cited by the 8 Nov 2026 rule draft",
-          "in_repo": false,
-          "note": "That editorial file is not in this repository and was not opened here."
+          "ref": "issues/issue-5-final.md, lines 35–42",
+          "in_repo": false
+        },
+        {
+          "type": "independent_review",
+          "ref": "Audience-tag review, 8 November 2026, final delta GREEN at 00:57 CET",
+          "result": "GREEN"
         }
       ]
     },
@@ -109,40 +122,41 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
       "library_title": "Energies du Grand Paris: project-management framework for the Paris heat networks (incl. geothermal production sites)",
       "labels": ["Engineering & Services"],
-      "status": "pending_review",
-      "approved": false,
+      "status": "reviewed",
+      "approved": true,
       "method": "manual",
-      "integrated_package": false,
+      "bases": {
+        "Engineering & Services": "TED 755201-2026, published 30 October 2026, is a framework for conception and supervision of renewal, modernisation, development and densification works on the Paris heat networks."
+      },
       "excluded": [
         {
           "label": "Drilling",
-          "reason": "The Library summary is a maîtrise d'œuvre framework. It does not procure the drilling contracts. Future drilling is not a tag."
+          "reason": "Future geothermal production sites are context for the design and supervision. This notice does not procure the drilling."
         },
         {
           "label": "Equipment",
-          "reason": "Substations and network length describe the system being designed and supervised. They are not a supply contract for equipment."
+          "reason": "Networks and substations describe the system being designed and supervised. They are not a supply contract for equipment."
         }
       ],
-      "basis": "The Library summary is a framework for maîtrise d'œuvre on the Paris heat networks. The 8 Nov 2026 rule draft proposes Engineering & Services only and says the tag itself is not yet reviewed.",
+      "basis": "Engineering & Services only. Downstream drilling or equipment contracts are not tagged from this notice.",
       "library_summary": "Framework for maîtrise d'œuvre; about 8 geothermal/renewable production sites, 200 km hot-water and 25 km steam network, 2,900 hot-water and 664 steam substations.",
       "provenance": [
         {
-          "type": "library_entry",
+          "type": "original_notice",
           "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
           "notice_id": "TED 755201-2026",
-          "in_repo": true
-        },
-        {
-          "type": "open_tender_entry",
-          "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-          "notice_id": "TED 755201-2026",
-          "in_repo": true
+          "checked": "2026-11-08",
+          "note": "Independent review of the TED description: conception and supervision, not equipment or drilling procurement."
         },
         {
           "type": "editorial_record_outside_repo",
-          "ref": "issues/issue-6-final.md, lines 20–27, as cited by the 8 Nov 2026 rule draft",
-          "in_repo": false,
-          "note": "That editorial file is not in this repository and was not opened here."
+          "ref": "issues/issue-6-final.md, lines 20–27",
+          "in_repo": false
+        },
+        {
+          "type": "independent_review",
+          "ref": "Audience-tag review, 8 November 2026, final delta GREEN at 00:57 CET",
+          "result": "GREEN"
         }
       ]
     },
@@ -151,32 +165,47 @@
       "notice_id": "FR-IDF-FEDER-geothermie-2026",
       "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
       "library_title": "Île-de-France ERDF call 2026: geothermal heat and cold",
-      "labels": [],
-      "status": "untagged",
-      "approved": false,
-      "method": "withheld",
-      "withhold": "Project owners & developers",
-      "withhold_until": "The Reviewer confirms that the call's stated applicants or beneficiaries are project owners or developers.",
-      "basis": "The Library summary calls this a regional ERDF call for geothermal heat and cold production and distribution. It does not state who may apply. The 8 Nov 2026 rule draft treats Project owners & developers as conditional only, so this item stays untagged.",
+      "labels": ["Project owners & developers"],
+      "status": "reviewed",
+      "approved": true,
+      "method": "manual",
+      "eligibility_caveat": "The audience tag does not mean that every reader or every project developer is individually eligible. Programme conditions still apply.",
+      "bases": {
+        "Project owners & developers": "Call PDF §2, printed pages 5–6, supports creation or extension of geothermal heat and cold production and distribution installations. §3.1, printed page 6, lists eligible project proponents, including operators and representatives of local authorities and their groupings, public establishments, local public and mixed-economy companies, mixed syndicates, micro, small and medium enterprises and listed groupings, social and solidarity-economy structures, associations, foundations and social landlords (OPHLM)."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "Drilling that a funded project may later contain is not a drilling contract in this call."
+        },
+        {
+          "label": "Equipment",
+          "reason": "Equipment that a funded project may later buy is not an equipment-supply notice."
+        },
+        {
+          "label": "Engineering & Services",
+          "reason": "Engineering that a funded project may later procure is not a services notice."
+        }
+      ],
+      "basis": "Project owners & developers only. §2 and §3.1 together show a development and funding instrument for project proponents. The tag is not an individual eligibility decision.",
       "library_summary": "Regional ERDF call for geothermal heat and cold production and distribution.",
       "provenance": [
         {
-          "type": "library_entry",
+          "type": "original_notice",
           "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
           "notice_id": "FR-IDF-FEDER-geothermie-2026",
-          "in_repo": true
-        },
-        {
-          "type": "open_tender_entry",
-          "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-          "notice_id": "FR-IDF-FEDER-geothermie-2026",
-          "in_repo": true
+          "checked": "2026-11-08",
+          "note": "Independent review of the original PDF: §2 printed pages 5–6 and §3.1 printed page 6."
         },
         {
           "type": "editorial_record_outside_repo",
-          "ref": "issues/issue-6-final.md, line 120, as cited by the 8 Nov 2026 rule draft",
-          "in_repo": false,
-          "note": "That editorial file is not in this repository and was not opened here. Beneficiary scope is not confirmed."
+          "ref": "issues/issue-6-final.md, line 120",
+          "in_repo": false
+        },
+        {
+          "type": "independent_review",
+          "ref": "Audience-tag review, 8 November 2026, final delta GREEN at 00:57 CET",
+          "result": "GREEN"
         }
       ]
     }

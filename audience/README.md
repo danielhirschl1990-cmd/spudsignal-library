@@ -1,6 +1,6 @@
 # Audience categories
 
-Status: review draft, 8 November 2026. This file is the shared rule sheet for the newsletter editor and the Library. It is not a published newsletter, and it does not authorise a live change.
+Status: rules and four historical examples reviewed GREEN at 00:57 CET on 8 November 2026. This file is the shared rule sheet for the newsletter editor and the Library. It does not authorise a live change or a Beehiiv send. Other Library items stay unclassified.
 
 The newsletter itself lives outside this repository and has not been edited. `audience/newsletter-item.html` is a reusable excerpt. Use the same labels, on the same source, as `audience/assignments.json`.
 
@@ -22,7 +22,7 @@ A tag says who the item is directly relevant to. It is an orientation aid. It is
 - **Engineering & Services.** The item explicitly procures or reports design, engineering, studies, testing or specialist services. Routine tests inside a drilling package do not add a second tag.
 - **Project owners & developers.** Only a project-development instrument or decision, such as exploration or development rights, or funding whose stated applicants or beneficiaries are project owners or developers. A project update, an award notice, or a policy story does not qualify on its own.
 
-Add a second tag only when that tag has its own explicit basis in the source. Record the basis and the original notice in `audience/assignments.json`. Leave an uncertain item untagged. Untagged does not mean irrelevant. Do not invent a tag to fill a filter, and do not assign tags by scanning titles for keywords.
+Add a second tag only when that tag has its own explicit basis in the source. Record the basis and the original notice in `audience/assignments.json`. An integrated drilling package does not gain Equipment or Engineering & Services from casing or routine tests. Design, engineering, manufacture and delivery that are part of supplying a product do not add Engineering & Services or Drilling. A second tag needs a deliverable beyond that ordinary supply work. This is an editorial convention, not a legal procurement class. Leave an uncertain item untagged. Untagged does not mean irrelevant. Do not invent a tag to fill a filter, and do not assign tags by scanning titles for keywords.
 
 Historical badge mockups are style references only. They are not approved mappings.
 
@@ -34,24 +34,24 @@ Historical badge mockups are style references only. They are not approved mappin
 node audience/apply.mjs
 ```
 
-The script checks the record before it writes. It refuses a keyword method, a second tag with no separate basis, an Equipment or Engineering & Services tag on an integrated drilling package unless that tag has its own `separate_basis`, and any label on the Île-de-France ERDF call while beneficiary evidence is unconfirmed.
+The script checks the record before it writes. It refuses a keyword method, a second tag with no separate basis, an extra Equipment or Engineering & Services tag on an integrated drilling package, an extra Drilling or Engineering & Services tag on an equipment-supply package, and any FEDER label other than Project owners & developers.
 
 `status` is one of:
 
-- `pending_review` — a proposed label. The page shows the full name and the words “Proposed, pending review”. `approved` must be false. This is not an approved assignment.
-- `reviewed` — the Reviewer has checked the original. `approved` must be true, and each label needs its own `bases` entry. The pending phrase is then omitted.
-- `untagged` — no audience badge. `labels` must be empty.
+- `reviewed` — checked against the original. `approved` is true, and each label has its own `bases` entry. The public badge is the full name only.
+- `pending_review` — not used for the four historical examples.
+- `untagged` — no audience badge. `labels` is empty.
 
-## Proposed examples, not yet reviewed
+## Reviewed historical examples
 
-These four items are the 8 November 2026 examples. The proposed categories are not independently approved. The in-repo basis is the Library summary already published for that source. Editorial files cited by the rule draft (`issues/issue-5-final.md`, `issues/issue-6-final.md`) are not in this repository and were not opened here.
+These four rows are the independently checked examples. The check was GREEN at 00:57 CET on 8 November 2026. They are historical items, not a new deadline briefing. Every other source stays unclassified.
 
-| Item | Notice | Proposed label | Status |
+| Item | Notice | Label | Basis |
 | --- | --- | --- | --- |
-| ECO Kutno wells GT-1 and GT-2 | [TED 725171-2026](https://ted.europa.eu/en/notice/-/detail/725171-2026) | Drilling | Pending review. No Equipment tag for casing in the drilling package. No Engineering & Services tag for the hydrogeological tests in that package. |
-| HVC heat-exchanger framework | [TED 726565-2026](https://ted.europa.eu/en/notice/-/detail/726565-2026) | Equipment | Pending review. The buyer being a project owner does not add Project owners & developers. |
-| Energies du Grand Paris design and supervision framework | [TED 755201-2026](https://ted.europa.eu/en/notice/-/detail/755201-2026) | Engineering & Services | Pending review. Later drilling or equipment contracts are not tagged from this item. |
-| Île-de-France ERDF geothermal call | [FR-IDF-FEDER-geothermie-2026](https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf) | None | Untagged until the stated applicants or beneficiaries are confirmed. |
+| ECO Kutno wells GT-1 and GT-2 | [TED 725171-2026](https://ted.europa.eu/en/notice/-/detail/725171-2026) | Drilling | Drilling, casing, cementing and completion, with integral tests and site restoration. A thermal-water discharge tank in the same package does not add Equipment. |
+| HVC heat-exchanger framework | [TED 726565-2026](https://ted.europa.eu/en/notice/-/detail/726565-2026) | Equipment | Supply in two portfolio lots, Westland and Slochteren, not a count of exactly two plants. Integral product engineering does not add Engineering & Services. |
+| Energies du Grand Paris design and supervision framework | [TED 755201-2026](https://ted.europa.eu/en/notice/-/detail/755201-2026) | Engineering & Services | Conception and supervision. Later drilling or equipment is not tagged from this notice. |
+| Île-de-France ERDF geothermal call | [FR-IDF-FEDER-geothermie-2026](https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf) | Project owners & developers | PDF §2 (printed pages 5–6) and §3.1 (printed page 6) name the funded installations and the project proponents. The tag is not a statement that any particular reader is eligible. |
 
 No reviewed multi-tag example is included. A layout sample with two names exists only in `audience/preview.html` and in the newsletter excerpt, and it is marked as not a source.
 
@@ -70,7 +70,7 @@ Behaviour, covered by `audience/filter.test.mjs`:
 - An entry must satisfy every group that has a selection (AND). Drilling plus Poland plus Other shows an entry only when it is Drilling and Poland and Other.
 - Press a selected audience again to clear that one label. **All** in the audience row clears audience only. The **All** button above the audience row on the tender list clears type, technical category, country and audience.
 - An untagged entry, including the ERDF call, remains visible under All and drops out when any audience label is selected.
-- A proposed label is included so the filter can be checked. The badge still says “Proposed, pending review”.
+- An entry with no audience label remains visible under All and drops out when any audience label is selected.
 
 The selected state shows the word “Selected” and `aria-pressed="true"`. Colour is extra, not the only signal.
 
@@ -80,7 +80,9 @@ The map has no audience filters in this stage. Weekly map maintenance, project p
 
 ## Newsletter excerpt
 
-Copy the “For:” line from `audience/newsletter-item.html` only after the Reviewer accepts the label. The line keeps the full name as text, so it can still be read if images are blocked. The Library uses the original SVG files in `symbols/` (`aud-drilling`, `aud-equipment`, `aud-engineering`, `aud-owners`). Email uses the matching PNG and `@2x` PNG, with root-relative addresses. Proposed labels stay pending until that review.
+The “For:” line in `audience/newsletter-item.html` uses the same labels as the Library. The words stay if images are blocked. The Library uses the original SVG files `symbols/aud-drilling.svg`, `symbols/aud-equipment.svg`, `symbols/aud-engineering.svg` and `symbols/aud-owners.svg`.
+
+The template’s image addresses are root-relative (`/symbols/…`). They are for this site. They are not ready to paste into Beehiiv. At insertion, replace each `src` and `srcset` with the absolute public URL of that file, for example `https://library.spudsignal.com/symbols/aud-drilling.png` and `https://library.spudsignal.com/symbols/aud-drilling@2x.png`, once the file is on the public site. The Beehiiv newsletter has not been edited.
 
 Do not start a segmented mailing from these tags. Do not present a pending label as a finished newsletter tag.
 

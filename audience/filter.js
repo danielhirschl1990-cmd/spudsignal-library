@@ -138,11 +138,22 @@
           }
         });
       }
+      if (a.supply_package) {
+        ["Drilling", "Engineering & Services"].forEach(function (extra) {
+          if (a.labels && a.labels.indexOf(extra) >= 0 && !(a.separate_basis && String(a.separate_basis[extra] || "").trim())) {
+            errors.push(where + " is an equipment supply and cannot add " + extra + " without a separate basis");
+          }
+        });
+      }
       if (a.withhold && a.labels && a.labels.indexOf(a.withhold) >= 0) errors.push(where + " still includes the withheld label");
       if (a.notice_id === "FR-IDF-FEDER-geothermie-2026" || /FEDER2026_G/.test(a.url || "")) {
-        if ((a.labels && a.labels.length) || a.status !== "untagged") {
-          errors.push("FEDER must remain untagged until beneficiary evidence is confirmed");
+        var federLabels = (a.labels || []).slice().sort().join("|");
+        if (federLabels !== "Project owners & developers" || a.status !== "reviewed") {
+          errors.push("FEDER example is Project owners & developers only, from the reviewed call");
         }
+        ["Drilling", "Equipment", "Engineering & Services"].forEach(function (extra) {
+          if (a.labels && a.labels.indexOf(extra) >= 0) errors.push("FEDER example cannot add " + extra);
+        });
       }
       if (!a.basis || String(a.basis).trim().length < 12) errors.push(where + " needs a written basis");
       if (!Array.isArray(a.provenance) || !a.provenance.length) errors.push(where + " needs provenance");
