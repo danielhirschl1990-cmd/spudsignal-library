@@ -1,0 +1,90 @@
+# Audience categories
+
+Status: the independent full audit of 8 November 2026, 01:22 CET, is reconciled in `audience/assignments.json` by exact URL. 70 rows carry reviewed labels, 5 green rows are intentionally untagged, and 21 yellow rows stay untagged. This file does not authorise a live change or a Beehiiv send.
+
+The newsletter itself lives outside this repository and has not been edited. `audience/newsletter-item.html` is a reusable excerpt. Use the same labels, on the same source, as `audience/assignments.json`.
+
+## Exact public labels
+
+- Drilling
+- Equipment
+- Engineering & Services
+- Project owners & developers
+
+Write the names in full. Do not shorten them to “Eng. & Services” or “Owners & developers”. A symbol or a colour may sit beside the name. It does not replace the name. On a narrow screen the full name wraps or the controls stack. They do not scroll sideways.
+
+## What a tag means
+
+A tag says who the item is directly relevant to. It is an orientation aid. It is not bidder eligibility, not the identity of the buyer, not a personalised feed, and not every possible later sale.
+
+- **Drilling.** The item explicitly procures or reports drilling, well construction, completion or well intervention.
+- **Equipment.** The item explicitly procures supply of identifiable equipment or components. Equipment that a drilling contractor merely uses does not add a second tag.
+- **Engineering & Services.** The item explicitly procures or reports design, engineering, studies, testing or specialist services. Routine tests inside a drilling package do not add a second tag.
+- **Project owners & developers.** Only a project-development instrument or decision, such as exploration or development rights, or funding whose stated applicants or beneficiaries are project owners or developers. A project update, an award notice, or a policy story does not qualify on its own.
+
+Add a second tag only when that tag has its own explicit basis in the source. Record the basis and the original notice in `audience/assignments.json`. An integrated drilling package does not gain Equipment or Engineering & Services from casing or routine tests. Design, engineering, manufacture and delivery that are part of supplying a product do not add Engineering & Services or Drilling. A second tag needs a deliverable beyond that ordinary supply work. This is an editorial convention, not a legal procurement class. Leave an uncertain item untagged. Untagged does not mean irrelevant. Do not invent a tag to fill a filter, and do not assign tags by scanning titles for keywords.
+
+Historical badge mockups are style references only. They are not approved mappings.
+
+## Assignment record
+
+`audience/assignments.json` is the only list of labels. The Library, the open-tender list, and the newsletter excerpt all read it. After an edit, run:
+
+```bash
+node audience/apply.mjs
+```
+
+The script checks the record before it writes. It refuses a keyword method, a second tag with no separate basis, an extra Equipment or Engineering & Services tag on an integrated drilling package, an extra Drilling or Engineering & Services tag on an equipment-supply package, and any FEDER label other than Project owners & developers.
+
+`status` is one of:
+
+- `reviewed` — checked against the original. `approved` is true, and each label has its own `bases` entry. The public badge is the full name only.
+- `pending_review` — not used after the 8 November reconciliation. A public badge from that status would say “Proposed, pending review”.
+- `untagged` — no audience badge. `labels` is empty. This covers the five green rows left blank on purpose and the 21 yellow rows the reviewer withheld.
+
+## Reviewed historical examples
+
+These four rows were the first independently checked examples, GREEN at 00:57 CET on 8 November 2026. The later full audit confirmed the same labels. They are historical items, not a new deadline briefing. The other reviewed rows are in the assignment file, each with the reviewer id `AUD-…`.
+
+| Item | Notice | Label | Basis |
+| --- | --- | --- | --- |
+| ECO Kutno wells GT-1 and GT-2 | [TED 725171-2026](https://ted.europa.eu/en/notice/-/detail/725171-2026) | Drilling | Drilling, casing, cementing and completion, with integral tests and site restoration. A thermal-water discharge tank in the same package does not add Equipment. |
+| HVC heat-exchanger framework | [TED 726565-2026](https://ted.europa.eu/en/notice/-/detail/726565-2026) | Equipment | Supply in two portfolio lots, Westland and Slochteren, not a count of exactly two plants. Integral product engineering does not add Engineering & Services. |
+| Energies du Grand Paris design and supervision framework | [TED 755201-2026](https://ted.europa.eu/en/notice/-/detail/755201-2026) | Engineering & Services | Conception and supervision. Later drilling or equipment is not tagged from this notice. |
+| Île-de-France ERDF geothermal call | [FR-IDF-FEDER-geothermie-2026](https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf) | Project owners & developers | PDF §2 (printed pages 5–6) and §3.1 (printed page 6) name the funded installations and the project proponents. The tag is not a statement that any particular reader is eligible. |
+
+No reviewed multi-tag example is included. A layout sample with two names exists only in `audience/preview.html` and in the newsletter excerpt, and it is marked as not a source.
+
+Every other Library source and open tender stays untagged. That is deliberate. Their scope was not reviewed into this record.
+
+## Filters
+
+The default is **All**. Every entry stays visible, including untagged entries.
+
+On the open-tender list, the existing controls stay: type (Tenders / Funding calls), technical category (Deep well, Shallow BHE, Planning, Other), country, and the Closing soon view. Those technical categories are not audience tags.
+
+Behaviour, covered by `audience/filter.test.mjs`:
+
+- Inside the audience group, several selected labels match an entry that carries **any** of them (ANY / OR).
+- Inside type, technical category and country, several selected values also match any of those values, as they did before.
+- An entry must satisfy every group that has a selection (AND). Drilling plus Poland plus Other shows an entry only when it is Drilling and Poland and Other.
+- Press a selected audience again to clear that one label. **All** in the audience row clears audience only. The **All** button above the audience row on the tender list clears type, technical category, country and audience.
+- An entry with no audience label remains visible under All and drops out when any audience label is selected. A tag is not eligibility and it is not a check that a deadline is currently open.
+
+The selected state shows the word “Selected” and `aria-pressed="true"`. Colour is extra, not the only signal.
+
+## Map
+
+The map uses the same assignment record and joins a pin only when the source URL is the same string. The source citation in each popup can repeat; the map does not use it as a key, so a repeated citation does not drop or merge a pin. The Charles University project pin cites TED 674260-2026 and names wellheads and frac trees only. Liner hangers remain the separate TED 679859-2026 pin. All is the default. Several audience labels match a pin that carries any of them, together with the existing type and country controls. Pins and nationwide calls with no label stay visible under All and drop out when a label is selected. That empty result is not a statement that no projects exist. Marker shapes, source and date lines, separate pins at one site, and the existing same-notice project/tender handling are unchanged. The Kalisz map pin uses a different URL from the PGI record and stays unlabelled. `audience/map-crosswalk-2026-11-08.json` lists every pin. Documented Pessac and KEHOP identities in the content review are not approved alternate map links. This preview is not a live publication.
+
+## Newsletter excerpt
+
+The “For:” line in `audience/newsletter-item.html` uses the same labels as the Library. The words stay if images are blocked. The Library uses the original SVG files `symbols/aud-drilling.svg`, `symbols/aud-equipment.svg`, `symbols/aud-engineering.svg` and `symbols/aud-owners.svg`.
+
+The template’s image addresses are root-relative (`/symbols/…`). They are for this site. They are not ready to paste into Beehiiv. At insertion, replace each `src` and `srcset` with the absolute public URL of that file, for example `https://library.spudsignal.com/symbols/aud-drilling.png` and `https://library.spudsignal.com/symbols/aud-drilling@2x.png`, once the file is on the public site. The Beehiiv newsletter has not been edited.
+
+Do not start a segmented mailing from these tags. Do not present a pending label as a finished newsletter tag.
+
+## After the 8 November audit
+
+The assignment file follows the independent review by exact URL and reviewer id. Yellow rows have no labels. Multi-tag corrections from that review are Aussac, both Kaba records, Călimănești, and Krafla. Stored Library sentences, including counts and start dates the reviewer did not clear, are not rewritten by the tag. The map crosswalk is `audience/map-crosswalk-2026-11-08.json` with the same rows in CSV and Markdown. Nothing here is a public release.
