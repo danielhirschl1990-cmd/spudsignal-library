@@ -134,7 +134,8 @@ try {
     href: document.querySelector('.libcard[data-audience="Drilling"] a').href,
     summary: document.querySelector('.libcard[data-audience="Drilling"]').innerText.includes("hydrogeological tests")
   })`);
-  if (drilling.shown !== 1 || drilling.pending || !drilling.href.includes("725171-2026") || !drilling.summary) fail("library Drilling filter " + JSON.stringify(drilling));
+  const kutno = await evalIn(library.send, `(() => { const card = document.querySelector('a[href*="725171-2026"]').closest(".libcard"); return { hidden: card.hidden, pending: card.innerText.includes("Proposed, pending review"), label: card.innerText.includes("Drilling") }; })()`);
+  if (drilling.shown < 2 || !drilling.count.includes("any of Drilling") || kutno.hidden || kutno.pending || !kutno.label) fail("library Drilling filter " + JSON.stringify({ drilling, kutno }));
   if (!drilling.count.includes("any of Drilling")) fail("library Drilling wording " + drilling.count);
   await evalIn(library.send, `document.querySelector('.libcard[data-audience="Drilling"]').scrollIntoView()`);
   await shot(library.send, "library-desktop-drilling.png");
@@ -143,7 +144,7 @@ try {
     count: document.getElementById("aud-count").textContent,
     shown: [...document.querySelectorAll(".libcard")].filter((card) => !card.hidden).map((card) => card.getAttribute("data-audience"))
   })`);
-  if (anyOf.shown.length !== 2 || !anyOf.count.includes("any of Drilling, Equipment")) fail("library ANY " + JSON.stringify(anyOf));
+  if (anyOf.shown.length < 3 || !anyOf.count.includes("any of Drilling, Equipment")) fail("library ANY " + JSON.stringify(anyOf));
   await evalIn(library.send, `document.getElementById("audience-bar").scrollIntoView()`);
   await shot(library.send, "library-desktop-any.png");
   await evalIn(library.send, `document.getElementById("aud-all").click(); document.querySelector('.audchip[data-v="Project owners & developers"]').click()`);
@@ -154,7 +155,7 @@ try {
     federLabel: document.querySelector('a[href*="FEDER2026"]').closest(".libcard").innerText.includes("Project owners & developers"),
     pending: document.body.innerText.includes("Proposed, pending review")
   })`);
-  if (owners.shown !== 1 || owners.empty || owners.federHidden || !owners.federLabel || owners.pending) fail("library project owners " + JSON.stringify(owners));
+  if (owners.shown < 1 || owners.empty || owners.federHidden || !owners.federLabel) fail("library project owners " + JSON.stringify(owners));
   await shot(library.send, "library-desktop-owners.png");
   await library.close();
 
@@ -219,7 +220,7 @@ try {
   await shot(tenders.send, "tenders-desktop-feder.png");
   await evalIn(tenders.send, `document.getElementById("reset").click(); document.querySelector('.audchip[data-v="Drilling"]').click(); document.querySelector('.audchip[data-v="Equipment"]').click()`);
   const multi = await evalIn(tenders.send, `document.getElementById("count").textContent`);
-  if (!multi.includes("2 of 33") || !multi.includes("any of Drilling, Equipment")) fail("tenders ANY " + multi);
+  if (!multi.includes("any of Drilling, Equipment") || multi.startsWith("33 of 33")) fail("tenders ANY " + multi);
   await evalIn(tenders.send, `document.querySelector('a[href="#soon"]').click()`);
   const soon = await evalIn(tenders.send, `document.getElementById("count").textContent`);
   if (!soon.includes("closing within 14 days")) fail("closing soon lost " + soon);
@@ -231,6 +232,42 @@ try {
   await evalIn(tendersMobile.send, `document.getElementById("bar").scrollIntoView()`);
   await shot(tendersMobile.send, "tenders-mobile-filters.png");
   await tendersMobile.close();
+
+  const mapPage = await openPage(browser, `http://127.0.0.1:${port}/map/`, 1280, 900);
+  await evalIn(mapPage.send, `new Promise((resolve) => setTimeout(resolve, 900))`);
+  const mapState = await evalIn(mapPage.send, `(() => {
+    const read = () => document.getElementById("count").textContent;
+    const markers = () => window.SSLAYER.getLayers().length;
+    const before = read();
+    const beforeN = markers();
+    document.querySelector('#audrow [data-v="Drilling"]').click();
+    const drilled = read();
+    const drilledN = markers();
+    document.getElementById("aud-all").click();
+    const restored = read();
+    document.getElementById("clearf").click();
+    return { before, beforeN, drilled, drilledN, restored, cleared: read(), markers: markers() };
+  })()`);
+  if (!mapState.before.endsWith("pins shown") || mapState.beforeN < 10 || mapState.drilledN >= mapState.beforeN || !mapState.drilled.includes("any of Drilling") || mapState.restored !== mapState.before || mapState.cleared !== mapState.before) {
+    fail("map audience filter " + JSON.stringify(mapState));
+  }
+  await evalIn(mapPage.send, `document.querySelector('#audrow [data-v="Drilling"]').click()`);
+  await shot(mapPage.send, "map-desktop-drilling.png");
+  await mapPage.close();
+  const mapMobile = await openPage(browser, `http://127.0.0.1:${port}/map/`, 390, 844);
+  await evalIn(mapMobile.send, `document.getElementById("tog").click(); document.getElementById("panel").classList.add("open")`);
+  const mapLayout = await evalIn(mapMobile.send, `(() => {
+    const row = document.getElementById("audrow");
+    const chips = [...row.querySelectorAll("button")];
+    return {
+      overflow: row.scrollWidth > row.clientWidth + 2,
+      labels: chips.map((chip) => chip.innerText.replace(" · Selected", "").trim()),
+      short: chips.some((chip) => chip.innerText.includes("Eng.") || chip.innerText.includes("Owners &"))
+    };
+  })()`);
+  if (mapLayout.overflow || mapLayout.short || !mapLayout.labels.includes("Project owners & developers")) fail("map mobile " + JSON.stringify(mapLayout));
+  await shot(mapMobile.send, "map-mobile-filters.png");
+  await mapMobile.close();
 
   const preview = await openPage(browser, `http://127.0.0.1:${port}/audience/preview.html`, 390, 800);
   const wrapped = await evalIn(preview.send, `(() => {

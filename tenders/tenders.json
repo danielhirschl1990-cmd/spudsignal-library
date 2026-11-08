@@ -30,8 +30,10 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "7b5311b7bce42b93",
@@ -59,8 +61,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "4d8245a64661a9ca",
@@ -118,8 +122,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Equipment"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "59eca9045bac22e1",
@@ -145,8 +151,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "41cabab7a5f09b40",
@@ -172,8 +180,10 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "fbe0bf1d339c6850",
@@ -203,8 +213,10 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "7095f2787aa83db3",
@@ -235,8 +247,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Equipment"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "3a5d2c3eb36bebba",
@@ -264,8 +278,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "4100e4cedb042af9",
@@ -292,8 +308,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "7bded30fa2266c1c",
@@ -323,8 +341,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "3c97938c6f31d0cc",
@@ -360,8 +380,10 @@
    "first_seen": "2026-11-01",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "253e005b3f55f334",
@@ -389,8 +411,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Equipment"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "798e608fb28b08cb",
@@ -420,8 +444,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "803c662051981e98",
@@ -501,8 +527,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "6b774d72bcf5d7f5",
@@ -531,8 +559,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "3942db59a0569a17",
@@ -624,8 +654,10 @@
    "first_seen": "2026-10-25",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Equipment"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "82be64efeab79612",
@@ -685,8 +717,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "06fd138aa75e9be4",
@@ -752,8 +786,10 @@
    "first_seen": "2026-10-23",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "0dc12863fa50d657",
@@ -782,8 +818,10 @@
    "first_seen": "2026-11-01",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "1d1fcdf4e5f90302",
@@ -837,8 +875,10 @@
    "first_seen": "2026-11-01",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Engineering & Services"
+   ],
+   "audience_status": "pending_review"
   },
   {
    "uid": "50fb456c6fff3b64",
@@ -984,8 +1024,10 @@
    "first_seen": "2026-11-01",
    "change": null,
    "accessed": "2026-11-01",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling"
+   ],
+   "audience_status": "pending_review"
   }
  ],
  "removed": [

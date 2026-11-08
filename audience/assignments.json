@@ -1,7 +1,7 @@
 {
   "schema": "spudsignal.audience.assignments.v1",
   "updated": "2026-11-08",
-  "status": "reviewed-examples",
+  "status": "reviewed-examples-plus-pending-proposals",
   "review": "Rules and these four historical examples were independently checked GREEN at 00:57 CET on 8 November 2026. That check does not clear other items, software publication, or a live newsletter send.",
   "documentation": "audience/README.md. Only these four rows are reviewed. Do not guess labels from keywords.",
   "labels": [
@@ -27,7 +27,9 @@
       "notice_id": "TED 725171-2026",
       "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
       "library_title": "ECO Kutno: drilling of geothermal wells Kutno GT-1 and GT-2",
-      "labels": ["Drilling"],
+      "labels": [
+        "Drilling"
+      ],
       "status": "reviewed",
       "approved": true,
       "method": "manual",
@@ -72,7 +74,9 @@
       "notice_id": "TED 726565-2026",
       "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
       "library_title": "HVC: framework agreement for heat exchangers for geothermal projects",
-      "labels": ["Equipment"],
+      "labels": [
+        "Equipment"
+      ],
       "status": "reviewed",
       "approved": true,
       "method": "manual",
@@ -121,7 +125,9 @@
       "notice_id": "TED 755201-2026",
       "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
       "library_title": "Energies du Grand Paris: project-management framework for the Paris heat networks (incl. geothermal production sites)",
-      "labels": ["Engineering & Services"],
+      "labels": [
+        "Engineering & Services"
+      ],
       "status": "reviewed",
       "approved": true,
       "method": "manual",
@@ -165,7 +171,9 @@
       "notice_id": "FR-IDF-FEDER-geothermie-2026",
       "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
       "library_title": "Île-de-France ERDF call 2026: geothermal heat and cold",
-      "labels": ["Project owners & developers"],
+      "labels": [
+        "Project owners & developers"
+      ],
       "status": "reviewed",
       "approved": true,
       "method": "manual",
@@ -206,6 +214,1794 @@
           "type": "independent_review",
           "ref": "Audience-tag review, 8 November 2026, final delta GREEN at 00:57 CET",
           "result": "GREEN"
+        }
+      ]
+    },
+    {
+      "key": "ted:620241-2026",
+      "notice_id": "TED 620241-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/620241-2026",
+      "library_title": "Flanders: gravity and magnetotelluric surveys, Brabant Massif",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: carrying out gravimetric and magnetotelluric measurements in the Brabant Massif as part of geological exploration."
+      },
+      "excluded": [],
+      "basis": "The notice is a contract to carry out gravimetric and magnetotelluric measurements.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "This contract involves carrying out gravimetric and magnetotelluric measurements in the Brabant Massif (Flanders) as part of geological exploration for mineralisation and deep geothermal energy. At the same time, the new data will provide further insight into the internal structure, composition and geodynamic history of the Brabant Massif. The contract focuses on two study areas and comprises a fixed portion and a conditional portion. If it is decided to proceed with the conditional portion, this will be communicated in writing by the official responsible for the contract. The first study area (approx. 11–16 km²) is located in the south-western part of Flemish Brabant. This area forms part o",
+      "library_summary": "Geophysical surveys for deep geothermal and critical raw materials in the Brabant Massif.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "This contract involves carrying out gravimetric and magnetotelluric measurements in the Brabant Massif (Flanders) as part of geological exploration for mineralisation and deep geothermal energy. At the same time, the new data will provide further insight into the internal structure, composition and geodynamic history of the Brabant Massif. The contract focuses on two study areas and comprises a fixed portion and a conditional portion. If it is decided to proceed with the conditional portion, this will be communicated in writing by the official responsible for the contract. The first study area (approx. 11–16 km²) is located in the south-western part of Flemish Brabant. This area forms part o",
+          "url": "https://ted.europa.eu/en/notice/-/detail/620241-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:637856-2026",
+      "notice_id": "TED 637856-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/637856-2026",
+      "library_title": "Charles University: day-rate drilling services with rig for SYNERGYS",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: provision of drilling services, including the provision and operation of a drilling rig, ancillary equipment, qualified drilling crew and related services for the SYNERGYS deep geothermal drilling."
+      },
+      "excluded": [
+        {
+          "label": "Equipment",
+          "reason": "Ancillary equipment is named as part of the drilling service, not as a separate supply."
+        }
+      ],
+      "basis": "The notice procures drilling services with a rig and crew. Ancillary equipment stays inside that package.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "This public contract concerns the provision of drilling services, including the provision and operation of a drilling rig, ancillary equipment, qualified drilling crew and related services necessary for the implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Contract contained in Part 3 of the Tender Documentation. For more details, please refer to the tender documents.",
+      "library_summary": "Drilling services with a rig, est. CZK 70m for 150 days; offers closed 22 Sep 2026.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "This public contract concerns the provision of drilling services, including the provision and operation of a drilling rig, ancillary equipment, qualified drilling crew and related services necessary for the implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Contract contained in Part 3 of the Tender Documentation. For more details, please refer to the tender documents.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/637856-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:638913-2026",
+      "notice_id": "TED 638913-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/638913-2026",
+      "library_title": "Verkís, Akureyri: pre-insulated pipe for a geothermal heating main",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Equipment": "TED description: DN500/DN400 pre-insulated bonded steel pipes for the main geothermal heating pipeline, length about 8.5 km."
+      },
+      "excluded": [],
+      "basis": "The notice is the supply of pre-insulated bonded steel pipe for a geothermal heating main.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "DN500/ DN400mm Pre-Insulated bonded steel pipes for main pipeline geothermal heating, length approx 8,5 km",
+      "library_summary": "8.5–8.8 km of DN500/DN400 pre-insulated pipe.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "DN500/ DN400mm Pre-Insulated bonded steel pipes for main pipeline geothermal heating, length approx 8,5 km",
+          "url": "https://ted.europa.eu/en/notice/-/detail/638913-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:643535-2026",
+      "notice_id": "TED 643535-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/643535-2026",
+      "library_title": "Winterthur, Langwiesen school: 40 borehole heat exchangers",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: 40 Erdwärmesonden à 135 m, together with two brine/water heat pumps, for the Langwiesen school."
+      },
+      "excluded": [
+        {
+          "label": "Equipment",
+          "reason": "The heat pumps are named inside the same borehole-works description, not as a separate supply contract."
+        }
+      ],
+      "basis": "The notice is 40 borehole heat exchangers of 135 m. Two heat pumps are named in the same works description and are not split out as a supply lot.",
+      "uncertainty": "The heat pumps are in the same sentence. A reviewer may still see a separate equipment scope.",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "40 Erdwärmesonden à 135m zur Wärmeerzeugung in Kombination mit zwei Sole-Wasser-Wärmepumpen für Gesamtsanierung und Erweiterungsbau der Schulanlage Langwiesen.",
+      "library_summary": "40 borehole heat exchangers of 135 m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "40 Erdwärmesonden à 135m zur Wärmeerzeugung in Kombination mit zwei Sole-Wasser-Wärmepumpen für Gesamtsanierung und Erweiterungsbau der Schulanlage Langwiesen.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/643535-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:649322-2026",
+      "notice_id": "TED 649322-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/649322-2026",
+      "library_title": "Housing fund, Kranj: hydrogeological supervision for geothermal wells",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: hydrogeological expert, supervision and administrative services to monitor three pumping wells and two injection wells in Kranj."
+      },
+      "excluded": [],
+      "basis": "The notice procures hydrogeological supervision for three production and two injection wells.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Namen naročila je zagotovitev hidrogeoloških strokovnih, nadzornih in upravnih storitev, potrebnih za spremljanje izvedbe treh črpalnih in dveh ponikalnih vrtin za potrebe izrabe plitve geotermalne energije s toplotnimi črpalkami sistema voda–voda na območju stanovanjske soseske Ob Savi v Kranju.",
+      "library_summary": "Supervision services for 3 production and 2 injection wells.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Namen naročila je zagotovitev hidrogeoloških strokovnih, nadzornih in upravnih storitev, potrebnih za spremljanje izvedbe treh črpalnih in dveh ponikalnih vrtin za potrebe izrabe plitve geotermalne energije s toplotnimi črpalkami sistema voda–voda na območju stanovanjske soseske Ob Savi v Kranju.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/649322-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:649808-2026",
+      "notice_id": "TED 649808-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/649808-2026",
+      "library_title": "WärmeWerk Wörth: wireline logging for two deep geothermal wells",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: provision of wireline logging services for two deep geothermal wells near Wörth am Rhein."
+      },
+      "excluded": [],
+      "basis": "The notice procures wireline-logging services for two deep wells.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Provision of (wireline logging) services for two geothermical deep wells (in the Upper Rhine Plain nearby city Wörth am Rhein).",
+      "library_summary": "Borehole logging services; requests to participate.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Provision of (wireline logging) services for two geothermical deep wells (in the Upper Rhine Plain nearby city Wörth am Rhein).",
+          "url": "https://ted.europa.eu/en/notice/-/detail/649808-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:652643-2026",
+      "notice_id": "TED 652643-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/652643-2026",
+      "library_title": "SGU: four-year drilling framework with geoenergy lots",
+      "labels": [
+        "Drilling",
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: framework lots for core drilling (Delområde 1) and groundwater wells (Delområde 2).",
+        "Engineering & Services": "TED description: a separate lot, Delområde 3, for borehole logging."
+      },
+      "excluded": [],
+      "basis": "The framework splits core drilling and groundwater wells from a separate borehole-logging lot.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Välkommen att delta i Sveriges geologiska undersökning (SGU) upphandling av Borrtjänster. I syfte att upprätta ett ramavtal inbjuder Sveriges geologiska undersökning (SGU) till anbudsgivning gällande Borrtjänster fördelat på tre delområden att lämna anbud för:- Delområde 1 Kärnborrning (uppdelad i 3 geografiska områden)- Delområde 2 Grundvattenrör (uppdelad i 3 geografiska områden)- Delområde 3 Borrloggning (uppdelad i anbudsområden, ej geografiska områden)Välkommen in med ert anbud! | Berggrundskartering, mineralprospektering, strukturgeologi, forskningsprojekt | Välkommen att delta i Sveriges geologiska undersökning (SGU) upphandling av Borrtjänster. I syfte att upprätta ett ramavtal inbju",
+      "library_summary": "Framework for core drilling, groundwater wells and logging, Dec 2026–Nov 2030. Est. SEK 60m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Välkommen att delta i Sveriges geologiska undersökning (SGU) upphandling av Borrtjänster. I syfte att upprätta ett ramavtal inbjuder Sveriges geologiska undersökning (SGU) till anbudsgivning gällande Borrtjänster fördelat på tre delområden att lämna anbud för:- Delområde 1 Kärnborrning (uppdelad i 3 geografiska områden)- Delområde 2 Grundvattenrör (uppdelad i 3 geografiska områden)- Delområde 3 Borrloggning (uppdelad i anbudsområden, ej geografiska områden)Välkommen in med ert anbud! | Berggrundskartering, mineralprospektering, strukturgeologi, forskningsprojekt | Välkommen att delta i Sveriges geologiska undersökning (SGU) upphandling av Borrtjänster. I syfte att upprätta ett ramavtal inbju",
+          "url": "https://ted.europa.eu/en/notice/-/detail/652643-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:660910-2026",
+      "notice_id": "TED 660910-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/660910-2026",
+      "library_title": "Mezőkövesd (Zsóry spa): new thermal well and well refurbishment",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: a new 1,000 m thermal well (VIII-as kút) for the Mezőkövesd Zsóry spa."
+      },
+      "excluded": [],
+      "basis": "The notice is drilling a new thermal well of about 1,000 m at Zsóry spa.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "VIII-as kút kialakítása: A nagyhírű és kiemelkedő vízminőséggel rendelkező Mezőkövesdi Zsóry Gyógyfürdő zavartalan hévíz ellátás céljából egy új 1000 m-es hévízkút fúrását valósítja meg. Az új kútból 1100 l/p 64-66 o C-os víz feltárására számítunk. A kijelölt kúthelyen a munkaterület rendelkezésre áll. Elektromos energia és öblitővíz a fürdő területéről 50 m-en belül biztosított. A keletkező csurgalégvizet (30 fokos) az itt lévő vizelvezető rendszeren elvezethető. A kút szerelvényeit a terepszintre kiemelve történik 3 m magas csővel. A kútfej szerelvényeinek anyaga KO-36. A kút körült 2,5 x 1,5 m alapterületű betonlemez kell kiépíteni C32/30 betonból. A Kút üzemeltetéséhez búvárszivattyú szü",
+      "library_summary": "Award notice for a ~1,000 m thermal well (Lot 2); contract to OLVISZ'98 Kft., HUF 318.41m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "VIII-as kút kialakítása: A nagyhírű és kiemelkedő vízminőséggel rendelkező Mezőkövesdi Zsóry Gyógyfürdő zavartalan hévíz ellátás céljából egy új 1000 m-es hévízkút fúrását valósítja meg. Az új kútból 1100 l/p 64-66 o C-os víz feltárására számítunk. A kijelölt kúthelyen a munkaterület rendelkezésre áll. Elektromos energia és öblitővíz a fürdő területéről 50 m-en belül biztosított. A keletkező csurgalégvizet (30 fokos) az itt lévő vizelvezető rendszeren elvezethető. A kút szerelvényeit a terepszintre kiemelve történik 3 m magas csővel. A kútfej szerelvényeinek anyaga KO-36. A kút körült 2,5 x 1,5 m alapterületű betonlemez kell kiépíteni C32/30 betonból. A Kút üzemeltetéséhez búvárszivattyú szü",
+          "url": "https://ted.europa.eu/en/notice/-/detail/660910-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:664782-2026",
+      "notice_id": "TED 664782-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/664782-2026",
+      "library_title": "Kaba: new 1,200 m thermal well, heat centre and heat network",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: new thermal well by drilling at the Kaba spa, together with a 300 kW heat block and a heat network."
+      },
+      "excluded": [],
+      "basis": "The notice expressly includes drilling a new thermal well. The heat centre and network are surface works and are not a second audience label.",
+      "uncertainty": "The same notice also builds a heat centre and network. Those works are not given a second label.",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Közintézmények távhőszolgáltatási rendszerének kialakítása geotermikus energia hasznosításával Kaba város közigazgatási területén az alábbiak szerint: Kabai Gyógyfürdő energetikai fejlesztése új termálkút fúrással és termálhő hasznosítással középületek számára távhővezetékhálózat és hőközpont építésével. A nyílt hévízkút mellett telepítendő 300 kW hőteljesítményű termálhő-hasznosító blokk, amelyek által megtermelt hő távvezetéken a következő önkormányzati intézményeket látja el távhővel: - Munkásszálló: 4183 Kaba, Hrsz: 1671, melyet a 302 fm előre szigetelt műanyag flexibilis vezetékpár-gerincen keresztül 10 fm egy közös köpenycsőbe szerelt vezetékpár köt a hálózatba. - Új Bölcsőde: 4183 Kab",
+      "library_summary": "Thermal well at the spa (65–70 °C expected), 300 kW heat centre and 1.3 km network.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Közintézmények távhőszolgáltatási rendszerének kialakítása geotermikus energia hasznosításával Kaba város közigazgatási területén az alábbiak szerint: Kabai Gyógyfürdő energetikai fejlesztése új termálkút fúrással és termálhő hasznosítással középületek számára távhővezetékhálózat és hőközpont építésével. A nyílt hévízkút mellett telepítendő 300 kW hőteljesítményű termálhő-hasznosító blokk, amelyek által megtermelt hő távvezetéken a következő önkormányzati intézményeket látja el távhővel: - Munkásszálló: 4183 Kaba, Hrsz: 1671, melyet a 302 fm előre szigetelt műanyag flexibilis vezetékpár-gerincen keresztül 10 fm egy közös köpenycsőbe szerelt vezetékpár köt a hálózatba. - Új Bölcsőde: 4183 Kab",
+          "url": "https://ted.europa.eu/en/notice/-/detail/664782-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:669195-2026",
+      "notice_id": "TED 669195-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/669195-2026",
+      "library_title": "Stadtwerke Prenzlau: surface plant for geothermal district heating",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED lot text: delivery and installation of heat pumps of about 4.4 MW, and thermal-water equipment including filters, a plate heat exchanger and an injection pump."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Installation is described with the equipment supply, not as a separate design contract."
+        }
+      ],
+      "basis": "The lots are supply and installation of heat pumps and thermal-water plant equipment. Installation is part of that supply.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Beschreibung Los 1: Wärmepumpen und Einbau - Lieferung und Installation Wärmepumpen und Mastersteuerung - Heizleistung: ca. 4,4 MW - Vorlauftemperatur nach Wärmpumpen: 80 °C | Beschreibung Los 2: Thermalwassertechnik und Anlagenbau Thermalwasserkreislauf: - Hauptausrüstung: Sloptank, Grobfilter, Druckhaltetank mit Stickstoffbeaufschlagung, Plattenwärmeübertrager, Feinfilter, Injektionspumpe, Regelarmatur zur Druckhaltung - Fördertemperatur am Bohrungskopf: 44 °C - Auslegungsdruck nach Injektionspumpe: 40 barg - Volumenstrom: 130 m³/h - Wassergefährdungsklasse gemäß AwSV: 1 - Material Rohrleitungen: GFK Fernwärmekreislauf: - Hauptausrüstung: Druckhaltung, Umwälzpumpen - Heizleistung: ca. 4,4 ",
+      "library_summary": "Five lots incl. heat pumps (about 4.4 MW), thermal-water plant, electrics and controls.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Beschreibung Los 1: Wärmepumpen und Einbau - Lieferung und Installation Wärmepumpen und Mastersteuerung - Heizleistung: ca. 4,4 MW - Vorlauftemperatur nach Wärmpumpen: 80 °C | Beschreibung Los 2: Thermalwassertechnik und Anlagenbau Thermalwasserkreislauf: - Hauptausrüstung: Sloptank, Grobfilter, Druckhaltetank mit Stickstoffbeaufschlagung, Plattenwärmeübertrager, Feinfilter, Injektionspumpe, Regelarmatur zur Druckhaltung - Fördertemperatur am Bohrungskopf: 44 °C - Auslegungsdruck nach Injektionspumpe: 40 barg - Volumenstrom: 130 m³/h - Wassergefährdungsklasse gemäß AwSV: 1 - Material Rohrleitungen: GFK Fernwärmekreislauf: - Hauptausrüstung: Druckhaltung, Umwälzpumpen - Heizleistung: ca. 4,4 ",
+          "url": "https://ted.europa.eu/en/notice/-/detail/669195-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:670200-2026",
+      "notice_id": "TED 670200-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/670200-2026",
+      "library_title": "Litoměřice SYNERGYS/USES4HEAT: 100 shallow boreholes for BTES heat storage",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: realisation of shallow geothermal boreholes at Litoměřice, 100 boreholes of 100 m, with an option for 30 more."
+      },
+      "excluded": [],
+      "basis": "The notice is execution of 100 shallow geothermal boreholes, plus an optional 30.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Předmětem plnění je realizace mělkých geotermálních vrtů a související infrastruktury v lokalitě Litoměřice - ul. Na Vinici, v areálu výzkumné infrastruktury RINGEN, za účelem výzkumu mezisezonního ukládání tepelné energie v horninovém prostředí. Základní rozsah plnění tvoří 100 vrtů o projektované hloubce 100 m, z toho pole BTES2 v rozsahu 42 vrtů a pole BTES3 v rozsahu 66 vrtů. Zadavatelé si dále vyhrazují realizaci dalších 30 vrtů o projektované hloubce 100 m pro část BTES3-U4H jako vyhrazenou změnu závazku podle § 100 odst. 1 ZZVZ, a to za podmínky uvedené v odst. 2.2 ZD. Vrty budou napojeny na samostatné sběrné systémy a na centrální řídicí systém v rozsahu stanoveném technickou specifi",
+      "library_summary": "100 boreholes of 100 m (plus 30 optional) for borehole thermal energy storage fields. Est. CZK 35m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Předmětem plnění je realizace mělkých geotermálních vrtů a související infrastruktury v lokalitě Litoměřice - ul. Na Vinici, v areálu výzkumné infrastruktury RINGEN, za účelem výzkumu mezisezonního ukládání tepelné energie v horninovém prostředí. Základní rozsah plnění tvoří 100 vrtů o projektované hloubce 100 m, z toho pole BTES2 v rozsahu 42 vrtů a pole BTES3 v rozsahu 66 vrtů. Zadavatelé si dále vyhrazují realizaci dalších 30 vrtů o projektované hloubce 100 m pro část BTES3-U4H jako vyhrazenou změnu závazku podle § 100 odst. 1 ZZVZ, a to za podmínky uvedené v odst. 2.2 ZD. Vrty budou napojeny na samostatné sběrné systémy a na centrální řídicí systém v rozsahu stanoveném technickou specifi",
+          "url": "https://ted.europa.eu/en/notice/-/detail/670200-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:674260-2026",
+      "notice_id": "TED 674260-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/674260-2026",
+      "library_title": "Charles University: wellhead and frac tree for SYNERGYS",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED description: supply of long-lead wellhead and frac-tree systems, with rental of installation tools and installation services, for SYNERGYS."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Installation is the ordinary work of supplying the wellhead, not a separate engineering contract."
+        }
+      ],
+      "basis": "The notice is supply of wellhead and frac-tree systems. Installation is part of that supply.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "This public contract concerns the supply of critical Long Lead Items - Wellhead and Frac Tree Systems - together with the related rental of installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+      "library_summary": "Supply of wellhead and frac-tree equipment, with installation, for deep geothermal wells at the SYNERGYS research site in Litoměřice. Est. CZK 9.8m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "This public contract concerns the supply of critical Long Lead Items - Wellhead and Frac Tree Systems - together with the related rental of installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/674260-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:679859-2026",
+      "notice_id": "TED 679859-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/679859-2026",
+      "library_title": "Charles University: liner hanger for SYNERGYS",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED description: supply of liner-hanger systems, with rental of running and installation tools and installation services, for SYNERGYS."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Installation is part of supplying the liner hanger."
+        }
+      ],
+      "basis": "The notice is supply of liner-hanger systems, with running tools and installation.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "This public contract concerns the supply of critical Long Lead Items – Liner Hanger Systems – together with the related rental of running and installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the Draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+      "library_summary": "Supply of liner-hanger equipment, with installation, for the SYNERGYS deep wells. Est. CZK 9.8m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "This public contract concerns the supply of critical Long Lead Items – Liner Hanger Systems – together with the related rental of running and installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the Draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/679859-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:681445-2026",
+      "notice_id": "TED 681445-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/681445-2026",
+      "library_title": "Rheinsberg: general planning for a hydrothermal doublet",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: general planning of a hydrothermal doublet, HOAI phases 2–4 for the subsurface and 1–4 for the surface plant."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "The new reinjection well is the subject of the planning, not a drilling contract in this notice."
+        }
+      ],
+      "basis": "The notice procures general planning (HOAI phases) for a hydrothermal doublet, not the drilling contract itself.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Die Stadtwerke Rheinsberg GmbH plant die Errichtung einer hydrogeothermischen Anlage auf Basis einer bestehenden, derzeit ungenutzten Thermalwasserbohrung aus dem Jahr 1995. Eine Machbarkeitsstudie aus dem Jahr 2023 hat die Möglichkeit ermittelt, durch die Reaktivierung einer bestehenden Förderbohrung und das Abteufen einer Reinjektionsbohrung am gleichen Standort sowie die Verbindung beider Bohrungen durch einen übertägigen Thermalwasserkreislauf ein geothermisches Dublettensystem zu bilden. Die Machbarkeitsstudie bildet die Grundlage der zu erbringenden Planungsleistungen. Die vorliegende Ausschreibung betrifft somit die Leistungsphasen 2-4 nach der HOAI, für die Obertageanlage jedoch 1-4.",
+      "library_summary": "Award notice: reactivation of a 1995 well plus a new reinjection well; awarded to Geothermie Neubrandenburg GmbH.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Die Stadtwerke Rheinsberg GmbH plant die Errichtung einer hydrogeothermischen Anlage auf Basis einer bestehenden, derzeit ungenutzten Thermalwasserbohrung aus dem Jahr 1995. Eine Machbarkeitsstudie aus dem Jahr 2023 hat die Möglichkeit ermittelt, durch die Reaktivierung einer bestehenden Förderbohrung und das Abteufen einer Reinjektionsbohrung am gleichen Standort sowie die Verbindung beider Bohrungen durch einen übertägigen Thermalwasserkreislauf ein geothermisches Dublettensystem zu bilden. Die Machbarkeitsstudie bildet die Grundlage der zu erbringenden Planungsleistungen. Die vorliegende Ausschreibung betrifft somit die Leistungsphasen 2-4 nach der HOAI, für die Obertageanlage jedoch 1-4.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/681445-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:684005-2026",
+      "notice_id": "TED 684005-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026",
+      "library_title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED description: supply of wellhead and frac-tree systems with installation services."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Installation remains part of the equipment supply."
+        }
+      ],
+      "basis": "Change notice for the same wellhead and frac-tree supply.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "This public contract concerns the supply of critical Long Lead Items - Wellhead and Frac Tree Systems - together with the related rental of installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+      "library_summary": "Supply of wellhead and frac-tree systems, with installation. Change notice TED 684005-2026.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "This public contract concerns the supply of critical Long Lead Items - Wellhead and Frac Tree Systems - together with the related rental of installation tools and provision of installation services necessary for implementation of the SYNERGYS Project involving deep geothermal drilling, as further specified in Part 2 of the Tender Documentation and in the draft Agreement contained in Part 3 of the Tender Documentation, including the Schedules thereto. For more details, please refer to the tender documents.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:689259-2026",
+      "notice_id": "TED 689259-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/689259-2026",
+      "library_title": "Grangegorman Development Agency, Dublin: geothermal engineering consultancy framework",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: single-party framework for geothermal engineering consultancy, first project the GEMINI geothermal design."
+      },
+      "excluded": [],
+      "basis": "The notice is a geothermal engineering consultancy framework.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "It is proposed to establish a Single-Party Framework Agreement for the provision of Geothermal Engineering Consultancy services described under the headings of General Services and Works Related Services (refer to Section 2 of PIM) and using The GEMINI Geothermal Design Project as the basis for this Framework competition which will be the first project requiring the services of a Geothermal Engineering Consultant. The scope of service required for this project is detailed further in the PIM. Subsequent potential appointments will be drawn down in accordance with the Framework Agreement.",
+      "library_summary": "Single-party framework; first project is the GEMINI geothermal design. Est. EUR 1.75m. Confirm time on eTenders.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "It is proposed to establish a Single-Party Framework Agreement for the provision of Geothermal Engineering Consultancy services described under the headings of General Services and Works Related Services (refer to Section 2 of PIM) and using The GEMINI Geothermal Design Project as the basis for this Framework competition which will be the first project requiring the services of a Geothermal Engineering Consultant. The scope of service required for this project is detailed further in the PIM. Subsequent potential appointments will be drawn down in accordance with the Framework Agreement.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/689259-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:691583-2026",
+      "notice_id": "TED 691583-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026",
+      "library_title": "Wrocław University of Science and Technology: fibre-optic temperature system for geothermal wells",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Equipment": "TED description: delivery of a system to measure temperature distribution and change in geothermal wells, with an automatic calibration rig for distributed fibre-optic sensors."
+      },
+      "excluded": [],
+      "basis": "The notice is delivery of a fibre-optic temperature-measurement system for geothermal wells.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "1.Przedmiotem zamówienia jest dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11. 2.Krótki opis systemu: system do rozproszonych pomiarów rozkładu temperatury oraz jej zmian w czasie w odwiertach geotermalnych, a także do wyznaczania profilu prędkości przepływu wody (płynu złożowego) na różnych głębokościach odwiertu, wraz z dedykowanym stanowiskiem laboratoryjnym do automatycznej kalibracji ciągłych (rozproszonych) czujników światłowodowych. System musi umożliwiać pomiary w odwiertach na długości co najmniej 2 km, natomiast stanowisko kalibracy",
+      "library_summary": "Distributed fibre-optic system for temperature profiles in wells of at least 2 km, with calibration rig.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "1.Przedmiotem zamówienia jest dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11. 2.Krótki opis systemu: system do rozproszonych pomiarów rozkładu temperatury oraz jej zmian w czasie w odwiertach geotermalnych, a także do wyznaczania profilu prędkości przepływu wody (płynu złożowego) na różnych głębokościach odwiertu, wraz z dedykowanym stanowiskiem laboratoryjnym do automatycznej kalibracji ciągłych (rozproszonych) czujników światłowodowych. System musi umożliwiać pomiary w odwiertach na długości co najmniej 2 km, natomiast stanowisko kalibracy",
+          "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:692185-2026",
+      "notice_id": "TED 692185-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/692185-2026",
+      "library_title": "Fraunhofer IEG, Reallabor Geothermie Rheinland: 2D seismic survey",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "Library summary, confirmed in kind by the TED text: 2D seismic profiles of about 23 km and 12 km in the Aachen-Weisweiler licence, awarded to Smart Seismic Solutions."
+      },
+      "excluded": [],
+      "basis": "Award of a 2D seismic survey. The library summary states the survey scope; the TED excerpt confirms an exploration programme in the Aachen-Weisweiler licence.",
+      "uncertainty": "The retrieved TED field describes the exploration programme and does not repeat the kilometre figures; those figures are the stored Library summary.",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Die Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. ist Inhaberin eines wissenschaftlichen Erlaubnisfeldes zur Aufsuchung von Erdwärme (Feld „Aachen-Weisweiler“) im Raum Aachen-Weisweiler, Nordrhein-Westfalen (Deutschland). Im Rahmen des Projektes „Reallabor Geothermie Rheinland“ führt die Fraunhofer-Einrichtung für Energieinfrastrukturen und Geotechnologien (Fraunhofer IEG) ein Explorationsprogramm durch, um das hydrothermale geothermische Potenzial der Region bis in eine Tiefe von etwa 4.000 m zu untersuchen. Bis in diese Tiefe sind paläozoische geothermische Reservoire (unterkarbonische Kohlenkalk, devonischer Condroz Sandstein und ober-/mitteldevonischer Massenkalk) ",
+      "library_summary": "Award notice: profiles of about 23 km and 12 km in the Aachen-Weisweiler licence; awarded to Smart Seismic Solutions SAS.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Die Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. ist Inhaberin eines wissenschaftlichen Erlaubnisfeldes zur Aufsuchung von Erdwärme (Feld „Aachen-Weisweiler“) im Raum Aachen-Weisweiler, Nordrhein-Westfalen (Deutschland). Im Rahmen des Projektes „Reallabor Geothermie Rheinland“ führt die Fraunhofer-Einrichtung für Energieinfrastrukturen und Geotechnologien (Fraunhofer IEG) ein Explorationsprogramm durch, um das hydrothermale geothermische Potenzial der Region bis in eine Tiefe von etwa 4.000 m zu untersuchen. Bis in diese Tiefe sind paläozoische geothermische Reservoire (unterkarbonische Kohlenkalk, devonischer Condroz Sandstein und ober-/mitteldevonischer Massenkalk) ",
+          "url": "https://ted.europa.eu/en/notice/-/detail/692185-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:696202-2026",
+      "notice_id": "TED 696202-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
+      "library_title": "UniGéo (Pantin, Les Lilas, Le Pré-Saint-Gervais, Romainville): project-management framework",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: maîtrise d'oeuvre for surface production plant, distribution networks and substations of UniGéo, outside the geothermal wells."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "The notice says the scope is outside the geothermal wells."
+        }
+      ],
+      "basis": "Framework for project management of surface installations, expressly excluding the geothermal wells.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "La présente consultation est un accord-cadre de maîtrise d'oeuvre pour le suivi des installations de surface (moyens de production en dehors des puits de géothermie, réseaux de distribution et sous-stations de livraison de chaleur) du réseau UniGéo des communes de Pantin, Les Lilas, Le Pré-Saint-Gervais et Romainville. Les prestations objet de cet accord-cadre sont précisées dans le cahier des clauses techniques particulières (CCTP). Elles concernent l'ensemble des missions techniques de suivi du fonctionnement des installations composant le réseau UniGéo (en dehors du suivi réglementaire des puits de géothermie qui font l'objet d'un suivi spécifique) ainsi que les missions de maîtrise d'oeu",
+      "library_summary": "Framework for project management of the geothermal network's surface installations and extensions. Est. EUR 1.7m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "La présente consultation est un accord-cadre de maîtrise d'oeuvre pour le suivi des installations de surface (moyens de production en dehors des puits de géothermie, réseaux de distribution et sous-stations de livraison de chaleur) du réseau UniGéo des communes de Pantin, Les Lilas, Le Pré-Saint-Gervais et Romainville. Les prestations objet de cet accord-cadre sont précisées dans le cahier des clauses techniques particulières (CCTP). Elles concernent l'ensemble des missions techniques de suivi du fonctionnement des installations composant le réseau UniGéo (en dehors du suivi réglementaire des puits de géothermie qui font l'objet d'un suivi spécifique) ainsi que les missions de maîtrise d'oeu",
+          "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:698651-2026",
+      "notice_id": "TED 698651-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026",
+      "library_title": "Gelsenwasser Energienetze, Linnich: 30-borehole field for a cold heat network",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: 30 geothermal boreholes, including placing the probes, and supply and installation of all required materials, for a cold heat network in Linnich."
+      },
+      "excluded": [
+        {
+          "label": "Equipment",
+          "reason": "Materials are included in the borehole works, not bought as a separate supply."
+        }
+      ],
+      "basis": "The notice is 30 geothermal boreholes and installation of the probes. Materials are included in that works package.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Gegenstand der ausgeschriebenen Leistung ist die Errichtung eines Erdwärmesondenfeldes zur Versorgung eines Quartiers mit kalter Nahwärme. Die ausgeschriebenen Leistungen beinhalten die vollständige Lieferung und Verlegung/Montage sämtlicher erforderlicher Materialien einschließlich aller Nebenarbeiten. Es sind 30 Erdwärmebohrungen zu erstellen; inkl. fachgerechten Einbringen der Erdwärmesonden. Die Erdwärmesonden sind mit dem zu liefernden und einzubauenden Sondenschacht fachgerecht zu verbinden.",
+      "library_summary": "30 geothermal boreholes with borehole heat exchangers and connection, all materials supplied.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Gegenstand der ausgeschriebenen Leistung ist die Errichtung eines Erdwärmesondenfeldes zur Versorgung eines Quartiers mit kalter Nahwärme. Die ausgeschriebenen Leistungen beinhalten die vollständige Lieferung und Verlegung/Montage sämtlicher erforderlicher Materialien einschließlich aller Nebenarbeiten. Es sind 30 Erdwärmebohrungen zu erstellen; inkl. fachgerechten Einbringen der Erdwärmesonden. Die Erdwärmesonden sind mit dem zu liefernden und einzubauenden Sondenschacht fachgerecht zu verbinden.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:701161-2026",
+      "notice_id": "TED 701161-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026",
+      "library_title": "AFK-Geothermie: planning for geothermal district-heating extensions 2027–2029",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: object planning of civil works, HOAI phases 2–8, including site supervision, and technical-equipment planning for distribution pipes and house connections, 2027–2029."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "The planning is for the heat network, not a drilling contract."
+        }
+      ],
+      "basis": "The notice procures HOAI design and site supervision for heat-network sections.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Die AFK-Geothermie GmbH versorgt die Gemeinden Aschheim, Feldkirchen und Kirchheim b. München mit geothermischer Fernwärme und baut ihr Wärmenetz in den Jahren 2027 bis 2029 in drei Bauabschnitten weiter aus. Vergeben werden die Objektplanung Ingenieurbauwerke (§§ 41 ff. HOAI, Leistungsphasen 2 bis 8) einschließlich örtlicher Bauüberwachung für Verteilleitungen und Hausanschlüsse sowie die Fachplanung Technische Ausrüstung (§§ 53 ff. HOAI, Leistungsphasen 2 bis 8) für die Übergabestationen. Die Beauftragung erfolgt stufenweise: Stufe 1 (Bauabschnitt 2027) wird fest beauftragt, die Stufen 2 (2028) und 3 (2029) sind Optionen ohne Abrufverpflichtung. Der Bauabschnitt 2027 umfasst sieben Leitung",
+      "library_summary": "HOAI phases 2–8 for distribution pipes, house connections and substations in Aschheim, Feldkirchen and Kirchheim. Est. EUR 1.03m.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Die AFK-Geothermie GmbH versorgt die Gemeinden Aschheim, Feldkirchen und Kirchheim b. München mit geothermischer Fernwärme und baut ihr Wärmenetz in den Jahren 2027 bis 2029 in drei Bauabschnitten weiter aus. Vergeben werden die Objektplanung Ingenieurbauwerke (§§ 41 ff. HOAI, Leistungsphasen 2 bis 8) einschließlich örtlicher Bauüberwachung für Verteilleitungen und Hausanschlüsse sowie die Fachplanung Technische Ausrüstung (§§ 53 ff. HOAI, Leistungsphasen 2 bis 8) für die Übergabestationen. Die Beauftragung erfolgt stufenweise: Stufe 1 (Bauabschnitt 2027) wird fest beauftragt, die Stufen 2 (2028) und 3 (2029) sind Optionen ohne Abrufverpflichtung. Der Bauabschnitt 2027 umfasst sieben Leitung",
+          "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:704493-2026",
+      "notice_id": "TED 704493-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/704493-2026",
+      "library_title": "Beauvaisis Terre d'Énergie: absorption heat pumps on a geothermal source",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED description: supply, installation and commissioning of absorption heat pumps recovering 7.3 MWth from geothermal and 2.8 MWth from biomass condensers."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Installation and commissioning are described with the heat-pump supply."
+        }
+      ],
+      "basis": "Supply, installation and commissioning of absorption heat pumps. Installation is part of the supply.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Fourniture, installation et mise en service de pompes à chaleur à ABSORPTION sur récupération d’une géothermie ( 7,3 MWth) et sur 2 condenseurs de chaudière biomasse ( puissance totale 2,8 MWth de récupération",
+      "library_summary": "Supply, installation and commissioning of absorption heat pumps recovering 7.3 MWth from geothermal and 2.8 MWth from biomass condensers.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Fourniture, installation et mise en service de pompes à chaleur à ABSORPTION sur récupération d’une géothermie ( 7,3 MWth) et sur 2 condenseurs de chaudière biomasse ( puissance totale 2,8 MWth de récupération",
+          "url": "https://ted.europa.eu/en/notice/-/detail/704493-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:709263-2026",
+      "notice_id": "TED 709263-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026",
+      "library_title": "Trier-Saarburg district, Waldrach: 22-borehole heat-exchanger field for the Ruwertalschule",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: 22 boreholes of 200 m and complete construction of the borehole heat exchangers for the Ruwertalschule in Waldrach."
+      },
+      "excluded": [],
+      "basis": "The notice is 22 boreholes of 200 m and the geothermal probes for a school.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Für die Wärmeversorgung ist die Errichtung einer Erdwärmesondenanlage vorgesehen. Die Anlage besteht aus insgesamt 22 Bohrungen (eine Probebohrung inkl. TRT wurde bereits in 2024 erstellt). Die Bohrungen sind mit einer Teufe von jeweils 200 m herzustellen. Insgesamt werden 22 Erdsonden mit einer Gesamtlänge von ca. 4.400 m erstellt. Der Leistungsumfang des Auftragnehmers Erdwärmesondenanlage umfasst die vollständige Herstellung der Erdsonden einschließlich Bohrarbeiten, Einbau der Sonden, Verpressung, Spülung, Druckprüfung, Befüllung sowie Dokumentation. Weiterhin umfasst die Leistung die erdverlegte Anbindung der Erdsonden an einen Erdsondenschacht sowie die Verlegung und Einführung der Sol",
+      "library_summary": "22 boreholes of 200 m (about 4,400 m, incl. 2024 test borehole) with probes, grouting, tests and connection to a probe manhole.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Für die Wärmeversorgung ist die Errichtung einer Erdwärmesondenanlage vorgesehen. Die Anlage besteht aus insgesamt 22 Bohrungen (eine Probebohrung inkl. TRT wurde bereits in 2024 erstellt). Die Bohrungen sind mit einer Teufe von jeweils 200 m herzustellen. Insgesamt werden 22 Erdsonden mit einer Gesamtlänge von ca. 4.400 m erstellt. Der Leistungsumfang des Auftragnehmers Erdwärmesondenanlage umfasst die vollständige Herstellung der Erdsonden einschließlich Bohrarbeiten, Einbau der Sonden, Verpressung, Spülung, Druckprüfung, Befüllung sowie Dokumentation. Weiterhin umfasst die Leistung die erdverlegte Anbindung der Erdsonden an einen Erdsondenschacht sowie die Verlegung und Einführung der Sol",
+          "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:716179-2026",
+      "notice_id": "TED 716179-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
+      "library_title": "Călimănești: design and build of geothermal wells, substations and heat networks (Călimănești and Seaca)",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary, consistent with the TED title: two geothermal production wells, heat substations and transport pipelines. TED text: design and execution of works to increase geothermal heat production."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Design is described as part of the same design-build, not as a separate consultancy."
+        }
+      ],
+      "basis": "The notice is design and construction of geothermal production, including two production wells in the Library summary. Design is part of that design-build.",
+      "uncertainty": "The TED extract does not repeat the well count. The well count is the stored Library summary. Substations and pipelines are in the same contract and are not given a second label.",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Conform Caietului de sarcini atasat. Cerințele Beneficiarului precizeaza scopul, aria de acoperire, cerințele de proiectare, precum și alte criterii tehnice privind Lucrările. Proiectarea și executarea Lucrărilor de către Antreprenor vor respecta Cerințele Beneficiarului. Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală” În responsabilitatea Antreprenorului se vor regăsi următoarele activităţi: a. Avize şi Autorizaţii • Demersurile ( întocmirea documentațiilor + predarea acestora către ",
+      "library_summary": "Two geothermal production wells, heat substations and transport pipelines; 12 months. Est. RON 53.84m excl. VAT.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Conform Caietului de sarcini atasat. Cerințele Beneficiarului precizeaza scopul, aria de acoperire, cerințele de proiectare, precum și alte criterii tehnice privind Lucrările. Proiectarea și executarea Lucrărilor de către Antreprenor vor respecta Cerințele Beneficiarului. Servicii de proiectare şi Execuţie lucrări pentru obiectivul: “Creșterea producției de energie din resurse geotermale prin realizarea/modernizarea capacităților de producție și a rețelelor de transport – distribuție a energiei termice din energie geotermală” În responsabilitatea Antreprenorului se vor regăsi următoarele activităţi: a. Avize şi Autorizaţii • Demersurile ( întocmirea documentațiilor + predarea acestora către ",
+          "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:729019-2026",
+      "notice_id": "TED 729019-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/729019-2026",
+      "library_title": "Kaba: new 1,200 m thermal well, heat centre and heat network (new notice 729019)",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description matches 664782-2026: new thermal well by drilling at the Kaba spa, with a heat block and heat network."
+      },
+      "excluded": [],
+      "basis": "Same Kaba scope as TED 664782-2026: a new thermal well by drilling, plus heat centre and network.",
+      "uncertainty": "Surface heat centre and network are in the same notice and are not a second label.",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Közintézmények távhőszolgáltatási rendszerének kialakítása geotermikus energia hasznosításával Kaba város közigazgatási területén az alábbiak szerint: Kabai Gyógyfürdő energetikai fejlesztése új termálkút fúrással és termálhő hasznosítással középületek számára távhővezetékhálózat és hőközpont építésével. A nyílt hévízkút mellett telepítendő 300 kW hőteljesítményű termálhő-hasznosító blokk, amelyek által megtermelt hő távvezetéken a következő önkormányzati intézményeket látja el távhővel: - Munkásszálló: 4183 Kaba, Hrsz: 1671, melyet a 302 fm előre szigetelt műanyag flexibilis vezetékpár-gerincen keresztül 10 fm egy közös köpenycsőbe szerelt vezetékpár köt a hálózatba. - Új Bölcsőde: 4183 Kab",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Közintézmények távhőszolgáltatási rendszerének kialakítása geotermikus energia hasznosításával Kaba város közigazgatási területén az alábbiak szerint: Kabai Gyógyfürdő energetikai fejlesztése új termálkút fúrással és termálhő hasznosítással középületek számára távhővezetékhálózat és hőközpont építésével. A nyílt hévízkút mellett telepítendő 300 kW hőteljesítményű termálhő-hasznosító blokk, amelyek által megtermelt hő távvezetéken a következő önkormányzati intézményeket látja el távhővel: - Munkásszálló: 4183 Kaba, Hrsz: 1671, melyet a 302 fm előre szigetelt műanyag flexibilis vezetékpár-gerincen keresztül 10 fm egy közös köpenycsőbe szerelt vezetékpár köt a hálózatba. - Új Bölcsőde: 4183 Kab",
+          "url": "https://ted.europa.eu/en/notice/-/detail/729019-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:730837-2026",
+      "notice_id": "TED 730837-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/730837-2026",
+      "library_title": "Litoměřice SYNERGYS/USES4HEAT: 100 shallow boreholes for BTES heat storage (co-buyer Univerzita Karlova)",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: realisation of shallow geothermal boreholes, 100 boreholes of 100 m, with an option for 30 more."
+      },
+      "excluded": [],
+      "basis": "Same Litoměřice borehole scope as TED 670200-2026, with Charles University as co-buyer.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Předmětem plnění je realizace mělkých geotermálních vrtů a související infrastruktury v lokalitě Litoměřice - ul. Na Vinici, v areálu výzkumné infrastruktury RINGEN, za účelem výzkumu mezisezonního ukládání tepelné energie v horninovém prostředí. Základní rozsah plnění tvoří 100 vrtů o projektované hloubce 100 m, z toho pole BTES2 v rozsahu 42 vrtů a pole BTES3 v rozsahu 66 vrtů. Zadavatelé si dále vyhrazují realizaci dalších 30 vrtů o projektované hloubce 100 m pro část BTES3-U4H jako vyhrazenou změnu závazku podle § 100 odst. 1 ZZVZ, a to za podmínky uvedené v odst. 2.2 ZD. Vrty budou napojeny na samostatné sběrné systémy a na centrální řídicí systém v rozsahu stanoveném technickou specifi",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Předmětem plnění je realizace mělkých geotermálních vrtů a související infrastruktury v lokalitě Litoměřice - ul. Na Vinici, v areálu výzkumné infrastruktury RINGEN, za účelem výzkumu mezisezonního ukládání tepelné energie v horninovém prostředí. Základní rozsah plnění tvoří 100 vrtů o projektované hloubce 100 m, z toho pole BTES2 v rozsahu 42 vrtů a pole BTES3 v rozsahu 66 vrtů. Zadavatelé si dále vyhrazují realizaci dalších 30 vrtů o projektované hloubce 100 m pro část BTES3-U4H jako vyhrazenou změnu závazku podle § 100 odst. 1 ZZVZ, a to za podmínky uvedené v odst. 2.2 ZD. Vrty budou napojeny na samostatné sběrné systémy a na centrální řídicí systém v rozsahu stanoveném technickou specifi",
+          "url": "https://ted.europa.eu/en/notice/-/detail/730837-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:734244-2026",
+      "notice_id": "TED 734244-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/734244-2026",
+      "library_title": "Geologischer Dienst NRW: Forschungsbohrung Münster, part 1 drilling contractor",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: execution of a research borehole; the competition concerns only part 1, the drilling contractor."
+      },
+      "excluded": [],
+      "basis": "The notice is only part 1, the drilling contractor, for the Münster research well.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Durchführung einer Forschungsbohrung gemäß der Vergabeunterlagen. Diese Ausschreibung befasst sich ausschließlich mit Teil 1 - Bohrkontraktor.",
+      "library_summary": "Drilling contractor for a research well in Münster (part 1 only); negotiated procedure with call; documents on evergabe.nrw.de.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Durchführung einer Forschungsbohrung gemäß der Vergabeunterlagen. Diese Ausschreibung befasst sich ausschließlich mit Teil 1 - Bohrkontraktor.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/734244-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:737356-2026",
+      "notice_id": "TED 737356-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/737356-2026",
+      "library_title": "Grangegorman: geothermal tender, deadline moved to 12 Nov (new notice 737356)",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: single-party framework for geothermal engineering consultancy, first project the GEMINI geothermal design."
+      },
+      "excluded": [],
+      "basis": "Later notice for the same Grangegorman geothermal engineering consultancy framework.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "It is proposed to establish a Single-Party Framework Agreement for the provision of Geothermal Engineering Consultancy services described under the headings of General Services and Works Related Services (refer to Section 2 of PIM) and using The GEMINI Geothermal Design Project as the basis for this Framework competition which will be the first project requiring the services of a Geothermal Engineering Consultant. The scope of service required for this project is detailed further in the PIM. Subsequent potential appointments will be drawn down in accordance with the Framework Agreement.",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "It is proposed to establish a Single-Party Framework Agreement for the provision of Geothermal Engineering Consultancy services described under the headings of General Services and Works Related Services (refer to Section 2 of PIM) and using The GEMINI Geothermal Design Project as the basis for this Framework competition which will be the first project requiring the services of a Geothermal Engineering Consultant. The scope of service required for this project is detailed further in the PIM. Subsequent potential appointments will be drawn down in accordance with the Framework Agreement.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/737356-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:738167-2026",
+      "notice_id": "TED 738167-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
+      "library_title": "HSE, University Hospital Galway: geothermal heat-pump feasibility study with thermal response tests",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: feasibility study and thermal response test for horizontal-loop, vertical-loop and aquifer options at University Hospital Galway."
+      },
+      "excluded": [],
+      "basis": "The notice is a geothermal heat-pump feasibility study and a thermal response test.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "We are seeking tender submissions from experienced geothermal heat pump specialists to conduct a comprehensive feasibility study and Thermal Response Test (TRT) at the University Hospital Galway campus. The purpose of the study is to determine the viability of implementing a geothermal heat pump system to meet a portion of the heating and cooling needs for a proposed new building efficiently and sustainably. The feasibility study must consider shallow horizontal loop, deep vertical loop as well as the potential to utilise aquifers for water to water systems.",
+      "library_summary": "Feasibility study incl. TRT for horizontal-loop, vertical-loop and aquifer options; est. EUR 60,000.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "We are seeking tender submissions from experienced geothermal heat pump specialists to conduct a comprehensive feasibility study and Thermal Response Test (TRT) at the University Hospital Galway campus. The purpose of the study is to determine the viability of implementing a geothermal heat pump system to meet a portion of the heating and cooling needs for a proposed new building efficiently and sustainably. The feasibility study must consider shallow horizontal loop, deep vertical loop as well as the potential to utilise aquifers for water to water systems.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:739829-2026",
+      "notice_id": "TED 739829-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/739829-2026",
+      "library_title": "GeoHardt GmbH, Schwetzingen: drilling planning and supervision for up to three doublets awarded to BESTEC",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "TED description: planning of up to three geothermal doublets in the Hardt licence, then support for tendering the drilling contractor, service firms and equipment."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "The drilling contractor is a later procurement this consultant would help tender, not this contract."
+        }
+      ],
+      "basis": "The notice is planning of up to three doublets and help procuring the later drilling contract.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Die anzubietenden Leistungen umfassen die Planung von bis zu drei geothermischen Doubletten im Er-laubnisfeld \"Hardt\" der GeoHardt GmbH (Inhaber der bergrechtlichen Erlaubnis zur Aufsuchung von Erd-wärme, Sole und Lithium zu gewerblichen Zwecken im Feld Hardt). Im Anschluss soll durch den AN bei der Erstellung der Ausschreibungen und bei den Vergaben des Bohrkontraktors, der Servicefirmen sowie des erforderlichen Equipments und Materials unterstützt werden. Als Vorbereitung für die Bohrarbeiten ist gemeinsam mit den beauftragten Firmen ein Bohrprogramm für jede der bis zu sechs Geothermie-bohrungen zu entwickeln und auf Basis der \"lessons learned\" zu optimieren. Dies beinhaltet auch eine Übe",
+      "library_summary": "Up to six wells in the 'Hardt' licence field; drilling supervision and optional company man; value not stated.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Die anzubietenden Leistungen umfassen die Planung von bis zu drei geothermischen Doubletten im Er-laubnisfeld \"Hardt\" der GeoHardt GmbH (Inhaber der bergrechtlichen Erlaubnis zur Aufsuchung von Erd-wärme, Sole und Lithium zu gewerblichen Zwecken im Feld Hardt). Im Anschluss soll durch den AN bei der Erstellung der Ausschreibungen und bei den Vergaben des Bohrkontraktors, der Servicefirmen sowie des erforderlichen Equipments und Materials unterstützt werden. Als Vorbereitung für die Bohrarbeiten ist gemeinsam mit den beauftragten Firmen ein Bohrprogramm für jede der bis zu sechs Geothermie-bohrungen zu entwickeln und auf Basis der \"lessons learned\" zu optimieren. Dies beinhaltet auch eine Übe",
+          "url": "https://ted.europa.eu/en/notice/-/detail/739829-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:751496-2026",
+      "notice_id": "TED 751496-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/751496-2026",
+      "library_title": "EDA Renováveis, Azores: Pico Vermelho geothermal plant substation (Mota-Engil, awarded Jul 2025): contract modification",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "TED description: design, manufacture, transport, insurance, assembly, tests and commissioning of electrical and mechanical equipment for the Pico Vermelho geothermal-plant substation."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Design and commissioning are described as part of supplying the substation equipment."
+        }
+      ],
+      "basis": "The contract is supply and assembly of electromechanical substation equipment. Design and manufacture are part of that supply.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Conceção e execução, por parte do adjudicatário, do projeto de execução, fabrico, transporte, seguro, montagem, ensaios e comissionamento dos equipamentos elétricos, mecânicos e eletromecânicos e ainda da execução dos trabalhos das especialidades de Mecânica e Eletricidade da empreitada de “Fornecimento e Montagem de Equipamentos Eletromecânicos da Subestação da Central Geotérmica do Pico Vermelho\"",
+      "library_summary": "Value raised to EUR 4,973,759.41 after EUR 45,794.82 of extra work (modification of award 488086-2025).",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Conceção e execução, por parte do adjudicatário, do projeto de execução, fabrico, transporte, seguro, montagem, ensaios e comissionamento dos equipamentos elétricos, mecânicos e eletromecânicos e ainda da execução dos trabalhos das especialidades de Mecânica e Eletricidade da empreitada de “Fornecimento e Montagem de Equipamentos Eletromecânicos da Subestação da Central Geotérmica do Pico Vermelho\"",
+          "url": "https://ted.europa.eu/en/notice/-/detail/751496-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:752632-2026",
+      "notice_id": "TED 752632-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
+      "library_title": "HOCH Health Ostschweiz: borehole heat-exchanger field for St. Gallen Cantonal Hospital, Building 07B",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: site establishment, drilling, and supply, installation and backfilling of geothermal probes, plus horizontal connection pipes, for Building 07B at St. Gallen Cantonal Hospital."
+      },
+      "excluded": [
+        {
+          "label": "Equipment",
+          "reason": "Probe supply is part of the drilling and installation works."
+        }
+      ],
+      "basis": "The notice covers drilling and installation of geothermal probes. Probe supply is inside that works package.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "The tender for geothermal boreholes covers the installation of the geothermal probe system for Building 07B at St. Gallen Cantonal Hospital. The scope of work includes site establishment, drilling operations, and the supply, installation, and complete backfilling of the geothermal probes in accordance with the tender documents. The scope also includes the horizontal connection pipes and their connection to the geothermal probe manifolds, including all required earthworks. The system must be flushed, tested for tightness and flow rate, and filled in accordance with the design specifications. All completed works and tests must be documented. The interface with the building-side heating system ",
+      "library_summary": "Drilling, probes, backfill and horizontal pipes; open procedure, works.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "The tender for geothermal boreholes covers the installation of the geothermal probe system for Building 07B at St. Gallen Cantonal Hospital. The scope of work includes site establishment, drilling operations, and the supply, installation, and complete backfilling of the geothermal probes in accordance with the tender documents. The scope also includes the horizontal connection pipes and their connection to the geothermal probe manifolds, including all required earthworks. The system must be flushed, tested for tightness and flow rate, and filled in accordance with the design specifications. All completed works and tests must be documented. The interface with the building-side heating system ",
+          "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "ted:754784-2026",
+      "notice_id": "TED 754784-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
+      "library_title": "Geologischer Dienst NRW: research well Münster, part 1 drilling contractor (new notice 754784)",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "TED description: execution of a research borehole; the competition concerns only part 1, the drilling contractor."
+      },
+      "excluded": [],
+      "basis": "Replacement notice for the Münster research-well drilling contractor.",
+      "uncertainty": "",
+      "evidence_access": "ted_api_2026-11-08",
+      "evidence_excerpt": "Durchführung einer Forschungsbohrung gemäß der Vergabeunterlagen. Diese Ausschreibung befasst sich ausschließlich mit Teil 1 - Bohrkontraktor.",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "ted_api_2026-11-08",
+          "excerpt": "Durchführung einer Forschungsbohrung gemäß der Vergabeunterlagen. Diese Ausschreibung befasst sich ausschließlich mit Teil 1 - Bohrkontraktor.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-97695",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
+      "library_title": "Terrinnov, Ferney-Voltaire: project management for a geothermal exploration well",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "Library summary: maîtrise d'oeuvre for an exploration well at Ferney-Voltaire, for a future doublet."
+      },
+      "excluded": [
+        {
+          "label": "Drilling",
+          "reason": "The summary is project management for the well, not the drilling contract."
+        }
+      ],
+      "basis": "Stored summary: maîtrise d'oeuvre for an exploration well.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Maîtrise d'oeuvre for an exploration well in the ZAC Ferney Genève Innovation, intended for a future doublet; works budget EUR 2.22m excl. VAT.",
+      "library_summary": "Maîtrise d'oeuvre for an exploration well in the ZAC Ferney Genève Innovation, intended for a future doublet; works budget EUR 2.22m excl. VAT.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: maîtrise d'oeuvre for an exploration well at Ferney-Voltaire, for a future doublet.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-95181",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
+      "library_title": "Sauer-Pechelbronn: study to convert an existing well into a deep geothermal probe",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "Library summary: 13-month study on the Hélions 2 well and reuse options for the Les Cybéliades well."
+      },
+      "excluded": [],
+      "basis": "Stored summary: a 13-month study of two existing wells.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "13-month study on the Hélions 2 well at Preuschdorf and reuse options for the Les Cybéliades well at Morsbronn-les-Bains.",
+      "library_summary": "13-month study on the Hélions 2 well at Preuschdorf and reuse options for the Les Cybéliades well at Morsbronn-les-Bains.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: 13-month study on the Hélions 2 well and reuse options for the Les Cybéliades well.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-100440",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
+      "library_title": "CNRS Occitanie Est, Montpellier: project management for geothermal production at Campus Route de Mende",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "Library summary: full maîtrise d'oeuvre in tranches for geothermal heat production at Campus Route de Mende."
+      },
+      "excluded": [],
+      "basis": "Stored summary: full maîtrise d'oeuvre in tranches for a campus geothermal plant.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Full maîtrise d'oeuvre in tranches for a geothermal heat-production project on the campus. Deadline as encoded = 11:00 CET; 12:00 Paris time may be meant (check the RC on PLACE).",
+      "library_summary": "Full maîtrise d'oeuvre in tranches for a geothermal heat-production project on the campus. Deadline as encoded = 11:00 CET; 12:00 Paris time may be meant (check the RC on PLACE).",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: full maîtrise d'oeuvre in tranches for geothermal heat production at Campus Route de Mende.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-100285",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-100285",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100285",
+      "library_title": "SIMACUR, Antony: concession for a deep Dogger geothermal heat network",
+      "labels": [
+        "Project owners & developers"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Project owners & developers": "Library summary: design, finance, build and operate a Dogger geothermal heat network; concession of about 27.5 years."
+      },
+      "excluded": [
+        {
+          "label": "Engineering & Services",
+          "reason": "Design is one part of the concession, not a separate services contract."
+        }
+      ],
+      "basis": "Stored summary: a concession to design, finance, build and operate a Dogger heat network.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Design, finance, build and operate a Dogger geothermal heat network with export to Bourg-la-Reine; investment est. EUR 110m, concession value est. EUR 320m, 27.5 years.",
+      "library_summary": "Design, finance, build and operate a Dogger geothermal heat network with export to Bourg-la-Reine; investment est. EUR 110m, concession value est. EUR 320m, 27.5 years.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: design, finance, build and operate a Dogger geothermal heat network; concession of about 27.5 years.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100285"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-103297",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
+      "library_title": "SMIREC, Villetaneuse: submersible production pump for the geothermal production well",
+      "labels": [
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": true,
+      "bases": {
+        "Equipment": "Library summary: supply of an ESP, with optional pressure sensor and connection box."
+      },
+      "excluded": [],
+      "basis": "Stored summary: supply of an electrical submersible pump.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Supply of an ESP with two optional tranches (pressure sensor, connection box); est. EUR 250,000, 48 months.",
+      "library_summary": "Supply of an ESP with two optional tranches (pressure sensor, connection box); est. EUR 250,000, 48 months.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: supply of an ESP, with optional pressure sensor and connection box.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-99761",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-99761",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-99761",
+      "library_title": "GHT Drôme Ardèche Vercors (CH Valence): borehole field for CH Drôme Vivarais awarded",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: award of lot 1, a vertical borehole field, to Geotec Energie."
+      },
+      "excluded": [],
+      "basis": "Stored summary: award of a vertical borehole field.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Award notice: lot 1 vertical borehole field to Geotec Energie, EUR 649,425 excl. VAT.",
+      "library_summary": "Award notice: lot 1 vertical borehole field to Geotec Energie, EUR 649,425 excl. VAT.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: award of lot 1, a vertical borehole field, to Geotec Energie.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-99761"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-101091",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091",
+      "library_title": "Aussac-Vadalle: borehole heat-exchanger field and heat pump",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": true,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: 3 boreholes of 80 m, plus 3 optional, with a reversible water/water heat pump and surface distribution."
+      },
+      "excluded": [
+        {
+          "label": "Equipment",
+          "reason": "The heat pump is described inside the same borehole works."
+        }
+      ],
+      "basis": "Stored summary: three boreholes of 80 m with a heat pump in the same works.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "3 boreholes of 80 m (plus 3 optional) with a reversible water/water heat pump and surface distribution.",
+      "library_summary": "3 boreholes of 80 m (plus 3 optional) with a reversible water/water heat pump and surface distribution.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: 3 boreholes of 80 m, plus 3 optional, with a reversible water/water heat pump and surface distribution.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101091"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-boamp-fr-pages-avis-q-idweb-26-92903",
+      "notice_id": "https://www.boamp.fr/pages/avis/?q=idweb:26-92903",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92903",
+      "library_title": "GEVES, Erdre-en-Anjou: geothermal heat pump, lots 'Forage' and 'PAC Géothermie'",
+      "labels": [
+        "Drilling",
+        "Equipment"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: a drilling lot.",
+        "Equipment": "Library summary: a separate geothermal heat-pump lot."
+      },
+      "excluded": [],
+      "basis": "Stored summary names two lots: drilling and a geothermal heat pump.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Drilling and geothermal heat pump lots; site visit mandatory.",
+      "library_summary": "Drilling and geothermal heat pump lots; site visit mandatory.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: a drilling lot.",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92903"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-resmigazete-gov-tr-ilanlar-eskiilanlar-2026-09-20260927-3-4-pdf",
+      "notice_id": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf",
+      "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf",
+      "library_title": "Erzurum Governorship: auction of two geothermal exploration licences",
+      "labels": [
+        "Project owners & developers"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Project owners & developers": "Library summary: auction of two exploration-licence fields of about 4,800 ha, three-year licences."
+      },
+      "excluded": [],
+      "basis": "Stored summary: auction of two three-year geothermal exploration licences.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Two fields of about 4,800 ha in Aşkale and Pasinler; three-year licences.",
+      "library_summary": "Two fields of about 4,800 ha in Aşkale and Pasinler; three-year licences.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: auction of two exploration-licence fields of about 4,800 ha, three-year licences.",
+          "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/09/20260927-3-4.pdf"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-resmigazete-gov-tr-ilanlar-eskiilanlar-2026-10-20261018-3-1-pdf",
+      "notice_id": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf",
+      "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf",
+      "library_title": "Niğde Provincial Special Administration: auction of six geothermal exploration licences",
+      "labels": [
+        "Project owners & developers"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Project owners & developers": "Library summary: auction of six exploration-licence areas, three-year licences."
+      },
+      "excluded": [],
+      "basis": "Stored summary: auction of six three-year geothermal exploration licences.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Six areas (about 24,560 ha) in Merkez, Bor and Altunhisar; three-year licences; est. TRY 1.15m–2.0m per area excl. VAT.",
+      "library_summary": "Six areas (about 24,560 ha) in Merkez, Bor and Altunhisar; three-year licences; est. TRY 1.15m–2.0m per area excl. VAT.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: auction of six exploration-licence areas, three-year licences.",
+          "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/10/20261018-3-1.pdf"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-groupe-coriance-fr-2026-09-25-aulnay-sous-bois-clap-de-fin-pour-le-forage-",
+      "notice_id": "https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/",
+      "url": "https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/",
+      "library_title": "Coriance: drilling completed at Aulnay-sous-Bois",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: Dogger well of about 2,000 m finished."
+      },
+      "excluded": [],
+      "basis": "Stored summary reports that the Dogger well was drilled. Completion news, not a drilling tender.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Dogger well (about 2,000 m, around 70 °C) finished; geothermal heat to cover 93% of the town network from year-end.",
+      "library_summary": "Dogger well (about 2,000 m, around 70 °C) finished; geothermal heat to cover 93% of the town network from year-end.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: Dogger well of about 2,000 m finished.",
+          "url": "https://groupe-coriance.fr/2026/09/25/aulnay-sous-bois-clap-de-fin-pour-le-forage-de-la-geothermie/"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-jeleniagora-naszemiasto-pl-woda-geotermalna-u-podnoza-karkonoszy-rozpoczel",
+      "notice_id": "https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853",
+      "url": "https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853",
+      "library_title": "Jelenia Góra: C-3 geothermal research well (2,500 m) drilling started",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: research well at Cieplice/Sobieszów, drilling started, about 12 months including tests."
+      },
+      "excluded": [],
+      "basis": "Stored summary reports that drilling of the 2,500 m research well has started. News report, not a tender.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Research well at Cieplice/Sobieszów drilled by Algeo; contract PLN 19.45m, NFOŚiGW grant PLN 18.79m; about 12 months incl. tests.",
+      "library_summary": "Research well at Cieplice/Sobieszów drilled by Algeo; contract PLN 19.45m, NFOŚiGW grant PLN 18.79m; about 12 months incl. tests.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: research well at Cieplice/Sobieszów, drilling started, about 12 months including tests.",
+          "url": "https://jeleniagora.naszemiasto.pl/woda-geotermalna-u-podnoza-karkonoszy-rozpoczeli-wiercenie-na-glebokosc-2500-metrow/ar/c7p2-29445853"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "https-www-veitur-is-en-bilanir-borad-laugarnes-2026-27",
+      "notice_id": "https://www.veitur.is/en/bilanir/borad_laugarnes_2026-27",
+      "url": "https://www.veitur.is/en/bilanir/borad_laugarnes_2026-27",
+      "library_title": "Veitur, Reykjavík: hot-water drilling at Laugardalur",
+      "labels": [
+        "Drilling"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Drilling": "Library summary: five wells of 800–1,500 m; drilling started 16 Oct 2026."
+      },
+      "excluded": [],
+      "basis": "Stored summary reports that hot-water drilling has started. Operator news, not a tender.",
+      "uncertainty": "Original page was not re-opened on 8 Nov 2026. The excerpt is the stored Library summary.",
+      "evidence_access": "library_summary_not_refetched",
+      "evidence_excerpt": "Five wells of 800–1,500 m at Engjateigur and Bolholt; drilling started 16 Oct 2026, Engjateigur until May 2027.",
+      "library_summary": "Five wells of 800–1,500 m at Engjateigur and Bolholt; drilling started 16 Oct 2026, Engjateigur until May 2027.",
+      "provenance": [
+        {
+          "type": "evidence",
+          "access": "library_summary_not_refetched",
+          "excerpt": "Library summary: five wells of 800–1,500 m; drilling started 16 Oct 2026.",
+          "url": "https://www.veitur.is/en/bilanir/borad_laugarnes_2026-27"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review",
+          "note": "Not a reviewer approval."
+        }
+      ]
+    },
+    {
+      "key": "boamp:26-102183",
+      "notice_id": "BOAMP 26-102183",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102183",
+      "library_title": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
+      "labels": [
+        "Engineering & Services"
+      ],
+      "status": "pending_review",
+      "approved": false,
+      "method": "manual",
+      "integrated_package": false,
+      "supply_package": false,
+      "bases": {
+        "Engineering & Services": "Stored tender title: support services for the project owner (accompagnement à maîtrise d'ouvrage) for the Villiers-le-Bel/Gonesse geothermal syndicate."
+      },
+      "excluded": [
+        {
+          "label": "Project owners & developers",
+          "reason": "The notice is a services contract for the owner, not a development right or funding instrument."
+        }
+      ],
+      "basis": "Owner-support services. BOAMP page was a script shell and was not re-read.",
+      "uncertainty": "Classification uses the stored official title. The notice body was not re-opened.",
+      "evidence_access": "stored_tender_title_not_refetched",
+      "evidence_excerpt": "Prestations d’accompagnement à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour la géothermie de Villiers-le-Bel/Gonesse.",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "stored_tender_title",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102183"
+        },
+        {
+          "type": "proposal",
+          "result": "pending_independent_review"
         }
       ]
     }

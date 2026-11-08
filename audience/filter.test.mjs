@@ -24,8 +24,8 @@ function byNotice(id) {
 
 test("the shared record matches the review draft and stays unapproved", () => {
   assert.deepEqual(api.validateAssignments(doc), []);
-  assert.equal(doc.assignments.length, 4);
   assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved).length, 4);
+  assert.ok(doc.assignments.filter((row) => row.status === "pending_review" && row.approved === false).length > 20);
   const kutno = byNotice("TED 725171-2026");
   const hvc = byNotice("TED 726565-2026");
   const paris = byNotice("TED 755201-2026");
@@ -42,7 +42,7 @@ test("the shared record matches the review draft and stays unapproved", () => {
   assert.match(feder.bases["Project owners & developers"], /§2/);
   assert.match(feder.bases["Project owners & developers"], /§3\.1/);
   assert.match(feder.eligibility_caveat, /not mean that every reader/);
-  assert.equal(doc.assignments.some((row) => row.labels.length > 1), false);
+  assert.equal(doc.assignments.some((row) => row.status === "pending_review" && row.labels.length > 1), true);
 });
 
 test("integrated packages, equipment supply and FEDER cannot pick up an extra label", () => {
@@ -124,10 +124,11 @@ test("Library and tender pages share the record and keep full labels", () => {
     assert.equal(preview.includes(banned), false, banned);
   }
   assert.match(indexHtml, /id="e-library-kutno"|data-audience="Drilling"/);
-  assert.doesNotMatch(indexHtml, /Proposed, pending review/);
-  assert.doesNotMatch(tendersHtml, /Proposed, pending review/);
+  assert.match(indexHtml, /Proposed, pending review/);
+  assert.doesNotMatch(indexHtml.slice(indexHtml.indexOf("725171-2026") - 400, indexHtml.indexOf("725171-2026")), /Proposed, pending review/);
   assert.doesNotMatch(indexHtml, /stays untagged until/);
-  assert.match(indexHtml, /The map does not filter by audience/);
+  assert.doesNotMatch(indexHtml, /does not filter by audience/);
+  assert.match(indexHtml, /The same labels filter the map/);
   assert.match(tendersHtml, /data-audience="Drilling"/);
   assert.match(tendersHtml, /data-audience="Equipment"/);
   assert.match(tendersHtml, /data-audience="Engineering &amp; Services"/);
@@ -138,8 +139,10 @@ test("Library and tender pages share the record and keep full labels", () => {
   assert.match(federCard, /class="audname">Project owners &amp; developers</);
   assert.match(tendersHtml, /audienceMatch/);
   assert.match(tendersHtml, /tab==="soon"/);
-  assert.match(indexHtml, /The map does not filter by audience/);
-  assert.match(tendersHtml, /The map does not filter by audience/);
+  assert.doesNotMatch(indexHtml, /does not filter by audience/);
+  assert.match(indexHtml, /The same labels filter the map/);
+  assert.doesNotMatch(tendersHtml, /does not filter by audience/);
+  assert.match(tendersHtml, /The same labels filter the map/);
   assert.match(newsletter, /was not edited/);
   assert.match(newsletter, /For:/);
   assert.match(preview, /Layout sample only/);
@@ -166,16 +169,24 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.deepEqual(feder.audience, ["Project owners & developers"]);
   assert.equal(feder.audience_status, "reviewed");
   const tagged = tenders.entries.filter((entry) => entry.audience.length);
-  assert.equal(tagged.length, 4);
-  const unknown = tenders.entries.find((entry) => entry.id === "TED 729019-2026");
-  assert.deepEqual(unknown.audience, []);
-  assert.equal(unknown.audience_status, "unassigned");
-  const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n");
+  assert.ok(tagged.length > 4);
+  const kaba = tenders.entries.find((entry) => entry.id === "TED 729019-2026");
+  assert.deepEqual(kaba.audience, ["Drilling"]);
+  assert.equal(kaba.audience_status, "pending_review");
+  const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
+  assert.deepEqual(blocked.audience, []);
+  assert.equal(blocked.audience_status, "unassigned");
+  const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n").filter((file) => file !== "map/index.html");
   for (const file of files) {
     const disk = fs.readFileSync(path.join(root, file));
     const git = execSync(`git show main:${file}`, { cwd: root });
     assert.deepEqual(disk, git, file);
   }
+  const mapHtml = fs.readFileSync(path.join(root, "map/index.html"), "utf8");
+  assert.match(mapHtml, /\/symbols\/aud-drilling\.svg/);
+  assert.match(mapHtml, /audienceMatch/);
+  assert.match(mapHtml, /markerClusterGroup/);
+  assert.doesNotMatch(mapHtml, /file:\/\//);
 });
 
 test("Library summaries and source links for the four examples are intact", () => {

@@ -76,7 +76,7 @@ The selected state shows the word “Selected” and `aria-pressed="true"`. Colo
 
 ## Map
 
-The map has no audience filters in this stage. Weekly map maintenance, project pins, BVG expansion, tender deduplication and auto-return are unchanged. Do not describe the newsletter, the Library and the map as one complete set of audience filters.
+The map uses the same assignment record. All is the default. Several audience labels match a pin that carries any of them, together with the existing type and country controls. Pins and nationwide calls with no label stay visible under All and drop out when a label is selected. That empty result is not a statement that no projects exist. Marker shapes, source and date lines, separate pins at one site, and the existing same-notice project/tender handling are unchanged. This preview is not a live publication.
 
 ## Newsletter excerpt
 

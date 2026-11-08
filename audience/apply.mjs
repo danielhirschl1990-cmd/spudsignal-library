@@ -74,8 +74,8 @@ ${api.LABELS.map(chip).join("\n")}
 <!-- audience-bar-end -->`;
 }
 
-const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The map does not filter by audience.";
-const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The map does not filter by audience.";
+const LIBRARY_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every source. If you select more than one audience, a source is shown when it carries any of those labels. The same labels filter the map.";
+const TENDERS_HELP = "Audience labels are guidance on who an item is relevant to. They are not eligibility. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The same labels filter the map.";
 
 function replaceBlock(html, start, end, original, replacement) {
   const block = `${start}\n${replacement}\n${end}`;
@@ -129,7 +129,7 @@ function stampLibrary(html, byUrl) {
   if (!html.includes("/audience/library.js")) {
     html = html.replace("</body>", '<script src="/audience/filter.js"></script>\n<script src="/audience/library.js"></script>\n</body>');
   }
-  return html;
+  return html.replace(/<!-- map-audience-limit --><p class="maplimit">The map does not filter by audience\.<\/p>\n?/g, "");
 }
 
 const SEL_ORIGINAL = 'var sel={kind:{},tag:{},country:{}},tab="open";\n[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.addEventListener("click",function(){var g=b.dataset.g,v=b.dataset.v;if(sel[g][v])delete sel[g][v];else sel[g][v]=1;b.setAttribute("aria-pressed",!!sel[g][v]);refresh();});});\ndocument.getElementById("reset").addEventListener("click",function(){sel={kind:{},tag:{},country:{}};[].forEach.call(document.querySelectorAll(".chip[data-g]"),function(b){b.setAttribute("aria-pressed","false");});refresh();});';
@@ -200,12 +200,15 @@ function stampTenders(html, byUrl, data) {
   html = replaceBlock(html, "/* audience-sel-start */", "/* audience-sel-end */", SEL_ORIGINAL, SEL_NEXT);
   html = replaceBlock(html, "/* audience-match-start */", "/* audience-match-end */", MATCH_ORIGINAL, MATCH_NEXT);
   html = replaceBlock(html, "/* audience-count-start */", "/* audience-count-end */", COUNT_ORIGINAL, COUNT_NEXT);
+  html = html.replace(/<!-- map-audience-limit --><p class="maplimit">The map does not filter by audience\.<\/p>\n?/g, "");
   if (!html.includes('src="/audience/filter.js"')) {
     html = html.replace("<script>\n(function(){", '<script src="/audience/filter.js"></script>\n<script>\n(function(){');
   }
-  const about = '<p id="audience-about">Audience tags use this same assignment record as the newsletter. They are an orientation aid. Several selected audiences match an entry that carries any of those labels. They combine with type, technical category and country. Untagged does not mean irrelevant. The map does not filter by audience.</p>';
+  const about = '<p id="audience-about">Audience labels use the same assignment record on the Library, the open-tender list and the map. They are guidance, not eligibility. Several selected labels match an entry that carries any of them. An entry with no label stays visible under All.</p>';
   if (!html.includes('id="audience-about"')) {
     html = html.replace('<section class="box"><h2>About this app</h2>', '<section class="box"><h2>About this app</h2>\n' + about);
+  } else {
+    html = html.replace(/<p id="audience-about">[\s\S]*?<\/p>/, about);
   }
   const json = JSON.stringify(data).replace(/</g, "\\u003c");
   if (!html.includes('<script type="application/json" id="data">')) throw new Error("Tender data script missing");
