@@ -11,9 +11,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MAP_JS = ROOT / "map" / "data.js"
 ASSIGN = ROOT / "audience" / "assignments.json"
-OUT_JSON = ROOT / "audience" / "map-crosswalk-2026-11-08.json"
-OUT_CSV = ROOT / "audience" / "map-crosswalk-2026-11-08.csv"
-OUT_MD = ROOT / "audience" / "map-crosswalk-2026-11-08.md"
+# Contains pin coordinates: written outside the published site (ODbL: display only, no download/export, 13 Nov 2026).
+OUT_DIR = ROOT.parent / "build" / "audience"
+OUT_JSON = OUT_DIR / "map-crosswalk-2026-11-08.json"
+OUT_CSV = OUT_DIR / "map-crosswalk-2026-11-08.csv"
+OUT_MD = OUT_DIR / "map-crosswalk-2026-11-08.md"
 
 IDENTITIES = {
     "https://www.boamp.fr/pages/avis/?q=idweb:26-93304": (
@@ -96,6 +98,7 @@ def assignment_fields(row):
 
 
 def main():
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     text = MAP_JS.read_text()
     data = parse_js_object(text, "SS_DATA")
     extra = parse_js_object(text, "SS_EXTRA")
