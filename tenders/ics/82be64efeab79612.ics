@@ -24,9 +24,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:82be64efeab79612@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Rénovation énergétique d'un ensemble d
  e bâtiments communaux et réalisation d'une installation de boucle d'eau
   tempérée à énergie géothermique (Beteg)

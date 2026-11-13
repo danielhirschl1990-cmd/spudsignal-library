@@ -24,9 +24,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:803c662051981e98@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Travaux de Création d'une centrale de g
  éothermie sur sonde et travaux de remplacement des émetteurs au centre 
  hospitalier Drôme Vivarais\n---\nRelance d

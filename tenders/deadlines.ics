@@ -182,9 +182,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:803c662051981e98@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Travaux de Création d'une centrale de g
  éothermie sur sonde et travaux de remplacement des émetteurs au centre 
  hospitalier Drôme Vivarais\n---\nRelance d
@@ -214,7 +214,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d6aceeed5e1cf4bd@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Appel à projets FEDER 2026 – Création
   ou extension des installations de distribution et production de chaleur 
@@ -247,7 +247,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:f0353bf382e57b2b@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: La présente consultation concerne la mis
  sion de Maitrise d’œuvre complète\, découpée en tranches\, pour l
@@ -280,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6b774d72bcf5d7f5@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Maîtrise d'oeuvre pour la gestion des in
  stallations de surface du réseau de chaleur UniGéo
@@ -309,14 +309,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:76d3e3d4f7f4b6c3@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261108T202117Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique avec
   la mise en place d'une PAC Géothermique sur sondes verticales sur le b
  âtiment " MAIRIE "
-DTSTART;TZID=Europe/Paris:20261118T130000
-DTEND;TZID=Europe/Paris:20261118T133000
+DTSTART;TZID=Europe/Paris:20261118T120000
+DTEND;TZID=Europe/Paris:20261118T123000
 DESCRIPTION:Source: BOAMP 26-103155. Published by source: 23 Oct 2026 · L
  ast checked by SpudSignal: 13 Nov 2026. Deadlines can change through corr
  igenda. This calendar feed is refreshed by SpudSignal on each weekly chec
@@ -341,7 +341,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:3942db59a0569a17@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Bohrplatzerrichtung zur Ex
  plorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes
@@ -371,7 +371,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d1a2305da5242137@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Fernwärmeverbundleitungst
  rasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG
@@ -400,9 +400,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0c87fc4157e326c0@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: PUITS DE PRODUCTION GEOTHERMIQUE DE VILLE
  TANEUSE FOURNITURE D'UNE ELECTROPOMPE DE PRODUCTION IMMERGEE
 DTSTART;TZID=Europe/Paris:20261123T120000
@@ -430,9 +430,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:82be64efeab79612@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Rénovation énergétique d'un ensemble d
  e bâtiments communaux et réalisation d'une installation de boucle d'eau
   tempérée à énergie géothermique (Beteg)
@@ -462,7 +462,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4fd50c9eb94424d6@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Servicii de proiectare şi Execuţie lucr
  ări pentru obiectivul: “Creșterea producției de energie din resurse 
@@ -493,7 +493,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:06fd138aa75e9be4@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Deadline: Wykonanie otworów geotermalnych Kutno GT
  -1 i Kutno GT-2\, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KU
@@ -524,7 +524,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:71a5f9ee90af9d4f@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T202117Z
 SUMMARY:[Check source] Deadline: Távhőszolgáltatási rendszer kialakít
  ása Kabán
@@ -553,9 +553,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c063c46f5a23a0b2@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261113T211741Z
-LAST-MODIFIED:20261023T130756Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Etude et accompagnement sur les forages L
  es Cybéliades et Hélions II
 DTSTART;TZID=Europe/Paris:20261124T120000
@@ -584,7 +584,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:0dc12863fa50d657@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Requests to participate: Forschungsbohrung Münster
   - Teil 1 Bohrkontraktor
@@ -614,7 +614,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:1d1fcdf4e5f90302@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Stimulering Duurzame Energieproductie en 
  Klimaattransitie (SDE++)
@@ -645,7 +645,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:5fbc2426027d65b6@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Geothermal Consultancy Services for Unive
  rsity Hospital Galway
@@ -675,7 +675,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:50fb456c6fff3b64@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Maintenance and repair of diaphragms
 DTSTART;TZID=Atlantic/Reykjavik:20261130T100000
@@ -704,7 +704,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dadbf94b3d55275a@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[Check source] Requests to participate: Framework Agreement regard
  ing the supply of Heat Exchangers for Geothermal Projects
@@ -734,7 +734,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:0eb0e95523645031@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261023T130756Z
 SUMMARY:[Check source] Deadline: Resource assessment for deep sedimentary 
  and basement reservoirs
@@ -766,7 +766,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:33fedeabccf98de1@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T202117Z
 SUMMARY:[Check source] Deadline: Geotermikus hőenergia beszerzés Szegedi
   Szakképzés
@@ -796,7 +796,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:9bb8bc940f00ee6c@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T202117Z
 SUMMARY:[Check source] Requests to participate: SV-KWE-261103-004 - TW - G
  eothermie Michaelibad - Wärmestation - Spezialtiefbau Baugrube
@@ -826,7 +826,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ed4f6d6f9dde823e@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Maitrise d'oeuvre pour la réalisation et
   l'extension de réseaux de chaleurs parisiens
@@ -856,7 +856,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:134f041368647f35@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: New Building 07B / Cost Group 241 / Geoth
  ermal Boreholes
@@ -886,7 +886,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:99df042879984a15@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Borrtjänster
 DTSTART;TZID=Europe/Stockholm:20261025T230000
@@ -920,7 +920,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6cf9dc14246ba798@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Réalisation de travaux conce
  rnant la mise en place d'un réseau de chaleur sur sondes géothermiques 
@@ -952,7 +952,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:9b7ec724fea2f2ed@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Requests to participate: Geothermie Pre
  nzlau - Anlagentechnik
@@ -983,7 +983,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:389f89d14d614826@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Création d'un réseau techni
  que de chaleur géothermique sur le site de Bellegrave à Pessac (33)
@@ -1015,7 +1015,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6baedd6c10b06e19@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Geotermikus fúrási kockáza
  tok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2
@@ -1048,7 +1048,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6a7ed73200f7a63d@library.spudsignal.com
 SEQUENCE:2
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Förderaufruf „Explorations
  initiative Geothermie“
@@ -1084,7 +1084,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:7b5311b7bce42b93@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Schulhaus Langwiesen Erweiter
  ung und Sanierung\; BKP 242 Erdsonden
@@ -1115,7 +1115,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4d8245a64661a9ca@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Travaux de rénovation énerg
  étique et mise en place d’un système de chauffage par géothermie sur
@@ -1147,7 +1147,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cdd0f1c5dd4de2ff@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Single-Party Framework for Wo
  rks-Related Technical Services in Geothermal Engineering Consultancy at G
@@ -1181,7 +1181,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:00be19d0c9c0cbfd@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: SYNERGYS PROJECT: LONG LEAD I
  TEMS (LLI) - LINER HANGER AND INSTALLATION SERVICES
@@ -1212,7 +1212,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:59eca9045bac22e1@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Réalisation d'un champ de so
  ndes géothermiques verticales et de son réseau de distribution de surfa
@@ -1244,7 +1244,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:d46da94459df81b5@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261025T175833Z
 SUMMARY:[CANCELLED] [Check source] Deadline: „Realizace vrtů pro systé
  my BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT
@@ -1277,7 +1277,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:7095f2787aa83db3@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: SYNERGYS PROJECT: LONG LEAD I
  TEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS
@@ -1308,7 +1308,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:3a5d2c3eb36bebba@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Erdwärmesondenfeld für kalt
  es Nahwärmenetz in Linnich-Süd
@@ -1339,7 +1339,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4100e4cedb042af9@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Marché de maîtrise d'oeuvre
   pour la réalisation d'un puits de prospection géothermique sur le sect
@@ -1371,7 +1371,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:7bded30fa2266c1c@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Requests to participate: Planungsleistu
  ngen Wärmenetz Bauabschnitte 2027–2029\; Aschheim\, Feldkirchen\, Kirc
@@ -1403,7 +1403,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:253e005b3f55f334@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: SZP/243-277/2026 - Dostawa sy
  stemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych
@@ -1435,7 +1435,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:798e608fb28b08cb@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Neubau Ruwertalschule in Wald
  rach
@@ -1466,7 +1466,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ffefc6bd40ec17bb@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Távhőszolgáltatási rendsz
  er kialakítása Kabán
@@ -1498,7 +1498,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:41cabab7a5f09b40@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Prestations d’accompagnemen
  t à Maîtrise d’Ouvrage pour la gestion du Syndicat Intercommunal pour
@@ -1530,7 +1530,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:fbe0bf1d339c6850@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T201956Z
 SUMMARY:[CANCELLED] [Check source] Deadline: „Realizace vrtů pro systé
  my BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT
@@ -1562,7 +1562,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:a18fef83c1e2ddc5@library.spudsignal.com
 SEQUENCE:1
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[CANCELLED] [Check source] Requests to participate: Forschungsbohr
  ung Münster - Teil 1 Bohrkontraktor
@@ -1593,7 +1593,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:3c97938c6f31d0cc@library.spudsignal.com
 SEQUENCE:2
-DTSTAMP:20261113T211741Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261113T211435Z
 SUMMARY:[CANCELLED] [Check source] Deadline: Single-Party Framework for Wo
  rks-Related Technical Services in Geothermal Engineering Consultancy at G
