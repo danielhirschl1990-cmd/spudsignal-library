@@ -20,22 +20,22 @@ concurrency:
 jobs:
   site-checks:
     name: site-checks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Warn if this PR changes the checks themselves
         if: github.event_name == 'pull_request'
         run: |
-          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- .github/ || true)
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- .github/ | tr "\n" " " || true)
           if [ -n "$changed" ]; then
             echo "::warning::This PR changes the automatic checks (.github/). Review these files before merging: $changed"
           fi
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -45,7 +45,7 @@ jobs:
       - name: Site checks (published files, placeholders, counts, links, legal footer)
         run: python3 .github/scripts/check_site.py .
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "22"
 
