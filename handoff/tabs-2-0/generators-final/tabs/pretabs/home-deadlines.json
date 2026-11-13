@@ -1,0 +1,380 @@
+[
+ {
+  "title": "Horizon Europe HORIZON-CL5-2026-11-D3-06: resource assessment for deep sedimentary and bas",
+  "chip": "⏱ 1 Dec 2026, 17:00 Brussels time",
+  "deadline": "2026-12-01T17:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Flanders: gravity and magnetotelluric surveys, Brabant Massif",
+  "chip": "⏱ 14 Oct 2026, 10:00 CEST",
+  "deadline": "2026-10-14T10:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Charles University: wellhead and frac tree for SYNERGYS",
+  "chip": "⏱ 9 Nov 2026, 10:00 CET (extended from 5 Nov)",
+  "deadline": "2026-11-09T10:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Charles University: liner hanger for SYNERGYS",
+  "chip": "⏱ 6 Nov 2026, 10:00 CET",
+  "deadline": "2026-11-06T10:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Charles University: day-rate drilling services with rig for SYNERGYS",
+  "chip": "⏱ 22 Sep 2026",
+  "deadline": "2026-09-22T23:59:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Litoměřice SYNERGYS/USES4HEAT: 100 shallow boreholes for BTES heat storage",
+  "chip": "⏱ 30 Oct 2026, 15:00 CET",
+  "deadline": "2026-10-30T15:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Litoměřice SYNERGYS/USES4HEAT: 100 shallow boreholes for BTES heat storage (co-buyer Unive",
+  "chip": "⏱ 6 Nov, 15:00 CET, co-buyer Univerzita Karlova (TED 730837-2026)",
+  "deadline": "2026-11-06T15:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Terrinnov, Ferney-Voltaire: project management for a geothermal exploration well",
+  "chip": "⏱ 10 Nov 2026, 16:00 CET",
+  "deadline": "2026-11-10T16:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Sauer-Pechelbronn: study to convert an existing well into a deep geothermal probe",
+  "chip": "⏱ 24 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-24T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Pessac, Bellegrave: new geothermal heat network, Lot 01 'Forages'",
+  "chip": "⏱ 26 Oct 2026, 13:00 CET",
+  "deadline": "2026-10-26T13:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "UniGéo (Pantin, Les Lilas, Le Pré-Saint-Gervais, Romainville): project-management framewor",
+  "chip": "⏱ 18 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-18T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Syndicat ValDem, Vendôme: Lot 3 'Forages'",
+  "chip": "⏱ 5 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-05T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "GEVES, Erdre-en-Anjou: geothermal heat pump, lots 'Forage' and 'PAC Géothermie'",
+  "chip": "⏱ 19 Oct 2026, 12:00 CEST",
+  "deadline": "2026-10-19T12:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Saint-Pierre-d'Eyraud: school heat network, Lot 2 'Sondes géothermiques'",
+  "chip": "⏱ 26 Oct 2026, 12:00 CET",
+  "deadline": "2026-10-26T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Douvaine: Lot 2 'Sondes Géothermie'",
+  "chip": "⏱ 12 Oct 2026, 14:00 CEST",
+  "deadline": "2026-10-12T14:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Meyzieu: Lot 14 'Géothermie'",
+  "chip": "⏱ 16 Oct 2026, 12:00 CEST",
+  "deadline": "2026-10-16T12:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Île-de-France ERDF call 2026: geothermal heat and cold",
+  "chip": "⏱ 16 Nov 2026, 17:00 (no zone stated)",
+  "deadline": "2026-11-16T17:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Beauvaisis Terre d'Énergie: absorption heat pumps on a geothermal source",
+  "chip": "⏱ Requests by 2 Nov 2026, 11:00 CET",
+  "deadline": "2026-11-02T11:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "CNRS Occitanie Est, Montpellier: project management for geothermal production at Campus Ro",
+  "chip": "⏱ 17 Nov 2026, 11:00 CET (notice encodes 12:00 with a summer-time offset; 12:00 Paris time may be meant – check the RC on PLACE)",
+  "deadline": "2026-11-17T11:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Aussac-Vadalle: borehole heat-exchanger field and heat pump",
+  "chip": "⏱ 6 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-06T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "SMIREC, Villetaneuse: submersible production pump for the geothermal production well",
+  "chip": "⏱ 23 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-23T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "GHT Drôme Ardèche Vercors (CH Valence): relaunch of lot 2 (HVAC) for the CH Drôme Vivarais",
+  "chip": "⏱ 16 Nov 2026, 16:00 CET",
+  "deadline": "2026-11-16T16:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Pessac, Bellegrave: new geothermal heat network, Lot 01 'Forages' (aquifer wells)",
+  "chip": "⏱ 30 Oct, Shallow (aquifer wells), 12:00 Paris time (rectificatif 26-101172)",
+  "deadline": "2026-10-30T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Energies du Grand Paris: project-management framework for the Paris heat networks (incl. g",
+  "chip": "⏱ 8 Dec 2026, 12:00 CET",
+  "deadline": "2026-12-08T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Croze: town-hall energy renovation with geothermal drilling and heat-pump lots",
+  "chip": "⏱ 18 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-18T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Stadtwerke Prenzlau: surface plant for geothermal district heating",
+  "chip": "⏱ 27 Oct 2026, 12:00 CET (requests to participate)",
+  "deadline": "2026-10-27T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Gelsenwasser Energienetze, Linnich: 30-borehole field for a cold heat network",
+  "chip": "⏱ 9 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-09T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "SWE Energie, Erfurt: processing and interpretation of 3D and wide-angle seismic",
+  "chip": "⏱ 13 Oct 2026, 10:00 CEST (was 9 Oct)",
+  "deadline": "2026-10-13T10:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Schwedt/Oder: Lot 32 'Geothermie'",
+  "chip": "⏱ 13 Oct 2026, 09:00 CEST",
+  "deadline": "2026-10-13T09:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "WärmeWerk Wörth: wireline logging for two deep geothermal wells",
+  "chip": "⏱ 19 Oct 2026, 15:00 CEST",
+  "deadline": "2026-10-19T15:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Federal funding call 'Explorationsinitiative Geothermie'",
+  "chip": "⏱ 31 Oct 2026 (no time stated)",
+  "deadline": "2026-10-31T23:59:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "AFK-Geothermie: planning for geothermal district-heating extensions 2027–2029",
+  "chip": "⏱ Requests by 11 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-11T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Trier-Saarburg district, Waldrach: 22-borehole heat-exchanger field for the Ruwertalschule",
+  "chip": "⏱ 13 Nov 2026, 10:00 CET",
+  "deadline": "2026-11-13T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Geologischer Dienst NRW: Forschungsbohrung Münster, part 1 drilling contractor",
+  "chip": "⏱ Requests to participate by 26 Nov 2026, 10:00 CET",
+  "deadline": "2026-11-26T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Erdwärme Grünwald II: district-heating link Laufzorn II – Laufzorn I",
+  "chip": "⏱ Requests to participate by 21 Nov 2026, 23:00 CET",
+  "deadline": "2026-11-21T23:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Berlin: first deep-geothermal exploration right to BEW; Marzahn well pad tendered",
+  "chip": "⏱ Requests to participate by 20 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-20T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Geologischer Dienst NRW: research well Münster, part 1 drilling contractor (new notice 754",
+  "chip": "⏱ 26 Nov, requests, 10:00 CET",
+  "deadline": "2026-11-26T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Munich tenders the Michaelibad heat-station excavation",
+  "chip": "⏱ Requests by 7 Dec 2026, 13:00 CET",
+  "deadline": "2026-12-07T13:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Kaba: new 1,200 m thermal well, heat centre and heat network",
+  "chip": "⏱ 20 Oct 2026, 11:00 CEST (extended)",
+  "deadline": "2026-10-20T11:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "University of Szeged: 38,000 GJ of geothermal heat",
+  "chip": "⏱ 26 Oct 2026, 10:00 CET",
+  "deadline": "2026-10-26T10:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "KEHOP Plusz 4.2.4-25: grants to reduce geothermal drilling risk",
+  "chip": "⏱ 2nd phase: 30 Oct 2026, 23:59",
+  "deadline": "2026-10-30T23:59:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25)",
+  "chip": "⏱ phase 2 ends 30 Oct 2026, 23:59 Hungarian time (per programme PDF as of 18 Oct)",
+  "deadline": "2026-10-30T23:59:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Kaba: new 1,200 m thermal well, heat centre and heat network (new notice 729019)",
+  "chip": "⏱ 3 Nov, by 10:00 CET (notice encodes 11:00 UTC+02:00; 11:00 Hungarian time may be meant)",
+  "deadline": "2026-11-03T10:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Kaba moves its geothermal heat-network deadline",
+  "chip": "⏱ 24 Nov 2026, 11:00 CET",
+  "deadline": "2026-11-24T11:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Szeged college tenders geothermal heat supply",
+  "chip": "⏱ 2 Dec 2026, 10:00 CET",
+  "deadline": "2026-12-02T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Verkís, Akureyri: pre-insulated pipe for a geothermal heating main",
+  "chip": "⏱ 19 Oct 2026, 13:30 Iceland time (15:30 CEST)",
+  "deadline": "2026-10-19T13:30:00+00:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Landsvirkjun: maintenance and repair of diaphragms for the Krafla geothermal power plant",
+  "chip": "⏱ 30 Nov 2026, 11:00 CET (notice: 10:00 UTC)",
+  "deadline": "2026-11-30T11:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Grangegorman Development Agency, Dublin: geothermal engineering consultancy framework",
+  "chip": "⏱ 5 Nov 2026, 14:00 Irish time (15:00 CET)",
+  "deadline": "2026-11-05T14:00:00+00:00",
+  "past_at_build": true
+ },
+ {
+  "title": "HSE, University Hospital Galway: geothermal heat-pump feasibility study with thermal respo",
+  "chip": "⏱ 27 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-27T12:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Grangegorman: geothermal tender, deadline moved to 12 Nov (new notice 737356)",
+  "chip": "⏱ 12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time.",
+  "deadline": "2026-11-12T15:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "RVO SDE++ 2026",
+  "chip": "⏱ opens 27 Oct, closes 26 Nov 2026, 17:00",
+  "deadline": "2026-11-26T17:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "HVC: framework agreement for heat exchangers for geothermal projects",
+  "chip": "⏱ Requests to participate by 30 Nov 2026, 18:00 CET (notice: 17:00 UTC)",
+  "deadline": "2026-11-30T18:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Wrocław University of Science and Technology: fibre-optic temperature system for geotherma",
+  "chip": "⏱ 13 Nov 2026, 10:00 CET",
+  "deadline": "2026-11-13T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "ECO Kutno: drilling of geothermal wells Kutno GT-1 and GT-2",
+  "chip": "⏱ 24 Nov 2026, 10:00 CET",
+  "deadline": "2026-11-24T10:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Călimănești: design and build of geothermal wells, substations and heat networks (Călimăne",
+  "chip": "⏱ 23 Nov 2026, 14:00 CET (15:00 Romanian time)",
+  "deadline": "2026-11-23T14:00:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Housing fund, Kranj: hydrogeological supervision for geothermal wells",
+  "chip": "⏱ 6 Oct 2026, 10:00 CEST",
+  "deadline": "2026-10-06T10:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "SGU: four-year drilling framework with geoenergy lots",
+  "chip": "⏱ 25 Oct 2026, end of day",
+  "deadline": "2026-10-25T23:59:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Winterthur, Langwiesen school: 40 borehole heat exchangers",
+  "chip": "⏱ 4 Nov 2026, 12:00 CET",
+  "deadline": "2026-11-04T12:00:00+01:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Zollikon, Rüterwis school: brine/water heat pumps on a borehole field",
+  "chip": "⏱ 23 Oct 2026, 14:00 CEST",
+  "deadline": "2026-10-23T14:00:00+02:00",
+  "past_at_build": true
+ },
+ {
+  "title": "HOCH Health Ostschweiz: borehole heat-exchanger field for St. Gallen Cantonal Hospital, Bu",
+  "chip": "⏱ 8 Dec 2026, 23:59 CET",
+  "deadline": "2026-12-08T23:59:00+01:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Erzurum Governorship: auction of two geothermal exploration licences",
+  "chip": "⏱ 13 Oct 2026, 10:00 TRT (09:00 CEST)",
+  "deadline": "2026-10-13T10:00:00+03:00",
+  "past_at_build": true
+ },
+ {
+  "title": "Niğde Provincial Special Administration: auction of six geothermal exploration licences",
+  "chip": "⏱ Auction 18 Nov 2026, from 11:00 TRT (09:00 CET)",
+  "deadline": "2026-11-18T11:00:00+03:00",
+  "past_at_build": false
+ },
+ {
+  "title": "Eden Geothermal (Cornwall): Section 73 application PA26/05364 (variation of conditions); s",
+  "chip": "⏱ Determination deadline 18 Nov 2026",
+  "deadline": "2026-11-18T23:59:00+01:00",
+  "past_at_build": false
+ }
+]

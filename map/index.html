@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!doctype html><html data-ss-tabs="2.0" lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Geothermal map: projects, tenders &amp; funding – SpudSignal Library</title>
 <meta name="description" content="Map of geothermal projects and wells from SpudSignal issues, plus open tenders and funding calls in Europe.">
 <meta property="og:title" content="We put Bavaria on the map – SpudSignal geothermal map">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.css">
 <style>
 :root{--navy:#0F2A3D;--orange:#E97828;--gb:#C8D2DC}
-*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:"DejaVu Sans",Verdana,system-ui,sans-serif;color:var(--navy)}
+*{box-sizing:border-box}html,body{margin:0;height:100%;color:var(--navy)}
 header{height:56px;background:var(--navy);color:#fff;display:flex;align-items:center;gap:10px;padding:0 16px}
 header img{height:40px}header b{font-size:17px}header nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
 header nav a{color:var(--gb);text-decoration:none}header nav a.on{color:#fff;border-bottom:2px solid var(--orange)}
@@ -33,11 +33,10 @@ header nav a{color:var(--gb);text-decoration:none}header nav a.on{color:#fff;bor
 h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px;color:#4a6072}
 label{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer}
 .dot{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid #fff;box-shadow:0 0 0 1px var(--navy)}
-.cty{display:flex;flex-wrap:wrap;gap:6px}.cty button{font:inherit;font-size:12px;border:1px solid var(--gb);background:#fff;color:var(--navy);border-radius:14px;padding:3px 9px;cursor:pointer}
-.cty button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.cty{display:flex;flex-wrap:wrap;gap:6px}
 .nw{border-left:3px solid var(--orange);padding:4px 8px;margin:6px 0;background:#f6f8fa}
 .nw a{color:var(--navy)}small{color:#5d7283}
-.leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.4;margin:12px 14px}
+.leaflet-popup-content{font-size:13px;line-height:1.4;margin:12px 14px}
 .pt{font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em}
 .pp b{display:block;margin:3px 0}.pp a{color:var(--orange);font-weight:bold}
 .ap{background:var(--gb);border-radius:3px;padding:0 4px;font-size:11px}
@@ -104,29 +103,29 @@ details.more ul{margin:3px 0 0;padding-left:16px} details.more li{margin:1px 0} 
 #ctabar .ctab{font-size:12.5px;padding:6px 12px}
 body #wrap{top:calc(48px + env(safe-area-inset-top))!important}}
 
-</style><style id="appnav-css">/* appnav v3: identical on /, /tenders/, /map/ */
-.appnav{position:fixed;z-index:1200;left:0;right:0;background:#0F2A3D;font-family:"DejaVu Sans",Verdana,system-ui,sans-serif;box-sizing:border-box}
-.appnav *{box-sizing:border-box}.appnav a{text-decoration:none}
-.appnav .al a{display:flex;align-items:center;color:#C8D2DC}
-.appnav .al a[aria-current="page"]{color:#E97828}
-.appnav a:focus-visible{outline:2px solid #E97828;outline-offset:-3px}
-@media(min-width:761px){.appnav{top:0;height:56px;display:flex;align-items:center;padding:0 20px}
-.appnav .ab{display:flex;align-items:center;gap:10px;color:#fff;font-size:17px}.appnav .ab img{height:32px;width:auto}
-.appnav .al{margin-left:auto;display:flex;gap:6px;height:100%}
-.appnav .al a{gap:8px;padding:0 12px;font-size:15px;border-bottom:3px solid transparent;border-top:3px solid transparent}
-.appnav .al a[aria-current="page"]{border-bottom-color:#E97828}.appnav .al a:hover{color:#fff}
-body.has-appnav{padding-top:56px}}
-@media(max-width:760px){.appnav{bottom:0;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
-.appnav .ab{display:none}.appnav .al{display:flex}
-.appnav .al a{flex:1;min-height:56px;flex-direction:column;justify-content:center;gap:2px;font-size:12px;border-top:3px solid transparent}
-.appnav .al a[aria-current="page"]{border-top-color:#E97828}
-body.has-appnav{padding-bottom:calc(64px + env(safe-area-inset-bottom))}}
 </style>
-</head><body>
-<div id="ctabar" class="sscta" data-cta="mobile"><span class="ctat">Get map updates in the free SpudSignal briefing.</span> <a class="ctab" href="https://spudsignal.beehiiv.com/subscribe?utm_source=map&amp;utm_medium=cta&amp;utm_content=mobile" target="_blank" rel="noopener">Subscribe free</a></div><div id="wrap"><aside id="panel">
+<link rel="stylesheet" href="/assets/spudsignal.css"><script src="/assets/ss-url.js" defer></script><style>
+#wrap{display:flex}#mapcol{flex:1;display:flex;flex-direction:column;min-width:0}#map{flex:1;min-height:0}
+.ss-maphead{height:auto;color:var(--navy);display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:center;background:#fff;border-bottom:1px solid var(--gb);padding:8px 16px}
+.ss-maphead h1{grid-column:1/3;font-size:22px;margin:0;color:var(--navy)}
+.ss-maphead .tnotice{grid-column:1;grid-row:2;margin:0;font-size:13px;line-height:1.4;background:none;border:0;padding:0}.ss-maphead .tnotice a{color:var(--navy);font-weight:700}
+.ss-maphead .sscta{grid-column:2;grid-row:2;display:flex;position:static;align-items:center;gap:10px;margin:0;font-size:13px;color:var(--navy)}
+.ss-maphead .ctab{display:inline-flex;align-items:center;min-height:44px;background:var(--orange);color:#fff;font-weight:700;text-decoration:none;border-radius:22px;padding:0 16px;white-space:nowrap}
+#legend{left:auto!important;right:10px;bottom:28px;padding:6px 8px;max-width:420px}#legend.open .legitems{display:block!important}#legend:not(.open) .legitems{display:none!important}
+#legend .lrow{display:flex;gap:10px}#legend .lrow i{font-style:normal;display:flex;align-items:center;gap:4px}
+#legend #legtog{display:inline-flex!important;align-items:center;margin:0;font-size:13px;min-height:44px;min-width:44px;font:inherit;font-weight:700;border:1px solid var(--navy);border-radius:22px;background:#fff;color:var(--navy);padding:0 14px;cursor:pointer}
+#mnotice{display:none}
+.minfo{margin:10px 0;border-top:1px solid var(--gb);padding-top:6px}.minfo>summary{min-height:44px;display:flex;align-items:center;font-weight:700;cursor:pointer}
+#panel h1.sr-only-m{font-size:15px;margin:0 0 4px;color:var(--navy)}
+@media(min-width:761px){#panel h1.sr-only-m{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media(max-width:760px){.ss-maphead{display:none}#mnotice{display:block;position:absolute;z-index:900;left:8px;right:8px;bottom:22px}#mnotice .tnotice{margin:0;background:rgba(255,255,255,.96);border:1px solid var(--gb);border-left:4px solid var(--orange);border-radius:8px;padding:8px 10px;font-size:13px}
+ #legend{right:8px;bottom:auto;top:10px;left:auto!important;padding:0;border:0;background:none;box-shadow:none;display:block}#legend.open{background:#fff;padding:6px 8px;border:1px solid var(--gb)}
+ #panel h1.sr-only-m{display:block}}
+</style></head><body class="has-appnav"><a class="skip" href="#content">Skip to content</a><nav class="appnav" aria-label="Main"><a class="ab" href="/" data-carry="/"><img src="/map/logo-v3-dark.png" alt="" width="32" height="32"><b>SpudSignal Library</b></a><div class="al"><a class="tab" href="/" data-carry="/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M8 7h7"/><path d="M8 11h7"/></svg><span>Library</span></a><a class="tab" href="/tenders/" data-carry="/tenders/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg><span>Tenders</span></a><a class="tab" href="/map/" data-carry="/map/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12s-8-7-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Map</span></a></div><a class="wn" href="/whats-new/"><span>What’s new</span><span class="vtag" data-version>Update 2.0</span></a></nav>
+<div id="ctabar" class="sscta" data-cta="mobile"><span class="ctat">Get map updates in the free SpudSignal briefing.</span> <a class="ctab" href="https://spudsignal.beehiiv.com/subscribe?utm_source=map&amp;utm_medium=cta&amp;utm_content=mobile" target="_blank" rel="noopener">Subscribe free</a></div><div id="wrap"><aside id="panel"><h1 class="sr-only-m" id="content" tabindex="-1">Geothermal map: projects, tenders &amp; funding</h1>
 <h3>Type</h3><div id="types"></div>
 <h3 id="aud-heading">Audience</h3>
-<p class="audnote">Guidance, not eligibility, and not a check that a deadline is currently open. All shows every pin. Several labels match a pin that carries any of them. A pin is labelled only when its source URL is the same URL as an assignment.</p>
+<p class="audnote">Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines.</p>
 <div class="audrow" id="audrow" role="group" aria-labelledby="aud-heading">
 <button type="button" id="aud-all" aria-pressed="true">All</button>
 <button type="button" data-v="Drilling" aria-pressed="false"><img src="/symbols/aud-drilling.svg" alt="" width="24" height="24">Drilling</button>
@@ -134,22 +133,22 @@ body.has-appnav{padding-bottom:calc(64px + env(safe-area-inset-bottom))}}
 <button type="button" data-v="Engineering &amp; Services" aria-pressed="false"><img src="/symbols/aud-engineering.svg" alt="" width="24" height="24">Engineering &amp; Services</button>
 <button type="button" data-v="Project owners &amp; developers" aria-pressed="false"><img src="/symbols/aud-owners.svg" alt="" width="24" height="24">Project owners &amp; developers</button>
 </div>
-<p class="audempty" id="audempty" hidden>No pins carry the selected labels. Pins without a label are hidden while a label is selected. Choose All to see them. This is not a finding that no projects exist.</p>
+<p class="audempty" id="audempty" hidden>No pins carry the selected labels. Pins without a label stay in All. This is not a finding that no projects exist.</p>
 <button type="button" id="clearf" class="clearf">Clear filters</button>
 <h3>Country</h3><div class="cty" id="ctys"></div>
 <p><small id="count"></small></p>
 <h3>Nationwide / EU calls (no single site)</h3><div id="nw"></div>
-<p><small>Tender data as published by source, no guarantee – check the original. Pins marked “approx.” sit at town/region level.</small></p>
-<p class="tnotice">Built from public sources. Spotted an error or a new project? <a href="mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A">Tell us</a> – please include a public source link. We check every report before it goes on the map.</p><p class="pab"><small><a href="/projects/">Project list</a></small></p><section id="about-sources"><h3>About &amp; Sources</h3><p class="tcredh">Credits for the new layers (active projects, operating plants):</p><ul class="tcred"><li>Datenquelle: Bayerisches Landesamt für Umwelt, www.lfu.bayern.de – Lizenz CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); Daten ausgewählt und bearbeitet (Stand 31.12.2024)</li><li>Datenquelle: Marktstammdatenregister, Bundesnetzagentur (Gesamtdatenauszug 11.11.2026); Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0, https://www.govdata.de/dl-de/by-2-0); Daten ausgewählt und bearbeitet. Dataset: Marktstammdatenregister (BNetzA), https://www.marktstammdatenregister.de/MaStR/Datendownload</li><li>Koordinaten (Gemeinde/Ortsteil, ca.): © OpenStreetMap-Mitwirkende, ODbL (https://www.openstreetmap.org/copyright)</li><li>TED: © European Union, single notices linked</li></ul><p class="tcredh">Locations are approximate unless noted. No coordinate table is offered, and nothing can be downloaded or exported.</p></section><p class="pab"><small><a href="/tenders/#about-data">About &amp; Sources</a> · <a href="https://impressum.spudsignal.com">Impressum</a> · <a href="https://privacy.spudsignal.com">Privacy</a></small></p>
-</aside><div id="map"></div><div id="legend"></div><button id="tog">☰ Filters</button></div>
-<!-- appnav v3 --><nav class="appnav" aria-label="Main"><a class="ab" href="/"><img src="/map/logo-v3-dark.png" alt="" width="32" height="32"><b>SpudSignal Library</b></a><div class="al"><a href="/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="/tenders/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg><span>Tenders</span></a><a href="/map/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12s-8-7-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Map</span></a></div></nav>
+
+<p class="pab"><small><a href="/projects/">Project list</a></small></p><p class="tcredh">Locations are approximate unless noted. No coordinate table is offered, and nothing can be downloaded or exported.</p><details class="minfo" id="map-info"><summary>Info</summary><p><small>Tender data as published by source, no guarantee – check the original. Pins marked “approx.” do not show the exact location.</small></p><p><small>All shows every pin, including those without an audience label. If you select more than one audience, a pin is shown when it carries any of those labels. A pin is labelled only when its source URL matches an assignment.</small></p></details><details class="minfo" id="about-sources"><summary>Sources &amp; credits</summary><p class="tcredh">Credits for the new layers (active projects, operating plants):</p><ul class="tcred"><li>Datenquelle: Bayerisches Landesamt für Umwelt, www.lfu.bayern.de – Lizenz CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); Daten ausgewählt und bearbeitet (Stand 31.12.2024)</li><li>Datenquelle: Marktstammdatenregister, Bundesnetzagentur (Gesamtdatenauszug 11.11.2026); Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0, https://www.govdata.de/dl-de/by-2-0); Daten ausgewählt und bearbeitet. Dataset: Marktstammdatenregister (BNetzA), https://www.marktstammdatenregister.de/MaStR/Datendownload</li><li>Koordinaten (Gemeinde/Ortsteil, ca.): © OpenStreetMap-Mitwirkende, ODbL (https://www.openstreetmap.org/copyright)</li><li>TED: © European Union, single notices linked</li></ul></details><footer class="ss-foot" data-ss-footer><p>Media owner and publisher: Daniel Hirschl, Ortsstraße 28, 3493 Kammern, Austria. SpudSignal is a neutral, independent briefing on European geothermal news. All documents are linked to their original publishers. Liability: entries are provided for information only, without guarantee of completeness or accuracy; the original document is authoritative.</p><p class="ss-links"><a href="https://impressum.spudsignal.com">Impressum &amp; disclaimer</a> &nbsp;·&nbsp; <a href="https://privacy.spudsignal.com">Privacy</a> &nbsp;·&nbsp; <a href="/tenders/#about-data">About &amp; Sources</a> &nbsp;·&nbsp; <a href="/whats-new/">What’s new</a><a class="vtag2" href="/whats-new/" aria-label="Update 2.0 – what’s new">Update 2.0</a> &nbsp;·&nbsp; <a href="https://spudsignal.beehiiv.com/subscribe">Subscribe free</a></p></footer>
+</aside><div id="mapcol"><header class="ss-maphead"><h1 aria-hidden="true">Geothermal map: projects, tenders &amp; funding</h1><p class="tnotice">Built from public sources. Spotted an error or a new project? <a href="mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A">Tell us</a> – please include a public source link. We check every report before it goes on the map.</p><p class="sscta mh" data-cta="desktop"><span class="ctat">Get map updates in the free SpudSignal briefing.</span> <a class="ctab" href="https://spudsignal.beehiiv.com/subscribe?utm_source=map&amp;utm_medium=cta&amp;utm_content=desktop" target="_blank" rel="noopener">Subscribe free</a></p></header><div id="map"></div></div><div id="legend"></div><div id="mnotice"><p class="tnotice">Built from public sources. Spotted an error or a new project? <a href="mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A">Tell us</a> – please include a public source link. We check every report before it goes on the map.</p></div><button id="tog">☰ Filters</button></div>
+
 <script src="vendor/leaflet/leaflet.js"></script><script src="vendor/markercluster/leaflet.markercluster.js"></script><script src="data.js"></script><script src="testlayers.js"></script><script src="/audience/filter.js"></script>
 <script>
 const NOTICE_HTML="<p class=\"tnotice\">Built from public sources. Spotted an error or a new project? <a href=\"mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A\">Tell us</a> \u2013 please include a public source link. We check every report before it goes on the map.</p>";
 const CTA_DESKTOP="<p class=\"sscta\" data-cta=\"desktop\"><span class=\"ctat\">Get map updates in the free SpudSignal briefing.</span> <a class=\"ctab\" href=\"https://spudsignal.beehiiv.com/subscribe?utm_source=map&amp;utm_medium=cta&amp;utm_content=desktop\" target=\"_blank\" rel=\"noopener\">Subscribe free</a></p>";
-const C={project:'#0F2A3D',tender:'#E97828',funding:'#1B998B'},LB={project:'Projects & wells (#1–#7)',tender:'Open tenders',funding:'Funding calls'};
+const CN={AT:"Austria",CH:"Switzerland",CZ:"Czechia",DE:"Germany",ES:"Spain",FR:"France",HU:"Hungary",IE:"Ireland",IS:"Iceland",IT:"Italy",NL:"Netherlands",PL:"Poland",RO:"Romania",TR:"Türkiye",UA:"Ukraine",UK:"United Kingdom",GB:"United Kingdom",BE:"Belgium",EE:"Estonia",PT:"Portugal",SE:"Sweden",SI:"Slovenia",EU:"EU-wide"};const C={project:'#0F2A3D',tender:'#E97828',funding:'#1B998B'},LB={project:'Projects & wells',tender:'Open tenders',funding:'Funding calls'};
 const CT={active:'#0F2A3D',operating:'#8FA3B5'},LBT={active:'Active projects',operating:'Operating plants'};
-const m=Lf();function Lf(){const mm=window.L.map('map',{zoomControl:true,maxZoom:12}).setView([49,10],4);
+const m=Lf();function Lf(){const mm=window.L.map('map',{zoomControl:true,maxZoom:12,zoomSnap:0.25}).setView([49,10],3.75);
 window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(mm);return mm}
 const TODAY=new Date();const F=SS_DATA.features.filter(f=>!f.properties.deadline_iso||new Date(f.properties.deadline_iso)>TODAY),on={project:1,tender:1,funding:1,active:1,operating:0},ctys=[...new Set(F.map(f=>f.properties.country))].sort();let sel=new Set(ctys);
 let audSel=[], byUrl=new Map();
@@ -205,7 +204,7 @@ function drawTest(){let k=0;const audOk=window.SpudAudience.audienceMatch([],aud
    g.forEach(o=>SSTEST_MARKERS[o.id]=mk);k++})}
  return k}
 layer.on('popupopen',e=>{const el=e.popup.getElement();if(el)el.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{const pp=e.popup;if(pp._updateLayout){pp._updateLayout();pp._updatePosition();pp._adjustPan&&pp._adjustPan()}}))});
-function testCounts(){const pts=new Set(TL.operating.map(o=>o.lat+','+o.lon)).size;return {active:TL.active.length,operating:pts}}
+function testCounts(){return {active:TL.active.length,operating:TL.operating.length}}
 function draw(){layer.clearLayers();let n=0;F.forEach(f=>{const p=f.properties;if(!on[p.type]||!sel.has(p.country)||!passAud(p))return;n++;
 window.L.marker([f.geometry.coordinates[1],f.geometry.coordinates[0]],{sstype:p.type,icon:window.L.divIcon({html:shp(p.type,p.type=='project'?24:26,p.approx),className:'',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-10]})}).bindPopup(pop(p),{maxWidth:280}).addTo(layer)});
 n+=drawTest();paintLegend();let msg=n+" pins shown";if(audSel.length)msg+=" · audience: any of "+audSel.join(", ");
@@ -214,22 +213,22 @@ document.getElementById("audempty").hidden=!(audSel.length&&n===0);
 document.querySelectorAll("[data-tc]").forEach(el=>{const t=el.dataset.tc;el.textContent="("+F.filter(f=>f.properties.type===t&&sel.has(f.properties.country)&&passAud(f.properties)).length+")";});
 refreshNw()}
 function refreshNw(){const rows=(SS_EXTRA.nationwide||[]).filter(p=>new Date(p.deadline_iso)>TODAY&&passAud(p));
-document.getElementById("nw").innerHTML=rows.length?rows.map(p=>`<div class="nw"><b>${esc(p.country)}</b> · <a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.title)}</a><br><small>Deadline: ${esc(p.deadline)}</small>${labelsFor(p).length?`<br><small>For: ${labelsFor(p).map(esc).join(", ")}</small>`:""}</div>`).join(""):"<p><small>No nationwide calls match these filters. Calls without a label stay visible under All.</small></p>";}
+document.getElementById("nw").innerHTML=rows.length?rows.map(p=>`<div class="nw"><b>${esc(p.country)}</b> · <a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.title)}</a><br><small>Deadline: ${esc(p.deadline)}</small>${labelsFor(p).length?`<br><small>For: ${labelsFor(p).map(esc).join(", ")}</small>`:""}</div>`).join(""):"<p><small>No nationwide calls match these filters. Calls without a label stay in All.</small></p>";}
 document.getElementById('types').innerHTML=Object.keys(C).map(t=>`<label><input type="checkbox" checked data-t="${t}">${shp(t,16,false)}${LB[t]} <span data-tc="${t}">(${F.filter(f=>f.properties.type==t).length})</span></label>`).join('');
 {const tc=testCounts();document.getElementById('types').insertAdjacentHTML('beforeend',`<label><input type="checkbox" checked data-t="active">${hexS('outline',16,false,false)}${LBT.active} <span>(${tc.active})</span></label>`+`<label><input type="checkbox" data-t="operating">${opS(16,false)}${LBT.operating} <span>(${tc.operating})</span></label>`);}
 document.querySelectorAll('[data-t]').forEach(i=>i.onchange=()=>{on[i.dataset.t]=i.checked?1:0;draw()});
-const ce=document.getElementById('ctys');ce.innerHTML='<button class="on" data-c="*">All</button>'+ctys.map(c=>`<button data-c="${c}">${c}</button>`).join('');
+const ce=document.getElementById('ctys');ce.innerHTML='<button class="on" data-c="*">All</button>'+ctys.map(c=>`<button data-c="${c}" title="${c}">${CN[c]||c}</button>`).join('');
 ce.onclick=e=>{const c=e.target.dataset.c;if(!c)return;if(c=='*')sel=new Set(ctys);else sel=new Set([c]);ce.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.c==c));draw()};
 function paintAud(){document.getElementById("aud-all").setAttribute("aria-pressed",audSel.length?"false":"true");document.querySelectorAll("#audrow [data-v]").forEach(b=>b.setAttribute("aria-pressed",audSel.includes(b.dataset.v)?"true":"false"));}
 document.getElementById("audrow").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.id==="aud-all")audSel=[];else{const v=b.dataset.v;audSel=audSel.includes(v)?audSel.filter(x=>x!==v):audSel.concat(v);}paintAud();draw();});
 document.getElementById("clearf").addEventListener("click",()=>{on.project=on.tender=on.funding=on.active=1;on.operating=0;document.querySelectorAll("[data-t]").forEach(i=>{i.checked=i.dataset.t!=="operating";});sel=new Set(ctys);ce.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.c==="*"));audSel=[];paintAud();draw();});
 document.getElementById('tog').onclick=()=>document.getElementById('panel').classList.toggle('open');
 m.on('click',()=>document.getElementById('panel').classList.remove('open'));
-const LEG0=[['tender','Tender'],['project','Project / news'],['funding','Funding']].map(([t,l])=>`<span>${shp(t,14,false)}${l}</span>`).join('')+'<span><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="#fff" stroke="#0F2A3D" stroke-width="2.5" stroke-dasharray="4 3"/></svg>approx. location</span>';
-function paintLegend(){const el=document.getElementById('legend');if(!el)return;el.innerHTML='<button type="button" id="legtog" aria-expanded="'+(el.classList.contains('open')?'true':'false')+'">Legend '+(el.classList.contains('open')?'▾':'▸')+'</button><div class="legitems">'+LEG0+`<span${on.active?'':' class="off"'}>${hexS('outline',14)}${hexS('half',14)}${hexS('full',14)}Active project: in preparation / in tender / in execution</span>`+`<span${on.active?'':' class="off"'}>${hexS('outline',14,true)}Status open – not verified</span>`+`<span${on.operating?'':' class="off"'}>${opS(14,false)}Operating plant${on.operating?'':' (layer off)'}</span>`+`<span>${hexS('half',14,false,false,false,true)}${opS(14,false,true)}Active project / operating plant, approx. location (dashed outline)</span>`+`<span>${hexS('outline',14,false,false,true)}Paused – no new public evidence</span></div>`+NOTICE_HTML+CTA_DESKTOP;}
+const LEG0='<span class="lrow">'+[['tender','Tender'],['project','Project / news'],['funding','Funding']].map(([t,l])=>`<i>${shp(t,14,false)}${l}</i>`).join('')+'</span>';
+function paintLegend(){const el=document.getElementById('legend');if(!el)return;el.innerHTML='<button type="button" id="legtog" aria-expanded="'+(el.classList.contains('open')?'true':'false')+'">Legend '+(el.classList.contains('open')?'▾':'▸')+'</button><div class="legitems">'+LEG0+`<span${on.active?'':' class="off"'}>${hexS('outline',14)}${hexS('half',14)}${hexS('full',14)}Active project: in preparation / in tender / in execution</span>`+`<span${on.active?'':' class="off"'}>${hexS('outline',14,true)}Status open – not verified</span>`+`<span${on.operating?'':' class="off"'}>${opS(14,false)}Operating plant${on.operating?'':' (layer off)'}</span>`+`<span>${hexS('half',14,false,false,false,true)}${opS(14,false,true)}<svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="#fff" stroke="#0F2A3D" stroke-width="2.5" stroke-dasharray="4 3"/></svg>approx. location (dashed outline)</span>`+`<span>${hexS('outline',14,false,false,true)}Paused – no new public evidence</span></div>`;}
 document.getElementById('legend').addEventListener('click',e=>{if(e.target.closest('#legtog')){document.getElementById('legend').classList.toggle('open');paintLegend()}});
 paintLegend();
-draw();window.SSMAP=m;if(m.attributionControl)m.attributionControl.addAttribution("<a href=\"#about-sources\" onclick=\"var p=document.getElementById('panel');if(p)p.classList.add('open')\">About &amp; Sources</a>");
+draw();window.SSMAP=m;if(m.attributionControl)m.attributionControl.addAttribution("<a href=\"#about-sources\" onclick=\"var p=document.getElementById('panel');if(p)p.classList.add('open');var d=document.getElementById('about-sources');if(d)d.open=true\">Sources &amp; credits</a>");
 fetch("/audience/assignments.json").then(r=>r.json()).then(doc=>{(doc.assignments||[]).forEach(a=>{byUrl.set(normUrl(a.url),a);byUrl.set(a.url,a);});draw();}).catch(()=>draw());
-if(window.innerWidth<=760&&layer.getLayers().length)m.fitBounds(layer.getBounds(),{padding:[24,24]});
+if(layer.getLayers().length)m.fitBounds(layer.getBounds(),{padding:[24,24],maxZoom:5});
 </script></body></html>
