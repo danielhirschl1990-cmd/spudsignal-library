@@ -110,8 +110,9 @@ hero.name="header"; del hero["style"]; hero["class"]="ss-head"
 ps=hero.find_all("p"); ps[0]["class"]="k"; h1=hero.find("h1"); h1["id"]="content"; h1["tabindex"]="-1"
 for t in [ps[0],h1,ps[1],ps[2]]: del t["style"]
 ps[2]["class"]="s"
-assert "102 primary sources" in ps[2].get_text()
-_rest=ps[2].get_text().replace("102 primary sources","",1); ps[2].clear(); _sp=soup.new_tag("span",attrs={"id":"ss-hcount"}); _sp.string="102 entries"; ps[2].append(_sp); ps[2].append(_rest)
+_hm=re.search(r"(\d+) primary sources",ps[2].get_text()); assert _hm, ps[2].get_text()
+NE=int(_hm.group(1)); assert NE==len(soup.find_all("div",class_="libcard")), (NE,len(soup.find_all("div",class_="libcard")))  # header count = cards on the page (weekly builds change it)
+_rest=ps[2].get_text().replace(_hm.group(0),"",1); ps[2].clear(); _sp=soup.new_tag("span",attrs={"id":"ss-hcount"}); _sp.string=f"{NE} entries"; ps[2].append(_sp); ps[2].append(_rest)
 log(page,"H-count","new","header count = all 102 regardless of what is shown","with JS: “64 current entries (38 expired hidden · show)” from real counts, updates with the toggle; without JS: “102 entries”")
 log(page,"G-entry","glossary","102 primary sources · 21 countries + EU · updated weekly","102 entries · 21 countries + EU · updated weekly")
 log(page,"CSS-h1","css-removed","H1 inline 34px","→ --h1 28px")
