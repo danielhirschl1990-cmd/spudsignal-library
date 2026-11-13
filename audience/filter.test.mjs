@@ -218,7 +218,10 @@ test("open-tender facts and the map files stay unchanged", () => {
   const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
   assert.deepEqual(blocked.audience, []);
   assert.equal(blocked.audience_status, "untagged");
-  const crosswalk = JSON.parse(fs.readFileSync(path.join(root, "audience/map-crosswalk-2026-11-08.json"), "utf8"));
+  // Crosswalk holds pin coordinates and is no longer published (ODbL); checked only when built locally.
+  const crosswalkPath = path.join(root, "..", "build/audience/map-crosswalk-2026-11-08.json");
+  if (fs.existsSync(crosswalkPath)) {
+  const crosswalk = JSON.parse(fs.readFileSync(crosswalkPath, "utf8"));
   assert.equal(crosswalk.counts.pins, 60);
   assert.equal(crosswalk.counts.pins_exact_url, 59);
   assert.equal(crosswalk.counts.pins_unlinked, 1);
@@ -236,6 +239,7 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.match(wellhead.title_scope_note, /679859-2026/);
   assert.equal(liner.source_url, "https://ted.europa.eu/en/notice/-/detail/679859-2026");
   assert.match(liner.title, /LINER HANGER/);
+  }
   assert.equal(doc.assignments.filter((row) => row.labels.length).length, 70);
   assert.equal(doc.assignments.filter((row) => row.intentionally_untagged).length, 5);
   assert.equal(doc.assignments.filter((row) => row.withheld).length, 21);
