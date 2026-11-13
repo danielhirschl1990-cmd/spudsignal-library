@@ -18,13 +18,13 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:50fb456c6fff3b64@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261108T202154Z
+DTSTAMP:20261113T211741Z
 LAST-MODIFIED:20261101T221916Z
 SUMMARY:[Check source] Deadline: Maintenance and repair of diaphragms
 DTSTART;TZID=Atlantic/Reykjavik:20261130T100000
 DTEND;TZID=Atlantic/Reykjavik:20261130T103000
 DESCRIPTION:Source: TED 754152-2026. Published by source: 30 Oct 2026 · L
- ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 13 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

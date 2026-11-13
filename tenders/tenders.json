@@ -1,238 +1,7 @@
 {
- "generated": "2026-11-08T21:21+01:00",
+ "generated": "2026-11-13T22:17+01:00",
  "note": "As published by source, no guarantee – check the original.",
  "entries": [
-  {
-   "uid": "7095f2787aa83db3",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 684005-2026",
-   "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS",
-   "title_official": null,
-   "buyer": "Univerzita Karlova",
-   "country": "CZ",
-   "tz": "Europe/Prague",
-   "deadline_iso": "2026-11-09T10:00:00+01:00",
-   "deadline_txt": "09 Nov 2026, 10:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Deep well"
-   ],
-   "cpv": [
-    "43130000",
-    "43612000",
-    "43612400",
-    "43612700"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Equipment"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "3a5d2c3eb36bebba",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 698651-2026",
-   "title": "Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd",
-   "title_official": null,
-   "buyer": "Gelsenwasser Energienetze GmbH",
-   "country": "DE",
-   "tz": "Europe/Berlin",
-   "deadline_iso": "2026-11-09T12:00:00+01:00",
-   "deadline_txt": "09 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Shallow BHE"
-   ],
-   "cpv": [
-    "45262220"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Drilling"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "4100e4cedb042af9",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-97695",
-   "title": "Marché de maîtrise d'oeuvre pour la réalisation d'un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique",
-   "title_official": null,
-   "buyer": "Société Publique Locale TERRITOIRE D'INNOVATION (SPL TERRINNOV)",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-10T16:00:00+01:00",
-   "deadline_txt": "10 Nov 2026, 16:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Deep well",
-    "Planning"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "7bded30fa2266c1c",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 701161-2026",
-   "title": "Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem",
-   "title_official": null,
-   "buyer": "AFK-Geothermie GmbH",
-   "country": "DE",
-   "tz": "Europe/Berlin",
-   "deadline_iso": "2026-11-11T12:00:00+01:00",
-   "deadline_txt": "11 Nov 2026, 12:00 CET",
-   "deadline_label": "Requests to participate",
-   "time_note": null,
-   "tags": [
-    "Planning"
-   ],
-   "cpv": [
-    "71300000",
-    "71321200",
-    "71521000"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "3c97938c6f31d0cc",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 737356-2026",
-   "title": "Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland",
-   "title_official": null,
-   "buyer": "Grangegorman Development Agency_564",
-   "country": "IE",
-   "tz": "Europe/Dublin",
-   "deadline_iso": "2026-11-12T15:00:00+01:00",
-   "deadline_txt": "12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time",
-   "deadline_label": null,
-   "time_note": "Time uncertain: TED encodes 15:00 +01:00 (= 14:00 Irish time); the buyer's eTenders page shows 15:00 without a time zone. Confirm on the buyer portal (Reviewer, 8 Nov 2026).",
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "45220000",
-    "45251141",
-    "71311000",
-    "71313000",
-    "71314300",
-    "71351210",
-    "71351220",
-    "71530000",
-    "79415200"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/737356-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-11-01",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "253e005b3f55f334",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 691583-2026",
-   "title": "SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11",
-   "title_official": null,
-   "buyer": "Politechnika Wrocławska",
-   "country": "PL",
-   "tz": "Europe/Warsaw",
-   "deadline_iso": "2026-11-13T10:00:00+01:00",
-   "deadline_txt": "13 Nov 2026, 10:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Deep well"
-   ],
-   "cpv": [
-    "38540000"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Equipment"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "798e608fb28b08cb",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 709263-2026",
-   "title": "Neubau Ruwertalschule in Waldrach",
-   "title_official": null,
-   "buyer": "Kreisverwaltung Trier-Saarburg",
-   "country": "DE",
-   "tz": "Europe/Berlin",
-   "deadline_iso": "2026-11-13T10:00:00+01:00",
-   "deadline_txt": "13 Nov 2026, 10:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Shallow BHE"
-   ],
-   "cpv": [
-    "45214210",
-    "45214220",
-    "45262220"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026",
-   "checked": "2026-11-08",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-08",
-   "audience": [
-    "Drilling"
-   ],
-   "audience_status": "reviewed"
-  },
   {
    "uid": "803c662051981e98",
    "kind": "tender",
@@ -244,6 +13,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-16T16:00:00",
+   "deadline_utc": "2026-11-16T15:00:00Z",
    "deadline_txt": "16 Nov 2026, 16:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -252,11 +22,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -271,17 +41,18 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-16T17:00:00+01:00",
+   "deadline_utc": "2026-11-16T16:00:00Z",
    "deadline_txt": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)",
    "deadline_label": null,
    "time_note": null,
    "tags": [],
    "cpv": [],
    "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Project owners & developers"
    ],
@@ -298,6 +69,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-17T12:00:00+02:00",
+   "deadline_utc": "2026-11-17T10:00:00Z",
    "deadline_txt": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)",
    "deadline_label": null,
    "time_note": "Time uncertain: the notice states 12:00 Paris but encodes an inconsistent offset (11:00 CET) – the earlier value is used here.",
@@ -306,11 +78,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Engineering & Services"
    ],
@@ -327,6 +99,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-18T12:00:00+01:00",
+   "deadline_utc": "2026-11-18T11:00:00Z",
    "deadline_txt": "18 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -338,11 +111,11 @@
     "71621000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Engineering & Services"
    ],
@@ -359,6 +132,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-18T12:00:00Z",
+   "deadline_utc": "2026-11-18T12:00:00Z",
    "deadline_txt": "18 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -367,11 +141,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -386,6 +160,7 @@
    "country": "DE",
    "tz": "Europe/Berlin",
    "deadline_iso": "2026-11-20T12:00:00+01:00",
+   "deadline_utc": "2026-11-20T11:00:00Z",
    "deadline_txt": "20 Nov 2026, 12:00 CET",
    "deadline_label": "Requests to participate",
    "time_note": null,
@@ -397,11 +172,11 @@
     "45255500"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -416,6 +191,7 @@
    "country": "DE",
    "tz": "Europe/Berlin",
    "deadline_iso": "2026-11-21T23:00:00+01:00",
+   "deadline_utc": "2026-11-21T22:00:00Z",
    "deadline_txt": "21 Nov 2026, 23:00 CET",
    "deadline_label": "Requests to participate",
    "time_note": null,
@@ -433,11 +209,11 @@
     "45232411"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -452,6 +228,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-23T12:00:00",
+   "deadline_utc": "2026-11-23T11:00:00Z",
    "deadline_txt": "23 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -460,11 +237,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Equipment"
    ],
@@ -481,6 +258,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-23T12:00:00",
+   "deadline_utc": "2026-11-23T11:00:00Z",
    "deadline_txt": "23 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -489,11 +267,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Drilling"
    ],
@@ -510,6 +288,7 @@
    "country": "RO",
    "tz": "Europe/Bucharest",
    "deadline_iso": "2026-11-23T15:00:00+02:00",
+   "deadline_utc": "2026-11-23T13:00:00Z",
    "deadline_txt": "23 Nov 2026, 14:00 CET (notice: 15:00 UTC+02:00)",
    "deadline_label": null,
    "time_note": null,
@@ -525,11 +304,11 @@
     "71356200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Drilling",
     "Equipment",
@@ -548,6 +327,7 @@
    "country": "PL",
    "tz": "Europe/Warsaw",
    "deadline_iso": "2026-11-24T10:00:00+01:00",
+   "deadline_utc": "2026-11-24T09:00:00Z",
    "deadline_txt": "24 Nov 2026, 10:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -566,11 +346,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Drilling"
    ],
@@ -587,6 +367,7 @@
    "country": "HU",
    "tz": "Europe/Budapest",
    "deadline_iso": "2026-11-24T11:00:00+01:00",
+   "deadline_utc": "2026-11-24T10:00:00Z",
    "deadline_txt": "24 Nov 2026, 11:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -599,11 +380,11 @@
     "45251250"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -618,6 +399,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-11-24T12:00:00.000+01:00",
+   "deadline_utc": "2026-11-24T11:00:00Z",
    "deadline_txt": "24 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -627,11 +409,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Engineering & Services"
    ],
@@ -648,6 +430,7 @@
    "country": "DE",
    "tz": "Europe/Berlin",
    "deadline_iso": "2026-11-26T10:00:00+01:00",
+   "deadline_utc": "2026-11-26T09:00:00Z",
    "deadline_txt": "26 Nov 2026, 10:00 CET",
    "deadline_label": "Requests to participate",
    "time_note": null,
@@ -659,11 +442,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Drilling"
    ],
@@ -680,17 +463,18 @@
    "country": "NL",
    "tz": "Europe/Amsterdam",
    "deadline_iso": "2026-11-26T17:00:00+01:00",
+   "deadline_utc": "2026-11-26T16:00:00Z",
    "deadline_txt": "Round 2026: opens 27 Oct 2026, 09:00 – closes 26 Nov 2026, 17:00 CET (phased)",
    "deadline_label": null,
    "time_note": null,
    "tags": [],
    "cpv": [],
    "url": "https://www.rvo.nl/subsidies-financiering/sde/aanvragen",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Project owners & developers"
    ],
@@ -707,6 +491,7 @@
    "country": "IE",
    "tz": "Europe/Dublin",
    "deadline_iso": "2026-11-27T12:00:00+01:00",
+   "deadline_utc": "2026-11-27T11:00:00Z",
    "deadline_txt": "27 Nov 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -718,11 +503,11 @@
     "71351220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Engineering & Services"
    ],
@@ -739,6 +524,7 @@
    "country": "IS",
    "tz": "Atlantic/Reykjavik",
    "deadline_iso": "2026-11-30T10:00:00+00:00",
+   "deadline_utc": "2026-11-30T10:00:00Z",
    "deadline_txt": "30 Nov 2026, 11:00 CET (notice: 10:00 UTC+00:00)",
    "deadline_label": null,
    "time_note": null,
@@ -749,11 +535,11 @@
     "50531000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754152-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Equipment",
     "Engineering & Services"
@@ -771,6 +557,7 @@
    "country": "NL",
    "tz": "Europe/Amsterdam",
    "deadline_iso": "2026-11-30T17:00:00+00:00",
+   "deadline_utc": "2026-11-30T17:00:00Z",
    "deadline_txt": "30 Nov 2026, 18:00 CET (notice: 17:00 UTC+00:00)",
    "deadline_label": "Requests to participate",
    "time_note": null,
@@ -783,11 +570,11 @@
     "42511100"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Equipment"
    ],
@@ -804,17 +591,18 @@
    "country": "EU",
    "tz": "Europe/Brussels",
    "deadline_iso": "2026-12-01T17:00:00+01:00",
+   "deadline_utc": "2026-12-01T16:00:00Z",
    "deadline_txt": "01 Dec 2026, 17:00 CET (Brussels time)",
    "deadline_label": null,
    "time_note": null,
    "tags": [],
    "cpv": [],
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -829,6 +617,7 @@
    "country": "HU",
    "tz": "Europe/Budapest",
    "deadline_iso": "2026-12-02T10:00:00+01:00",
+   "deadline_utc": "2026-12-02T09:00:00Z",
    "deadline_txt": "02 Dec 2026, 10:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -839,11 +628,11 @@
     "09320000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/759601-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -858,6 +647,7 @@
    "country": "DE",
    "tz": "Europe/Berlin",
    "deadline_iso": "2026-12-07T13:00:00+01:00",
+   "deadline_utc": "2026-12-07T12:00:00Z",
    "deadline_txt": "07 Dec 2026, 13:00 CET",
    "deadline_label": "Requests to participate",
    "time_note": null,
@@ -870,11 +660,11 @@
     "45262212"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/766383-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -889,6 +679,7 @@
    "country": "FR",
    "tz": "Europe/Paris",
    "deadline_iso": "2026-12-08T12:00:00+01:00",
+   "deadline_utc": "2026-12-08T11:00:00Z",
    "deadline_txt": "08 Dec 2026, 12:00 CET",
    "deadline_label": null,
    "time_note": null,
@@ -899,11 +690,11 @@
     "71321200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Engineering & Services"
    ],
@@ -920,6 +711,7 @@
    "country": "CH",
    "tz": "Europe/Zurich",
    "deadline_iso": "2026-12-08T23:59:00+01:00",
+   "deadline_utc": "2026-12-08T22:59:00Z",
    "deadline_txt": "08 Dec 2026, 23:59 CET",
    "deadline_label": null,
    "time_note": null,
@@ -930,11 +722,11 @@
     "45000000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
-   "checked": "2026-11-08",
+   "checked": "2026-11-13",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-08",
+   "accessed": "2026-11-13",
    "audience": [
     "Drilling"
    ],
@@ -1111,6 +903,90 @@
    "kind": "tender"
   },
   {
+   "uid": "7095f2787aa83db3",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 09 Nov 2026, 10:00 CET",
+   "title": "SYNERGYS PROJECT: LONG LEAD ITEMS (LLI) - WELLHEAD AND FRAC TREE SYSTEMS",
+   "url": "https://ted.europa.eu/en/notice/-/detail/684005-2026",
+   "deadline_iso": "2026-11-09T10:00:00+01:00",
+   "deadline_txt": "09 Nov 2026, 10:00 CET",
+   "src": "TED",
+   "id": "TED 684005-2026",
+   "country": "CZ",
+   "kind": "tender"
+  },
+  {
+   "uid": "3a5d2c3eb36bebba",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 09 Nov 2026, 12:00 CET",
+   "title": "Erdwärmesondenfeld für kaltes Nahwärmenetz in Linnich-Süd",
+   "url": "https://ted.europa.eu/en/notice/-/detail/698651-2026",
+   "deadline_iso": "2026-11-09T12:00:00+01:00",
+   "deadline_txt": "09 Nov 2026, 12:00 CET",
+   "src": "TED",
+   "id": "TED 698651-2026",
+   "country": "DE",
+   "kind": "tender"
+  },
+  {
+   "uid": "4100e4cedb042af9",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 10 Nov 2026, 16:00 CET",
+   "title": "Marché de maîtrise d'oeuvre pour la réalisation d'un puits de prospection géothermique sur le secteur Poterie de la ZAC Ferney Genève Innovation pour un futur doublet géothermique",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-97695",
+   "deadline_iso": "2026-11-10T16:00:00+01:00",
+   "deadline_txt": "10 Nov 2026, 16:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-97695",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
+   "uid": "7bded30fa2266c1c",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 11 Nov 2026, 12:00 CET",
+   "title": "Planungsleistungen Wärmenetz Bauabschnitte 2027–2029; Aschheim, Feldkirchen, Kirchhem",
+   "url": "https://ted.europa.eu/en/notice/-/detail/701161-2026",
+   "deadline_iso": "2026-11-11T12:00:00+01:00",
+   "deadline_txt": "11 Nov 2026, 12:00 CET",
+   "src": "TED",
+   "id": "TED 701161-2026",
+   "country": "DE",
+   "kind": "tender"
+  },
+  {
+   "uid": "253e005b3f55f334",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 13 Nov 2026, 10:00 CET",
+   "title": "SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11",
+   "url": "https://ted.europa.eu/en/notice/-/detail/691583-2026",
+   "deadline_iso": "2026-11-13T10:00:00+01:00",
+   "deadline_txt": "13 Nov 2026, 10:00 CET",
+   "src": "TED",
+   "id": "TED 691583-2026",
+   "country": "PL",
+   "kind": "tender"
+  },
+  {
+   "uid": "798e608fb28b08cb",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 13 Nov 2026, 10:00 CET",
+   "title": "Neubau Ruwertalschule in Waldrach",
+   "url": "https://ted.europa.eu/en/notice/-/detail/709263-2026",
+   "deadline_iso": "2026-11-13T10:00:00+01:00",
+   "deadline_txt": "13 Nov 2026, 10:00 CET",
+   "src": "TED",
+   "id": "TED 709263-2026",
+   "country": "DE",
+   "kind": "tender"
+  },
+  {
    "uid": "ffefc6bd40ec17bb",
    "status": "removed",
    "gone": "2026-11-08",
@@ -1164,6 +1040,20 @@
    "src": "TED",
    "id": "TED 734244-2026",
    "country": "DE",
+   "kind": "tender"
+  },
+  {
+   "uid": "3c97938c6f31d0cc",
+   "status": "removed",
+   "gone": "2026-11-13",
+   "reason": "deadline passed 12 Nov 2026, 15:00 CET",
+   "title": "Single-Party Framework for Works-Related Technical Services in Geothermal Engineering Consultancy at Grangegorman, Dublin, Ireland",
+   "url": "https://ted.europa.eu/en/notice/-/detail/737356-2026",
+   "deadline_iso": "2026-11-12T15:00:00+01:00",
+   "deadline_txt": "12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time",
+   "src": "TED",
+   "id": "TED 737356-2026",
+   "country": "IE",
    "kind": "tender"
   }
  ]
