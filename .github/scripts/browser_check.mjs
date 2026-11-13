@@ -29,7 +29,10 @@ const errors = [];
 const fail = (m) => { errors.push(m); console.log("ERROR " + m); if (process.env.GITHUB_ACTIONS) console.log("::error::" + m); };
 
 const libCount = (fs.readFileSync(path.join(root, "index.html"), "utf8").match(/class="libcard\b/g) || []).length;
-const tenderCount = JSON.parse(fs.readFileSync(path.join(root, "tenders/tenders.json"), "utf8")).entries.length;
+const tenderEntries = JSON.parse(fs.readFileSync(path.join(root, "tenders/tenders.json"), "utf8")).entries;
+const tenderCount = tenderEntries.length;
+// With JS the page hides entries whose deadline has passed; without JS it shows all of them.
+const tenderOpen = tenderEntries.filter((e) => !e.deadline_utc || Date.parse(e.deadline_utc) > Date.now()).length;
 
 const browser = await chromium.launch();
 for (const js of [true, false]) {
@@ -48,13 +51,14 @@ for (const js of [true, false]) {
         footer: !!document.querySelector("[data-ss-footer]") && document.querySelector("[data-ss-footer]").offsetHeight > 0,
         tabs: [...document.querySelectorAll('a[href="/whats-new/"]')].some((a) => a.offsetHeight > 0),
         libVisible: [...document.querySelectorAll(".libcard")].filter((c) => !c.hidden && c.offsetHeight > 0).length,
-        cards: document.querySelectorAll("article.card:not(.gone)").length,
+        cards: [...document.querySelectorAll("article.card:not(.gone)")].filter((c) => !c.hidden && c.offsetHeight > 0).length,
       }));
       if (r.sw > r.cw + 1) fail(`${tag}: horizontal scroll (${r.sw}px content in ${r.cw}px)`);
       if (!r.footer) fail(`${tag}: shared footer not visible`);
       if (!r.tabs) fail(`${tag}: no visible link to What's new (tab bar)`);
       if (p === "/" && !js && r.libVisible !== libCount) fail(`${tag}: shows ${r.libVisible} of ${libCount} Library entries`);
-      if (p === "/tenders/" && r.cards !== tenderCount) fail(`${tag}: ${r.cards} tender cards, data has ${tenderCount}`);
+      const expected = js ? tenderOpen : tenderCount;
+      if (p === "/tenders/" && r.cards !== expected) fail(`${tag}: ${r.cards} tender cards visible, data has ${expected}${js ? " open" : ""}`);
       if (js && width === 1280) {
         await page.keyboard.press("Tab");
         const first = await page.evaluate(() => (document.activeElement && document.activeElement.textContent || "").trim());

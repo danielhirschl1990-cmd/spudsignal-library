@@ -170,8 +170,10 @@ class Check:
             embedded = json.loads(m.group(1)).get("entries", []) if m else None
             if embedded is None:
                 self.err("tenders/index.html: embedded #data JSON not found")
-            elif [e["uid"] for e in embedded] != [e["uid"] for e in entries]:
-                self.err("tenders/index.html: embedded data differs from tenders/tenders.json")
+            elif embedded != entries:
+                diff = [e["uid"] for e, f in zip(embedded, entries) if e != f]
+                self.err("tenders/index.html: embedded data differs from tenders/tenders.json"
+                         + (f" (entries {', '.join(diff[:5])})" if diff else f" ({len(embedded)} vs {len(entries)} entries)"))
             if sorted(cards) != sorted(e["uid"] for e in entries):
                 self.err(f"tenders/index.html: {len(cards)} cards, tenders.json has {len(entries)} entries")
             for e in entries:
