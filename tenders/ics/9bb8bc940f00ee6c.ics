@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:9bb8bc940f00ee6c@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261108T202154Z
+DTSTAMP:20261113T212310Z
 LAST-MODIFIED:20261108T202117Z
 SUMMARY:[Check source] Requests to participate: SV-KWE-261103-004 - TW - G
  eothermie Michaelibad - Wärmestation - Spezialtiefbau Baugrube
 DTSTART;TZID=Europe/Berlin:20261207T130000
 DTEND;TZID=Europe/Berlin:20261207T133000
 DESCRIPTION:Source: TED 766383-2026. Published by source: 04 Nov 2026 · L
- ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 13 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

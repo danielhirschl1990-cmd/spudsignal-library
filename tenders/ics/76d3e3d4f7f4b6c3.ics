@@ -24,16 +24,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:76d3e3d4f7f4b6c3@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261108T202154Z
-LAST-MODIFIED:20261108T202117Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique avec
   la mise en place d'une PAC Géothermique sur sondes verticales sur le b
  âtiment " MAIRIE "
-DTSTART;TZID=Europe/Paris:20261118T130000
-DTEND;TZID=Europe/Paris:20261118T133000
+DTSTART;TZID=Europe/Paris:20261118T120000
+DTEND;TZID=Europe/Paris:20261118T123000
 DESCRIPTION:Source: BOAMP 26-103155. Published by source: 23 Oct 2026 · L
- ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 13 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av

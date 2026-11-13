@@ -24,16 +24,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:803c662051981e98@library.spudsignal.com
-SEQUENCE:0
-DTSTAMP:20261108T202154Z
-LAST-MODIFIED:20261025T175833Z
+SEQUENCE:1
+DTSTAMP:20261113T212310Z
+LAST-MODIFIED:20261113T212310Z
 SUMMARY:[Check source] Deadline: Travaux de Création d'une centrale de g
  éothermie sur sonde et travaux de remplacement des émetteurs au centre 
  hospitalier Drôme Vivarais\n---\nRelance d
 DTSTART;TZID=Europe/Paris:20261116T160000
 DTEND;TZID=Europe/Paris:20261116T163000
 DESCRIPTION:Source: BOAMP 26-101464. Published by source: 19 Oct 2026 · L
- ast checked by SpudSignal: 08 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 13 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
