@@ -1,0 +1,555 @@
+[
+ {
+  "page": "home",
+  "id": "S-nav",
+  "kind": "shell",
+  "old": "appnav v3 (Home|Tenders|Map)",
+  "new": "tab bar Library|Tenders|Map + What’s new"
+ },
+ {
+  "page": "home",
+  "id": "CSS-nav",
+  "kind": "css-removed",
+  "old": "local <style> appnav v3 block",
+  "new": "→ assets/spudsignal.css §8"
+ },
+ {
+  "page": "home",
+  "id": "CSS-body",
+  "kind": "css-removed",
+  "old": "body inline style (margin, background)",
+  "new": "→ shared"
+ },
+ {
+  "page": "home",
+  "id": "CSS-wrap",
+  "kind": "css-removed",
+  "old": "inline font stack -apple-system… + max-width:860px",
+  "new": "→ .ss-wrap (DejaVu stack, 1100px)"
+ },
+ {
+  "page": "home",
+  "id": "H-count",
+  "kind": "new",
+  "old": "header count = all 102 regardless of what is shown",
+  "new": "with JS: “64 current entries (38 expired hidden · show)” from real counts, updates with the toggle; without JS: “102 entries”"
+ },
+ {
+  "page": "home",
+  "id": "G-entry",
+  "kind": "glossary",
+  "old": "102 primary sources · 21 countries + EU · updated weekly",
+  "new": "102 entries · 21 countries + EU · updated weekly"
+ },
+ {
+  "page": "home",
+  "id": "CSS-h1",
+  "kind": "css-removed",
+  "old": "H1 inline 34px",
+  "new": "→ --h1 28px"
+ },
+ {
+  "page": "home",
+  "id": "H-banner",
+  "kind": "removed",
+  "old": "Open geothermal drilling & project tenders and funding calls → 23 open entries · filter by country, type, technical category, deadline, CPV and audience.",
+  "new": "(tab bar Tenders / Map)"
+ },
+ {
+  "page": "home",
+  "id": "H-banner",
+  "kind": "removed",
+  "old": "Explore the interactive map → Projects and wells from SpudSignal issues, open tenders and funding calls on one map.",
+  "new": "(tab bar Tenders / Map)"
+ },
+ {
+  "page": "home",
+  "id": "G-aud",
+  "kind": "glossary",
+  "old": "Audience filters help you find updates relevant to your work. Select one or more categories to see items matching any of them, or choose “All” to include items without an audience label. Other active filters still apply. For tenders and funding calls, check the original source for application requirements and deadlines.",
+  "new": "Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines. ‖ info: All shows every entry, including those without an audience label. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with other filter groups. The same labels filter the map; a pin is labelled only when its source URL matches an assignment."
+ },
+ {
+  "page": "home",
+  "id": "G-country",
+  "kind": "glossary",
+  "old": "country jump chips with flag emoji (e.g. “🇦🇹 Austria”)",
+  "new": "country name only (“Austria”), shared .ss-chip"
+ },
+ {
+  "page": "home",
+  "id": "CSS-card",
+  "kind": "css-removed",
+  "old": "inline styles on 102 cards (card, badge, title, text, meta, deadline chip)",
+  "new": "→ .ss-card/.ss-badge/.ss-dl"
+ },
+ {
+  "page": "home",
+  "id": "CSS-badge",
+  "kind": "css-removed",
+  "old": "badge colours inline (Tender #E97828, Project #1F6FB2, Funding #1E8A5A, Licence #6B4FA0, Study/Data #24435A)",
+  "new": "→ one colour per type (shared)"
+ },
+ {
+  "page": "home",
+  "id": "H05-liab",
+  "kind": "liability",
+  "old": "Home footer liability (live)",
+  "new": "unchanged: H05 wording copied from live /projects/ (approved)"
+ },
+ {
+  "page": "tenders",
+  "id": "S-nav",
+  "kind": "shell",
+  "old": "appnav v3 (Home|Tenders|Map)",
+  "new": "tab bar Library|Tenders|Map + What’s new"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-nav",
+  "kind": "css-removed",
+  "old": "local <style> appnav v3 block",
+  "new": "→ assets/spudsignal.css §8"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": "font:16px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;",
+  "new": "body font stack → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".wrap{max-width:1100px;margin:0 auto;padding:0 12px}",
+  "new": "content width → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".badge{font-size:12px;font-weight:700;padding:2px 8px;border-radius:10px;color:#fff}.badge",
+  "new": "badge colours (Tender #2E5E80, Funding call #1F6B4F) → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".hero h1{font-size:28px}",
+  "new": "H1 size → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".hero h1{font-size:22px;line-height:1.25;margin:4px 0 8px}",
+  "new": "H1 size → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".hero h1{font-size:20px;margin:2px 0 4px}",
+  "new": "H1 size → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": ".hero{padding:18px 24px}.hero h1{font-size:26px}",
+  "new": "header padding/H1 → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": "footer{max-width:1100px;margin:0 auto;padding:8px 12px 32px;font-size:13px;color:#5B6B7A;t",
+  "new": "footer → shared"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": " #list{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}\n",
+  "new": "2-column grid with gaps → single column (see proposal)"
+ },
+ {
+  "page": "tenders",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": " #list{grid-template-columns:1fr 1fr}\n",
+  "new": "2-column grid → single column"
+ },
+ {
+  "page": "tenders",
+  "id": "G-source",
+  "kind": "glossary",
+  "old": "each linked to the original notice",
+  "new": "each linked to the original source"
+ },
+ {
+  "page": "tenders",
+  "id": "G-source",
+  "kind": "glossary",
+  "old": "Each entry links to the original notice.",
+  "new": "Each entry links to the original source."
+ },
+ {
+  "page": "tenders",
+  "id": "G-source",
+  "kind": "glossary",
+  "old": "CPV is not in our extract – see the original notice.",
+  "new": "CPV is not in our extract – see the original source."
+ },
+ {
+  "page": "tenders",
+  "id": "G-all",
+  "kind": "glossary",
+  "old": "stay visible under All",
+  "new": "stay in All"
+ },
+ {
+  "page": "tenders",
+  "id": "G-reset",
+  "kind": "glossary",
+  "old": "title=\"Clear all filters\" id=\"reset\" aria-pressed=\"true\">All</button>",
+  "new": "title=\"Clear filters\" aria-label=\"Clear filters\" id=\"reset\" aria-pressed=\"true\">Clear filters</button>"
+ },
+ {
+  "page": "tenders",
+  "id": "G-aud",
+  "kind": "glossary",
+  "old": "<p class=\"audhelp\" id=\"aud-help\">Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. All shows every entry. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with type, technical category and country. The same labels filter the map by exact source URL.</p>",
+  "new": "<p class=\"audhelp\" id=\"aud-help\">Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines.</p><p class=\"audhelp ss-info\">All shows every entry, including those without an audience label. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with other filter groups. The same labels filter the map; a pin is labelled only when its source URL matches an assignment.</p>"
+ },
+ {
+  "page": "tenders",
+  "id": "G-aud",
+  "kind": "glossary",
+  "old": "<p id=\"f2\">Audience labels are guidance on who an item is relevant to. They are not eligibility, and they are not a check that a deadline is currently open. For tenders and funding calls, check the original source for application requirements and deadlines. All shows every entry, including items without an audience label. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with other filter groups (type, technical category and country). The same labels filter the map; a pin is labelled only when its source URL is the same URL as an assignment. Audience labels use the same assignment record on the Library, the open-tender list and the map.</p>",
+  "new": "<p id=\"f2\">Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines. All shows every entry, including those without an audience label. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with other filter groups. The same labels filter the map; a pin is labelled only when its source URL matches an assignment. Audience labels use the same audience assignments on the Library, the Tenders page and the map.</p>"
+ },
+ {
+  "page": "tenders",
+  "id": "G-aud",
+  "kind": "glossary",
+  "old": "Audience labels use the same assignment record on the Library, the open-tender list and the map. They are guidance, not eligibility, and they are not a check that a deadline is currently open. Several selected labels match an entry that carries any of them. An entry with no label stays visible under All. The map joins a pin only when its source URL is the same URL.",
+  "new": "Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines. All shows every entry, including those without an audience label. If you select more than one audience, an entry is shown when it carries any of those labels. These labels combine with other filter groups. The same labels filter the map; a pin is labelled only when its source URL matches an assignment."
+ },
+ {
+  "page": "tenders",
+  "id": "G-date",
+  "kind": "glossary",
+  "old": "JS date format day:\"2-digit\"",
+  "new": "day:\"numeric\""
+ },
+ {
+  "page": "tenders",
+  "id": "G-date",
+  "kind": "glossary",
+  "old": "5× deadline “0D Mon YYYY”",
+  "new": "“D Mon YYYY”"
+ },
+ {
+  "page": "tenders",
+  "id": "S-footer",
+  "kind": "shell",
+  "old": "footer link row: Impressum & disclaimer · Privacy · About & Sources · Source Library · Subscribe free; liability “Liability: listings … the original notice is authoritative.”",
+  "new": "shared footer; liability = H05 wording from live /projects/ (approved)"
+ },
+ {
+  "page": "tenders",
+  "id": "BASE-HOTFIX-2",
+  "kind": "baseline",
+  "old": "#about-data anchor",
+  "new": "already live since 368155e (hotfix PR #7) – not a tabs-package change"
+ },
+ {
+  "page": "map",
+  "id": "S-nav",
+  "kind": "shell",
+  "old": "appnav v3 (Home|Tenders|Map)",
+  "new": "tab bar Library|Tenders|Map + What’s new"
+ },
+ {
+  "page": "map",
+  "id": "CSS-nav",
+  "kind": "css-removed",
+  "old": "local <style> appnav v3 block",
+  "new": "→ assets/spudsignal.css §8"
+ },
+ {
+  "page": "map",
+  "id": "CSS-font",
+  "kind": "css-removed",
+  "old": "html,body font-family DejaVu stack (local)",
+  "new": "→ shared"
+ },
+ {
+  "page": "map",
+  "id": "CSS-font",
+  "kind": "css-removed",
+  "old": "popup font-family:inherit (= Leaflet Helvetica Neue)",
+  "new": "→ shared DejaVu stack"
+ },
+ {
+  "page": "map",
+  "id": "CSS-chip",
+  "kind": "css-removed",
+  "old": "country button style (12px ISO pills)",
+  "new": "→ shared .ss-chip"
+ },
+ {
+  "page": "map",
+  "id": "M-title",
+  "kind": "map",
+  "old": "<aside id=\"panel\">",
+  "new": "<aside id=\"panel\"><h1 class=\"sr-only-m\" id=\"content\" tabindex=\"-1\">Geothermal map: projects, tenders &amp; funding</h1>"
+ },
+ {
+  "page": "map",
+  "id": "G-aud",
+  "kind": "glossary",
+  "old": "<p class=\"audnote\">Guidance, not eligibility, and not a check that a deadline is currently open. All shows every pin. Several labels match a pin that carries any of them. A pin is labelled only when its source URL is the same URL as an assignment.</p>",
+  "new": "<p class=\"audnote\">Audience labels are guidance, not eligibility. Check the original source for requirements and deadlines.</p>"
+ },
+ {
+  "page": "map",
+  "id": "G-pin",
+  "kind": "glossary",
+  "old": "No pins carry the selected labels. Pins without a label are hidden while a label is selected. Choose All to see them. This is not a finding that no projects exist.",
+  "new": "No pins carry the selected labels. Pins without a label stay in All. This is not a finding that no projects exist."
+ },
+ {
+  "page": "map",
+  "id": "G-all",
+  "kind": "glossary",
+  "old": "Calls without a label stay visible under All.",
+  "new": "Calls without a label stay in All."
+ },
+ {
+  "page": "map",
+  "id": "M-pab",
+  "kind": "map",
+  "old": "panel link row About & Sources · Impressum · Privacy (live, #about-data since 368155e)",
+  "new": "moved into the shared footer in the panel"
+ },
+ {
+  "page": "map",
+  "id": "M-dis",
+  "kind": "map",
+  "old": "Tender data as published by source, no guarantee – check the original. Pins marked “approx.” sit at town/region level.",
+  "new": "first sentence unchanged (disclaimer); second sentence per Kartograf #6: Pins marked “approx.” do not show the exact location. (moved behind Info)"
+ },
+ {
+  "page": "map",
+  "id": "M-panel",
+  "kind": "map",
+  "old": "disclaimer + credits + audience mechanics in the open panel",
+  "new": "behind Info / Sources & credits; B1 line stays visible; full footer at the end of the panel"
+ },
+ {
+  "page": "map",
+  "id": "M-head",
+  "kind": "map",
+  "old": "<div id=\"map\"></div><div id=\"legend\"></div>",
+  "new": "<div id=\"mapcol\"><header class=\"ss-maphead\"><h1 aria-hidden=\"true\">Geothermal map: projects, tenders &amp; funding</h1><p class=\"tnotice\">Built from public sources. Spotted an error or a new project? <a href=\"mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A\">Tell us</a> – please include a public source link. We check every report before it goes on the map.</p><p class=\"sscta mh\" data-cta=\"desktop\"><span class=\"ctat\">Get map updates in the free SpudSignal briefing.</span> <a class=\"ctab\" href=\"https://spudsignal.beehiiv.com/subscribe?utm_source=map&amp;utm_medium=cta&amp;utm_content=desktop\" target=\"_blank\" rel=\"noopener\">Subscribe free</a></p></header><div id=\"map\"></div></div><div id=\"legend\"></div><div id=\"mnotice\"><p class=\"tnotice\">Built from public sources. Spotted an error or a new project? <a href=\"mailto:spudsignal@gmx.de?subject=Map%20report%3A%20&amp;body=Project%20or%20pin%3A%0ASource%20link%20%28public%29%3A%0AWhat%20is%20wrong%20or%20new%3A%0A\">Tell us</a> – please include a public source link. We check every report before it goes on the map.</p></div>"
+ },
+ {
+  "page": "map",
+  "id": "M-notice",
+  "kind": "map",
+  "old": "Tell-us notice + desktop CTA inside the legend",
+  "new": "Tell-us + CTA in a visible map header (desktop); Tell-us card bottom (mobile); mobile CTA bar unchanged"
+ },
+ {
+  "page": "map",
+  "id": "M-label",
+  "kind": "map",
+  "old": "LB={project:'Projects & wells (#1–#7)',",
+  "new": "LB={project:'Projects & wells',"
+ },
+ {
+  "page": "map",
+  "id": "M-legend",
+  "kind": "map",
+  "old": "+NOTICE_HTML+CTA_DESKTOP;}",
+  "new": ";}"
+ },
+ {
+  "page": "map",
+  "id": "M-legend",
+  "kind": "map",
+  "old": "const LEG0=[['tender','Tender'],['project','Project / news'],['funding','Funding']].map(([t,l])=>`<span>${shp(t,14,false)}${l}</span>`).join('')+'<span><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9.5\" fill=\"#fff\" stroke=\"#0F2A3D\" stroke-width=\"2.5\" stroke-dasharray=\"4 3\"/></svg>approx. location</span>';",
+  "new": "const LEG0='<span class=\"lrow\">'+[['tender','Tender'],['project','Project / news'],['funding','Funding']].map(([t,l])=>`<i>${shp(t,14,false)}${l}</i>`).join('')+'</span>';"
+ },
+ {
+  "page": "map",
+  "id": "M-legend",
+  "kind": "map",
+  "old": "`<span>${hexS('half',14,false,false,false,true)}${opS(14,false,true)}Active project / operating plant, approx. location (dashed outline)</span>`",
+  "new": "`<span>${hexS('half',14,false,false,false,true)}${opS(14,false,true)}<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9.5\" fill=\"#fff\" stroke=\"#0F2A3D\" stroke-width=\"2.5\" stroke-dasharray=\"4 3\"/></svg>approx. location (dashed outline)</span>`"
+ },
+ {
+  "page": "map",
+  "id": "M-country",
+  "kind": "map",
+  "old": "ctys.map(c=>`<button data-c=\"${c}\">${c}</button>`)",
+  "new": "ctys.map(c=>`<button data-c=\"${c}\" title=\"${c}\">${CN[c]||c}</button>`)"
+ },
+ {
+  "page": "map",
+  "id": "M-start2",
+  "kind": "map",
+  "old": "window.L.map('map',{zoomControl:true,maxZoom:12})",
+  "new": "window.L.map('map',{zoomControl:true,maxZoom:12,zoomSnap:0.25})"
+ },
+ {
+  "page": "map",
+  "id": "M-start3",
+  "kind": "map",
+  "old": "setView([49,10],4);",
+  "new": "setView([49,10],3.75);"
+ },
+ {
+  "page": "map",
+  "id": "M-start",
+  "kind": "map",
+  "old": "if(window.innerWidth<=760&&layer.getLayers().length)m.fitBounds(layer.getBounds(),{padding:[24,24]});",
+  "new": "if(layer.getLayers().length)m.fitBounds(layer.getBounds(),{padding:[24,24],maxZoom:5});"
+ },
+ {
+  "page": "map",
+  "id": "M-attrib",
+  "kind": "map",
+  "old": "\"<a href=\\\"#about-sources\\\" onclick=\\\"var p=document.getElementById('panel');if(p)p.classList.add('open')\\\">About &amp; Sources</a>\"",
+  "new": "\"<a href=\\\"#about-sources\\\" onclick=\\\"var p=document.getElementById('panel');if(p)p.classList.add('open');var d=document.getElementById('about-sources');if(d)d.open=true\\\">Sources &amp; credits</a>\""
+ },
+ {
+  "page": "map",
+  "id": "M-count",
+  "kind": "map",
+  "old": "function testCounts(){const pts=new Set(TL.operating.map(o=>o.lat+','+o.lon)).size;return {active:TL.active.length,operating:pts}}",
+  "new": "function testCounts(){return {active:TL.active.length,operating:TL.operating.length}}"
+ },
+ {
+  "page": "map",
+  "id": "M-country",
+  "kind": "map",
+  "old": "const C={project:",
+  "new": "const CN={AT:\"Austria\",CH:\"Switzerland\",CZ:\"Czechia\",DE:\"Germany\",ES:\"Spain\",FR:\"France\",HU:\"Hungary\",IE:\"Ireland\",IS:\"Iceland\",IT:\"Italy\",NL:\"Netherlands\",PL:\"Poland\",RO:\"Romania\",TR:\"Türkiye\",UA:\"Ukraine\",UK:\"United Kingdom\",GB:\"United Kingdom\",BE:\"Belgium\",EE:\"Estonia\",PT:\"Portugal\",SE:\"Sweden\",SI:\"Slovenia\",EU:\"EU-wide\"};const C={project:"
+ },
+ {
+  "page": "projects",
+  "id": "S-nav",
+  "kind": "shell",
+  "old": "appnav v3 (Home|Tenders|Map)",
+  "new": "tab bar Library|Tenders|Map + What’s new"
+ },
+ {
+  "page": "projects",
+  "id": "CSS-nav",
+  "kind": "css-removed",
+  "old": "local <style> appnav v3 block",
+  "new": "→ assets/spudsignal.css §8"
+ },
+ {
+  "page": "projects",
+  "id": "S-head",
+  "kind": "shell",
+  "old": "plain H1 26px",
+  "new": "shared page header (kicker SpudSignal + H1)"
+ },
+ {
+  "page": "projects",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": "body{margin:0;font-family:\"DejaVu Sans\",Verdana,sans-serif;color:var(--navy);background:#F",
+  "new": "body font/background → shared"
+ },
+ {
+  "page": "projects",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": "main{max-width:1120px;margin:0 auto;padding:22px 24px 10px} h1{font-size:26px;margin:4px 0",
+  "new": "width 1120 + H1 26px → shared"
+ },
+ {
+  "page": "projects",
+  "id": "CSS-local",
+  "kind": "css-removed",
+  "old": "@media(max-width:600px){main{padding:14px 12px 10px} h1{font",
+  "new": "H1 mobile → shared"
+ },
+ {
+  "page": "projects",
+  "id": "S-footer",
+  "kind": "shell",
+  "old": "hotfix legal footer (live since 368155e, inline styles; links Impressum · Privacy · About & Sources · SpudSignal)",
+  "new": "shared footer; liability sentence kept verbatim from the hotfix (temporary, P-F1 pending H05)"
+ },
+ {
+  "page": "home",
+  "id": "H-rename",
+  "kind": "shell",
+  "old": "tab label Home",
+  "new": "tab label Library (page H1 “Source Library” unchanged – decision B)"
+ },
+ {
+  "page": "home",
+  "id": "H-search",
+  "kind": "new",
+  "old": "–",
+  "new": "search field “Search the Library” (JS only; hidden without JS)"
+ },
+ {
+  "page": "home",
+  "id": "H-past",
+  "kind": "new",
+  "old": "36 expired entries mixed into the list (grey, struck through)",
+  "new": "hidden by default; toggle “Show entries whose deadline has passed (N)”; without JS all entries stay visible"
+ },
+ {
+  "page": "home",
+  "id": "H-layout",
+  "kind": "shell",
+  "old": "single column 860px",
+  "new": "sidebar (search, toggle, audience, countries) + list, 1100px"
+ },
+ {
+  "page": "home",
+  "id": "S-footer",
+  "kind": "shell",
+  "old": "home footer",
+  "new": "shared footer (same text, plus What’s new link)"
+ },
+ {
+  "page": "tenders",
+  "id": "T-hash",
+  "kind": "new",
+  "old": "/tenders/#about-data lands on a closed “About this data”",
+  "new": "opens the details when the hash is #about-data (Reviewer PR #7 note F-3)"
+ },
+ {
+  "page": "all",
+  "id": "U-params",
+  "kind": "new",
+  "old": "filters not carried between pages",
+  "new": "?aud=, ?country=, ?q= in the URL; tab links carry aud/country; without JS the page shows everything"
+ },
+ {
+  "page": "whats-new",
+  "id": "W-page",
+  "kind": "new",
+  "old": "–",
+  "new": "new page /whats-new/ (W-01, W-02, W-10, W-11, W-12 merged, W-20)"
+ },
+ {
+  "page": "map",
+  "id": "M-legend2",
+  "kind": "map",
+  "old": "legend open",
+  "new": "legend collapsed by default (“Legend ▸”, 44px)"
+ }
+]

@@ -1,0 +1,38 @@
+{
+ "name": "SpudSignal – Open geothermal tenders & funding calls",
+ "short_name": "SpudSignal Tenders",
+ "id": "/tenders/",
+ "start_url": "/tenders/?source=pwa",
+ "scope": "/tenders/",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0F2A3D",
+ "theme_color": "#0F2A3D",
+ "lang": "en",
+ "icons": [
+  {
+   "src": "/tenders/icons/icon-180.png",
+   "sizes": "180x180",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/tenders/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/tenders/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/tenders/icons/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

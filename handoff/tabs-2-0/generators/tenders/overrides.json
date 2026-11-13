@@ -1,0 +1,175 @@
+{
+ "_about": "Manual review overrides, keyed by the ORIGINAL reviewed notice URL (as in the issue files). Applied after the automatic correction check. Fields: drop (reason), title, buyer, deadline_txt, deadline_iso, deadline_label, tags. Source: library/tenders-review-2026-10-23.md (Reviewer, 23 Oct 2026). Remove an override when the notice changes again. ack_rectif: BOAMP rectificatif IDs reviewed as not affecting the listed fields. manual_check: date of a manual primary-source check (Reviewer); used as last-check date if newer than the pipeline check.",
+ "tags_allowed": [
+  "Deep well",
+  "Shallow BHE",
+  "Shallow (aquifer wells)",
+  "Planning",
+  "Heat supply",
+  "Other"
+ ],
+ "entries": {
+  "https://ted.europa.eu/en/notice/-/detail/660087-2026": {
+   "drop": "heat purchase, off-scope (Reviewer 23 Oct)"
+  },
+  "https://ted.europa.eu/en/notice/-/detail/704493-2026": {
+   "drop": "absorption heat pumps, off-scope (Reviewer 23 Oct)"
+  },
+  "https://ted.europa.eu/en/notice/-/detail/664748-2026": {
+   "deadline_txt": "Ends 25 Oct 2026 (end of day, Swedish time). The notice encodes 26 Oct 00:00 +02:00, which taken literally is 23:00 CET on 25 Oct – submit by 23:00 to be safe.",
+   "deadline_iso": "2026-10-25T23:00:00+01:00",
+   "tags": [
+    "Deep well"
+   ],
+   "time_note": "Time uncertain: the notice can be read as end of 25 Oct (Swedish time) or 23:00 CET – the earlier value is used here."
+  },
+  "https://ted.europa.eu/en/notice/-/detail/670200-2026": {
+   "tags": [
+    "Shallow BHE"
+   ]
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-93304": {
+   "tags": [
+    "Shallow (aquifer wells)"
+   ],
+   "ack_rectif": [
+    "26-94401"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/669195-2026": {
+   "deadline_label": "Requests to participate",
+   "tags": [
+    "Deep well"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/701161-2026": {
+   "deadline_label": "Requests to participate",
+   "tags": [
+    "Planning"
+   ]
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-100440": {
+   "deadline_txt": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)",
+   "tags": [
+    "Planning"
+   ],
+   "time_note": "Time uncertain: the notice states 12:00 Paris but encodes an inconsistent offset (11:00 CET) – the earlier value is used here."
+  },
+  "https://ted.europa.eu/en/notice/-/detail/689259-2026": {
+   "deadline_txt": "05 Nov 2026, 14:00 Irish time (15:00 CET)",
+   "tags": [
+    "Planning"
+   ],
+   "time_note": "Time uncertain: the notice encodes 15:00 +01:00 (= 14:00 Irish time); eTenders may state 15:00 local – the earlier value is used here."
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-92772": {
+   "tags": [
+    "Shallow BHE"
+   ],
+   "deadline_iso": "2026-10-26T12:00:00+01:00"
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-95465": {
+   "tags": [
+    "Shallow BHE"
+   ],
+   "deadline_iso": "2026-11-05T12:00:00+01:00"
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-101091": {
+   "tags": [
+    "Shallow BHE"
+   ],
+   "deadline_iso": "2026-11-06T12:00:00+01:00"
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-97695": {
+   "tags": [
+    "Deep well",
+    "Planning"
+   ]
+  },
+  "https://www.boamp.fr/pages/avis/?q=idweb:26-95181": {
+   "tags": [
+    "Deep well",
+    "Planning"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/643535-2026": {
+   "tags": [
+    "Shallow BHE"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/679859-2026": {
+   "tags": [
+    "Deep well"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/684005-2026": {
+   "tags": [
+    "Deep well"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/698651-2026": {
+   "tags": [
+    "Shallow BHE"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/691583-2026": {
+   "tags": [
+    "Deep well"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/709263-2026": {
+   "tags": [
+    "Shallow BHE"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/696202-2026": {
+   "tags": [
+    "Planning"
+   ]
+  },
+  "https://ted.europa.eu/en/notice/-/detail/716179-2026": {
+   "tags": [
+    "Deep well"
+   ]
+  },
+  "HU-KEHOP-Plusz-4.2.4-25": {
+   "title": "Geotermikus fúrási kockázatok csökkentése (KEHOP-Plusz-4.2.4-25) – phase 2",
+   "title_official": true,
+   "deadline_txt": "30 Oct 2026, 23:59 (Hungarian time)",
+   "deadline_iso": "2026-10-30T23:59:00+01:00",
+   "url": "https://www.palyazat.gov.hu/programok/szechenyi-terv-plusz/kehop-plusz/kehop_plusz-4.2.4-25",
+   "manual_check": "2026-10-23"
+  },
+  "NL-SDE-2026": {
+   "title": "Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++)",
+   "title_official": true,
+   "deadline_txt": "Round 2026: opens 27 Oct 2026, 09:00 – closes 26 Nov 2026, 17:00 CET (phased)",
+   "deadline_iso": "2026-11-26T17:00:00+01:00",
+   "manual_check": "2026-10-23"
+  },
+  "DE-explorationsinitiative-2026-10": {
+   "title": "Förderaufruf „Explorationsinitiative Geothermie“",
+   "title_official": true,
+   "deadline_txt": "Next submission cut-off: 31 Oct 2026 (project outlines via easy-Online; no time stated)",
+   "manual_check": "2026-10-23",
+   "deadline_iso": "2026-10-31T23:59:00+01:00",
+   "time_note": "No time stated in the call – end of day (23:59 German time) assumed; submit earlier to be safe."
+  },
+  "FR-IDF-FEDER-geothermie-2026": {
+   "title": "Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie",
+   "title_official": true,
+   "deadline_txt": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)",
+   "deadline_iso": "2026-11-16T17:00:00+01:00",
+   "manual_check": "2026-10-23"
+  },
+  "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06": {
+   "deadline_txt": "01 Dec 2026, 17:00 CET (Brussels time)",
+   "deadline_iso": "2026-12-01T17:00:00+01:00",
+   "manual_check": "2026-10-23"
+  },
+  "https://ted.europa.eu/en/notice/-/detail/737356-2026": {
+   "deadline_txt": "12 Nov 2026, 15:00 CET as encoded in TED; confirm the buyer portal's closing time",
+   "time_note": "Time uncertain: TED encodes 15:00 +01:00 (= 14:00 Irish time); the buyer's eTenders page shows 15:00 without a time zone. Confirm on the buyer portal (Reviewer, 8 Nov 2026)."
+  }
+ }
+}

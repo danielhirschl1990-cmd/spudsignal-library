@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>SpudSignal</title>
+  
+  <g>
+    <rect x="0" y="0" width="512" height="512" rx="112.64" fill="#0F2A3D"/>
+    <!-- signal arcs -->
+    <path d="M 133.12 235.51999999999998 A 133.12 133.12 0 0 1 378.88 235.51999999999998" fill="none" stroke="#C2410C" stroke-width="30.72" stroke-linecap="round"/>
+    <path d="M 189.44 255.99999999999997 A 76.8 76.8 0 0 1 322.56 255.99999999999997" fill="none" stroke="#C2410C" stroke-width="30.72" stroke-linecap="round"/>
+    <!-- ground surface -->
+    <line x1="92.16" y1="296.96" x2="419.84000000000003" y2="296.96" stroke="#FFFFFF" stroke-width="25.6" stroke-linecap="round"/>
+    <!-- borehole -->
+    <line x1="256.0" y1="296.96" x2="256.0" y2="430.08" stroke="#FFFFFF" stroke-width="30.72" stroke-linecap="round"/>
+    <!-- spud point -->
+    <circle cx="256.0" cy="296.96" r="33.28" fill="#C2410C" stroke="#0F2A3D" stroke-width="12.8"/>
+  </g>
+</svg>

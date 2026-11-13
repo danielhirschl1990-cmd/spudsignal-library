@@ -1,0 +1,101 @@
+/* SpudSignal shared stylesheet – Library Tabs v2 prototype (NOT live). One file for /, /tenders/, /map/, /projects/, /whats-new/.
+   Replaces: per-page font stacks, content widths, H1 sizes, type-badge colours, country-chip styles, footers, the tab bar (appnav v3 blocks). */
+:root{
+ --navy:#0F2A3D;--orange:#E97828;--gb:#C8D2DC;--open:#F2C230;
+ --ink:#1B2B38;--mut:#4A6275;--line:#D5DEE6;--bg:#F4F7FA;
+ --font:"DejaVu Sans",Verdana,system-ui,sans-serif;
+ --content:1100px;--side:290px;--h1:28px;--h1-m:22px;--radius:10px;
+ --t-tender:#E97828;--t-tender-ink:#0F2A3D;--t-project:#0F2A3D;--t-funding:#127A6E;--t-licence:#6B4FA0;--t-study:#5B6B7A;
+}
+[hidden]{display:none!important}
+/* 1 font – one stack everywhere, incl. Leaflet controls and popups */
+html,body,button,input,select,textarea,.leaflet-container,.leaflet-popup-content,.leaflet-bar a{font-family:var(--font)}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}
+/* 2 content width */
+.ss-wrap,.wrap,main.ss-main,footer.ss-foot{max-width:var(--content);margin-left:auto;margin-right:auto;padding-left:12px;padding-right:12px;box-sizing:border-box}
+/* 3 page header (same on every page; map uses .ss-maphead) */
+.ss-head,.hero{background:var(--navy);color:#fff;border-bottom:4px solid var(--orange);border-radius:0 0 var(--radius) var(--radius);padding:18px 24px;margin:0 0 12px}
+.ss-head .k,.hero .k{margin:0;color:var(--orange);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.ss-head .k a,.hero .k a{color:var(--orange);text-decoration:none}
+.ss-head h1,.hero h1,.ss-maphead h1{font-size:var(--h1);line-height:1.2;margin:4px 0 6px;font-weight:700}
+.ss-head p,.hero p{color:#DCE5EC;font-size:15px;margin:4px 0}.ss-head .s,.hero .s{font-size:13px;color:var(--gb)}
+@media(max-width:760px){.ss-head,.hero{padding:14px 16px;margin:0 -12px 10px;border-radius:0}.ss-head h1,.hero h1{font-size:var(--h1-m)}}
+/* 4 cards */
+.ss-card,.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;margin:0 0 10px;box-shadow:0 1px 2px rgba(15,42,61,.05)}
+.ss-card .ss-ct{margin:6px 0 4px;font-size:16px;font-weight:700;line-height:1.35}.ss-card .ss-ct a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--orange)}
+.ss-card .ss-cd{margin:0 0 8px;font-size:14px;color:#24435A}.ss-card .ss-cm{margin:0;font-size:13px;color:#5B6B7A}
+.ss-card .ss-cm a{color:var(--orange);font-weight:700;text-decoration:none}
+.ss-dl{display:inline-block;margin:0 8px 6px 0;padding:2px 10px;border-radius:999px;background:#FDEBDD;color:#A84E10;font-weight:600}
+.ss-dl.past{background:#ECEFF2;color:#8A96A3;text-decoration:line-through}
+.ss-past{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:10px;background:#5B6B7A;color:#fff;margin-left:6px}
+.ss-card.is-past{background:#F1F3F5;border-style:dashed}
+/* 5 one badge per type, fixed colour */
+.ss-badge,.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 9px;border-radius:999px;color:#fff;background:var(--t-study)}
+.ss-badge.t-tender,.badge.tend{background:var(--t-tender);color:var(--t-tender-ink)}
+.ss-badge.t-project{background:var(--t-project)}
+.ss-badge.t-funding,.badge.fund{background:var(--t-funding);color:#fff}
+.ss-badge.t-licence{background:var(--t-licence)}
+.ss-badge.t-study{background:var(--t-study)}
+/* 6 country chip – one style, country names (no ISO codes, no flags) */
+.ss-chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.ss-chip,.cty button,.chip[data-g="country"]{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid #9FB0BF;border-radius:22px;background:#fff;color:var(--navy);font:inherit;font-size:14px;text-decoration:none;white-space:nowrap;cursor:pointer;box-sizing:border-box}
+.cty button.on,.chip[data-g="country"][aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+/* 7 footer – same full legal footer everywhere */
+footer.ss-foot{font-size:13px;color:#5B6B7A;text-align:center;line-height:1.6;padding-top:12px;padding-bottom:28px}
+footer.ss-foot p{margin:0 0 6px}footer.ss-foot a{color:var(--navy)}
+footer.ss-foot .vtag2{display:inline-block;border:1px solid var(--gb);border-radius:999px;padding:0 8px;margin-left:4px;font-size:12px;text-decoration:none}
+#panel footer.ss-foot{padding:12px 0 8px;text-align:left;font-size:12px}
+/* 8 tab bar (moved here from the per-page appnav v3 blocks) */
+.appnav{position:fixed;z-index:1200;left:0;right:0;background:var(--navy);box-sizing:border-box}
+.appnav *{box-sizing:border-box}.appnav a{text-decoration:none}
+.appnav .al a{display:flex;align-items:center;color:var(--gb)}
+.appnav a:focus-visible{outline:2px solid var(--orange);outline-offset:-3px}
+.skip{position:absolute;left:8px;top:-60px;z-index:1300;background:var(--orange);color:var(--navy);padding:10px 14px;border-radius:6px;font-weight:600}.skip:focus{top:8px}
+@media(min-width:761px){
+ body.has-appnav{padding-top:56px}
+ [id]{scroll-margin-top:72px}
+ .appnav{top:0;height:56px;display:flex;align-items:center;padding:0 20px}
+ .appnav .ab{display:flex;align-items:center;gap:10px;color:#fff;font-size:17px;padding-right:22px;margin-right:6px;border-right:1px solid rgba(200,210,220,.25);height:44px}
+ .appnav .ab img{height:32px;width:auto}
+ .appnav .al{display:flex;gap:2px;height:100%}
+ .appnav .al a.tab{gap:8px;padding:0 18px;font-size:15px;font-weight:600;border-top:4px solid transparent;border-bottom:4px solid transparent}
+ .appnav .al a.tab[aria-current]{color:#fff;background:rgba(200,210,220,.10);border-bottom-color:var(--orange)}
+ .appnav .al a.tab[aria-current] svg{color:var(--orange)}
+ .appnav .al a.tab:hover{color:#fff}
+ .appnav .wn{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--gb);font-size:13px;min-height:44px;padding:0 6px}
+ .appnav .wn:hover,.appnav .wn[aria-current]{color:#fff}
+ .appnav .vtag{border:1px solid var(--gb);border-radius:999px;padding:2px 8px;font-size:12px}
+}
+@media(max-width:760px){
+ body.has-appnav{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+ .appnav{bottom:0;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+ .appnav .ab,.appnav .wn{display:none}
+ .appnav .al{display:flex}
+ .appnav .al a.tab{flex:1;min-height:56px;flex-direction:column;justify-content:center;gap:2px;font-size:12px;border-top:3px solid transparent}
+ .appnav .al a.tab[aria-current]{color:var(--orange);border-top-color:var(--orange)}
+}
+/* 9 two-column layout shared by Library and Tenders (sidebar + list) */
+.ss-lay{display:grid;grid-template-columns:var(--side) minmax(0,1fr);gap:20px;align-items:start}
+.ss-side{position:sticky;top:64px;max-height:calc(100vh - 72px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px 12px}
+.ss-side h2{font-size:15px;margin:12px 0 6px;color:var(--navy)}
+@media(max-width:899px){.ss-lay{display:block}.ss-side{position:static;max-height:none;margin:0 0 12px}}
+.ss-search{display:flex;flex-direction:column;gap:4px;margin:4px 0 10px}.ss-search label{font-size:14px;font-weight:700;color:var(--navy)}
+.ss-search input{min-height:44px;padding:8px 12px;border:1px solid #9FB0BF;border-radius:8px;font-size:15px;box-sizing:border-box;width:100%}
+.ss-toggle{display:flex;align-items:center;gap:10px;min-height:44px;font-size:14px;cursor:pointer}.ss-toggle input{width:20px;height:20px}
+.ss-count{font-size:13px;color:var(--mut);margin:6px 0}
+.ss-h2{margin:22px 0 10px;font-size:20px;color:var(--navy);border-bottom:2px solid var(--orange);padding-bottom:6px}
+.ss-cta{background:var(--orange);border-radius:12px;padding:22px 20px;margin:24px 0;text-align:center;color:#fff}
+.ss-cta p{margin:0 0 6px}.ss-cta .t{font-size:20px;font-weight:700}.ss-cta a{display:inline-block;min-height:44px;line-height:44px;background:var(--navy);color:#fff;font-weight:700;text-decoration:none;padding:0 24px;border-radius:999px;margin-top:8px}
+.crumb{font-size:14px;margin:0 0 6px;color:#5B6B7A}.crumb a{color:var(--navy);display:inline-block;min-height:44px;min-width:44px;line-height:44px;padding:0 6px;margin-left:-6px}
+.ss-optb{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:var(--radius);padding:8px 12px;margin:0 0 10px;font-size:13px;color:var(--ink)}.ss-optb p{margin:2px 0}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* §12 tap targets ≥44px (QA v2) */
+#types label,#panel label:has(> input[type=checkbox]){display:flex;align-items:center;min-height:44px}
+#ctys button{min-width:44px;min-height:44px}
+#panel .pab a,.ss-foot a{display:inline-flex;align-items:center;min-height:44px}
+#tog{min-height:44px}
+#ctabar .ctab{display:inline-flex;align-items:center;min-height:44px}
+details>summary{min-height:44px;box-sizing:border-box;padding-top:12px;padding-bottom:12px}
+/* §13 Library header count toggle (“show”/“hide”), ≥44px */
+.ss-hbtn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0;margin:0 -2px;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:2px;cursor:pointer;vertical-align:middle}
+.ss-hbtn:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
