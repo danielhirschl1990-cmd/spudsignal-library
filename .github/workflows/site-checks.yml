@@ -1,0 +1,58 @@
+# Automatic checks for library.spudsignal.com.
+# Runs on every pull request to main and after every push to main.
+# A red result means: do not merge, something would go live broken.
+name: Site checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site-checks:
+    name: site-checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Warn if this PR changes the checks themselves
+        if: github.event_name == 'pull_request'
+        run: |
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- .github/ || true)
+          if [ -n "$changed" ]; then
+            echo "::warning::This PR changes the automatic checks (.github/). Review these files before merging: $changed"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Self-test of the checks (entry count changed, placeholder, handoff/)
+        run: python3 .github/scripts/check_site.py --selftest
+
+      - name: Site checks (published files, placeholders, counts, links, legal footer)
+        run: python3 .github/scripts/check_site.py .
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install headless browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+
+      - name: Browser checks (390 px and 1280 px, with and without JavaScript)
+        run: node .github/scripts/browser_check.mjs .
