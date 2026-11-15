@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T22:23+01:00",
+ "generated": "2026-11-15T18:11+01:00",
  "note": "As published by source, no guarantee – check the original.",
  "entries": [
   {
@@ -22,11 +22,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -48,11 +48,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Project owners & developers"
    ],
@@ -78,11 +78,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Engineering & Services"
    ],
@@ -111,11 +111,11 @@
     "71621000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Engineering & Services"
    ],
@@ -141,11 +141,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -172,11 +172,11 @@
     "45255500"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -209,13 +209,43 @@
     "45232411"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "untagged"
+  },
+  {
+   "uid": "b23794cd7971dbe3",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 788685-2026",
+   "title": "SZP/243-277/2026 - Dostawa systemu do pomiaru rozkładu i zmian temperatury w odwiertach geotermalnych wraz z układem do automatycznej kalibracji rozproszonych czujników światłowodowych dla Katedry Optyki i Fotoniki W11",
+   "title_official": null,
+   "buyer": "Politechnika Wrocławska",
+   "country": "PL",
+   "tz": "Europe/Warsaw",
+   "deadline_iso": "2026-11-23T10:00:00+01:00",
+   "deadline_utc": "2026-11-23T09:00:00Z",
+   "deadline_txt": "23 Nov 2026, 10:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "38540000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/788685-2026",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "0c87fc4157e326c0",
@@ -237,11 +267,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Equipment"
    ],
@@ -267,11 +297,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Drilling"
    ],
@@ -304,11 +334,11 @@
     "71356200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Drilling",
     "Equipment",
@@ -346,11 +376,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Drilling"
    ],
@@ -380,11 +410,11 @@
     "45251250"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -409,11 +439,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Engineering & Services"
    ],
@@ -442,11 +472,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Drilling"
    ],
@@ -470,11 +500,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://www.rvo.nl/subsidies-financiering/sde/aanvragen",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Project owners & developers"
    ],
@@ -503,11 +533,11 @@
     "71351220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Engineering & Services"
    ],
@@ -535,11 +565,11 @@
     "50531000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754152-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Equipment",
     "Engineering & Services"
@@ -570,15 +600,43 @@
     "42511100"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Equipment"
    ],
    "audience_status": "reviewed"
+  },
+  {
+   "uid": "3271aefb65e558b2",
+   "kind": "tender",
+   "src": "simap",
+   "id": "simap 46554-01",
+   "title": "PHSG Gossau - BKP 242 Erdwärmesonden\t\t\t\t",
+   "title_official": null,
+   "buyer": "Kanton St.Gallen, Bau- und Umweltdepartement, Hochbauamt",
+   "country": "CH",
+   "tz": "Europe/Zurich",
+   "deadline_iso": "2026-11-30T23:59:00+01:00",
+   "deadline_utc": "2026-11-30T22:59:00Z",
+   "deadline_txt": "30 Nov 2026, 23:59 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [],
+   "url": "https://www.simap.ch/de/project-detail/4a531af0-0afd-4088-9c1d-1a194b82e6fa#publication/8387d283-d92a-4596-8278-f9a3616bb3b5",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "0eb0e95523645031",
@@ -598,11 +656,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -628,11 +686,39 @@
     "09320000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/759601-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "061f0cb82b9176bf",
+   "kind": "tender",
+   "src": "BOAMP",
+   "id": "BOAMP 26-108789",
+   "title": "étude de faisabilité géothermique et stratégie énergétique patrimoniale  - Analyse des synergies avec le développement photovoltaïque",
+   "title_official": null,
+   "buyer": "Fondation Bon Sauveur d'Alby",
+   "country": "FR",
+   "tz": "Europe/Paris",
+   "deadline_iso": "2026-12-07T12:00:00+01:00",
+   "deadline_utc": "2026-12-07T11:00:00Z",
+   "deadline_txt": "07 Dec 2026, 12:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [],
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-108789",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -660,11 +746,75 @@
     "45262212"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/766383-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "7ead6eb08485a1d8",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 775181-2026",
+   "title": "Anlagenbau Kompressionswärmepumpe",
+   "title_official": null,
+   "buyer": "GTU Geothermie Unterschleißheim AG",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2026-12-07T13:00:00+01:00",
+   "deadline_utc": "2026-12-07T12:00:00Z",
+   "deadline_txt": "07 Dec 2026, 13:00 CET",
+   "deadline_label": "Requests to participate",
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45317200",
+    "45331000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/775181-2026",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "4d64898b82a9eb0a",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 781999-2026",
+   "title": "SYNERGYS PROJECT: MUD LOGGING",
+   "title_official": null,
+   "buyer": "Univerzita Karlova",
+   "country": "CZ",
+   "tz": "Europe/Prague",
+   "deadline_iso": "2026-12-08T10:00:00+01:00",
+   "deadline_utc": "2026-12-08T09:00:00Z",
+   "deadline_txt": "08 Dec 2026, 10:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "76000000",
+    "76211200",
+    "76440000",
+    "76460000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/781999-2026",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -690,11 +840,11 @@
     "71321200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Engineering & Services"
    ],
@@ -722,15 +872,46 @@
     "45000000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
-   "checked": "2026-11-13",
+   "checked": "2026-11-15",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-13",
+   "accessed": "2026-11-15",
    "audience": [
     "Drilling"
    ],
    "audience_status": "reviewed"
+  },
+  {
+   "uid": "d01c30182b220cd9",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 790186-2026",
+   "title": "SV-KWE-261112-003 - TW - Geothermie Michaelibad - Sicherheits- und Gesundheitsschutzkoordination (SiGeKo)",
+   "title_official": null,
+   "buyer": "SWM Services GmbH",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2026-12-14T10:00:00+01:00",
+   "deadline_utc": "2026-12-14T09:00:00Z",
+   "deadline_txt": "14 Dec 2026, 10:00 CET",
+   "deadline_label": "Requests to participate",
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "71317200",
+    "71317210"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/790186-2026",
+   "checked": "2026-11-15",
+   "flag": null,
+   "first_seen": "2026-11-15",
+   "change": null,
+   "accessed": "2026-11-15",
+   "audience": [],
+   "audience_status": "unassigned"
   }
  ],
  "removed": [
