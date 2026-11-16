@@ -206,24 +206,31 @@ test("open-tender facts and the map files stay unchanged", () => {
     assert.deepEqual(Object.keys(entry).slice(0, base.length), base);
     assert.ok(["unassigned", "pending_review", "untagged", "reviewed"].includes(entry.audience_status));
   });
-  const kutno = tenders.entries.find((entry) => entry.id === "TED 725171-2026");
-  assert.deepEqual(kutno.audience, ["Drilling"]);
-  assert.equal(kutno.audience_status, "reviewed");
-  assert.equal(kutno.tags.includes("Other"), true);
-  const feder = tenders.entries.find((entry) => entry.id === "FR-IDF-FEDER-geothermie-2026");
-  assert.deepEqual(feder.audience, ["Project owners & developers"]);
-  assert.equal(feder.audience_status, "reviewed");
-  const tagged = tenders.entries.filter((entry) => entry.audience.length);
-  assert.ok(tagged.length > 4);
-  // Generic check: every reviewed open entry with two or more labels carries exactly
-  // the labels of the assignment row for its URL. No fixed notice id, so it survives
-  // weekly refreshes as long as at least one such entry is open.
-  const multi = tenders.entries.filter((entry) => entry.audience_status === "reviewed" && entry.audience.length >= 2);
-  assert.ok(multi.length >= 1, "expected at least one reviewed open entry with two or more labels");
-  for (const entry of multi) {
+  // Open entries come and go with every weekly refresh. Fixed notices are checked
+  // against assignments.json (stable) and against tenders.json only while still open.
+  const openById = (id) => tenders.entries.find((entry) => entry.id === id);
+  const rowById = (id) => doc.assignments.find((row) => row.notice_id === id);
+  assert.deepEqual(rowById("TED 725171-2026").labels, ["Drilling"]);
+  const kutno = openById("TED 725171-2026");
+  if (kutno) {
+    assert.deepEqual(kutno.audience, ["Drilling"]);
+    assert.equal(kutno.audience_status, "reviewed");
+    assert.equal(kutno.tags.includes("Other"), true);
+  }
+  assert.deepEqual(rowById("FR-IDF-FEDER-geothermie-2026").labels, ["Project owners & developers"]);
+  const feder = openById("FR-IDF-FEDER-geothermie-2026");
+  if (feder) {
+    assert.deepEqual(feder.audience, ["Project owners & developers"]);
+    assert.equal(feder.audience_status, "reviewed");
+  }
+  // Generic check: every open entry with labels is reviewed and carries exactly the
+  // labels of the assignment row for its URL. No fixed notice id and no minimum count,
+  // so it survives weekly refreshes (it is vacuous only if no labelled entry is open).
+  for (const entry of tenders.entries.filter((item) => item.audience.length)) {
     const row = doc.assignments.find((item) => item.url === entry.url);
     assert.ok(row, "no assignment row for " + entry.url);
     assert.equal(row.status, "reviewed", entry.url);
+    assert.equal(entry.audience_status, "reviewed", entry.url);
     assert.deepEqual(entry.audience, row.labels, entry.url);
   }
   // KNOWN GAP (Kaba), recorded 16 Nov 2026, not fixed by this test:
@@ -240,9 +247,14 @@ test("open-tender facts and the map files stay unchanged", () => {
     assert.deepEqual(kabaOpen.audience, [], "Kaba gap changed: 763136 now has labels, update the known-gap block");
     assert.equal(kabaOpen.audience_status, "unassigned", "Kaba gap changed: update the known-gap block");
   }
-  const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
-  assert.deepEqual(blocked.audience, []);
-  assert.equal(blocked.audience_status, "untagged");
+  const blockedRow = rowById("TED 729199-2026");
+  assert.deepEqual(blockedRow.labels, []);
+  assert.equal(blockedRow.withheld, true);
+  const blocked = openById("TED 729199-2026");
+  if (blocked) {
+    assert.deepEqual(blocked.audience, []);
+    assert.equal(blocked.audience_status, "untagged");
+  }
   // Crosswalk holds pin coordinates and is no longer published (ODbL); checked only when built locally.
   const crosswalkPath = path.join(root, "..", "build/audience/map-crosswalk-2026-11-08.json");
   if (fs.existsSync(crosswalkPath)) {
