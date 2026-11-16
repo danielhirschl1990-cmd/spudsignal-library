@@ -4,13 +4,14 @@ import fs from "fs";
 import path from "path";
 import { createRequire } from "module";
 import { execSync } from "child_process";
-import { apply } from "./apply.mjs";
 
 const require = createRequire(import.meta.url);
 const api = require("./filter.js");
 const root = path.resolve(import.meta.dirname, "..");
 
-apply();
+// Library Update 2.0 already carries audience stamps in the committed pages.
+// apply.mjs still looks for the pre-2.0 tender blurb and would rewrite the
+// current HTML, so this test reads the committed files and does not run apply.
 const doc = JSON.parse(fs.readFileSync(path.join(root, "audience/assignments.json"), "utf8"));
 const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const tendersHtml = fs.readFileSync(path.join(root, "tenders/index.html"), "utf8");
@@ -162,11 +163,13 @@ test("Library and tender pages share the record and keep full labels", () => {
   assert.match(indexHtml, /id="e-library-kutno"|data-audience="Drilling"/);
   assert.doesNotMatch(indexHtml, /Proposed, pending review/);
   assert.doesNotMatch(tendersHtml, /Proposed, pending review/);
-  assert.match(indexHtml, /Audience filters help you find updates relevant to your work/);
-  assert.match(indexHtml, /matching any of them/);
-  assert.match(indexHtml, /choose “All” to include items without an audience label/);
-  assert.match(indexHtml, /Other active filters still apply/);
-  assert.match(indexHtml, /check the original source for application requirements and deadlines/);
+  assert.match(indexHtml, /Audience labels are guidance, not eligibility/);
+  assert.match(indexHtml, /Check the original source for requirements and deadlines/);
+  assert.match(indexHtml, /All shows every entry, including those without an audience label/);
+  assert.match(indexHtml, /If you select more than one audience, an entry is shown when it carries any of those labels/);
+  assert.match(indexHtml, /These labels combine with other filter groups/);
+  assert.match(indexHtml, /The same labels filter the map/);
+  assert.match(indexHtml, /a pin is labelled only when its source URL matches an assignment/);
   assert.equal((indexHtml.match(/id="aud-help"/g) || []).length, 1);
   assert.doesNotMatch(indexHtml, /exact source URL/);
   assert.doesNotMatch(indexHtml, /not a check that a deadline is currently open/);
@@ -196,7 +199,7 @@ test("open-tender facts and the map files stay unchanged", () => {
   const before = JSON.parse(execSync("git show main:tenders/tenders.json", { cwd: root }));
   assert.equal(tenders.entries.length, before.entries.length);
   assert.deepEqual(tenders.removed, before.removed);
-  const base = ["uid", "kind", "src", "id", "title", "title_official", "buyer", "country", "tz", "deadline_iso", "deadline_txt", "deadline_label", "time_note", "tags", "cpv", "url", "checked", "flag", "first_seen", "change", "accessed"];
+  const base = ["uid", "kind", "src", "id", "title", "title_official", "buyer", "country", "tz", "deadline_iso", "deadline_utc", "deadline_txt", "deadline_label", "time_note", "tags", "cpv", "url", "checked", "flag", "first_seen", "change", "accessed"];
   tenders.entries.forEach((entry, i) => {
     const prior = before.entries[i];
     for (const key of base) assert.deepEqual(entry[key], prior[key], entry.uid + " " + key);
@@ -212,9 +215,10 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.equal(feder.audience_status, "reviewed");
   const tagged = tenders.entries.filter((entry) => entry.audience.length);
   assert.ok(tagged.length > 4);
-  const kaba = tenders.entries.find((entry) => entry.id === "TED 729019-2026");
-  assert.deepEqual(kaba.audience, ["Drilling", "Equipment"]);
-  assert.equal(kaba.audience_status, "reviewed");
+  // TED 729019-2026 (Kaba) left the open list after its 3 Nov 2026 deadline.
+  const multi = tenders.entries.find((entry) => entry.id === "TED 716179-2026");
+  assert.deepEqual(multi.audience, ["Drilling", "Equipment", "Engineering & Services"]);
+  assert.equal(multi.audience_status, "reviewed");
   const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
   assert.deepEqual(blocked.audience, []);
   assert.equal(blocked.audience_status, "untagged");
@@ -252,7 +256,8 @@ test("open-tender facts and the map files stay unchanged", () => {
   const mapHtml = fs.readFileSync(path.join(root, "map/index.html"), "utf8");
   assert.match(mapHtml, /\/symbols\/aud-drilling\.svg/);
   assert.match(mapHtml, /audienceMatch/);
-  assert.match(mapHtml, /not a check that a deadline is currently open/);
+  assert.match(mapHtml, /Audience labels are guidance, not eligibility/);
+  assert.match(mapHtml, /Check the original source for requirements and deadlines/);
   assert.match(mapHtml, /markerClusterGroup/);
   assert.doesNotMatch(mapHtml, /file:\/\//);
 });
@@ -274,8 +279,8 @@ test("repeated source labels do not collapse markers", () => {
     url: feature.properties.source_url,
     at: feature.geometry.coordinates.join(",")
   }));
-  assert.equal(markers.length, 60);
-  assert.equal(new Set(markers.map((marker) => marker.at + "|" + marker.title)).size, 60);
+  assert.equal(markers.length, 61);
+  assert.equal(new Set(markers.map((marker) => marker.at + "|" + marker.title)).size, 61);
   const erzurum = markers.filter((marker) => marker.label === "Official Gazette notice, 27 Sep 2026");
   const gse = markers.filter((marker) => marker.label === "GSE news, 23 Oct 2026");
   const hvc = markers.filter((marker) => marker.url.endsWith("/726565-2026"));
@@ -290,10 +295,18 @@ test("repeated source labels do not collapse markers", () => {
   assert.equal(new Set(hvc.map((marker) => marker.url)).size, 1);
   const equipment = doc.assignments.find((row) => row.url === hvc[0].url);
   assert.deepEqual(equipment.labels, ["Equipment"]);
-  assert.equal(markers[4].url, "https://ted.europa.eu/en/notice/-/detail/674260-2026");
-  assert.equal(markers[4].at, "14.1318,50.5341");
-  assert.equal(markers[32].url, "https://ted.europa.eu/en/notice/-/detail/679859-2026");
-  assert.match(markers[32].title, /LINER HANGER/);
+  const wellheadUrl = "https://ted.europa.eu/en/notice/-/detail/674260-2026";
+  const wellhead = markers.find((marker) => marker.url === wellheadUrl);
+  const wellheadFeature = data.features.find((feature) => feature.properties.source_url === wellheadUrl);
+  assert.ok(wellhead, "wellhead pin should still be on the map");
+  assert.ok(wellheadFeature);
+  assert.match(wellhead.title, /wellheads and frac trees for SYNERGYS/);
+  // Read coordinates from the live map data at runtime; do not hard-code them here (ODbL).
+  assert.equal(wellheadFeature.geometry.type, "Point");
+  assert.equal(wellheadFeature.geometry.coordinates.length, 2);
+  assert.equal(wellhead.at, wellheadFeature.geometry.coordinates.join(","));
+  // TED 679859-2026 (liner hanger at the same project) left the map after its 6 Nov 2026 deadline.
+  assert.equal(markers.filter((marker) => marker.url.includes("679859-2026")).length, 0);
 });
 
 test("Library summaries and source links for the four examples are intact", () => {
@@ -307,7 +320,7 @@ test("Library summaries and source links for the four examples are intact", () =
     assert.ok(indexHtml.includes(url), url);
     assert.ok(indexHtml.includes(quote), quote);
   }
-  assert.equal((indexHtml.match(/class="libcard"/g) || []).length, 92);
+  assert.equal((indexHtml.match(/class="libcard[^"]*"/g) || []).length, 102);
   assert.equal((indexHtml.match(/id="audience-bar"/g) || []).length, 1);
   assert.equal((indexHtml.match(/id="aud-all"/g) || []).length, 1);
 });
