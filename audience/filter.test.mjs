@@ -215,10 +215,31 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.equal(feder.audience_status, "reviewed");
   const tagged = tenders.entries.filter((entry) => entry.audience.length);
   assert.ok(tagged.length > 4);
-  // TED 729019-2026 (Kaba) left the open list after its 3 Nov 2026 deadline.
-  const multi = tenders.entries.find((entry) => entry.id === "TED 716179-2026");
-  assert.deepEqual(multi.audience, ["Drilling", "Equipment", "Engineering & Services"]);
-  assert.equal(multi.audience_status, "reviewed");
+  // Generic check: every reviewed open entry with two or more labels carries exactly
+  // the labels of the assignment row for its URL. No fixed notice id, so it survives
+  // weekly refreshes as long as at least one such entry is open.
+  const multi = tenders.entries.filter((entry) => entry.audience_status === "reviewed" && entry.audience.length >= 2);
+  assert.ok(multi.length >= 1, "expected at least one reviewed open entry with two or more labels");
+  for (const entry of multi) {
+    const row = doc.assignments.find((item) => item.url === entry.url);
+    assert.ok(row, "no assignment row for " + entry.url);
+    assert.equal(row.status, "reviewed", entry.url);
+    assert.deepEqual(entry.audience, row.labels, entry.url);
+  }
+  // KNOWN GAP (Kaba), recorded 16 Nov 2026, not fixed by this test:
+  // TED 729019-2026 and TED 763136-2026 share procedure-identifier
+  // 9e93c537-170a-4a87-a6a3-d01fe0f9a81e (TED API), so the procedure is still open
+  // via 763136 (deadline 24 Nov 2026, 11:00 CET). The reviewed labels
+  // ["Drilling", "Equipment"] sit on the old URL 729019 only, so 763136 is unassigned.
+  // Whether 763136 takes over those labels is a reviewed label decision, not a test change.
+  // When that decision is made (or 763136 leaves the list), update this block.
+  const kabaOld = doc.assignments.find((row) => row.url === "https://ted.europa.eu/en/notice/-/detail/729019-2026");
+  assert.deepEqual(kabaOld.labels, ["Drilling", "Equipment"]);
+  const kabaOpen = tenders.entries.find((entry) => entry.id === "TED 763136-2026");
+  if (kabaOpen) {
+    assert.deepEqual(kabaOpen.audience, [], "Kaba gap changed: 763136 now has labels, update the known-gap block");
+    assert.equal(kabaOpen.audience_status, "unassigned", "Kaba gap changed: update the known-gap block");
+  }
   const blocked = tenders.entries.find((entry) => entry.id === "TED 729199-2026");
   assert.deepEqual(blocked.audience, []);
   assert.equal(blocked.audience_status, "untagged");
@@ -279,8 +300,9 @@ test("repeated source labels do not collapse markers", () => {
     url: feature.properties.source_url,
     at: feature.geometry.coordinates.join(",")
   }));
-  assert.equal(markers.length, 61);
-  assert.equal(new Set(markers.map((marker) => marker.at + "|" + marker.title)).size, 61);
+  // Pin count is read from map/data.js at runtime; the check is that no two markers collapse.
+  assert.ok(markers.length > 0);
+  assert.equal(new Set(markers.map((marker) => marker.at + "|" + marker.title)).size, markers.length);
   const erzurum = markers.filter((marker) => marker.label === "Official Gazette notice, 27 Sep 2026");
   const gse = markers.filter((marker) => marker.label === "GSE news, 23 Oct 2026");
   const hvc = markers.filter((marker) => marker.url.endsWith("/726565-2026"));
@@ -320,6 +342,8 @@ test("Library summaries and source links for the four examples are intact", () =
     assert.ok(indexHtml.includes(url), url);
     assert.ok(indexHtml.includes(quote), quote);
   }
+  // SNAPSHOT 16 Nov 2026 (main 279f64a): 102 Library cards, all with class="libcard ss-card".
+  // This number changes with every Library data update; refresh it together with the data.
   assert.equal((indexHtml.match(/class="libcard[^"]*"/g) || []).length, 102);
   assert.equal((indexHtml.match(/id="audience-bar"/g) || []).length, 1);
   assert.equal((indexHtml.match(/id="aud-all"/g) || []).length, 1);
