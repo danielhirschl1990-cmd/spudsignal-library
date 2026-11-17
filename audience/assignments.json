@@ -2258,7 +2258,7 @@
           "review_status": "green",
           "decision": "Eigenständig gegen TED 763136-2026 geprüft: gleiches Verfahren und identischer Leistungsumfang wie 729019 (AUD-2b86d4c68c29); Drilling für neuen Thermalbrunnen, Equipment für Wärmeblock/Kútgépészet, nicht für Bohrmaterial.",
           "evidence_section": "description-lot/hun/0",
-          "evidence_snapshot": "/workspace/geothermie/review-evidence/audience-kaba-2026-11-17/ted-729019-763136.json",
+          "evidence_snapshot": "audience-kaba-2026-11-17/ted-729019-763136.json",
           "evidence_snapshot_sha256": "cad61461a9084587d14663888dafa208a102be81797d67878232ddb563b1fdf1",
           "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026"
         },
