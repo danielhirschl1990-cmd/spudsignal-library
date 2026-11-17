@@ -2225,6 +2225,60 @@
       ]
     },
     {
+      "key": "ted:763136-2026",
+      "reviewer_id": "AUD-54da3302f5d0",
+      "reviewer_row": null,
+      "notice_id": "TED 763136-2026",
+      "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
+      "library_title": "Kaba moves its geothermal heat-network deadline",
+      "labels": [
+        "Drilling",
+        "Equipment"
+      ],
+      "status": "reviewed",
+      "approved": true,
+      "method": "manual",
+      "review_status": "green",
+      "intentionally_untagged": false,
+      "withheld": false,
+      "missing_evidence": "",
+      "bases": {
+        "Drilling": "Same procedure as TED 729019-2026 (TED procedure-identifier 9e93c537-170a-4a87-a6a3-d01fe0f9a81e); TED 763136-2026 (published 3 Nov 2026, requests to participate by 24 Nov 2026, 11:00 CET) re-publishes the call. TED Search API v3 on 17 Nov 2026: title-proc, description-proc, description-lot and CPV are identical to 729019. Drilling basis taken over from the reviewed row for 729019 (AUD-2b86d4c68c29): new thermal well drilled ('új termálkút fúrással'), same explicit well scope.",
+        "Equipment": "Same procedure as TED 729019-2026 (TED procedure-identifier 9e93c537-170a-4a87-a6a3-d01fe0f9a81e); TED 763136-2026 (published 3 Nov 2026, requests to participate by 24 Nov 2026, 11:00 CET) re-publishes the call. TED Search API v3 on 17 Nov 2026: title-proc, description-proc, description-lot and CPV are identical to 729019. Equipment basis taken over from the reviewed row for 729019 (AUD-2b86d4c68c29): 300 kW thermal-heat block, pump house and well equipment for the heat centre, not drilling material."
+      },
+      "basis": "Takes over the reviewed labels of TED 729019-2026 (AUD-2b86d4c68c29), same TED procedure 9e93c537-170a-4a87-a6a3-d01fe0f9a81e, identical scope text. Independently reviewed against TED 763136-2026 on 17 Nov 2026 (AUD-54da3302f5d0). Label decision transmitted by the Chief of Staff; not seen from Daniel Hirschl directly.",
+      "library_summary": "",
+      "provenance": [
+        {
+          "type": "independent_review",
+          "id": "AUD-54da3302f5d0",
+          "row": null,
+          "reviewer_row": null,
+          "reviewed_at": "2026-11-17 CET (Europe/Berlin)",
+          "review_status": "green",
+          "decision": "Eigenständig gegen TED 763136-2026 geprüft: gleiches Verfahren und identischer Leistungsumfang wie 729019 (AUD-2b86d4c68c29); Drilling für neuen Thermalbrunnen, Equipment für Wärmeblock/Kútgépészet, nicht für Bohrmaterial.",
+          "evidence_section": "description-lot/hun/0",
+          "evidence_snapshot": "audience-kaba-2026-11-17/ted-729019-763136.json",
+          "evidence_snapshot_sha256": "cad61461a9084587d14663888dafa208a102be81797d67878232ddb563b1fdf1",
+          "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026"
+        },
+        {
+          "type": "procedure_successor",
+          "predecessor_url": "https://ted.europa.eu/en/notice/-/detail/729019-2026",
+          "predecessor_reviewer_id": "AUD-2b86d4c68c29",
+          "procedure_identifier": "9e93c537-170a-4a87-a6a3-d01fe0f9a81e",
+          "checked": "2026-11-17 (TED Search API v3): procedure-identifier, title-proc, description-proc, description-lot and classification-cpv identical",
+          "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026"
+        },
+        {
+          "type": "label_decision",
+          "by": "Chief of Staff (transmitted; not seen from Daniel Hirschl directly)",
+          "decision": "763136 takes over the labels [Drilling, Equipment] from 729019 because it is the same procedure; implement in the weekly data PR with Reviewer check.",
+          "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026"
+        }
+      ]
+    },
+    {
       "key": "ted:638913-2026",
       "reviewer_id": "AUD-72d9cfe74afb",
       "reviewer_row": 60,

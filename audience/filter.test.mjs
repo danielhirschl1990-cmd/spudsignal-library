@@ -25,16 +25,20 @@ function byNotice(id) {
 
 test("the shared record matches the independent review", () => {
   assert.deepEqual(api.validateAssignments(doc), []);
-  assert.equal(doc.assignments.length, 96);
-  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 70);
-  assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved && row.labels.length).length, 70);
+  // Since 17 Nov 2026: +1 row, TED 763136-2026 (Kaba) takes over the reviewed labels of
+  // TED 729019-2026 (same TED procedure). 96 -> 97 rows, 70 -> 71 labelled rows.
+  assert.equal(doc.assignments.length, 97);
+  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 71);
+  assert.equal(doc.assignments.filter((row) => row.status === "reviewed" && row.approved && row.labels.length).length, 71);
   assert.equal(doc.assignments.filter((row) => row.intentionally_untagged && !row.labels.length).length, 5);
   assert.equal(doc.assignments.filter((row) => row.withheld && row.status === "untagged" && !row.labels.length).length, 21);
   assert.equal(doc.assignments.filter((row) => row.status === "pending_review").length, 0);
-  assert.equal(new Set(doc.assignments.map((row) => row.url)).size, 96);
+  assert.equal(new Set(doc.assignments.map((row) => row.url)).size, 97);
   for (const row of doc.assignments) {
-    assert.equal(row.provenance[0].type, "independent_review");
-    assert.match(row.reviewer_id, /^AUD-[0-9a-f]{12}$/);
+    // Every row needs an independent reviewer id issued by the Reviewer
+    // (AUD- + first 12 hex of sha256 of the exact URL).
+    assert.equal(row.provenance[0].type, "independent_review", row.url + ": independent review pending");
+    assert.match(row.reviewer_id, /^AUD-[0-9a-f]{12}$/, row.url + ": reviewer id pending, the Reviewer must issue it");
     assert.equal(row.provenance[0].id, row.reviewer_id);
     assert.equal(row.provenance[0].url, row.url);
   }
@@ -58,6 +62,7 @@ test("the shared record matches the independent review", () => {
     "https://www.boamp.fr/pages/avis/?q=idweb:26-101091": ["Drilling", "Equipment"],
     "https://ted.europa.eu/en/notice/-/detail/664782-2026": ["Drilling", "Equipment"],
     "https://ted.europa.eu/en/notice/-/detail/729019-2026": ["Drilling", "Equipment"],
+    "https://ted.europa.eu/en/notice/-/detail/763136-2026": ["Drilling", "Equipment"],
     "https://ted.europa.eu/en/notice/-/detail/716179-2026": ["Drilling", "Equipment", "Engineering & Services"],
     "https://ted.europa.eu/en/notice/-/detail/754152-2026": ["Equipment", "Engineering & Services"]
   };
@@ -233,19 +238,27 @@ test("open-tender facts and the map files stay unchanged", () => {
     assert.equal(entry.audience_status, "reviewed", entry.url);
     assert.deepEqual(entry.audience, row.labels, entry.url);
   }
-  // KNOWN GAP (Kaba), recorded 16 Nov 2026, not fixed by this test:
-  // TED 729019-2026 and TED 763136-2026 share procedure-identifier
-  // 9e93c537-170a-4a87-a6a3-d01fe0f9a81e (TED API), so the procedure is still open
-  // via 763136 (deadline 24 Nov 2026, 11:00 CET). The reviewed labels
-  // ["Drilling", "Equipment"] sit on the old URL 729019 only, so 763136 is unassigned.
-  // Whether 763136 takes over those labels is a reviewed label decision, not a test change.
-  // When that decision is made (or 763136 leaves the list), update this block.
-  const kabaOld = doc.assignments.find((row) => row.url === "https://ted.europa.eu/en/notice/-/detail/729019-2026");
+  // Kaba: TED 729019-2026 and TED 763136-2026 share procedure-identifier
+  // 9e93c537-170a-4a87-a6a3-d01fe0f9a81e (TED API). Decision by the CoS for Daniel (confirmed 17 Nov 2026):
+  // 763136 takes over the reviewed labels of 729019. The 763136 row must carry the same
+  // labels, name the shared procedure and 729019 in its bases, and, while 763136 is still
+  // on the open list, the entry must show exactly those labels as reviewed.
+  const kabaOld = rowById("TED 729019-2026");
+  const kabaNew = rowById("TED 763136-2026");
   assert.deepEqual(kabaOld.labels, ["Drilling", "Equipment"]);
-  const kabaOpen = tenders.entries.find((entry) => entry.id === "TED 763136-2026");
+  assert.ok(kabaNew, "763136 needs its own assignment row (exact-URL join)");
+  assert.deepEqual(kabaNew.labels, kabaOld.labels);
+  assert.equal(kabaNew.status, "reviewed");
+  assert.equal(kabaNew.approved, true);
+  for (const label of kabaNew.labels) {
+    assert.match(kabaNew.bases[label], /729019-2026/);
+    assert.match(kabaNew.bases[label], /9e93c537-170a-4a87-a6a3-d01fe0f9a81e/);
+  }
+  const kabaOpen = openById("TED 763136-2026");
   if (kabaOpen) {
-    assert.deepEqual(kabaOpen.audience, [], "Kaba gap changed: 763136 now has labels, update the known-gap block");
-    assert.equal(kabaOpen.audience_status, "unassigned", "Kaba gap changed: update the known-gap block");
+    assert.deepEqual(kabaOpen.audience, ["Drilling", "Equipment"]);
+    assert.equal(kabaOpen.audience_status, "reviewed");
+    assert.deepEqual(kabaOpen.audience, kabaNew.labels);
   }
   const blockedRow = rowById("TED 729199-2026");
   assert.deepEqual(blockedRow.labels, []);
@@ -277,7 +290,7 @@ test("open-tender facts and the map files stay unchanged", () => {
   assert.equal(liner.source_url, "https://ted.europa.eu/en/notice/-/detail/679859-2026");
   assert.match(liner.title, /LINER HANGER/);
   }
-  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 70);
+  assert.equal(doc.assignments.filter((row) => row.labels.length).length, 71); // 70 + Kaba 763136 (17 Nov 2026)
   assert.equal(doc.assignments.filter((row) => row.intentionally_untagged).length, 5);
   assert.equal(doc.assignments.filter((row) => row.withheld).length, 21);
   const files = execSync("git ls-files map tenders/deadlines.ics tenders/ics", { cwd: root, encoding: "utf8" }).trim().split("\n").filter((file) => file !== "map/index.html");

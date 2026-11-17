@@ -2,6 +2,8 @@
 
 Status: the independent full audit of 8 November 2026, 01:22 CET, is reconciled in `audience/assignments.json` by exact URL. 70 rows carry reviewed labels, 5 green rows are intentionally untagged, and 21 yellow rows stay untagged. This file does not authorise a live change or a Beehiiv send.
 
+Update 17 November 2026: TED 763136-2026 (Kaba) takes over the reviewed labels Drilling and Equipment of TED 729019-2026, because both notices belong to the same TED procedure (procedure-identifier 9e93c537-170a-4a87-a6a3-d01fe0f9a81e) and carry identical scope text. Label decision transmitted by the Chief of Staff. Independently reviewed against TED 763136-2026 on 17 November 2026 (reviewer id `AUD-54da3302f5d0`).
+
 The newsletter itself lives outside this repository and has not been edited. `audience/newsletter-item.html` is a reusable excerpt. Use the same labels, on the same source, as `audience/assignments.json`.
 
 ## Exact public labels
