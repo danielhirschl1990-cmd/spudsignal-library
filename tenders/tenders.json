@@ -415,8 +415,11 @@
    "first_seen": "2026-11-08",
    "change": null,
    "accessed": "2026-11-15",
-   "audience": [],
-   "audience_status": "unassigned"
+   "audience": [
+    "Drilling",
+    "Equipment"
+   ],
+   "audience_status": "reviewed"
   },
   {
    "uid": "c063c46f5a23a0b2",
