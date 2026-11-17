@@ -35,8 +35,8 @@ test("the shared record matches the independent review", () => {
   assert.equal(doc.assignments.filter((row) => row.status === "pending_review").length, 0);
   assert.equal(new Set(doc.assignments.map((row) => row.url)).size, 97);
   for (const row of doc.assignments) {
-    // Every row needs an independent reviewer id issued by the Reviewer. A row with a
-    // PENDING id fails here on purpose and must not be merged.
+    // Every row needs an independent reviewer id issued by the Reviewer
+    // (AUD- + first 12 hex of sha256 of the exact URL).
     assert.equal(row.provenance[0].type, "independent_review", row.url + ": independent review pending");
     assert.match(row.reviewer_id, /^AUD-[0-9a-f]{12}$/, row.url + ": reviewer id pending, the Reviewer must issue it");
     assert.equal(row.provenance[0].id, row.reviewer_id);
