@@ -8,38 +8,38 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Warsaw
+TZID:Europe/Dublin
 BEGIN:DAYLIGHT
-TZOFFSETFROM:+0100
-TZOFFSETTO:+0200
-DTSTART:19700329T020000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
 RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
 END:DAYLIGHT
 BEGIN:STANDARD
-TZOFFSETFROM:+0200
-TZOFFSETTO:+0100
-DTSTART:19701025T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:06fd138aa75e9be4@library.spudsignal.com
+UID:4f4caef9d5bed147@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261115T171103Z
-LAST-MODIFIED:20261025T175833Z
-SUMMARY:[Check source] Deadline: Wykonanie otworów geotermalnych Kutno GT
- -1 i Kutno GT-2\, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KU
- TNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEM
-DTSTART;TZID=Europe/Warsaw:20261124T100000
-DTEND;TZID=Europe/Warsaw:20261124T103000
-DESCRIPTION:Source: TED 725171-2026. Published by source: 20 Oct 2026 · L
- ast checked by SpudSignal: 15 Nov 2026. Deadlines can change through corr
+DTSTAMP:20261122T164749Z
+LAST-MODIFIED:20261122T163114Z
+SUMMARY:[Check source] Requests to participate: Prequalification Questionn
+ aire (PQQ) for the provision of services for the design\, build\, operati
+ on\, maintenance and performance guarantee of a Ground
+DTSTART;TZID=Europe/Dublin:20261209T120000
+DTEND;TZID=Europe/Dublin:20261209T123000
+DESCRIPTION:Source: TED 798417-2026. Published by source: 17 Nov 2026 · L
+ ast checked by SpudSignal: 22 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
- ce/-/detail/725171-2026. No guarantee of completeness or accuracy. As pub
- lished: 24 Nov 2026\, 10:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/725171-2026
+ ce/-/detail/798417-2026. No guarantee of completeness or accuracy. As pub
+ lished: 09 Dec 2026\, 13:00 CET (notice: 12:00 UTC+00:00).
+URL:https://ted.europa.eu/en/notice/-/detail/798417-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM

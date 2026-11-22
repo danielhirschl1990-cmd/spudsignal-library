@@ -25,13 +25,13 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:3271aefb65e558b2@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261115T171103Z
+DTSTAMP:20261122T164749Z
 LAST-MODIFIED:20261115T171103Z
 SUMMARY:[Check source] Deadline: PHSG Gossau - BKP 242 Erdwärmesonden				
 DTSTART;TZID=Europe/Zurich:20261130T235900
 DTEND;TZID=Europe/Zurich:20261201T002900
 DESCRIPTION:Source: simap 46554-01. Published by source: 09 Nov 2026 · La
- st checked by SpudSignal: 15 Nov 2026. Deadlines can change through corri
+ st checked by SpudSignal: 22 Nov 2026. Deadlines can change through corri
  genda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://www.simap.ch/de/proje

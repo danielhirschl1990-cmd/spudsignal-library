@@ -25,14 +25,14 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:7ead6eb08485a1d8@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261115T171103Z
+DTSTAMP:20261122T164749Z
 LAST-MODIFIED:20261115T165821Z
 SUMMARY:[Check source] Requests to participate: Anlagenbau Kompressionswä
  rmepumpe
 DTSTART;TZID=Europe/Berlin:20261207T130000
 DTEND;TZID=Europe/Berlin:20261207T133000
 DESCRIPTION:Source: TED 775181-2026. Published by source: 09 Nov 2026 · L
- ast checked by SpudSignal: 15 Nov 2026. Deadlines can change through corr
+ ast checked by SpudSignal: 22 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti

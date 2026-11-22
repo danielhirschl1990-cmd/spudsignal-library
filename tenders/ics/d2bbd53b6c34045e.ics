@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Paris
+TZID:Europe/Berlin
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -23,23 +23,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:76d3e3d4f7f4b6c3@library.spudsignal.com
-SEQUENCE:1
-DTSTAMP:20261115T171103Z
-LAST-MODIFIED:20261113T212310Z
-SUMMARY:[Check source] Deadline: Travaux de rénovation énergétique avec
-  la mise en place d'une PAC Géothermique sur sondes verticales sur le b
- âtiment " MAIRIE "
-DTSTART;TZID=Europe/Paris:20261118T120000
-DTEND;TZID=Europe/Paris:20261118T123000
-DESCRIPTION:Source: BOAMP 26-103155. Published by source: 23 Oct 2026 · L
- ast checked by SpudSignal: 15 Nov 2026. Deadlines can change through corr
+UID:d2bbd53b6c34045e@library.spudsignal.com
+SEQUENCE:0
+DTSTAMP:20261122T164749Z
+LAST-MODIFIED:20261122T163114Z
+SUMMARY:[Check source] Deadline: Stadt Owen - Sanierung und Erweiterung Ra
+ thaus Owen\, Gewerk: Erdwärmesondenfeld / Geothermie
+DTSTART;TZID=Europe/Berlin:20270111T120000
+DTEND;TZID=Europe/Berlin:20270111T123000
+DESCRIPTION:Source: TED 801899-2026. Published by source: 18 Nov 2026 · L
+ ast checked by SpudSignal: 22 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
- s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
- is/?q=idweb:26-103155. No guarantee of completeness or accuracy. As publi
- shed: 18 Nov 2026\, 12:00 CET.
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-103155
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/801899-2026. No guarantee of completeness or accuracy. As pub
+ lished: 11 Jan 2027\, 12:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/801899-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
