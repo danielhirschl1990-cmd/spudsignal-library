@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Paris
+TZID:Europe/Prague
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -23,26 +23,23 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:f0353bf382e57b2b@library.spudsignal.com
+UID:8718be26632e9180@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261115T171103Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: La présente consultation concerne la mis
- sion de Maitrise d’œuvre complète\, découpée en tranches\, pour l
- ’opération de « Production Géothermique – Campu
-DTSTART;TZID=Europe/Paris:20261117T110000
-DTEND;TZID=Europe/Paris:20261117T113000
-DESCRIPTION:Source: BOAMP 26-100440. Published by source: 17 Oct 2026 · L
- ast checked by SpudSignal: 15 Nov 2026. Deadlines can change through corr
+DTSTAMP:20261122T163114Z
+LAST-MODIFIED:20261122T163114Z
+SUMMARY:[Check source] Deadline: „Opakování - Realizace vrtů pro syst
+ émy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT
+ “
+DTSTART;TZID=Europe/Prague:20261216T120000
+DTEND;TZID=Europe/Prague:20261216T123000
+DESCRIPTION:Source: TED 794245-2026. Published by source: 16 Nov 2026 · L
+ ast checked by SpudSignal: 22 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
- s.ics. Only the original notice is binding: https://www.boamp.fr/pages/av
- is/?q=idweb:26-100440. No guarantee of completeness or accuracy. Time unc
- ertain: the notice states 12:00 Paris but encodes an inconsistent offset 
- (11:00 CET) – the earlier value is used here. As published: 17 Nov 2026
- \, 11:00 CET (notice states 12:00 Paris\; submit before 11:00 to be safe)
- .
-URL:https://www.boamp.fr/pages/avis/?q=idweb:26-100440
+ s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
+ ce/-/detail/794245-2026. No guarantee of completeness or accuracy. As pub
+ lished: 16 Dec 2026\, 12:00 CET.
+URL:https://ted.europa.eu/en/notice/-/detail/794245-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM

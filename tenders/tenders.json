@@ -1,222 +1,7 @@
 {
- "generated": "2026-11-15T18:11+01:00",
+ "generated": "2026-11-22T17:31+01:00",
  "note": "As published by source, no guarantee – check the original.",
  "entries": [
-  {
-   "uid": "803c662051981e98",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-101464",
-   "title": "Travaux de Création d'une centrale de géothermie sur sonde et travaux de remplacement des émetteurs au centre hospitalier Drôme Vivarais\n---\nRelance du lot n°2",
-   "title_official": null,
-   "buyer": "Centre Hospitalier de Valence - Etablissement support Ght Dav",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-16T16:00:00+01:00",
-   "deadline_utc": "2026-11-16T15:00:00Z",
-   "deadline_txt": "16 Nov 2026, 16:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [],
-   "audience_status": "untagged"
-  },
-  {
-   "uid": "d6aceeed5e1cf4bd",
-   "kind": "funding",
-   "src": "PROG",
-   "id": "FR-IDF-FEDER-geothermie-2026",
-   "title": "Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie",
-   "title_official": true,
-   "buyer": "Région Île-de-France – FEDER 2026",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-16T17:00:00+01:00",
-   "deadline_utc": "2026-11-16T16:00:00Z",
-   "deadline_txt": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [],
-   "cpv": [],
-   "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [
-    "Project owners & developers"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "f0353bf382e57b2b",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-100440",
-   "title": "La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».",
-   "title_official": null,
-   "buyer": "CNRS - DR13",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-17T12:00:00+02:00",
-   "deadline_utc": "2026-11-17T10:00:00Z",
-   "deadline_txt": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)",
-   "deadline_label": null,
-   "time_note": "Time uncertain: the notice states 12:00 Paris but encodes an inconsistent offset (11:00 CET) – the earlier value is used here.",
-   "tags": [
-    "Planning"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "6b774d72bcf5d7f5",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 696202-2026",
-   "title": "Maîtrise d'oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo",
-   "title_official": null,
-   "buyer": "UniGéo",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-18T12:00:00+01:00",
-   "deadline_utc": "2026-11-18T11:00:00Z",
-   "deadline_txt": "18 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Planning"
-   ],
-   "cpv": [
-    "71300000",
-    "71621000"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-23",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [
-    "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "76d3e3d4f7f4b6c3",
-   "kind": "tender",
-   "src": "BOAMP",
-   "id": "BOAMP 26-103155",
-   "title": "Travaux de rénovation énergétique avec la mise en place d'une PAC Géothermique sur sondes verticales sur le bâtiment \" MAIRIE \"",
-   "title_official": null,
-   "buyer": "Commune de Croze",
-   "country": "FR",
-   "tz": "Europe/Paris",
-   "deadline_iso": "2026-11-18T12:00:00+01:00",
-   "deadline_utc": "2026-11-18T11:00:00Z",
-   "deadline_txt": "18 Nov 2026, 12:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [],
-   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-11-08",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [],
-   "audience_status": "unassigned"
-  },
-  {
-   "uid": "3942db59a0569a17",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 729199-2026",
-   "title": "Bohrplatzerrichtung zur Explorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes",
-   "title_official": null,
-   "buyer": "BEW Berliner Energie und Wärme GmbH",
-   "country": "DE",
-   "tz": "Europe/Berlin",
-   "deadline_iso": "2026-11-20T12:00:00+01:00",
-   "deadline_utc": "2026-11-20T11:00:00Z",
-   "deadline_txt": "20 Nov 2026, 12:00 CET",
-   "deadline_label": "Requests to participate",
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "45113000",
-    "45255500"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [],
-   "audience_status": "untagged"
-  },
-  {
-   "uid": "d1a2305da5242137",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 732630-2026",
-   "title": "Fernwärmeverbundleitungstrasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG",
-   "title_official": null,
-   "buyer": "Erdwärme Grünwald II GmbH & Co. KG",
-   "country": "DE",
-   "tz": "Europe/Berlin",
-   "deadline_iso": "2026-11-21T23:00:00+01:00",
-   "deadline_utc": "2026-11-21T22:00:00Z",
-   "deadline_txt": "21 Nov 2026, 23:00 CET",
-   "deadline_label": "Requests to participate",
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "45112000",
-    "45231100",
-    "45231110",
-    "45231300",
-    "45231400",
-    "45232140",
-    "45232150",
-    "45232411"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [],
-   "audience_status": "untagged"
-  },
   {
    "uid": "b23794cd7971dbe3",
    "kind": "tender",
@@ -239,11 +24,11 @@
     "38540000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/788685-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-15",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -267,11 +52,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103297",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Equipment"
    ],
@@ -297,11 +82,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103038",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Drilling"
    ],
@@ -334,55 +119,15 @@
     "71356200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/716179-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Drilling",
     "Equipment",
     "Engineering & Services"
-   ],
-   "audience_status": "reviewed"
-  },
-  {
-   "uid": "06fd138aa75e9be4",
-   "kind": "tender",
-   "src": "TED",
-   "id": "TED 725171-2026",
-   "title": "Wykonanie otworów geotermalnych Kutno GT-1 i Kutno GT-2, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KUTNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEMU CIEPŁOWNICZEGO ECO KUTNO SP. Z O.O.",
-   "title_official": null,
-   "buyer": "ECO Kutno Sp. z. o.o.",
-   "country": "PL",
-   "tz": "Europe/Warsaw",
-   "deadline_iso": "2026-11-24T10:00:00+01:00",
-   "deadline_utc": "2026-11-24T09:00:00Z",
-   "deadline_txt": "24 Nov 2026, 10:00 CET",
-   "deadline_label": null,
-   "time_note": null,
-   "tags": [
-    "Other"
-   ],
-   "cpv": [
-    "43100000",
-    "43130000",
-    "43136000",
-    "43300000",
-    "45120000",
-    "45121000",
-    "45122000",
-    "71331000",
-    "76300000"
-   ],
-   "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
-   "checked": "2026-11-15",
-   "flag": null,
-   "first_seen": "2026-10-25",
-   "change": null,
-   "accessed": "2026-11-15",
-   "audience": [
-    "Drilling"
    ],
    "audience_status": "reviewed"
   },
@@ -410,11 +155,11 @@
     "45251250"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/763136-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Drilling",
     "Equipment"
@@ -442,11 +187,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-95181",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Engineering & Services"
    ],
@@ -475,11 +220,11 @@
     "76300000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754784-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Drilling"
    ],
@@ -503,11 +248,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://www.rvo.nl/subsidies-financiering/sde/aanvragen",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Project owners & developers"
    ],
@@ -536,11 +281,11 @@
     "71351220"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/738167-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Engineering & Services"
    ],
@@ -568,11 +313,11 @@
     "50531000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/754152-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Equipment",
     "Engineering & Services"
@@ -603,11 +348,11 @@
     "42511100"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/726565-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-25",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Equipment"
    ],
@@ -659,11 +404,11 @@
    "tags": [],
    "cpv": [],
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl5-2026-11-d3-06",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-10-23",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "untagged"
   },
@@ -689,11 +434,42 @@
     "09320000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/759601-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "586d99079d0ef1cd",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 807413-2026",
+   "title": "Bohrplatzerrichtung zur Explorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes",
+   "title_official": null,
+   "buyer": "BEW Berliner Energie und Wärme GmbH",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2026-12-04T12:00:00+01:00",
+   "deadline_utc": "2026-12-04T11:00:00Z",
+   "deadline_txt": "04 Dec 2026, 12:00 CET",
+   "deadline_label": "Requests to participate",
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45113000",
+    "45255500"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/807413-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -717,11 +493,11 @@
    ],
    "cpv": [],
    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-108789",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-15",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -749,11 +525,11 @@
     "45262212"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/766383-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-08",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -780,11 +556,11 @@
     "45331000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/775181-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-15",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -813,11 +589,49 @@
     "76460000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/781999-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-15",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "e892589bb80f89b2",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 801779-2026",
+   "title": "Wykonanie otworów geotermalnych Kutno GT-1 i Kutno GT-2, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KUTNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEMU CIEPŁOWNICZEGO ECO KUTNO SP. Z O.O.",
+   "title_official": null,
+   "buyer": "ECO Kutno Sp. z. o.o.",
+   "country": "PL",
+   "tz": "Europe/Warsaw",
+   "deadline_iso": "2026-12-08T10:00:00+01:00",
+   "deadline_utc": "2026-12-08T09:00:00Z",
+   "deadline_txt": "08 Dec 2026, 10:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "43100000",
+    "43130000",
+    "43136000",
+    "43300000",
+    "45120000",
+    "45121000",
+    "45122000",
+    "71331000",
+    "76300000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/801779-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   },
@@ -843,11 +657,11 @@
     "71321200"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/755201-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Engineering & Services"
    ],
@@ -875,15 +689,49 @@
     "45000000"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/752632-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-01",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
    "audience": [
     "Drilling"
    ],
    "audience_status": "reviewed"
+  },
+  {
+   "uid": "4f4caef9d5bed147",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 798417-2026",
+   "title": "Prequalification Questionnaire (PQQ) for the provision of services for the design, build, operation, maintenance and performance guarantee of a Groundsource Heat pump System for Sligo Regional Sports",
+   "title_official": null,
+   "buyer": "Sligo County Council",
+   "country": "IE",
+   "tz": "Europe/Dublin",
+   "deadline_iso": "2026-12-09T12:00:00+00:00",
+   "deadline_utc": "2026-12-09T12:00:00Z",
+   "deadline_txt": "09 Dec 2026, 13:00 CET (notice: 12:00 UTC+00:00)",
+   "deadline_label": "Requests to participate",
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "43300000",
+    "43600000",
+    "45100000",
+    "45120000",
+    "45251141"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/798417-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
   },
   {
    "uid": "d01c30182b220cd9",
@@ -908,11 +756,166 @@
     "71317210"
    ],
    "url": "https://ted.europa.eu/en/notice/-/detail/790186-2026",
-   "checked": "2026-11-15",
+   "checked": "2026-11-22",
    "flag": null,
    "first_seen": "2026-11-15",
    "change": null,
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "8718be26632e9180",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 794245-2026",
+   "title": "„Opakování - Realizace vrtů pro systémy BTES2 a BTES3 projektu SYNERGYS a vrtů BTES3-U4H projektu USES4HEAT“",
+   "title_official": null,
+   "buyer": "Česká geologická služba · Univerzita Karlova",
+   "country": "CZ",
+   "tz": "Europe/Prague",
+   "deadline_iso": "2026-12-16T12:00:00+01:00",
+   "deadline_utc": "2026-12-16T11:00:00Z",
+   "deadline_txt": "16 Dec 2026, 12:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "71350000",
+    "71351000",
+    "71351730"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/794245-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "4eac0e6fe27f55f7",
+   "kind": "tender",
+   "src": "BOAMP",
+   "id": "BOAMP 26-111813",
+   "title": "Travaux pour l'installation de géothermie sur sondes en complément de la boucle d'eau tempérée sur le Campus Moulin à Vent de l'Université de Perpignan Via Domitia.",
+   "title_official": null,
+   "buyer": "Université de Perpignan Via Domitia (UPVD)",
+   "country": "FR",
+   "tz": "Europe/Paris",
+   "deadline_iso": "2026-12-18T17:00:00+01:00",
+   "deadline_utc": "2026-12-18T16:00:00Z",
+   "deadline_txt": "18 Dec 2026, 17:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [],
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-111813",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "1bab5d098b65f30f",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 809843-2026",
+   "title": "Ganztagesgrundschule Mörsch - Geothermie",
+   "title_official": null,
+   "buyer": "Stadt Rheinstetten",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2026-12-21T09:00:00+01:00",
+   "deadline_utc": "2026-12-21T08:00:00Z",
+   "deadline_txt": "21 Dec 2026, 09:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45251141"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/809843-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "d2bbd53b6c34045e",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 801899-2026",
+   "title": "Stadt Owen - Sanierung und Erweiterung Rathaus Owen, Gewerk: Erdwärmesondenfeld / Geothermie",
+   "title_official": null,
+   "buyer": "Stadt Owen",
+   "country": "DE",
+   "tz": "Europe/Berlin",
+   "deadline_iso": "2027-01-11T12:00:00+01:00",
+   "deadline_utc": "2027-01-11T11:00:00Z",
+   "deadline_txt": "11 Jan 2027, 12:00 CET",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45000000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/801899-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
+   "audience": [],
+   "audience_status": "unassigned"
+  },
+  {
+   "uid": "368db92497e3aa91",
+   "kind": "tender",
+   "src": "TED",
+   "id": "TED 803586-2026",
+   "title": "THT10 Steam Gathering System",
+   "title_official": null,
+   "buyer": "Landsvirkjun",
+   "country": "IS",
+   "tz": "Atlantic/Reykjavik",
+   "deadline_iso": "2027-01-12T14:00:00+00:00",
+   "deadline_utc": "2027-01-12T14:00:00Z",
+   "deadline_txt": "12 Jan 2027, 15:00 CET (notice: 14:00 UTC+00:00)",
+   "deadline_label": null,
+   "time_note": null,
+   "tags": [
+    "Other"
+   ],
+   "cpv": [
+    "45112000",
+    "45231100",
+    "45231112",
+    "45251141",
+    "45262680",
+    "45321000"
+   ],
+   "url": "https://ted.europa.eu/en/notice/-/detail/803586-2026",
+   "checked": "2026-11-22",
+   "flag": null,
+   "first_seen": "2026-11-22",
+   "change": null,
+   "accessed": "2026-11-22",
    "audience": [],
    "audience_status": "unassigned"
   }
@@ -1171,6 +1174,48 @@
    "kind": "tender"
   },
   {
+   "uid": "d6aceeed5e1cf4bd",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "no longer listed (not re-verifiable or withdrawn)",
+   "title": "Appel à projets FEDER 2026 – Création ou extension des installations de distribution et production de chaleur et de froid par géothermie",
+   "url": "https://www.europeidf.fr/sites/default/files/AAP_FEDER2026_G%C3%A9othermie.pdf",
+   "deadline_iso": "2026-11-16T17:00:00+01:00",
+   "deadline_txt": "16 Nov 2026, 17:00 Paris time (submission via e-Synergie)",
+   "src": "PROG",
+   "id": "FR-IDF-FEDER-geothermie-2026",
+   "country": "FR",
+   "kind": "funding"
+  },
+  {
+   "uid": "f0353bf382e57b2b",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 17 Nov 2026, 11:00 CET",
+   "title": "La présente consultation concerne la mission de Maitrise d’œuvre complète, découpée en tranches, pour l’opération de « Production Géothermique – Campus Route de Mende ».",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100440",
+   "deadline_iso": "2026-11-17T12:00:00+02:00",
+   "deadline_txt": "17 Nov 2026, 11:00 CET (notice states 12:00 Paris; submit before 11:00 to be safe)",
+   "src": "BOAMP",
+   "id": "BOAMP 26-100440",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
+   "uid": "6b774d72bcf5d7f5",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 18 Nov 2026, 12:00 CET",
+   "title": "Maîtrise d'oeuvre pour la gestion des installations de surface du réseau de chaleur UniGéo",
+   "url": "https://ted.europa.eu/en/notice/-/detail/696202-2026",
+   "deadline_iso": "2026-11-18T12:00:00+01:00",
+   "deadline_txt": "18 Nov 2026, 12:00 CET",
+   "src": "TED",
+   "id": "TED 696202-2026",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
    "uid": "ffefc6bd40ec17bb",
    "status": "removed",
    "gone": "2026-11-08",
@@ -1213,6 +1258,62 @@
    "kind": "tender"
   },
   {
+   "uid": "803c662051981e98",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 16 Nov 2026, 16:00 CET",
+   "title": "Travaux de Création d'une centrale de géothermie sur sonde et travaux de remplacement des émetteurs au centre hospitalier Drôme Vivarais\n---\nRelance du lot n°2",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-101464",
+   "deadline_iso": "2026-11-16T16:00:00+01:00",
+   "deadline_txt": "16 Nov 2026, 16:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-101464",
+   "country": "FR",
+   "kind": "tender"
+  },
+  {
+   "uid": "3942db59a0569a17",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 20 Nov 2026, 12:00 CET",
+   "title": "Bohrplatzerrichtung zur Explorationsbohrung Geothermie Marzahn im Rahmen eines Gesamtprojektes",
+   "url": "https://ted.europa.eu/en/notice/-/detail/729199-2026",
+   "deadline_iso": "2026-11-20T12:00:00+01:00",
+   "deadline_txt": "20 Nov 2026, 12:00 CET",
+   "src": "TED",
+   "id": "TED 729199-2026",
+   "country": "DE",
+   "kind": "tender"
+  },
+  {
+   "uid": "d1a2305da5242137",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 21 Nov 2026, 23:00 CET",
+   "title": "Fernwärmeverbundleitungstrasse Laufzorn II nach Laufzorn I der Erdwärme II GmbH und Co KG",
+   "url": "https://ted.europa.eu/en/notice/-/detail/732630-2026",
+   "deadline_iso": "2026-11-21T23:00:00+01:00",
+   "deadline_txt": "21 Nov 2026, 23:00 CET",
+   "src": "TED",
+   "id": "TED 732630-2026",
+   "country": "DE",
+   "kind": "tender"
+  },
+  {
+   "uid": "06fd138aa75e9be4",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "superseded by later notice TED 801779-2026",
+   "title": "Wykonanie otworów geotermalnych Kutno GT-1 i Kutno GT-2, dla Inwestycji pn.: BUDOWA CIEPŁOWNI GEOTERMALNEJ W KUTNIE WRAZ Z JEJ PRZYŁĄCZENIEM DO SYSTEMU CIEPŁOWNICZEGO ECO KUTNO SP. Z O.O.",
+   "url": "https://ted.europa.eu/en/notice/-/detail/725171-2026",
+   "deadline_iso": "2026-11-24T10:00:00+01:00",
+   "deadline_txt": "24 Nov 2026, 10:00 CET",
+   "src": "TED",
+   "id": "TED 725171-2026",
+   "country": "PL",
+   "kind": "tender"
+  },
+  {
    "uid": "a18fef83c1e2ddc5",
    "status": "removed",
    "gone": "2026-11-01",
@@ -1238,6 +1339,20 @@
    "src": "TED",
    "id": "TED 737356-2026",
    "country": "IE",
+   "kind": "tender"
+  },
+  {
+   "uid": "76d3e3d4f7f4b6c3",
+   "status": "removed",
+   "gone": "2026-11-22",
+   "reason": "deadline passed 18 Nov 2026, 12:00 CET",
+   "title": "Travaux de rénovation énergétique avec la mise en place d'une PAC Géothermique sur sondes verticales sur le bâtiment \" MAIRIE \"",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103155",
+   "deadline_iso": "2026-11-18T12:00:00+01:00",
+   "deadline_txt": "18 Nov 2026, 12:00 CET",
+   "src": "BOAMP",
+   "id": "BOAMP 26-103155",
+   "country": "FR",
    "kind": "tender"
   }
  ]

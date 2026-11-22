@@ -8,37 +8,38 @@ X-WR-TIMEZONE:Europe/Brussels
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
-TZID:Europe/Paris
+TZID:Europe/Dublin
 BEGIN:DAYLIGHT
-TZOFFSETFROM:+0100
-TZOFFSETTO:+0200
-DTSTART:19700329T020000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
 RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
 END:DAYLIGHT
 BEGIN:STANDARD
-TZOFFSETFROM:+0200
-TZOFFSETTO:+0100
-DTSTART:19701025T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6b774d72bcf5d7f5@library.spudsignal.com
+UID:4f4caef9d5bed147@library.spudsignal.com
 SEQUENCE:0
-DTSTAMP:20261115T171103Z
-LAST-MODIFIED:20261023T130756Z
-SUMMARY:[Check source] Deadline: Maîtrise d'oeuvre pour la gestion des in
- stallations de surface du réseau de chaleur UniGéo
-DTSTART;TZID=Europe/Paris:20261118T120000
-DTEND;TZID=Europe/Paris:20261118T123000
-DESCRIPTION:Source: TED 696202-2026. Published by source: 08 Oct 2026 · L
- ast checked by SpudSignal: 15 Nov 2026. Deadlines can change through corr
+DTSTAMP:20261122T163114Z
+LAST-MODIFIED:20261122T163114Z
+SUMMARY:[Check source] Requests to participate: Prequalification Questionn
+ aire (PQQ) for the provision of services for the design\, build\, operati
+ on\, maintenance and performance guarantee of a Ground
+DTSTART;TZID=Europe/Dublin:20261209T120000
+DTEND;TZID=Europe/Dublin:20261209T123000
+DESCRIPTION:Source: TED 798417-2026. Published by source: 17 Nov 2026 · L
+ ast checked by SpudSignal: 22 Nov 2026. Deadlines can change through corr
  igenda. This calendar entry does NOT update itself. For automatic updates
  \, subscribe to the feed: https://library.spudsignal.com/tenders/deadline
  s.ics. Only the original notice is binding: https://ted.europa.eu/en/noti
- ce/-/detail/696202-2026. No guarantee of completeness or accuracy. As pub
- lished: 18 Nov 2026\, 12:00 CET.
-URL:https://ted.europa.eu/en/notice/-/detail/696202-2026
+ ce/-/detail/798417-2026. No guarantee of completeness or accuracy. As pub
+ lished: 09 Dec 2026\, 13:00 CET (notice: 12:00 UTC+00:00).
+URL:https://ted.europa.eu/en/notice/-/detail/798417-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
