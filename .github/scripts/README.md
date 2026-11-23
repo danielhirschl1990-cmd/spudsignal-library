@@ -26,3 +26,7 @@ It only **warns** about tender pins whose deadline has passed and about a succes
 - **When a map update replaces a notice** (same procedure, new notice number), add an old → new pair with its source to `map/superseded-tenders.json`. Never remove pairs.
 - **When an issue has nothing mappable** (for example policy only), add `{"issue": N, "reason": "..."}` under `issues_without_map_items`.
 - **In CI:** the gate is strict on pushes to main, on manual runs, and on PRs that touch `map/data.js`, `map/superseded-tenders.json` or the gate. On all other PRs it is advisory (warnings only), so the weekly tender refresh and the featured-links PR are never blocked.
+
+## Read-in rule (which issue a pin links to)
+
+A pin's "Read in SpudSignal #N" points to the **earliest issue whose web version links the pin's own source URL** (`source_url`). Lines in "Closing soon" (email-only) never count. Later mentions, such as On-the-radar lines in newer issues, don't move the link. This is the same rule the Library uses for "Featured in #N", which lists every issue that links the source. For the newest issue, the gate checks only that at least one map item carries it.
