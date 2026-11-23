@@ -56,3 +56,37 @@ jobs:
 
       - name: Browser checks (390 px and 1280 px, with and without JavaScript)
         run: node .github/scripts/browser_check.mjs .
+
+  # Map gate (23 Nov 2026): the latest published SpudSignal issue must have a
+  # "Read in SpudSignal #N" link on the map, and map/data.js must not show a
+  # tender ID listed in map/superseded-tenders.json. Separate check run, so a
+  # map that is one issue behind never turns the site checks red.
+  # Strict (red on failure) on pushes to main, manual runs, and pull requests
+  # that touch the map data or this gate. Advisory (warning only) on other pull
+  # requests, e.g. the weekly tender refresh or the Library featured-links PR.
+  map-issue-gate:
+    name: map-issue-gate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Self-test of the map gate
+        run: python3 .github/scripts/check_map_issue.py --selftest
+
+      - name: Map gate (latest issue has Read-in links, no superseded tender IDs)
+        run: |
+          mode=strict
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            if ! git diff --name-only "origin/${{ github.base_ref }}...HEAD" | grep -qE '^(map/data\.js|map/superseded-tenders\.json|\.github/scripts/check_map_issue\.py|\.github/workflows/site-checks\.yml)$'; then
+              mode=advisory
+            fi
+          fi
+          echo "Map gate mode: $mode"
+          python3 .github/scripts/check_map_issue.py . --mode "$mode"

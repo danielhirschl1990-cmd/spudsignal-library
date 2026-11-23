@@ -1,0 +1,22 @@
+{
+  "about": "Tender/funding notices that a newer notice has replaced (same procedure, e.g. a moved deadline). The map gate (.github/scripts/check_map_issue.py) fails while map/data.js still shows an 'old' ID. Maintained by the Kartograf: add a pair whenever a map update replaces a notice. Keep entries; never delete them.",
+  "superseded": [
+    {
+      "old": "TED 725171-2026",
+      "new": "TED 801779-2026",
+      "what": "Kutno GT-1/GT-2 geothermal wells (ECO Kutno, PL): new notice in the same TED procedure moved the deadline from 24 Nov to 8 Dec 2026, 10:00 CET",
+      "procedure": "69db3c60-c623-4dcc-9c34-471aff0d12ad",
+      "source": "https://ted.europa.eu/en/notice/-/detail/801779-2026",
+      "checked": "2026-11-23"
+    },
+    {
+      "old": "TED 729199-2026",
+      "new": "TED 807413-2026",
+      "what": "Marzahn exploration-well drill pad (BEW, Berlin, DE): new notice in the same TED procedure moved requests to participate from 20 Nov to 4 Dec 2026, 12:00 CET",
+      "procedure": "7eb231d2-bbfe-4cc4-9506-6e04798b126d",
+      "source": "https://ted.europa.eu/en/notice/-/detail/807413-2026",
+      "checked": "2026-11-23"
+    }
+  ],
+  "issues_without_map_items": []
+}
