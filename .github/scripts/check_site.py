@@ -50,6 +50,18 @@ REMOVED_TEXTS = ["Clear all filters", "listings", "Projects &amp; wells (#1", "P
 H05 = ("Liability: entries are provided for information only, without guarantee of "
        "completeness or accuracy; the original document is authoritative.")
 
+def first_difference(page, want, ctx=40):
+    """Show where two HTML snippets first differ: position plus context on both sides."""
+    i = next((k for k, (x, y) in enumerate(zip(page, want)) if x != y), min(len(page), len(want)))
+    start = max(0, i - ctx)
+    def cut(s):
+        return ("…" if start else "") + s[start:i + ctx] + ("…" if len(s) > i + ctx else "")
+    return f"first difference at character {i + 1}: page {cut(page)!r} vs map {cut(want)!r}"
+
+
+# One project row on /projects/: Name, Stage, Region, Status, Source
+PROJECT_ROW = re.compile(r"<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>")
+
 TEXT_EXT = (".html", ".js", ".mjs", ".css", ".json", ".ics", ".webmanifest", ".xml", ".txt", ".svg")
 SKIP_DIRS = {".git", ".github", "node_modules"}
 SKIP_TEXT_SCAN = ("map/vendor/", "audience/")  # third-party code; audience/ holds audit notes
@@ -193,6 +205,50 @@ class Check:
                     for m in re.finditer(re.escape(label) + r" \((\d+)\)", p):
                         if int(m.group(1)) != len(tl.get(key, [])):
                             self.err(f"projects/index.html: '{label} ({m.group(1)})' but map data has {len(tl.get(key, []))}")
+                self.projects_vs_map(tl, p)
+
+    # 4b. /projects/ is static HTML next to the map data: every pin's row must
+    # show the same stage, status line (+ location note) and sources as
+    # map/testlayers.js (added 24 Nov 2026 after PR #23 left five rows behind)
+    def projects_vs_map(self, tl, page):
+        def a(u, n):
+            return f'<a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n, quote=False)}</a>'
+        rows = {}
+        for m in PROJECT_ROW.finditer(page):
+            name = html.unescape(m.group(1))
+            if name in rows:
+                line = page.count("\n", 0, m.start()) + 1
+                self.err(f"projects/index.html: duplicate row '{name}' (line {line}); each map pin needs exactly one row")
+                continue
+            rows[name] = m
+        pins = tl.get("active", []) + tl.get("operating", [])
+        names = set()
+        for pin in pins:
+            pid, name = pin.get("id", "?"), pin.get("name", "")
+            names.add(name)
+            m = rows.get(name)
+            if not m:
+                self.err(f"projects/index.html: no row for map pin {pid} '{name}' (map/testlayers.js)")
+                continue
+            stage = html.escape(pin.get("stage") or "", quote=False)
+            if pin.get("status_open") and pin.get("status_label"):
+                stage += ' <span class="open">' + html.escape(pin["status_label"], quote=False) + "</span>"
+            status = html.escape(pin.get("status_line") or "", quote=False)
+            if pin.get("location_note"):
+                status += "<br><small>" + html.escape(pin["location_note"], quote=False) + "</small>"
+            more = pin.get("sources") or []
+            src = "Source: " + a(pin.get("source_url", ""), pin.get("source_name", ""))
+            if more:
+                src += (f"<details><summary>More sources ({len(more)})</summary><ul>"
+                        + "".join("<li>" + a(x["url"], x["name"]) + "</li>" for x in more) + "</ul></details>")
+            for field, shown, want in (("stage", m.group(2), stage), ("status line", m.group(4), status),
+                                       ("sources", m.group(5), src)):
+                if shown != want:
+                    self.err(f"projects/index.html: {pid} '{name}': {field} differs from map/testlayers.js, "
+                             + first_difference(shown, want))
+        for name in rows:
+            if name not in names:
+                self.err(f"projects/index.html: row '{name}' has no pin in map/testlayers.js")
 
     # 5. map shows data, never offers it as a download
     def map_data(self):
@@ -291,7 +347,49 @@ def selftest():
             return s[:m.start(2)] + json.dumps(d) + s[m.end(2):]
         edit(root, "tenders/index.html", fix)
 
+    def map_edit(root, fn):
+        # edit map/testlayers.js like a weekly map delta would (JSON in, JSON out)
+        def go(s):
+            pre, body = s.split("=", 1)
+            d, end = json.JSONDecoder().raw_decode(body.strip())
+            fn(d)
+            return pre + "=" + json.dumps(d, ensure_ascii=False) + body.strip()[end:]
+        edit(root, "map/testlayers.js", go)
+
+    def first_active(d):
+        return d["active"][0]
+
+    def add_source_both(root):
+        # map gets one more source AND /projects/ row is updated the same way: consistent
+        box = {}
+        def fn(d):
+            p = first_active(d); box["p"] = dict(p)
+            p["sources"] = p["sources"] + [{"name": "Selftest source", "url": "https://example.org/selftest"}]
+            box["n"] = p
+        map_edit(root, fn)
+        old, new = box["p"], box["n"]
+        def fix(s):
+            m = next(m for m in PROJECT_ROW.finditer(s) if html.unescape(m.group(1)) == new["name"])
+            cell = m.group(5)
+            if old["sources"]:
+                cell = cell.replace(f"More sources ({len(old['sources'])})", f"More sources ({len(new['sources'])})")
+                cell = cell.replace("</ul></details>", '<li><a href="https://example.org/selftest" target="_blank" rel="noopener">Selftest source</a></li></ul></details>')
+            else:
+                cell += '<details><summary>More sources (1)</summary><ul><li><a href="https://example.org/selftest" target="_blank" rel="noopener">Selftest source</a></li></ul></details>'
+            return s[:m.start(5)] + cell + s[m.end(5):]
+        edit(root, "projects/index.html", fix)
+
     cases = [
+        ("map source added and /projects/ row updated the same way: must PASS", add_source_both, False),
+        ("map status line changed, /projects/ left behind: must FAIL",
+         lambda r: map_edit(r, lambda d: first_active(d).update(status_line=first_active(d)["status_line"] + " Selftest.")), True),
+        ("map source added, /projects/ left behind: must FAIL",
+         lambda r: map_edit(r, lambda d: first_active(d).update(sources=first_active(d)["sources"] + [{"name": "x", "url": "https://example.org/x"}])), True),
+        ("duplicate /projects/ row (same project twice, other stage): must FAIL",
+         lambda r: edit(r, "projects/index.html", lambda s: (lambda m: s[:m.end()] + "\n" + m.group(0).replace("</td><td>In preparation</td>", "</td><td>In execution</td>", 1) + s[m.end():])(
+             next(m for m in PROJECT_ROW.finditer(s) if "</td><td>In preparation</td>" in m.group(0)))), True),
+        ("stage changed on /projects/ only: must FAIL",
+         lambda r: edit(r, "projects/index.html", lambda s: s.replace("</td><td>In execution</td>", "</td><td>In preparation</td>", 1)), True),
         ("one Library entry and one tender fewer, counts updated: must PASS",
          lambda r: (edit(r, "index.html", drop_libcard), drop_tender(r)), False),
         ("one Library entry fewer, header count left unchanged: must FAIL",
