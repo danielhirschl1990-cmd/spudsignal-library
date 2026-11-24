@@ -50,6 +50,15 @@ REMOVED_TEXTS = ["Clear all filters", "listings", "Projects &amp; wells (#1", "P
 H05 = ("Liability: entries are provided for information only, without guarantee of "
        "completeness or accuracy; the original document is authoritative.")
 
+def first_difference(page, want, ctx=40):
+    """Show where two HTML snippets first differ: position plus context on both sides."""
+    i = next((k for k, (x, y) in enumerate(zip(page, want)) if x != y), min(len(page), len(want)))
+    start = max(0, i - ctx)
+    def cut(s):
+        return ("…" if start else "") + s[start:i + ctx] + ("…" if len(s) > i + ctx else "")
+    return f"first difference at character {i + 1}: page {cut(page)!r} vs map {cut(want)!r}"
+
+
 # One project row on /projects/: Name, Stage, Region, Status, Source
 PROJECT_ROW = re.compile(r"<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>")
 
@@ -206,7 +215,12 @@ class Check:
             return f'<a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n, quote=False)}</a>'
         rows = {}
         for m in PROJECT_ROW.finditer(page):
-            rows.setdefault(html.unescape(m.group(1)), m)
+            name = html.unescape(m.group(1))
+            if name in rows:
+                line = page.count("\n", 0, m.start()) + 1
+                self.err(f"projects/index.html: duplicate row '{name}' (line {line}); each map pin needs exactly one row")
+                continue
+            rows[name] = m
         pins = tl.get("active", []) + tl.get("operating", [])
         names = set()
         for pin in pins:
@@ -230,9 +244,8 @@ class Check:
             for field, shown, want in (("stage", m.group(2), stage), ("status line", m.group(4), status),
                                        ("sources", m.group(5), src)):
                 if shown != want:
-                    self.err(f"projects/index.html: {pid} '{name}': {field} differs from map/testlayers.js "
-                             f"(page: {html.unescape(re.sub('<[^>]+>', ' ', shown)).strip()[:90]!r} | "
-                             f"map: {html.unescape(re.sub('<[^>]+>', ' ', want)).strip()[:90]!r})")
+                    self.err(f"projects/index.html: {pid} '{name}': {field} differs from map/testlayers.js, "
+                             + first_difference(shown, want))
         for name in rows:
             if name not in names:
                 self.err(f"projects/index.html: row '{name}' has no pin in map/testlayers.js")
@@ -372,6 +385,9 @@ def selftest():
          lambda r: map_edit(r, lambda d: first_active(d).update(status_line=first_active(d)["status_line"] + " Selftest.")), True),
         ("map source added, /projects/ left behind: must FAIL",
          lambda r: map_edit(r, lambda d: first_active(d).update(sources=first_active(d)["sources"] + [{"name": "x", "url": "https://example.org/x"}])), True),
+        ("duplicate /projects/ row (same project twice, other stage): must FAIL",
+         lambda r: edit(r, "projects/index.html", lambda s: (lambda m: s[:m.end()] + "\n" + m.group(0).replace("</td><td>In preparation</td>", "</td><td>In execution</td>", 1) + s[m.end():])(
+             next(m for m in PROJECT_ROW.finditer(s) if "</td><td>In preparation</td>" in m.group(0)))), True),
         ("stage changed on /projects/ only: must FAIL",
          lambda r: edit(r, "projects/index.html", lambda s: s.replace("</td><td>In execution</td>", "</td><td>In preparation</td>", 1)), True),
         ("one Library entry and one tender fewer, counts updated: must PASS",
